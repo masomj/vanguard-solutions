@@ -12,7 +12,7 @@ export function useSeoMeta() {
       { property: 'og:title', content: computed(() => (route.meta.ogTitle ?? route.meta.title) ?? '') },
       { property: 'og:description', content: computed(() => (route.meta.ogDescription ?? route.meta.description) ?? '') },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: computed(() => `https://vanguarddigital.co.za${route.path}`) },
+      { property: 'og:url', content: computed(() => `https://vanguarddigitalsolutions.co.uk${route.path}`) },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
   })

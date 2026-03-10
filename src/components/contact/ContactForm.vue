@@ -56,7 +56,7 @@
             autocomplete="tel"
             v-bind="ariaAttrs"
             class="w-full px-4 py-2.5 border border-border rounded-md bg-white text-text-primary placeholder:text-text-secondary/50 focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-            placeholder="+27 12 345 6789"
+            placeholder="+44 29 1234 5678"
           />
         </template>
       </FormField>
@@ -73,8 +73,6 @@
           <option value="" disabled>Select a project type</option>
           <option value="tender">Tender Response</option>
           <option value="development">Custom Software Development</option>
-          <option value="consulting">Consulting</option>
-          <option value="integration">Systems Integration</option>
           <option value="other">Other</option>
         </select>
       </template>

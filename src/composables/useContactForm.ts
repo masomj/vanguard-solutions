@@ -55,7 +55,7 @@ export function useContactForm() {
       Object.assign(form, { name: '', email: '', company: '', phone: '', projectType: '', message: '' })
     } catch {
       status.value = 'error'
-      statusMessage.value = 'Something went wrong. Please try again or email us directly at info@vanguarddigital.co.za.'
+      statusMessage.value = 'Something went wrong. Please try again or email us directly at enquiries@vanguarddigitalsolutions.co.uk.'
     }
   }
 

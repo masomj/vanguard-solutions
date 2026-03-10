@@ -21,12 +21,12 @@
               complex requirements into elegant, reliable software.
             </p>
             <p>
-              Our team brings together deep expertise in software engineering, systems architecture,
-              and project management. This combination allows us to guide clients through every
-              stage — from initial consultation to deployment and ongoing support.
+              Our experience spans software engineering, architecture,
+              and delivery management. This combination allows us to guide clients through every
+              stage of building secure, scalable, and maintainable software.
             </p>
             <p>
-              Based in South Africa, we serve businesses and organisations that require
+              Based in South Wales, we serve businesses and organisations that require
               secure, scalable, and well-crafted digital solutions.
             </p>
           </div>
@@ -47,25 +47,6 @@
             </div>
             <h3 class="text-lg font-semibold text-text mb-2">{{ value.title }}</h3>
             <p class="text-text-light text-sm leading-relaxed">{{ value.description }}</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="team-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading subtitle="Experienced professionals dedicated to your success.">
-          Our Team
-        </SectionHeading>
-
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article v-for="member in team" :key="member.name" class="text-center">
-            <div class="w-24 h-24 mx-auto rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mb-4" aria-hidden="true">
-              {{ member.name.split(' ').map(n => n[0]).join('') }}
-            </div>
-            <h3 class="text-lg font-semibold text-text">{{ member.name }}</h3>
-            <p class="text-accent font-medium text-sm mb-2">{{ member.role }}</p>
-            <p class="text-text-light text-sm leading-relaxed">{{ member.bio }}</p>
           </article>
         </div>
       </div>
@@ -112,21 +93,4 @@ const values = [
   },
 ]
 
-const team = [
-  {
-    name: 'David Mthembu',
-    role: 'Managing Director',
-    bio: 'Over 15 years of experience in IT strategy and software delivery.',
-  },
-  {
-    name: 'Anele Dlamini',
-    role: 'Head of Engineering',
-    bio: 'Full-stack architect specialising in secure, scalable enterprise systems.',
-  },
-  {
-    name: 'Liezel Botha',
-    role: 'Project Manager',
-    bio: 'Expert in delivering complex software projects on time and within budget.',
-  },
-]
 </script>

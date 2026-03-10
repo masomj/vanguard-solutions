@@ -29,8 +29,8 @@
                   </div>
                   <div>
                     <h3 class="font-semibold text-text text-sm mb-1">Email</h3>
-                    <a href="mailto:info@vanguarddigital.co.za" class="text-primary hover:text-primary-light transition-colors no-underline text-sm">
-                      info@vanguarddigital.co.za
+                    <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-primary hover:text-primary-light transition-colors no-underline text-sm">
+                      enquiries@vanguarddigitalsolutions.co.uk
                     </a>
                   </div>
                 </div>

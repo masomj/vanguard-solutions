@@ -11,40 +11,34 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="services-list">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <ServiceCard
-            v-for="service in services"
-            :key="service.title"
-            :icon="service.icon"
-            :title="service.title"
-            :description="service.description"
-            :features="service.features"
-          />
-        </div>
-      </div>
-    </section>
+        <div class="max-w-5xl mx-auto">
+          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-8 lg:p-10">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0" aria-hidden="true">
+                <span class="text-2xl">{{ service.icon }}</span>
+              </div>
+              <div>
+                <h2 id="services-list" class="text-2xl sm:text-3xl font-bold text-text">{{ service.title }}</h2>
+                <p class="mt-3 text-text-light leading-relaxed max-w-3xl">{{ service.description }}</p>
+              </div>
+            </div>
 
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="process-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading subtitle="A structured approach to ensure consistent, high-quality delivery.">
-          Our Process
-        </SectionHeading>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div v-for="feature in service.features" :key="feature" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ feature }}
+              </div>
+            </div>
 
-        <div class="mt-12 max-w-3xl mx-auto">
-          <div class="space-y-8">
-            <article v-for="(step, index) in processSteps" :key="step.title" class="flex gap-4">
-              <div class="flex flex-col items-center">
-                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">
-                  {{ index + 1 }}
+            <div class="mt-10 border-t border-border pt-8">
+              <h3 class="text-lg font-semibold text-text">How We Approach Delivery</h3>
+              <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div v-for="item in deliveryApproach" :key="item.title" class="rounded-lg border border-border bg-white px-4 py-4">
+                  <p class="font-semibold text-text text-sm">{{ item.title }}</p>
+                  <p class="mt-1 text-text-light text-sm leading-relaxed">{{ item.description }}</p>
                 </div>
-                <div v-if="index < processSteps.length - 1" class="w-0.5 flex-1 bg-border mt-2"></div>
               </div>
-              <div class="pb-8">
-                <h3 class="text-lg font-semibold text-text mb-1">{{ step.title }}</h3>
-                <p class="text-text-light text-sm leading-relaxed">{{ step.description }}</p>
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -54,73 +48,34 @@
 </template>
 
 <script setup lang="ts">
-import ServiceCard from '../components/services/ServiceCard.vue'
-import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
-const services = [
-  {
-    icon: '💻',
-    title: 'Custom Software Development',
-    description: 'Bespoke applications built to specification, with a focus on security, scalability, and maintainability.',
-    features: [
-      'Web applications and portals',
-      'Mobile-responsive solutions',
-      'API development and integration',
-      'Database design and optimisation',
-      'Automated testing and CI/CD pipelines',
-    ],
-  },
-  {
-    icon: '🔗',
-    title: 'Systems Integration & Consulting',
-    description: 'Strategic advisory and hands-on integration services for complex enterprise environments.',
-    features: [
-      'Enterprise architecture assessment',
-      'Legacy system modernisation',
-      'Third-party system integration',
-      'Technology stack evaluation',
-      'Digital transformation roadmaps',
-    ],
-  },
-  {
-    icon: '🛡️',
-    title: 'Maintenance & Support',
-    description: 'Ongoing technical support, monitoring, and continuous improvement for delivered solutions.',
-    features: [
-      'Service level agreements (SLAs)',
-      'Proactive system monitoring',
-      'Security patching and updates',
-      'Performance optimisation',
-      'User training and knowledge transfer',
-    ],
-  },
-]
+const service = {
+  icon: '💻',
+  title: 'Custom Software Development',
+  description: 'Bespoke applications built to your requirements, with a strong focus on reliability, security, and maintainability.',
+  features: [
+    'Web applications and client portals',
+    'Internal business systems and workflow tools',
+    'API and backend service development',
+    'Database design and performance optimisation',
+    'Automated testing and CI/CD pipelines',
+    'Mobile-responsive user interfaces',
+  ],
+}
 
-const processSteps = [
+const deliveryApproach = [
   {
-    title: 'Discovery & Requirements',
-    description: 'We begin by understanding your needs, constraints, and objectives through in-depth consultation.',
+    title: 'Discovery and Scoping',
+    description: 'We define business goals, technical requirements, and delivery milestones before development begins.',
   },
   {
-    title: 'Proposal & Planning',
-    description: 'Our team prepares a detailed technical proposal, project plan, and cost estimate for your review.',
+    title: 'Build and Iterate',
+    description: 'Incremental delivery with regular demos, feedback loops, and quality checks throughout the build.',
   },
   {
-    title: 'Design & Architecture',
-    description: 'We design the solution architecture, user experience, and technical specifications before development begins.',
-  },
-  {
-    title: 'Development & Testing',
-    description: 'Iterative development with continuous testing ensures quality at every stage of the build.',
-  },
-  {
-    title: 'Deployment & Training',
-    description: 'We handle deployment, data migration, and provide comprehensive training for your team.',
-  },
-  {
-    title: 'Support & Optimisation',
-    description: 'Ongoing monitoring, maintenance, and optimisation to keep your solution performing at its best.',
+    title: 'Launch and Improve',
+    description: 'A production-ready release process with post-launch refinements based on real usage insights.',
   },
 ]
 </script>

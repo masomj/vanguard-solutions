@@ -71,7 +71,5 @@ const quickLinks = [
 
 const services = [
   'Custom Software Development',
-  'Systems Integration',
-  'Maintenance & Support',
 ]
 </script>
