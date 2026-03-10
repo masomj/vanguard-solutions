@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
         <p class="text-lg text-white/80 max-w-2xl">
-          Building trusted partnerships through technology and tender expertise.
+          Building trusted partnerships through technology and innovation.
         </p>
       </div>
     </section>
@@ -15,19 +15,19 @@
           <h2 id="our-story" class="text-3xl font-bold text-text mb-6">Our Story</h2>
           <div class="space-y-4 text-text-light leading-relaxed">
             <p>
-              Vanguard Digital Solutions was founded with a clear mission: to bridge the gap between
-              government procurement requirements and modern software solutions. We recognised that
-              many organisations struggle to navigate the complexities of tender processes while
-              simultaneously delivering technically excellent products.
+              Vanguard Digital Solutions was founded with a clear mission: to deliver modern,
+              high-quality software solutions that help organisations thrive in a digital world.
+              We recognised that many businesses need a trusted technology partner who can turn
+              complex requirements into elegant, reliable software.
             </p>
             <p>
-              Our team brings together deep expertise in public sector procurement, software engineering,
-              and project management. This unique combination allows us to guide clients through every
-              stage — from initial bid preparation to final system deployment and ongoing support.
+              Our team brings together deep expertise in software engineering, systems architecture,
+              and project management. This combination allows us to guide clients through every
+              stage — from initial consultation to deployment and ongoing support.
             </p>
             <p>
-              Based in South Africa, we serve government departments, state-owned enterprises, and
-              large private organisations that require compliant, secure, and scalable digital solutions.
+              Based in South Africa, we serve businesses and organisations that require
+              secure, scalable, and well-crafted digital solutions.
             </p>
           </div>
         </div>
@@ -91,11 +91,6 @@ const values = [
     description: 'We hold ourselves to the highest standards of quality in code, documentation, and client communication.',
   },
   {
-    icon: '🔒',
-    title: 'Compliance',
-    description: 'We ensure every solution meets regulatory requirements and procurement standards without compromise.',
-  },
-  {
     icon: '🚀',
     title: 'Innovation',
     description: 'We leverage modern technologies and methodologies to deliver solutions that are future-ready.',
@@ -104,6 +99,11 @@ const values = [
     icon: '🤝',
     title: 'Partnership',
     description: 'We view every client relationship as a long-term partnership built on mutual respect and shared goals.',
+  },
+  {
+    icon: '🔒',
+    title: 'Security',
+    description: 'We build every solution with security at the forefront, following industry best practices and standards.',
   },
   {
     icon: '📊',
@@ -116,7 +116,7 @@ const team = [
   {
     name: 'David Mthembu',
     role: 'Managing Director',
-    bio: 'Over 15 years of experience in public sector IT procurement and software delivery.',
+    bio: 'Over 15 years of experience in IT strategy and software delivery.',
   },
   {
     name: 'Anele Dlamini',
@@ -125,8 +125,8 @@ const team = [
   },
   {
     name: 'Liezel Botha',
-    role: 'Tender Manager',
-    bio: 'Expert in government procurement processes with a strong track record of successful bids.',
+    role: 'Project Manager',
+    bio: 'Expert in delivering complex software projects on time and within budget.',
   },
 ]
 </script>

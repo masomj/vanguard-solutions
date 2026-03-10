@@ -9,10 +9,10 @@ const router = createRouter({
       name: 'home',
       component: HomePage,
       meta: {
-        title: 'Vanguard Digital Solutions | Software Development & Tender Fulfillment',
-        description: 'Vanguard Digital Solutions delivers expert software development, tender fulfillment, and digital consulting for government and enterprise clients.',
+        title: 'Vanguard Digital Solutions | Custom Software Development',
+        description: 'Vanguard Digital Solutions delivers expert custom software development, systems integration, and digital consulting for businesses and organisations.',
         ogTitle: 'Vanguard Digital Solutions',
-        ogDescription: 'Expert software development for government and enterprise tenders.',
+        ogDescription: 'Expert custom software development and digital consulting.',
       },
     },
     {
@@ -21,9 +21,9 @@ const router = createRouter({
       component: () => import('../pages/AboutPage.vue'),
       meta: {
         title: 'About Us | Vanguard Digital Solutions',
-        description: 'Learn about Vanguard Digital Solutions — our team, mission, and track record in tender fulfillment and software delivery.',
+        description: 'Learn about Vanguard Digital Solutions — our team, mission, and track record in software delivery.',
         ogTitle: 'About Vanguard Digital Solutions',
-        ogDescription: 'Our mission and track record in government and enterprise software.',
+        ogDescription: 'Our mission and track record in software development.',
       },
     },
     {
@@ -32,9 +32,9 @@ const router = createRouter({
       component: () => import('../pages/ServicesPage.vue'),
       meta: {
         title: 'Services | Vanguard Digital Solutions',
-        description: 'Tender fulfillment, custom software development, and digital consulting services for government and enterprise clients.',
+        description: 'Custom software development, systems integration, and digital consulting services for businesses and organisations.',
         ogTitle: 'Our Services',
-        ogDescription: 'Tender fulfillment, custom software, and digital consulting.',
+        ogDescription: 'Custom software development, systems integration, and consulting.',
       },
     },
     {

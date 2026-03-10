@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
         <p class="text-lg text-white/80 max-w-2xl">
-          Comprehensive software and tender solutions for government and enterprise.
+          Comprehensive software solutions for businesses and organisations.
         </p>
       </div>
     </section>
@@ -59,18 +59,6 @@ import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
 const services = [
-  {
-    icon: '📋',
-    title: 'Tender Fulfillment & Bid Management',
-    description: 'Complete tender lifecycle management — from opportunity identification to successful contract award.',
-    features: [
-      'Bid/No-bid analysis and strategy',
-      'Technical and functional proposal writing',
-      'Compliance documentation and BEE certification',
-      'Pricing strategy and financial modelling',
-      'Post-submission clarifications and presentations',
-    ],
-  },
   {
     icon: '💻',
     title: 'Custom Software Development',

@@ -26,12 +26,12 @@ import SectionHeading from '../shared/SectionHeading.vue'
 const reasons = [
   {
     title: 'Proven Track Record',
-    description: 'Successfully delivered on numerous government and enterprise tenders with measurable results.',
+    description: 'Successfully delivered numerous projects for businesses and organisations with measurable results.',
     iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
-    title: 'Compliance Expertise',
-    description: 'Deep understanding of procurement regulations, BEE requirements, and public sector compliance standards.',
+    title: 'Quality First',
+    description: 'Rigorous quality assurance, code review processes, and industry best practices on every project.',
     iconPath: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
   },
   {

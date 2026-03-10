@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 lg:py-24 bg-white" aria-labelledby="services-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading subtitle="We deliver end-to-end solutions tailored for public sector and enterprise requirements.">
+      <SectionHeading subtitle="We deliver end-to-end solutions tailored to your business needs.">
         What We Do
       </SectionHeading>
 
@@ -31,19 +31,19 @@ import BaseButton from '../shared/BaseButton.vue'
 
 const services = [
   {
-    icon: '📋',
-    title: 'Tender Fulfillment',
-    description: 'End-to-end tender management — from bid preparation and compliance documentation to technical proposals and delivery execution.',
-  },
-  {
     icon: '💻',
     title: 'Custom Software Development',
     description: 'Bespoke applications built with modern technologies, designed for scalability, security, and seamless integration with existing systems.',
   },
   {
-    icon: '🤝',
-    title: 'Digital Consulting',
-    description: 'Strategic guidance on digital transformation, technology stack selection, and IT governance for government and enterprise environments.',
+    icon: '🔗',
+    title: 'Systems Integration & Consulting',
+    description: 'Strategic guidance on digital transformation, technology stack selection, and seamless integration across your organisation.',
+  },
+  {
+    icon: '🛡️',
+    title: 'Maintenance & Support',
+    description: 'Ongoing technical support, proactive monitoring, and continuous improvement to keep your systems running at their best.',
   },
 ]
 </script>

@@ -4,11 +4,11 @@
       <div class="max-w-3xl">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           Delivering Excellence in
-          <span class="text-accent-light">Tender Fulfillment</span>
+          <span class="text-accent-light">Software Solutions</span>
         </h1>
         <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
-          Vanguard Digital Solutions partners with government and enterprise clients to deliver
-          high-quality software solutions that meet rigorous tender requirements — on time and on budget.
+          Vanguard Digital Solutions partners with businesses and organisations to deliver
+          high-quality software solutions — on time and on budget.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <BaseButton variant="accent" size="lg" to="/contact">
