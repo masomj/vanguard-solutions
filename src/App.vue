@@ -5,6 +5,7 @@
     <router-view />
   </main>
   <SiteFooter />
+  <CookieBanner />
 </template>
 
 <script setup lang="ts">
@@ -14,9 +15,12 @@ import { useHead } from '@unhead/vue'
 import SkipLink from './components/layout/SkipLink.vue'
 import SiteHeader from './components/layout/SiteHeader.vue'
 import SiteFooter from './components/layout/SiteFooter.vue'
+import CookieBanner from './components/cookie/CookieBanner.vue'
 import { useSeoMeta } from './composables/useSeoMeta'
+import { useAnalytics } from './composables/useAnalytics'
 
 useSeoMeta()
+useAnalytics()
 
 useHead({
   script: [

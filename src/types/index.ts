@@ -29,6 +29,15 @@ export interface FormErrors {
 
 export type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
+export type ConsentStatus = 'undecided' | 'accepted' | 'declined'
+
+declare global {
+  interface Window {
+    dataLayer: unknown[]
+    gtag?: (...args: unknown[]) => void
+  }
+}
+
 declare module 'vue-router' {
   interface RouteMeta {
     title?: string

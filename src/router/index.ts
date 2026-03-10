@@ -49,6 +49,17 @@ const router = createRouter({
       },
     },
     {
+      path: '/cookie-policy',
+      name: 'cookie-policy',
+      component: () => import('../pages/CookiePolicyPage.vue'),
+      meta: {
+        title: 'Cookie Policy | Vanguard Digital Solutions',
+        description: 'Learn about how Vanguard Digital Solutions uses cookies and manage your cookie preferences.',
+        ogTitle: 'Cookie Policy',
+        ogDescription: 'Our cookie policy and your privacy choices.',
+      },
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../pages/NotFoundPage.vue'),

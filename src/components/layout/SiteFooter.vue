@@ -67,6 +67,7 @@ const quickLinks = [
   { to: '/about', label: 'About Us' },
   { to: '/services', label: 'Services' },
   { to: '/contact', label: 'Contact Us' },
+  { to: '/cookie-policy', label: 'Cookie Policy' },
 ]
 
 const services = [
