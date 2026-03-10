@@ -1,5 +1,9 @@
 import { reactive, ref } from 'vue'
+import emailjs from '@emailjs/browser'
 import type { ContactFormData, FormErrors, FormStatus } from '../types'
+
+const SERVICE_ID = 'service_cw3aocj'
+const TEMPLATE_ID = 'template_wn5byer'
 
 export function useContactForm() {
   const form = reactive<ContactFormData>({
@@ -46,10 +50,17 @@ export function useContactForm() {
 
     status.value = 'submitting'
 
-    // Simulate submission — replace with actual API endpoint
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      console.log('Form submission data:', { ...form })
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        fullName: form.name,
+        name: form.name,
+        email: form.email,
+        orgName: form.company,
+        phoneNumber: form.phone,
+        projectType: form.projectType,
+        message: form.message,
+        time: new Date().toLocaleString('en-GB', { dateStyle: 'long', timeStyle: 'short' }),
+      })
       status.value = 'success'
       statusMessage.value = 'Thank you! Your message has been sent. We will be in touch shortly.'
       Object.assign(form, { name: '', email: '', company: '', phone: '', projectType: '', message: '' })
