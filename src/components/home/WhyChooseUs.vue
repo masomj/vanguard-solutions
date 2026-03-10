@@ -5,7 +5,7 @@
         Why Choose Vanguard
       </SectionHeading>
 
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         <article v-for="item in reasons" :key="item.title" class="text-center">
           <div class="w-16 h-16 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,11 +24,6 @@
 import SectionHeading from '../shared/SectionHeading.vue'
 
 const reasons = [
-  {
-    title: 'Proven Track Record',
-    description: 'Successfully delivered numerous projects for businesses and organisations with measurable results.',
-    iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
-  },
   {
     title: 'Quality First',
     description: 'Rigorous quality assurance, code review processes, and industry best practices on every project.',
