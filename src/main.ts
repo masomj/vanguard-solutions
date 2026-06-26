@@ -12,4 +12,5 @@ const head = createHead()
 
 app.use(router)
 app.use(head)
-app.mount('#app')
+
+router.isReady().then(() => app.mount('#app'))
