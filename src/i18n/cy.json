@@ -1,0 +1,350 @@
+{
+  "site": {
+    "name": "Vanguard Digital Solutions",
+    "shortName": "VDS"
+  },
+  "language": {
+    "switchToEnglish": "English",
+    "switchToWelsh": "Cymraeg",
+    "switchLabel": "Newid iaith",
+    "current": "Iaith bresennol: {language}",
+    "english": "Saesneg",
+    "welsh": "Cymraeg"
+  },
+  "nav": {
+    "home": "Cartref",
+    "about": "Amdanom Ni",
+    "services": "Gwasanaethau",
+    "contact": "Cysylltu",
+    "getQuote": "Cael Dyfynbris",
+    "menu": "Dewislen",
+    "mainNavigation": "Prif lywio",
+    "mobileNavigation": "Llywio symudol",
+    "toggleNavigationMenu": "Toglo dewislen llywio",
+    "closeNavigationMenu": "Cau dewislen llywio",
+    "homeAria": "Cartref Vanguard Digital Solutions"
+  },
+  "skipLink": {
+    "main": "Neidio i brif gynnwys"
+  },
+  "footer": {
+    "tagline": "Darparu atebion meddalwedd arloesol i fusnesau a sefydliadau.",
+    "quickLinks": "Dolenni Cyflym",
+    "services": "Gwasanaethau",
+    "contact": "Cysylltu",
+    "copyright": "Hawlfraint {year} Vanguard Digital Solutions. Cedwir pob hawl.",
+    "customSoftwareDevelopment": "Datblygu Meddalwedd Personol",
+    "aboutUs": "Amdanom Ni",
+    "contactUs": "Cysylltu",
+    "cookiePolicy": "Polisi Cwcis"
+  },
+  "cookieBanner": {
+    "ariaLabel": "Caniatad cwcis",
+    "messageA": "Rydym yn defnyddio cwcis i ddadansoddi traffig y safle ac i wella eich profiad.",
+    "messageB": "Drwy glicio \"Derbyn\", rydych yn caniatáu i ni ddefnyddio cwcis dadansoddeg.",
+    "learnMore": "Dysgu mwy",
+    "decline": "Gwrthod",
+    "accept": "Derbyn"
+  },
+  "home": {
+    "hero": {
+      "badge": "Wedi ein lleoli ym Mhen-y-bont - Yn gwasanaethu De Cymru a thu hwnt",
+      "titleStart": "Dylunio Gwe a Datrysiadau Digidol i",
+      "titleHighlight": "Fusnesau De Cymru",
+      "description": "O wefannau fforddiadwy i fusnesau bach i lwyfannau digidol pwrpasol, mae Vanguard Digital Solutions yn adeiladu safleoedd cyflym, modern ac effeithiol i fusnesau ar draws Pen-y-bont, Caerdydd, Abertawe, a De Cymru.",
+      "ctaPrimary": "Cael Dyfynbris Am Ddim",
+      "ctaSecondary": "Gweld Ein Gwasanaethau"
+    },
+    "servicesOverview": {
+      "heading": "Beth Rydym yn ei Adeiladu",
+      "subtitle": "Gwasanaethau dylunio gwe a digidol fforddiadwy i fusnesau bach ledled De Cymru.",
+      "exploreAll": "Archwilio Pob Gwasanaeth",
+      "card1Title": "Gwefannau Busnesau Bach",
+      "card1Description": "Gwefannau glan a phroffesiynol i fusnesau lleol fel salonau, crefftwyr, ymgynghorwyr a mwy. Cyfeillgar i symudol ac yn gyflym.",
+      "card2Title": "Siopau eFasnach",
+      "card2Description": "Gwerthwch ar-lein gyda siop eFasnach lawn, taliadau diogel, rheoli cynnyrch a integreiddio taliadau.",
+      "card3Title": "Safleoedd Archebu ac Apwyntiadau",
+      "card3Description": "Gadewch i gwsmeriaid archebu ar-lein 24/7 gyda Booksy, Square a llifoedd archebu personol.",
+      "card4Title": "Safleoedd Gwybodaeth Busnes",
+      "card4Description": "Rhannwch stori eich busnes ar-lein gyda safleoedd gwybodaeth i grefftwyr, bwytai a gwasanaethau proffesiynol.",
+      "card5Title": "Apiau Gwe Pwrpasol",
+      "card5Description": "Angen rhywbeth unigryw? Rydym yn adeiladu apiau gwe, offer mewnol, dangosfyrddau a phyrth cleientiaid.",
+      "card6Title": "Integreiddio ac Awtomeiddio",
+      "card6Description": "Cysylltwch eich gwefan gyda Booksy, Square, porth taliadau, CRM ac API i symleiddio eich busnes."
+    },
+    "whyChoose": {
+      "heading": "Pam Dewis Vanguard",
+      "subtitle": "Gwybodaeth leol. Sgiliau modern. Canlyniadau gwirioneddol i fusnesau De Cymru.",
+      "item1Title": "Yn Lleol i Dde Cymru",
+      "item1Description": "Rydym wedi ein lleoli ym Mhen-y-bont ac yn gweithio gyda busnesau ledled De Cymru. Rydym yn deall y farchnad leol.",
+      "item2Title": "Prisiau Gonest",
+      "item2Description": "Dim ffioedd cudd a dim marciau asiantaeth gormodol. Rydym yn dyfynnu yn glir ac yn canolbwyntio ar werth gwirioneddol.",
+      "item3Title": "Wedi ei Adeiladu i Gael ei Ddarganfod",
+      "item3Description": "Mae pob safle yn cael ei optimeiddio ar gyfer Google gyda SEO lleol, llwytho cyflym ac ymagwedd symudol-gyntaf."
+    },
+    "localPresence": {
+      "heading": "Dylunwyr Gwe ym Mhen-y-bont a De Cymru",
+      "description": "Mae Vanguard Digital Solutions yn gwmni dylunio a datblygu gwe ym Mhen-y-bont, De Cymru. Rydym yn gweithio gyda busnesau ledled Caerdydd, Abertawe, Casnewydd, Castell-nedd, Port Talbot a thu hwnt i adeiladu gwefannau sy'n troi ymwelwyr yn gwsmeriaid.",
+      "nearbyTitle": "Chwilio am ddylunydd gwe yn agos atoch?",
+      "nearbyDescription": "P'un ai yn nhref Pen-y-bont neu mewn ardaloedd gwledig, gallwn deithio i gyfarfod neu weithio o bell.",
+      "nearbyCta": "Siaradwch Gyda Ni Heddiw"
+    },
+    "testimonials": {
+      "heading": "Adborth Cleientiaid",
+      "subtitle": "Beth mae ein cleientiaid yn ei ddweud am weithio gyda Vanguard Digital Solutions.",
+      "starsAria": "gradd 5 seren",
+      "moreReviews": "Mwy o adolygiadau yn dod yn fuan. Rydym newydd ddechrau.",
+      "becomeClient": "Byddwch yn un o'n cleientiaid cyntaf",
+      "quote1": "Adeiladodd Vanguard ein safle archebu o'r dechrau. Mae'n edrych yn wych ac yn llwytho'n gyflym.",
+      "name1": "Sarah T.",
+      "business1": "Salon Harddwch, Pen-y-bont",
+      "quote2": "Hawdd iawn i ddelio gyda nhw. Dim jargon, prisiau teg, a chyflenwi yn union fel y cytunwyd.",
+      "name2": "James R.",
+      "business2": "Crefftwr Lleol, Caerdydd",
+      "quote3": "Mae ein safle eFasnach newydd wedi gwneud gwahaniaeth mawr i werthiant ar-lein. Argymhellaf yn fawr.",
+      "name3": "Emma L.",
+      "business3": "Manwerthwr Bach, Abertawe"
+    },
+    "cta": {
+      "heading": "Yn Barod i Gael Eich Busnes Ar-lein?",
+      "description": "Wedi ein lleoli ym Mhen-y-bont ac yn gwasanaethu busnesau ledled De Cymru. Cael dyfynbris am ddim heddiw gyda chyngor clir a gonest.",
+      "primary": "Cael Dyfynbris Am Ddim",
+      "secondary": "Archwilio Gwasanaethau"
+    },
+    "areas": {
+      "a1": "Pen-y-bont",
+      "a2": "Caerdydd",
+      "a3": "Abertawe",
+      "a4": "Casnewydd",
+      "a5": "Castell-nedd",
+      "a6": "Port Talbot",
+      "a7": "Merthyr Tudful",
+      "a8": "Rhondda",
+      "a9": "Pontypridd",
+      "a10": "Y Barri",
+      "a11": "Bro Morgannwg",
+      "a12": "Caerffili"
+    }
+  },
+  "about": {
+    "title": "Amdanom Ni",
+    "subtitle": "Adeiladu partneriaethau dibynadwy trwy dechnoleg ac arloesi.",
+    "storyHeading": "Ein Hanes",
+    "p1": "Sefydlwyd Vanguard Digital Solutions gyda chenadaeth glir: darparu atebion meddalwedd modern o ansawdd uchel sy'n helpu sefydliadau i ffynnu mewn byd digidol. Mae llawer o fusnesau angen partner technoleg dibynadwy i droi gofynion cymhleth yn feddalwedd cain a dibynadwy.",
+    "p2": "Mae ein profiad yn cynnwys peirianneg meddalwedd, pensaerniaeth, a rheoli cyflenwi. Mae hyn yn ein galluogi i arwain cleientiaid trwy bob cam o adeiladu meddalwedd ddiogel, graddadwy, a chynaladwy.",
+    "p3": "Wedi ein lleoli yn Ne Cymru, rydym yn cefnogi busnesau a sefydliadau sydd angen atebion digidol diogel a chrefftus.",
+    "valuesHeading": "Ein Gwerthoedd",
+    "valuesSubtitle": "Yr egwyddorion sy'n arwain popeth rydym yn ei wneud.",
+    "value1Title": "Uniondeb",
+    "value1Description": "Rydym yn gweithredu gyda thryloywder a gonestrwydd ym mhob rhyngweithio, o'r dechrau i'r cyflenwi.",
+    "value2Title": "Rhagoriaeth",
+    "value2Description": "Rydym yn cadw at y safonau uchaf o ansawdd mewn cod, dogfennaeth, a chyfathrebu.",
+    "value3Title": "Arloesi",
+    "value3Description": "Rydym yn defnyddio technolegau a dulliau modern i ddarparu atebion sy'n barod ar gyfer y dyfodol.",
+    "value4Title": "Partneriaeth",
+    "value4Description": "Rydym yn gweld pob perthynas cleient fel partneriaeth hirdymor gyda pharch a nodau a rennir.",
+    "value5Title": "Diogelwch",
+    "value5Description": "Rydym yn adeiladu pob ateb gyda diogelwch yn flaenoriaeth, gan ddilyn arferion gorau'r diwydiant.",
+    "value6Title": "Atebolrwydd",
+    "value6Description": "Rydym yn cymryd perchnogaeth o'n hymrwymiadau ac yn darparu canlyniadau mesuradwy."
+  },
+  "servicesPage": {
+    "title": "Ein Gwasanaethau",
+    "subtitle": "Dylunio gwe a datrysiadau digidol fforddiadwy i fusnesau bach ledled De Cymru. O safleoedd syml i gymwysiadau pwrpasol.",
+    "allServices": "Pob Gwasanaeth",
+    "smallBusiness": {
+      "title": "Gwefannau Busnesau Bach",
+      "description": "Mae gwefan broffesiynol yn offeryn busnes allweddol. Rydym yn dylunio ac yn adeiladu gwefannau cyflym sy'n gyfeillgar i symudol i fusnesau lleol ar draws De Cymru.",
+      "f1": "Dyluniad ymatebol symudol-gyntaf",
+      "f2": "SEO lleol wedi ei optimeiddio i Google",
+      "f3": "Cyflymder llwytho uchel",
+      "f4": "Ffurflenni cyswllt a sgwrs fyw",
+      "f5": "Integreiddio Google Maps",
+      "f6": "Dolenni a ffrydiau cyfryngau cymdeithasol",
+      "f7": "Cynlluniau addas i ffotograffiaeth broffesiynol",
+      "f8": "Cynnwys hawdd i'w ddiweddaru"
+    },
+    "ecommerce": {
+      "title": "eFasnach i Fusnesau Bach",
+      "description": "Dechreuwch werthu ar-lein gyda siop lawn, prosesu taliadau diogel, rheoli cynnyrch, olrhain stoc a mwy.",
+      "f1": "Catalog a rheoli cynnyrch",
+      "f2": "Talu diogel a phrosesu taliadau",
+      "f3": "Integreiddio Stripe, PayPal, a thaliadau cerdyn",
+      "f4": "Rheoli stoc a rhestr eiddo",
+      "f5": "Rheoli archebion a hysbysiadau e-bost",
+      "f6": "Codau disgownt a hyrwyddiadau",
+      "f7": "Profiad siopa wedi'i optimeiddio i symudol",
+      "f8": "Integreiddio Google Shopping"
+    },
+    "booking": {
+      "title": "Safleoedd Archebu ac Apwyntiadau",
+      "description": "Gadewch i gwsmeriaid archebu apwyntiadau, dosbarthiadau neu wasanaethau ar-lein 24/7. Rydym yn adeiladu systemau wedi eu teilwra ac yn integreiddio gyda llwyfannau poblogaidd.",
+      "f1": "Archebu ar-lein a threfnu apwyntiadau",
+      "f2": "Calendr argaeledd amser-real",
+      "f3": "Atgoffa awtomatig trwy e-bost a SMS",
+      "f4": "Rheoli staff ac adnoddau",
+      "f5": "Integreiddio Booksy",
+      "f6": "Integreiddio Square",
+      "f7": "Llifoedd archebu personol i'ch busnes",
+      "f8": "Cefnogaeth talu wrth archebu",
+      "integrationsHeading": "Integreiddiadau rydym yn gweithio gyda nhw",
+      "integrationsList": "Booksy, Square, systemau archebu personol, Google Calendar, Stripe, a PayPal."
+    },
+    "brochure": {
+      "title": "Safleoedd Gwybodaeth a Broshwr",
+      "description": "Nid oes angen siop ar-lein ar bob busnes. Weithiau dim ond safle clir a safonol sydd ei angen i esbonio pwy ydych a sut i gysylltu.",
+      "f1": "Gwefan broffesiynol aml-dudalen",
+      "f2": "Tudalennau Amdanom, Gwasanaethau, Cysylltu, ac Oriel",
+      "f3": "SEO lleol ar gyfer chwiliadau yn eich ardal",
+      "f4": "Cysylltu Google Business Profile",
+      "f5": "Cyflym, hygyrch, a chyfeillgar i WCAG",
+      "f6": "Schema markup ar gyfer canlyniadau cyfoethog",
+      "f7": "Strwythur parod ar gyfer blog",
+      "f8": "Gosod dadansoddeg gyda GA4"
+    },
+    "bespoke": {
+      "title": "Apiau Gwe a Meddalwedd Pwrpasol",
+      "description": "Angen rhywbeth y tu hwnt i offer safonol? Rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol, systemau mewnol, pyrth cleientiaid, a llwyfannau llif gwaith.",
+      "f1": "Datblygu apiau gwe pwrpasol",
+      "f2": "Offer busnes mewnol a dangosfyrddau",
+      "f3": "Pyrth cleientiaid a chwsmeriaid",
+      "f4": "Datblygu API a backend",
+      "f5": "Dylunio ac optimeiddio cronfa ddata",
+      "f6": "Profi awtomataidd a phiblinellau CI/CD",
+      "f7": "Integreiddio API trydydd parti",
+      "f8": "Cefnogaeth a chynnal parhaus",
+      "approachHeading": "Sut Rydym yn Cyflwyno",
+      "approach1Title": "Darganfod a Chwmpasu",
+      "approach1Description": "Rydym yn diffinio nodau busnes, gofynion technegol, a cherrig milltir cyn i'r datblygu ddechrau.",
+      "approach2Title": "Adeiladu ac Itereiddio",
+      "approach2Description": "Cyflenwi cam wrth gam gyda demos rheolaidd, adborth, a gwiriadau ansawdd trwy'r broses.",
+      "approach3Title": "Lansio a Gwella",
+      "approach3Description": "Proses lansio barod ar gyfer cynhyrchiad gyda gwelliannau ar ol lansio yn seiliedig ar ddefnydd go iawn."
+    },
+    "integrations": {
+      "title": "Integreiddio a Chysylltiadau Trydydd Parti",
+      "description": "Ydych eisoes yn defnyddio Booksy, Square, Mailchimp neu CRM? Rydym yn cysylltu eich safle gyda'ch offer ac yn awtomeiddio llifoedd gwaith.",
+      "f1": "Integreiddio archebu Booksy",
+      "f2": "Integreiddio Square",
+      "f3": "Cysylltiadau Stripe a phorth taliadau",
+      "f4": "Mailchimp a marchnata e-bost",
+      "f5": "Integreiddio CRM gan gynnwys HubSpot a Zoho",
+      "f6": "Google Analytics a Search Console",
+      "f7": "WhatsApp Business a sgwrs fyw",
+      "f8": "Datblygu API personol"
+    }
+  },
+  "contactPage": {
+    "title": "Cysylltu",
+    "subtitle": "Yn barod i ddechrau eich prosiect nesaf? Cysylltwch a gadewch i ni drafod sut gallwn helpu.",
+    "contactInformation": "Gwybodaeth Gyswllt",
+    "email": "E-bost"
+  },
+  "contactForm": {
+    "heading": "Anfonwch Neges atom",
+    "name": "Enw Llawn",
+    "email": "Cyfeiriad E-bost",
+    "company": "Cwmni neu Sefydliad",
+    "phone": "Rhif Ffon",
+    "projectType": "Math o Brosiect",
+    "projectTypePlaceholder": "Dewiswch fath o brosiect",
+    "optionTender": "Ymateb Tendr",
+    "optionDevelopment": "Datblygu Meddalwedd Personol",
+    "optionOther": "Arall",
+    "message": "Neges",
+    "placeholderName": "John Doe",
+    "placeholderEmail": "john@example.com",
+    "placeholderCompany": "Eich cwmni",
+    "placeholderPhone": "+44 29 1234 5678",
+    "placeholderMessage": "Dywedwch wrthym am eich prosiect...",
+    "send": "Anfon Neges",
+    "sending": "Yn anfon...",
+    "statusSuccess": "Diolch. Mae eich neges wedi ei hanfon a byddwn mewn cysylltiad yn fuan.",
+    "statusError": "Aeth rhywbeth o'i le. Ceisiwch eto neu e-bostiwch enquiries@vanguarddigitalsolutions.co.uk.",
+    "validationName": "Rhowch eich enw llawn gyda o leiaf 2 nod.",
+    "validationEmail": "Rhowch gyfeiriad e-bost dilys.",
+    "validationProjectType": "Dewiswch fath o brosiect.",
+    "validationMessage": "Rhowch neges gyda o leiaf 10 nod."
+  },
+  "cookiePolicy": {
+    "title": "Polisi Cwcis",
+    "subtitle": "Sut rydym yn defnyddio cwcis a sut gallwch reoli eich dewisiadau.",
+    "whatAreCookiesHeading": "Beth Yw Cwcis?",
+    "whatAreCookiesBody": "Ffeiliau testun bach yw cwcis sy'n cael eu storio ar eich dyfais pan fyddwch yn ymweld a gwefan. Maent yn helpu gweithredwyr gwefannau i ddeall sut mae ymwelwyr yn rhyngweithio gyda'r safle.",
+    "cookiesWeUseHeading": "Y Cwcis Rydym yn eu Defnyddio",
+    "cookiesWeUseBody": "Mae'r wefan hon yn defnyddio cwcis dadansoddeg yn unig a ddarperir gan Google Analytics 4 (GA4).",
+    "tableCookie": "Cwci",
+    "tablePurpose": "Pwrpas",
+    "tableDuration": "Hyd",
+    "gaPurpose": "Gwahaniaethu ymwelwyr unigryw",
+    "gaDuration": "2 flynedd",
+    "gaSessionPurpose": "Cynnal cyflwr sesiwn",
+    "gaSessionDuration": "2 flynedd",
+    "gidPurpose": "Gwahaniaethu ymwelwyr unigryw",
+    "gidDuration": "24 awr",
+    "analyticsHeading": "Pam Rydym yn Defnyddio Dadansoddeg",
+    "analyticsBody": "Rydym yn defnyddio Google Analytics 4 i ddeall sut mae ymwelwyr yn defnyddio'r safle, pa dudalennau sy'n fwyaf poblogaidd, a sut gallwn wella'r profiad defnyddiwr. Nid ydym yn casglu data personol y tu hwnt i osodiadau diofyn GA4.",
+    "consentHeading": "Eich Caniatad",
+    "consentBody": "Dim ond ar ol i chi roi caniatad clir trwy glicio Derbyn y mae cwcis dadansoddeg yn cael eu gosod. Os byddwch yn gwrthod, ni osodir cwcis dadansoddeg.",
+    "manageHeading": "Rheoli Eich Dewisiadau",
+    "manageBody": "Gallwch newid eich dewisiadau cwcis unrhyw bryd gan ddefnyddio'r rheolyddion isod. Os byddwch yn tynnu caniatad yn ol, bydd olrhain yn stopio ar unwaith.",
+    "currentPreferenceHeading": "Eich Dewis Presennol",
+    "statusLabel": "Statws:",
+    "accepted": "Derbyniwyd",
+    "declined": "Gwrthodwyd",
+    "undecided": "Heb benderfynu eto",
+    "accept": "Derbyn Cwcis",
+    "decline": "Gwrthod Cwcis",
+    "reset": "Ailosod Dewis",
+    "furtherInfoHeading": "Gwybodaeth Bellach",
+    "furtherInfoPart1": "Am fwy o wybodaeth am sut mae Google yn prosesu data, gweler",
+    "googlePolicy": "Polisi Preifatrwydd Google",
+    "furtherInfoPart2": "Os oes gennych gwestiynau am ein defnydd o gwcis,",
+    "contactUs": "cysylltwch a ni",
+    "lastUpdated": "Diweddarwyd ddiwethaf: Mawrth 2026"
+  },
+  "notFound": {
+    "title": "Tudalen Heb ei Chanfod",
+    "message": "Nid yw'r dudalen rydych yn chwilio amdani yn bodoli neu mae wedi symud.",
+    "backHome": "Yn ol i'r Cartref"
+  },
+  "seo": {
+    "home": {
+      "title": "Dylunydd Gwe Pen-y-bont | Gwefannau Busnesau Bach De Cymru | Vanguard Digital Solutions",
+      "description": "Dylunio a datblygu gwe yn Ne Cymru gan Vanguard Digital Solutions. Gwefannau busnesau bach, eFasnach, systemau archebu, ac apiau gwe pwrpasol.",
+      "ogTitle": "Dylunydd Gwe Pen-y-bont | Vanguard Digital Solutions",
+      "ogDescription": "Dylunio gwe fforddiadwy i fusnesau bach ym Mhen-y-bont a De Cymru, gan gynnwys eFasnach ac apiau pwrpasol."
+    },
+    "about": {
+      "title": "Amdanom Ni | Dylunio Gwe Pen-y-bont De Cymru | Vanguard Digital Solutions",
+      "description": "Dysgwch am Vanguard Digital Solutions, cwmni dylunio a datblygu meddalwedd wedi ei leoli ym Mhen-y-bont, De Cymru.",
+      "ogTitle": "Amdanom Vanguard Digital Solutions",
+      "ogDescription": "Cwmni dylunio gwe lleol ym Mhen-y-bont sy'n adeiladu gwefannau ac apiau gwe i fusnesau ledled y rhanbarth."
+    },
+    "services": {
+      "title": "Gwasanaethau Dylunio Gwe | eFasnach, Archebu ac Apiau Pwrpasol | Vanguard Digital Solutions",
+      "description": "Gwasanaethau dylunio gwe i fusnesau De Cymru gan gynnwys gwefannau busnesau bach, siopau eFasnach, systemau archebu, ac apiau pwrpasol.",
+      "ogTitle": "Gwasanaethau Dylunio Gwe yn Ne Cymru",
+      "ogDescription": "Gwefannau busnesau bach, eFasnach, safleoedd archebu, safleoedd gwybodaeth, ac apiau gwe pwrpasol o dîm ym Mhen-y-bont."
+    },
+    "contact": {
+      "title": "Cysylltu | Cael Dyfynbris Am Ddim | Vanguard Digital Solutions",
+      "description": "Cysylltwch gyda Vanguard Digital Solutions ym Mhen-y-bont, De Cymru i ofyn am ddyfynbris am ddim ar gyfer eich gwefan neu brosiect meddalwedd.",
+      "ogTitle": "Cysylltu gyda Vanguard Digital Solutions",
+      "ogDescription": "Gofynnwch am ddyfynbris am ddim ar gyfer dylunio gwe a datblygu meddalwedd ym Mhen-y-bont a De Cymru."
+    },
+    "cookiePolicy": {
+      "title": "Polisi Cwcis | Vanguard Digital Solutions",
+      "description": "Dysgwch sut mae Vanguard Digital Solutions yn defnyddio cwcis a rheolwch eich dewisiadau preifatrwydd.",
+      "ogTitle": "Polisi Cwcis",
+      "ogDescription": "Ein polisi cwcis a'ch dewisiadau preifatrwydd."
+    },
+    "notFound": {
+      "title": "404 Tudalen Heb ei Chanfod | Vanguard Digital Solutions",
+      "description": "",
+      "ogTitle": "404 Tudalen Heb ei Chanfod",
+      "ogDescription": ""
+    },
+    "fallbackTitle": "Vanguard Digital Solutions"
+  }
+}

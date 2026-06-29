@@ -1,5 +1,10 @@
 import { createI18n } from 'vue-i18n'
-import { messages, type AppLocale } from './messages'
+import en from './en.json'
+import cy from './cy.json'
+
+const messages = { en, cy } as const
+
+export type AppLocale = keyof typeof messages
 
 const LOCALE_STORAGE_KEY = 'vds_locale'
 
