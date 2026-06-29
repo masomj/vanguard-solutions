@@ -1,11 +1,14 @@
 import { reactive, ref } from 'vue'
 import emailjs from '@emailjs/browser'
+import { useI18n } from 'vue-i18n'
 import type { ContactFormData, FormErrors, FormStatus } from '../types'
 
 const SERVICE_ID = 'service_cw3aocj'
 const TEMPLATE_ID = 'template_wn5byer'
 
 export function useContactForm() {
+  const { t, locale } = useI18n()
+
   const form = reactive<ContactFormData>({
     name: '',
     email: '',
@@ -30,16 +33,16 @@ export function useContactForm() {
     clearErrors()
 
     if (!form.name || form.name.trim().length < 2) {
-      errors.name = 'Please enter your full name (at least 2 characters).'
+      errors.name = t('contactForm.validationName')
     }
     if (!form.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      errors.email = 'Please enter a valid email address.'
+      errors.email = t('contactForm.validationEmail')
     }
     if (!form.projectType) {
-      errors.projectType = 'Please select a project type.'
+      errors.projectType = t('contactForm.validationProjectType')
     }
     if (!form.message || form.message.trim().length < 10) {
-      errors.message = 'Please enter a message (at least 10 characters).'
+      errors.message = t('contactForm.validationMessage')
     }
 
     return !errors.name && !errors.email && !errors.projectType && !errors.message
@@ -59,14 +62,17 @@ export function useContactForm() {
         phoneNumber: form.phone,
         projectType: form.projectType,
         message: form.message,
-        time: new Date().toLocaleString('en-GB', { dateStyle: 'long', timeStyle: 'short' }),
+        time: new Date().toLocaleString(locale.value === 'cy' ? 'cy-GB' : 'en-GB', {
+          dateStyle: 'long',
+          timeStyle: 'short',
+        }),
       })
       status.value = 'success'
-      statusMessage.value = 'Thank you! Your message has been sent. We will be in touch shortly.'
+      statusMessage.value = t('contactForm.statusSuccess')
       Object.assign(form, { name: '', email: '', company: '', phone: '', projectType: '', message: '' })
     } catch {
       status.value = 'error'
-      statusMessage.value = 'Something went wrong. Please try again or email us directly at enquiries@vanguarddigitalsolutions.co.uk.'
+      statusMessage.value = t('contactForm.statusError')
     }
   }
 

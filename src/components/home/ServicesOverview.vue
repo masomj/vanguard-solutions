@@ -1,8 +1,8 @@
 <template>
   <section class="py-16 lg:py-24 bg-white" aria-labelledby="services-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading subtitle="Affordable, professional web design and digital services for small businesses across South Wales.">
-        What We Build
+      <SectionHeading :subtitle="t('home.servicesOverview.subtitle')">
+        {{ t('home.servicesOverview.heading') }}
       </SectionHeading>
 
       <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -18,7 +18,7 @@
 
       <div class="mt-12 text-center">
         <BaseButton to="/services" variant="primary">
-          Explore All Services
+          {{ t('home.servicesOverview.exploreAll') }}
         </BaseButton>
       </div>
     </div>
@@ -26,39 +26,43 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SectionHeading from '../shared/SectionHeading.vue'
 import BaseButton from '../shared/BaseButton.vue'
 
-const services = [
+const { t } = useI18n()
+
+const services = computed(() => [
   {
     icon: '🎨',
-    title: 'Small Business Websites',
-    description: 'Clean, professional websites for local businesses — hair salons, trades, consultants, and more. Mobile-friendly, fast, and built to impress.',
+    title: t('home.servicesOverview.card1Title'),
+    description: t('home.servicesOverview.card1Description'),
   },
   {
     icon: '🛒',
-    title: 'eCommerce Stores',
-    description: 'Sell your products online. We build fully-featured eCommerce stores for small businesses, with secure checkout, product management, and payment integration.',
+    title: t('home.servicesOverview.card2Title'),
+    description: t('home.servicesOverview.card2Description'),
   },
   {
     icon: '📅',
-    title: 'Booking & Appointment Sites',
-    description: 'Let customers book online 24/7. Integrations with Booksy, Square, and custom booking systems — perfect for salons, clinics, and service businesses.',
+    title: t('home.servicesOverview.card3Title'),
+    description: t('home.servicesOverview.card3Description'),
   },
   {
     icon: '📋',
-    title: 'Business Information Sites',
-    description: 'Tell your story online. Information sites built for local tradespeople, restaurants, solicitors, and professional services — built for Google too.',
+    title: t('home.servicesOverview.card4Title'),
+    description: t('home.servicesOverview.card4Description'),
   },
   {
     icon: '⚙️',
-    title: 'Bespoke Web Applications',
-    description: 'Need something custom? We build complex web applications, internal tools, dashboards, and client portals tailored precisely to your requirements.',
+    title: t('home.servicesOverview.card5Title'),
+    description: t('home.servicesOverview.card5Description'),
   },
   {
     icon: '🔗',
-    title: 'Integrations & Automation',
-    description: 'Connect your website with the tools you already use — Booksy, Square, payment gateways, CRMs, and APIs to streamline your business.',
+    title: t('home.servicesOverview.card6Title'),
+    description: t('home.servicesOverview.card6Description'),
   },
-]
+])
 </script>

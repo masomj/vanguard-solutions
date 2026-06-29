@@ -8,15 +8,15 @@
               <rect width="32" height="32" rx="6" fill="currentColor" />
               <path d="M8 10l8 12 8-12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
             </svg>
-            <span class="font-bold text-lg">Vanguard Digital Solutions</span>
+            <span class="font-bold text-lg">{{ t('site.name') }}</span>
           </div>
           <p class="text-white/70 text-sm leading-relaxed">
-            Delivering innovative software solutions for businesses and organisations.
+            {{ t('footer.tagline') }}
           </p>
         </div>
 
         <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">Quick Links</h3>
+          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.quickLinks') }}</h3>
           <ul class="list-none m-0 p-0 space-y-2">
             <li v-for="link in quickLinks" :key="link.to">
               <router-link :to="link.to" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
@@ -27,7 +27,7 @@
         </div>
 
         <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">Services</h3>
+          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.services') }}</h3>
           <ul class="list-none m-0 p-0 space-y-2">
             <li v-for="service in services" :key="service">
               <router-link to="/services" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
@@ -38,7 +38,7 @@
         </div>
 
         <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">Contact</h3>
+          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.contact') }}</h3>
           <ul class="list-none m-0 p-0 space-y-3">
             <li class="flex items-start gap-2 text-sm text-white/70">
               <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -53,24 +53,28 @@
       </div>
 
       <div class="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/50">
-        <p>&copy; {{ currentYear }} Vanguard Digital Solutions. All rights reserved.</p>
+        <p>{{ t('footer.copyright', { year: currentYear }) }}</p>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
 const currentYear = new Date().getFullYear()
+const { t } = useI18n()
 
-const quickLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About Us' },
-  { to: '/services', label: 'Services' },
-  { to: '/contact', label: 'Contact Us' },
-  { to: '/cookie-policy', label: 'Cookie Policy' },
-]
+const quickLinks = computed(() => [
+  { to: '/', label: t('nav.home') },
+  { to: '/about', label: t('footer.aboutUs') },
+  { to: '/services', label: t('nav.services') },
+  { to: '/contact', label: t('footer.contactUs') },
+  { to: '/cookie-policy', label: t('footer.cookiePolicy') },
+])
 
-const services = [
-  'Custom Software Development',
-]
+const services = computed(() => [
+  t('footer.customSoftwareDevelopment'),
+])
 </script>

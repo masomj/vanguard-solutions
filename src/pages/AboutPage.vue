@@ -2,9 +2,9 @@
   <div>
     <section class="bg-primary text-white py-16 sm:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('about.title') }}</h1>
         <p class="text-lg text-white/80 max-w-2xl">
-          Building trusted partnerships through technology and innovation.
+          {{ t('about.subtitle') }}
         </p>
       </div>
     </section>
@@ -12,23 +12,11 @@
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="our-story">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
-          <h2 id="our-story" class="text-3xl font-bold text-text mb-6">Our Story</h2>
+          <h2 id="our-story" class="text-3xl font-bold text-text mb-6">{{ t('about.storyHeading') }}</h2>
           <div class="space-y-4 text-text-light leading-relaxed">
-            <p>
-              Vanguard Digital Solutions was founded with a clear mission: to deliver modern,
-              high-quality software solutions that help organisations thrive in a digital world.
-              We recognised that many businesses need a trusted technology partner who can turn
-              complex requirements into elegant, reliable software.
-            </p>
-            <p>
-              Our experience spans software engineering, architecture,
-              and delivery management. This combination allows us to guide clients through every
-              stage of building secure, scalable, and maintainable software.
-            </p>
-            <p>
-              Based in South Wales, we serve businesses and organisations that require
-              secure, scalable, and well-crafted digital solutions.
-            </p>
+            <p>{{ t('about.p1') }}</p>
+            <p>{{ t('about.p2') }}</p>
+            <p>{{ t('about.p3') }}</p>
           </div>
         </div>
       </div>
@@ -36,8 +24,8 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="values-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading subtitle="The principles that guide everything we do.">
-          Our Values
+        <SectionHeading :subtitle="t('about.valuesSubtitle')">
+          {{ t('about.valuesHeading') }}
         </SectionHeading>
 
         <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,40 +45,44 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
-const values = [
+const { t } = useI18n()
+
+const values = computed(() => [
   {
     icon: '🎯',
-    title: 'Integrity',
-    description: 'We operate with transparency and honesty in every interaction, from initial engagement through project delivery.',
+    title: t('about.value1Title'),
+    description: t('about.value1Description'),
   },
   {
     icon: '🏆',
-    title: 'Excellence',
-    description: 'We hold ourselves to the highest standards of quality in code, documentation, and client communication.',
+    title: t('about.value2Title'),
+    description: t('about.value2Description'),
   },
   {
     icon: '🚀',
-    title: 'Innovation',
-    description: 'We leverage modern technologies and methodologies to deliver solutions that are future-ready.',
+    title: t('about.value3Title'),
+    description: t('about.value3Description'),
   },
   {
     icon: '🤝',
-    title: 'Partnership',
-    description: 'We view every client relationship as a long-term partnership built on mutual respect and shared goals.',
+    title: t('about.value4Title'),
+    description: t('about.value4Description'),
   },
   {
     icon: '🔒',
-    title: 'Security',
-    description: 'We build every solution with security at the forefront, following industry best practices and standards.',
+    title: t('about.value5Title'),
+    description: t('about.value5Description'),
   },
   {
     icon: '📊',
-    title: 'Accountability',
-    description: 'We take ownership of our commitments and deliver measurable outcomes on every project.',
+    title: t('about.value6Title'),
+    description: t('about.value6Description'),
   },
-]
+])
 
 </script>

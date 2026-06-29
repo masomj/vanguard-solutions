@@ -2,9 +2,9 @@
   <div>
     <section class="bg-primary text-white py-16 sm:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Contact Us</h1>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('contactPage.title') }}</h1>
         <p class="text-lg text-white/80 max-w-2xl">
-          Ready to start your next project? Get in touch and let's discuss how we can help.
+          {{ t('contactPage.subtitle') }}
         </p>
       </div>
     </section>
@@ -18,7 +18,7 @@
 
           <aside class="lg:col-span-2">
             <div class="bg-surface rounded-lg p-6 lg:p-8 border border-border sticky top-24">
-              <h2 class="text-xl font-bold text-text mb-6">Contact Information</h2>
+              <h2 class="text-xl font-bold text-text mb-6">{{ t('contactPage.contactInformation') }}</h2>
 
               <div class="space-y-6">
                 <div class="flex items-start gap-4">
@@ -28,7 +28,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-text text-sm mb-1">Email</h3>
+                    <h3 class="font-semibold text-text text-sm mb-1">{{ t('contactPage.email') }}</h3>
                     <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-primary hover:text-primary-light transition-colors no-underline text-sm">
                       enquiries@vanguarddigitalsolutions.co.uk
                     </a>
@@ -44,5 +44,8 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import ContactForm from '../components/contact/ContactForm.vue'
+
+const { t } = useI18n()
 </script>

@@ -40,9 +40,6 @@ declare global {
 
 declare module 'vue-router' {
   interface RouteMeta {
-    title?: string
-    description?: string
-    ogTitle?: string
-    ogDescription?: string
+    seoKey?: 'home' | 'about' | 'services' | 'contact' | 'cookiePolicy' | 'notFound'
   }
 }

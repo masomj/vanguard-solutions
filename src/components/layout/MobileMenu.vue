@@ -15,15 +15,15 @@
         id="mobile-menu"
         ref="menuRef"
         class="fixed top-0 right-0 bottom-0 w-72 bg-white shadow-xl z-50 lg:hidden flex flex-col"
-        aria-label="Mobile navigation"
+        :aria-label="t('nav.mobileNavigation')"
         @keydown.escape="$emit('close')"
       >
         <div class="flex items-center justify-between p-4 border-b border-border">
-          <span class="font-bold text-primary text-lg">Menu</span>
+          <span class="font-bold text-primary text-lg">{{ t('nav.menu') }}</span>
           <button
             ref="closeButtonRef"
             class="p-2 rounded-md text-text-light hover:text-primary hover:bg-surface transition-colors"
-            aria-label="Close navigation menu"
+            :aria-label="t('nav.closeNavigationMenu')"
             @click="$emit('close')"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -48,11 +48,20 @@
         <div class="mt-auto p-4 border-t border-border">
           <router-link
             to="/contact"
-            class="block w-full text-center px-5 py-3 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors"
+            class="block w-full text-center px-5 py-3 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors mb-3"
             @click="$emit('close')"
           >
-            Get a Quote
+            {{ t('nav.getQuote') }}
           </router-link>
+
+          <button
+            class="block w-full text-center px-5 py-3 border border-border text-text-light hover:text-primary hover:bg-surface rounded-md font-semibold transition-colors"
+            type="button"
+            :aria-label="t('language.switchLabel')"
+            @click="$emit('toggle-locale')"
+          >
+            {{ localeToggleLabel }}
+          </button>
         </div>
       </nav>
     </Transition>
@@ -60,7 +69,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, nextTick } from 'vue'
+import { computed, ref, watch, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 defineProps<{
   open: boolean
@@ -69,9 +79,16 @@ defineProps<{
 
 defineEmits<{
   close: []
+  'toggle-locale': []
 }>()
 
+const { t, locale } = useI18n()
+
 const closeButtonRef = ref<HTMLButtonElement | null>(null)
+
+const localeToggleLabel = computed(() => (locale.value === 'en'
+  ? t('language.switchToWelsh')
+  : t('language.switchToEnglish')))
 
 watch(() => closeButtonRef.value, async (btn) => {
   if (btn) {

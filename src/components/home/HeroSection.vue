@@ -4,22 +4,21 @@
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80 mb-6">
           <span aria-hidden="true">&#9679;</span>
-          Based in Bridgend &mdash; Serving South Wales &amp; Beyond
+          {{ t('home.hero.badge') }}
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          Web Design &amp; Digital Solutions for
-          <span class="text-accent-light">South Wales Businesses</span>
+          {{ t('home.hero.titleStart') }}
+          <span class="text-accent-light">{{ t('home.hero.titleHighlight') }}</span>
         </h1>
         <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
-          From affordable small business websites to bespoke digital platforms — Vanguard Digital Solutions
-          builds fast, modern, and results-driven sites for businesses across Bridgend, Cardiff, Swansea, and South Wales.
+          {{ t('home.hero.description') }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <BaseButton variant="accent" size="lg" to="/contact">
-            Get a Free Quote
+            {{ t('home.hero.ctaPrimary') }}
           </BaseButton>
           <BaseButton variant="secondary" size="lg" to="/services">
-            See Our Services
+            {{ t('home.hero.ctaSecondary') }}
           </BaseButton>
         </div>
       </div>
@@ -29,7 +28,10 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import BaseButton from '../shared/BaseButton.vue'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
