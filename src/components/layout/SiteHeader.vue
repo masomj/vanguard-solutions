@@ -3,10 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18">
         <router-link :to="'/'" class="flex items-center gap-2 text-primary font-bold text-xl no-underline" :aria-label="t('nav.homeAria')">
-          <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <rect width="32" height="32" rx="6" fill="currentColor" />
-            <path d="M8 10l8 12 8-12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-          </svg>
+          <BrandLogo class="h-8 w-auto shrink-0" variant="gradient" />
           <span class="hidden sm:inline">{{ t('site.name') }}</span>
           <span class="sm:hidden">{{ t('site.shortName') }}</span>
         </router-link>
@@ -78,6 +75,7 @@ import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import MobileMenu from './MobileMenu.vue'
+import BrandLogo from '../shared/BrandLogo.vue'
 import { toggleLocale } from '../../i18n'
 
 const menuOpen = ref(false)
@@ -88,6 +86,8 @@ const navLinks = computed(() => [
   { to: '/', label: t('nav.home') },
   { to: '/about', label: t('nav.about') },
   { to: '/services', label: t('nav.services') },
+  { to: '/technology', label: t('nav.technology') },
+  { to: '/process', label: t('nav.process') },
   { to: '/contact', label: t('nav.contact') },
 ])
 

@@ -4,9 +4,13 @@
   --color-primary: #1a365d;
   --color-primary-light: #2c5282;
   --color-primary-dark: #102a4a;
-  --color-accent: #c05621;
-  --color-accent-light: #dd6b20;
-  --color-accent-dark: #9c4221;
+  /* Brand accent. Blue scale is safe on light surfaces (white text >= 4.5:1). */
+  --color-accent: #176ACC;
+  --color-accent-light: #1F72D4;
+  --color-accent-dark: #0B5FBF;
+  /* Electric cyan from the brand gradient. DARK SURFACES ONLY -- it scores
+     1.82:1 against white, so never use it for text or fills on light backgrounds. */
+  --color-accent-cyan: #00D1FF;
   --color-surface: #f7fafc;
   --color-surface-dark: #edf2f7;
   --color-border: #e2e8f0;

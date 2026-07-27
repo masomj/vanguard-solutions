@@ -8,7 +8,7 @@
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           {{ t('home.hero.titleStart') }}
-          <span class="text-accent-light">{{ t('home.hero.titleHighlight') }}</span>
+          <span class="text-accent-cyan">{{ t('home.hero.titleHighlight') }}</span>
         </h1>
         <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
           {{ t('home.hero.description') }}

@@ -1,4 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Vanguard Digital Solutions">
+  <title>Vanguard Digital Solutions</title>
+  <defs>
+    <linearGradient id="vdsFaviconGrad" x1="0" y1="0" x2="0.62" y2="0.79">
+      <stop offset="0" stop-color="#176ACC"/>
+      <stop offset="1" stop-color="#00D1FF"/>
+    </linearGradient>
+    <mask id="vdsFaviconSeam" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-60" y="-60" width="860" height="660">
+      <rect x="-60" y="-60" width="860" height="660" fill="#fff"/>
+      <polygon points="-40,199 475,162 475,180 -40,217" fill="#000"/>
+    </mask>
+  </defs>
   <rect width="32" height="32" rx="6" fill="#1a365d"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#ffffff">V</text>
+  <g transform="translate(6.2 8.7) scale(0.0271)">
+    <g mask="url(#vdsFaviconSeam)" fill="url(#vdsFaviconGrad)">
+      <polygon points="0,0 250,540 500,0 355,0 250,370 145,0"/>
+      <polygon points="582,0 627,21 543,202 498,181"/>
+      <polygon points="692,0 737,21 683,139 638,118"/>
+    </g>
+  </g>
 </svg>

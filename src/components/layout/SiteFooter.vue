@@ -4,10 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
         <div>
           <div class="flex items-center gap-2 mb-4">
-            <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="6" fill="currentColor" />
-              <path d="M8 10l8 12 8-12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-            </svg>
+            <BrandLogo class="h-8 w-auto shrink-0" variant="cyan" />
             <span class="font-bold text-lg">{{ t('site.name') }}</span>
           </div>
           <p class="text-white/70 text-sm leading-relaxed">
@@ -62,6 +59,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import BrandLogo from '../shared/BrandLogo.vue'
 
 const currentYear = new Date().getFullYear()
 const { t } = useI18n()
@@ -70,6 +68,9 @@ const quickLinks = computed(() => [
   { to: '/', label: t('nav.home') },
   { to: '/about', label: t('footer.aboutUs') },
   { to: '/services', label: t('nav.services') },
+  { to: '/technology', label: t('nav.technology') },
+  { to: '/process', label: t('nav.process') },
+  { to: '/small-business', label: t('nav.smallBusiness') },
   { to: '/contact', label: t('footer.contactUs') },
   { to: '/cookie-policy', label: t('footer.cookiePolicy') },
 ])

@@ -14,7 +14,7 @@
             {{ t('cookieBanner.messageB') }}
             <router-link
               to="/cookie-policy"
-              class="text-accent-light hover:text-white underline transition-colors"
+              class="text-accent-cyan hover:text-white underline transition-colors"
             >
               {{ t('cookieBanner.learnMore') }}
             </router-link>
@@ -22,13 +22,13 @@
           <div class="flex gap-3 shrink-0">
             <button
               @click="declineCookies"
-              class="px-4 py-2 text-sm font-semibold text-white/70 hover:text-white border border-white/30 rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark cursor-pointer"
+              class="px-4 py-2 text-sm font-semibold text-white/70 hover:text-white border border-white/30 rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-accent-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark cursor-pointer"
             >
               {{ t('cookieBanner.decline') }}
             </button>
             <button
               @click="acceptCookies"
-              class="px-4 py-2 text-sm font-semibold text-white bg-accent hover:bg-accent-light rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark cursor-pointer"
+              class="px-4 py-2 text-sm font-semibold text-white bg-accent hover:bg-accent-light rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-accent-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark cursor-pointer"
             >
               {{ t('cookieBanner.accept') }}
             </button>
