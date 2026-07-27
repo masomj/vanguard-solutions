@@ -15,6 +15,9 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "technology": "Technology",
+    "process": "Process",
+    "smallBusiness": "Small Business",
     "contact": "Contact",
     "getQuote": "Get a Quote",
     "menu": "Menu",
@@ -89,22 +92,6 @@
       "nearbyDescription": "Whether you are in Bridgend town centre or rural valleys, we can travel to meet you or work remotely.",
       "nearbyCta": "Talk to Us Today"
     },
-    "testimonials": {
-      "heading": "Client Feedback",
-      "subtitle": "What our clients say about working with Vanguard Digital Solutions.",
-      "starsAria": "5 star rating",
-      "moreReviews": "More reviews coming soon. We are just getting started.",
-      "becomeClient": "Become one of our first clients",
-      "quote1": "Vanguard built our booking site from scratch. It looks great, loads fast, and clients love using it.",
-      "name1": "Sarah T.",
-      "business1": "Beauty Salon, Bridgend",
-      "quote2": "Straightforward to deal with. No jargon, fair pricing, and they delivered exactly what we asked for.",
-      "name2": "James R.",
-      "business2": "Local Tradesperson, Cardiff",
-      "quote3": "Our new eCommerce site has made a real difference to our online sales. Highly recommend.",
-      "name3": "Emma L.",
-      "business3": "Small Retailer, Swansea"
-    },
     "cta": {
       "heading": "Ready to Get Your Business Online?",
       "description": "Based in Bridgend and serving businesses across South Wales. Get a free, no-obligation quote today with clear and honest advice.",
@@ -124,6 +111,40 @@
       "a10": "Barry",
       "a11": "Vale of Glamorgan",
       "a12": "Caerphilly"
+    },
+    "techStack": {
+      "heading": "The Technology Behind the Work",
+      "subtitle": "Modern, proven tools and frameworks for fast, accessible, and maintainable solutions.",
+      "tech1": "Vue 3",
+      "tech2": "Nuxt",
+      "tech3": "TypeScript",
+      "tech4": "HTML5 & CSS",
+      "tech5": "Node.js",
+      "tech6": ".NET / C#",
+      "tech7": "SQL Databases",
+      "tech8": "REST & GraphQL APIs",
+      "tech9": "Microsoft Azure",
+      "tech10": "Docker",
+      "tech11": "CI/CD Pipelines",
+      "tech12": "WCAG 2.2 Accessibility",
+      "description": "Every project is built with modern, professional-grade tools and workflows. From TypeScript for type safety to CI/CD pipelines that catch issues before they reach production.",
+      "learnMore": "More About Our Technology"
+    },
+    "process": {
+      "heading": "A Clear, Milestone-Driven Process",
+      "subtitle": "From first contact to launch and beyond, you'll always know what's happening next.",
+      "step1Title": "Request",
+      "step1Description": "You get in touch. We discuss your goals and requirements in plain English.",
+      "step2Title": "Proposal",
+      "step2Description": "A written proposal with scope, timelines, cost, and what's included.",
+      "step3Title": "Requirements",
+      "step3Description": "Detailed requirements gathering and design. We document assumptions and exclusions.",
+      "step4Title": "Build in Milestones",
+      "step4Description": "Development in milestones with regular check-ins and demos.",
+      "step5Title": "Launch & Support",
+      "step5Description": "Testing, deployment, handover documentation, and post-launch support.",
+      "description": "AI-assisted and agentic workflows mean more of the budget goes into requirements, design, and testing rather than boilerplate. Every line is human-reviewed before it ships.",
+      "learnMore": "See the Full Process"
     }
   },
   "about": {
@@ -146,7 +167,51 @@
     "value5Title": "Security",
     "value5Description": "We build every solution with security at the forefront, following industry best practices and standards.",
     "value6Title": "Accountability",
-    "value6Description": "We take ownership of our commitments and deliver measurable outcomes on every project."
+    "value6Description": "We take ownership of our commitments and deliver measurable outcomes on every project.",
+    "howIWork": {
+      "heading": "How I Work",
+      "subtitle": "Clear communication, honest advice, and no surprises.",
+      "item1Title": "Direct Contact",
+      "item1Description": "You speak to the person writing the code, not an account manager relay. Questions get answered quickly and accurately.",
+      "item2Title": "Clear Scope and Honest Estimates",
+      "item2Description": "Assumptions and exclusions are written down. I'll tell you if something is simpler or cheaper than you expected.",
+      "item3Title": "Modern, Maintainable Code",
+      "item3Description": "TypeScript, automated tests, and CI pipelines so the thing still works in two years and another developer could pick it up.",
+      "item4Title": "You Own Everything",
+      "item4Description": "Your domain, your hosting accounts, your source code. No lock-in, no recurring fees for access to your own assets."
+    },
+    "skills": {
+      "heading": "Skills and Technologies",
+      "subtitle": "Technical capabilities built over four years of professional full-stack development.",
+      "intro": "Four years of professional full-stack development experience, now working independently.",
+      "group1Title": "Front End",
+      "group1Skill1": "Vue 3, Nuxt",
+      "group1Skill2": "TypeScript",
+      "group1Skill3": "HTML5",
+      "group1Skill4": "Modern CSS",
+      "group1Skill5": "Responsive design",
+      "group1Skill6": "WCAG 2.2 accessibility",
+      "group1Skill7": "Component-driven development",
+      "group2Title": "Back End and Data",
+      "group2Skill1": ".NET / C#",
+      "group2Skill2": "Node.js",
+      "group2Skill3": "REST APIs",
+      "group2Skill4": "GraphQL",
+      "group2Skill5": "SQL databases",
+      "group2Skill6": "Third-party integrations",
+      "group3Title": "Cloud and Delivery",
+      "group3Skill1": "Microsoft Azure",
+      "group3Skill2": "Docker and containerisation",
+      "group3Skill3": "CI/CD pipelines",
+      "group3Skill4": "Infrastructure as code",
+      "group3Skill5": "Monitoring and logging",
+      "group4Title": "Practice",
+      "group4Skill1": "UK GDPR and data protection",
+      "group4Skill2": "Performance and Core Web Vitals",
+      "group4Skill3": "Technical SEO",
+      "group4Skill4": "Automated testing",
+      "group4Skill5": "AI-assisted and agentic development workflows"
+    }
   },
   "servicesPage": {
     "title": "Our Services",
@@ -232,6 +297,428 @@
       "f6": "Google Analytics and Search Console",
       "f7": "WhatsApp Business and live chat",
       "f8": "Custom API development"
+    },
+    "related": {
+      "heading": "Go Deeper",
+      "subtitle": "Explore the technology, process, and packages behind our work.",
+      "link1Title": "The Technology Behind the Work",
+      "link1Description": "Vue 3, TypeScript, modern CSS, CI/CD, and the frameworks that power fast, accessible, maintainable applications.",
+      "link2Title": "How a Project Runs, Step by Step",
+      "link2Description": "From first contact to launch and beyond. A clear, milestone-driven process with no surprises.",
+      "link3Title": "Simple Websites for Small Businesses",
+      "link3Description": "Affordable, professional websites for local businesses across South Wales. Fixed scope, transparent pricing."
+    }
+  },
+  "technology": {
+    "hero": {
+      "title": "The Technology Behind the Work",
+      "subtitle": "Modern web development techniques and tools that deliver fast, accessible, and maintainable solutions for your business."
+    },
+    "foundations": {
+      "heading": "The Foundations",
+      "subtitle": "Strong fundamentals for reliable, accessible software.",
+      "html": {
+        "title": "Semantic HTML",
+        "description": "Every site is built with semantic HTML5 elements including proper landmark roles (<header>, <nav>, <main>, <footer>, <article>, <section>). This creates a logical document structure that search engines understand and that assistive technologies navigate efficiently, improving both SEO and accessibility from the ground up."
+      },
+      "css": {
+        "title": "Modern CSS",
+        "description": "CSS Grid and Flexbox for responsive layouts, container queries for component-level responsiveness, custom properties (design tokens) for maintainable theming, and no bloated CSS frameworks. Modern CSS is powerful enough without the overhead of legacy libraries, resulting in smaller bundles and faster page loads."
+      },
+      "typescript": {
+        "title": "JavaScript & TypeScript",
+        "description": "TypeScript brings type safety to JavaScript, catching bugs at compile time instead of runtime. Strongly typed interfaces define data contracts, autocomplete speeds development, and refactoring becomes safer. The result is fewer production errors, clearer code, and faster onboarding for future maintainers."
+      }
+    },
+    "frameworks": {
+      "heading": "Frameworks and Tooling",
+      "subtitle": "Vue 3, Nuxt, and Vite for high-performance modern applications.",
+      "vue": {
+        "title": "Vue 3",
+        "description": "Vue 3 is a progressive JavaScript framework for building user interfaces. The Composition API provides excellent logic reusability and TypeScript integration, the reactivity system is efficient and predictable, and single-file components (.vue files) keep template, logic, and styles co-located. Vue's small bundle size and performance characteristics make it an ideal choice for both marketing sites and complex applications.",
+        "f1": "Composition API for reusable, testable logic",
+        "f2": "Reactive data binding and computed properties",
+        "f3": "Single-file components with scoped styles",
+        "f4": "First-class TypeScript support",
+        "f5": "Small runtime (~34KB gzipped)",
+        "f6": "Virtual DOM with optimised patch algorithm"
+      },
+      "nuxt": {
+        "title": "Nuxt",
+        "description": "Nuxt is a meta-framework built on Vue 3 that provides server-side rendering (SSR), static site generation (SSG), and hybrid rendering modes. SSR delivers fully-rendered HTML to search engines and users on the first request, improving SEO and perceived performance. SSG pre-renders pages at build time for maximum speed and edge caching. File-based routing eliminates boilerplate and improves developer experience.",
+        "f1": "Server-side rendering (SSR) for SEO and performance",
+        "f2": "Static site generation (SSG) for edge-cached sites",
+        "f3": "Incremental static regeneration (ISR)",
+        "f4": "File-based routing with automatic code splitting",
+        "f5": "Built-in SEO and meta tag management",
+        "f6": "Middleware and server API routes"
+      },
+      "vite": {
+        "title": "Vite & the Build Pipeline",
+        "description": "Vite is a next-generation build tool that leverages native ES modules for instant server start and lightning-fast hot module replacement (HMR). Production builds use Rollup for optimised bundles with code splitting, tree shaking to eliminate dead code, and automatic vendor chunk splitting. The result is faster development and smaller production bundles.",
+        "f1": "Instant server start with native ESM",
+        "f2": "Lightning-fast hot module replacement (HMR)",
+        "f3": "Optimised Rollup-based production builds",
+        "f4": "Automatic code splitting and tree shaking",
+        "f5": "CSS code splitting and preprocessing",
+        "f6": "Asset handling and optimisation"
+      }
+    },
+    "apis": {
+      "heading": "APIs and Integrations",
+      "subtitle": "Secure, versioned, and well-documented API design.",
+      "p1": "Modern applications often require backend APIs to handle data, authentication, payments, and third-party integrations. I design and build REST and GraphQL APIs with clear OpenAPI contracts, semantic versioning, and comprehensive documentation. REST endpoints follow standard HTTP status codes (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) and use idempotent verbs (GET, POST, PUT, DELETE) consistently.",
+      "p2": "Authentication is handled using industry-standard protocols including OAuth 2.0 for delegated access and JWT (JSON Web Tokens) for stateless session management. Rate limiting protects APIs from abuse, and CORS policies are configured correctly for cross-origin requests. Backend services are built in .NET (C#) or Node.js depending on project requirements, both using strongly typed languages and robust frameworks.",
+      "p3": "Data persistence uses relational databases (SQL Server, PostgreSQL, MySQL) with normalised schema design, appropriate indexing, and transactional integrity. Third-party integrations include payment gateways (Stripe, PayPal), booking systems (Booksy, Square), CRM platforms (HubSpot, Zoho), and email services (Mailchimp, SendGrid). Each integration is abstracted behind a clean interface so dependencies can be swapped without rewriting application logic."
+    },
+    "accessibility": {
+      "heading": "Accessibility Built In, Not Bolted On",
+      "subtitle": "WCAG 2.2 compliance for inclusive, usable web experiences.",
+      "p1": "Accessibility is not an afterthought — it's built into every decision from the start. Every site I build targets WCAG 2.2 Level AA compliance, which covers the most impactful success criteria for keyboard operability, screen reader support, colour contrast, and error handling. WAI-ARIA attributes (aria-label, aria-labelledby, aria-describedby, aria-live, role) are used sparingly and correctly to enhance semantics where HTML alone is insufficient, never as a replacement for proper semantic markup.",
+      "p2": "Keyboard operability is tested rigorously: all interactive elements receive visible focus indicators, focus order follows logical reading order, and keyboard traps are eliminated. Screen reader testing is performed using NVDA (Windows) and VoiceOver (macOS/iOS) to ensure announcements are clear, landmarks are navigable, and dynamic content updates are communicated via live regions. Colour contrast meets or exceeds WCAG AA ratios (4.5:1 for normal text, 3:1 for large text), and information is never conveyed by colour alone. Users who prefer reduced motion receive alternative animations or static layouts via the prefers-reduced-motion media query.",
+      "p3": "Forms are designed for clarity and error recovery: labels are properly associated with inputs, validation errors are announced to screen readers and linked via aria-describedby, and error messages provide actionable guidance. Legally, accessible websites are required under the UK Equality Act 2010 for businesses providing services to the public, and public sector bodies must meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018. Commercially, accessibility increases your audience, improves usability for all users, and contributes to better SEO rankings since search engines reward well-structured, semantic markup."
+    },
+    "gdpr": {
+      "heading": "UK GDPR and Data Protection",
+      "subtitle": "Privacy-first design and compliance with UK data protection law.",
+      "p1": "Every project is designed with UK GDPR compliance from the outset. Personal data processing is based on a lawful basis (consent, contractual necessity, legitimate interests, legal obligation) and documented clearly in privacy policies. Data minimisation means collecting only what is necessary; purpose limitation ensures data is used only for the stated purpose; and storage limitation defines retention periods after which data is securely deleted. Consent for analytics and marketing cookies is obtained explicitly via opt-in banners under PECR (Privacy and Electronic Communications Regulations), and users can withdraw consent at any time, triggering immediate deletion of tracking cookies.",
+      "p2": "Analytics configurations respect privacy: Google Analytics 4 is configured with IP anonymisation enabled, sensitive data is excluded from event parameters, and data retention periods are set appropriately. Where possible, privacy-focused analytics alternatives are recommended. Data subject rights under UK GDPR — including the right to access (subject access requests), rectification, erasure (right to be forgotten), data portability, and objection — are supported through clear processes and technical implementation. The ICO (Information Commissioner's Office) provides regulatory guidance, and I help clients understand their obligations as data controllers.",
+      "p3": "Data in transit is encrypted using TLS 1.2 or higher (HTTPS everywhere), and sensitive data at rest is encrypted using industry-standard algorithms (AES-256). Where data is hosted, UK or EU data residency is preferred to avoid international transfer complexities, particularly when using Microsoft Azure's UK South or UK West regions. Backups are encrypted and tested regularly, and disaster recovery procedures ensure data can be restored within defined recovery time objectives (RTO) and recovery point objectives (RPO).",
+      "disclaimer": "This information is provided for general guidance and does not constitute legal advice. Consult a qualified data protection solicitor for specific legal requirements."
+    },
+    "cloud": {
+      "heading": "Cloud-First Hosting",
+      "subtitle": "Microsoft Azure and edge-optimised infrastructure.",
+      "p1": "Modern hosting is cloud-first: Microsoft Azure provides scalable, reliable infrastructure with global edge delivery via Azure Static Web Apps, Azure App Service, and Azure CDN. Static sites are deployed to Azure's edge network, delivering content from the closest point of presence (PoP) to the user for minimum latency. TLS/HTTPS is enabled by default with automatic certificate renewal via Let's Encrypt or Azure-managed certificates, ensuring encrypted connections and trust indicators in browsers.",
+      "p2": "Environments are separated logically (development, staging, production) using Azure resource groups and deployment slots, allowing safe testing before production release. Auto-scaling handles traffic spikes without manual intervention, and uptime is monitored using Azure Monitor and Application Insights, with alerting configured for performance degradation, errors, or downtime. Costs are controlled through resource tagging, budget alerts, and right-sizing of compute and storage resources — cloud infrastructure does not need to be expensive, especially for small businesses with predictable traffic patterns.",
+      "p3": "Infrastructure as code (IaC) is used where appropriate, defining resources declaratively in Bicep or Terraform templates for reproducible deployments and version-controlled infrastructure changes. Backups are automated and tested regularly to verify restore procedures, and rollback mechanisms are in place to revert deployments if issues are detected post-release. Azure's UK regions (UK South, UK West) keep data within UK borders, simplifying GDPR compliance and meeting organisational data residency requirements."
+    },
+    "containers": {
+      "heading": "Containerisation and CI/CD",
+      "subtitle": "Docker and automated pipelines for reliable deployments.",
+      "p1": "Docker containers package applications and dependencies into reproducible, portable images that run identically in development, staging, and production. This eliminates the 'works on my machine' problem and ensures consistency across environments. Dockerfiles define multi-stage builds: compile and test stages discard unnecessary files, and only the final runtime image (containing the compiled application and production dependencies) is deployed, reducing image size and attack surface.",
+      "p2": "Container images are pushed to container registries (Azure Container Registry, Docker Hub) with semantic versioning tags, enabling rollback to previous versions if deployments fail. Base images are kept up to date with security patches, and vulnerability scanning tools (Trivy, Snyk, Azure Defender) identify known CVEs in dependencies. Image layers are cached intelligently to speed rebuilds: dependency installation layers are cached separately from application code layers, so dependency downloads are skipped if package manifests haven't changed.",
+      "p3": "CI/CD pipelines automate the software delivery process through clearly defined stages: lint checks enforce code style, type checks verify TypeScript correctness, unit and integration tests validate behaviour, builds produce optimised bundles, and deployments push to target environments. Automated preview deployments create ephemeral environments for pull requests, allowing stakeholders to review changes before merging to main. If a deployment introduces a bug, automated rollback policies revert to the last known good version, minimising downtime and user impact."
+    },
+    "performance": {
+      "heading": "Performance and Core Web Vitals",
+      "subtitle": "Fast, measurable user experiences that drive conversions.",
+      "p1": "Performance is not subjective — it is measured using Google's Core Web Vitals: Largest Contentful Paint (LCP) measures loading performance and should occur within 2.5 seconds, Interaction to Next Paint (INP) measures responsiveness to user input and should be below 200ms, and Cumulative Layout Shift (CLS) measures visual stability and should be below 0.1. These metrics directly impact user experience, conversion rates, and Google search rankings, so I optimise every project to meet or exceed Good thresholds.",
+      "p2": "Images are delivered in modern formats (AVIF with WebP fallback) using responsive image syntax (srcset and sizes attributes) to serve appropriately sized images for each viewport. Lazy loading defers offscreen images until the user scrolls near them, reducing initial page weight. Font loading uses font-display: swap to prevent invisible text (FOIT) and subset fonts to include only required character ranges. Critical CSS is inlined in the document head to render above-the-fold content immediately, and non-critical CSS is loaded asynchronously.",
+      "p3": "JavaScript bundles are code-split by route, so users only download code for the pages they visit. Third-party scripts (analytics, chat widgets) are loaded asynchronously or deferred to avoid blocking the main thread. Caching headers are configured aggressively for static assets (immutable files are cached for one year with cache-busting hashes in filenames), and stale-while-revalidate strategies serve cached content instantly while fetching updates in the background. The result is fast, smooth experiences that keep users engaged and drive measurable improvements in conversion funnels."
+    },
+    "seo": {
+      "heading": "Technical SEO",
+      "subtitle": "Semantic markup, metadata, and server-side rendering for crawlability.",
+      "p1": "Technical SEO ensures that search engines can crawl, index, and rank your content effectively. Semantic HTML structure with correct heading hierarchy (one h1 per page, logical h2-h6 nesting) communicates content importance and relationships. Metadata includes title tags (55-60 characters), meta descriptions (150-160 characters), and Open Graph tags for rich social media previews. JSON-LD structured data (Schema.org markup) provides explicit semantic context: LocalBusiness, Product, Article, BreadcrumbList, and FAQPage schemas help search engines understand content types and display rich results in SERPs.",
+      "p2": "Sitemaps (XML and HTML) list all pages for crawlers, and robots.txt files control crawler access to specific paths. Canonical URLs (rel=canonical) prevent duplicate content penalties, and 301 redirects guide search engines when URLs change. Server-side rendering (SSR) delivers fully-rendered HTML to crawlers on first request, ensuring JavaScript-heavy applications are indexable — unlike client-side rendering, which requires crawlers to execute JavaScript (not all do reliably). Nuxt's SSR mode solves this problem elegantly.",
+      "p3": "Internationalisation (i18n) with hreflang tags signals language and regional variants to search engines, preventing duplicate content issues for multilingual sites. This very site is bilingual (English and Welsh) with correct hreflang annotations. Performance optimisations (fast LCP, low CLS) contribute directly to SEO rankings under Google's page experience signals. Regular audits using tools like Lighthouse, Search Console, and Screaming Frog identify technical issues (broken links, missing alt text, slow pages) and track ranking improvements over time."
+    }
+  },
+  "process": {
+    "hero": {
+      "title": "How I Work",
+      "subtitle": "A clear, milestone-driven delivery process. No surprises, no black boxes — you always know where your project stands."
+    },
+    "lifecycle": {
+      "heading": "The Delivery Lifecycle",
+      "subtitle": "Five stages from first contact to launch and handover.",
+      "outputs": "What you get",
+      "stage1": {
+        "title": "Request and Discovery",
+        "description": "First contact is a no-obligation conversation to understand your business problem rather than jumping straight to a solution. I ask about your users, what success looks like, existing systems and constraints, budget range and realistic deadlines. Discovery is about understanding the problem deeply enough to propose the right solution, not the easiest one to build.",
+        "output1": "Written summary of what was discussed",
+        "output2": "Agreed problem statement",
+        "output3": "Indication of feasibility and suitability"
+      },
+      "stage2": {
+        "title": "Proposal",
+        "description": "A written proposal covers scope, recommended approach and technology choices with reasons, assumptions and exclusions stated plainly. For larger builds, phasing options are provided so you can start small and expand later. The proposal includes an indicative cost and a milestone plan showing what gets delivered and when. No jargon, no padding — everything is explained in plain English.",
+        "output1": "Proposal document with scope and approach",
+        "output2": "Milestone breakdown with deliverables",
+        "output3": "Clear statement of what is and is not included"
+      },
+      "stage3": {
+        "title": "Refining Requirements",
+        "description": "Once the proposal is agreed, I turn it into something buildable: user stories with acceptance criteria, wireframes or clickable prototypes for key screens, data models and integration points, and non-functional requirements covering accessibility level, performance budgets, security and GDPR handling. Everything is prioritised in a backlog so we can adapt scope if needed without derailing the project.",
+        "output1": "Agreed backlog of user stories with acceptance criteria",
+        "output2": "Wireframes or prototypes for key screens",
+        "output3": "Technical design notes covering data and integrations",
+        "output4": "Non-functional requirements (accessibility, performance, security)"
+      },
+      "stage4": {
+        "title": "Build in Milestones",
+        "description": "Development is broken into short iterations, each ending in working software you can click through on a staging URL. Regular check-in calls review progress and unblock issues. A written progress note accompanies each milestone showing what changed, what's next, and budget burn against the plan. Change requests are handled openly — impact on cost and timeline is shown before anything is agreed. Continuous integration runs lint, type checks, tests and accessibility checks on every change, catching problems early.",
+        "output1": "Working software each milestone on a staging environment",
+        "output2": "Written progress notes with demos",
+        "output3": "Updated backlog reflecting current priorities"
+      },
+      "stage5": {
+        "title": "Launch, Handover and Support",
+        "description": "Launch follows a pre-launch checklist: accessibility audit, performance pass, security review, analytics and consent wiring, SEO metadata, and backups configured. Deploy is controlled with rollback procedures in place. Handover includes documentation, a walkthrough session, and ownership transfer of source code and infrastructure accounts. Optional ongoing support and maintenance arrangements are discussed openly, but you are never locked in — everything is yours to take elsewhere if you choose.",
+        "output1": "Live site or application on production infrastructure",
+        "output2": "Handover documentation and admin walkthrough",
+        "output3": "Source code and infrastructure ownership transferred",
+        "output4": "Agreed support arrangement (if required)"
+      }
+    },
+    "milestones": {
+      "heading": "Milestones, Not Mystery",
+      "subtitle": "Regular check-ins so you always know where the project stands.",
+      "item1": {
+        "title": "Milestone Reviews",
+        "description": "Each milestone ends with a demo of working software, a written note covering what changed and what's next, and a budget check against the plan. Nothing is hidden."
+      },
+      "item2": {
+        "title": "Transparency",
+        "description": "You see the staging environment at all times. You see the backlog. You see progress notes. You know where the budget stands. There are no surprises."
+      },
+      "item3": {
+        "title": "Adapt or Stop",
+        "description": "Priorities change, budgets tighten, or requirements evolve. At any milestone boundary, we can re-scope or stop work — you are never locked into a contract that no longer fits."
+      },
+      "item4": {
+        "title": "Exit Anytime",
+        "description": "Code and infrastructure are yours from the start. If you decide to take the project elsewhere or in-house, everything transfers cleanly without legal wrangling or ransom."
+      }
+    },
+    "ai": {
+      "heading": "AI-Assisted and Agentic Delivery",
+      "subtitle": "Modern tooling to deliver more value for your budget.",
+      "item1": {
+        "title": "AI Tooling Throughout",
+        "description": "AI-assisted coding tools help with scaffolding, boilerplate generation, test creation, refactoring, documentation and code review assistance. This speeds up repetitive work without sacrificing quality."
+      },
+      "item2": {
+        "title": "Agentic Workflows",
+        "description": "Agentic workflows handle multi-step tasks like schema migrations, bulk refactors, generating TypeScript types from API specs, and scaffolding i18n translations. Work that would previously burn billable hours is automated, freeing budget for design decisions and testing."
+      },
+      "item3": {
+        "title": "More Value, Less Typing",
+        "description": "The result: more of your budget goes into requirements refinement, user experience design, and thorough testing rather than typing boilerplate that a machine can write faster and more accurately."
+      },
+      "item4": {
+        "title": "Human Accountability and Review",
+        "description": "Every line of code is reviewed by a human before it ships. Nothing is merged without passing automated checks (linting, type checking, tests, accessibility scans) and manual code review. AI is a tool, not a replacement for judgment. The developer remains accountable for the output."
+      },
+      "item5": {
+        "title": "Data Privacy and Guardrails",
+        "description": "AI tooling does not have access to client production data, secrets, API keys, or sensitive business logic. Confidentiality and GDPR obligations govern what can and cannot be shared with third-party services. If your project has strict data handling requirements, AI tooling is restricted or disabled accordingly."
+      }
+    },
+    "quality": {
+      "heading": "Quality Gates",
+      "subtitle": "Automated checks and manual review at every stage.",
+      "item1": {
+        "title": "Code Review",
+        "description": "Every change is reviewed before merge. Code quality, logic correctness, test coverage and security implications are checked manually."
+      },
+      "item2": {
+        "title": "Automated Tests",
+        "description": "Unit tests validate individual functions and components. End-to-end tests simulate real user journeys through the application. Tests run on every commit."
+      },
+      "item3": {
+        "title": "Type Checking",
+        "description": "TypeScript catches type errors, null reference bugs and interface mismatches at compile time, reducing runtime errors dramatically."
+      },
+      "item4": {
+        "title": "Accessibility Checks",
+        "description": "Automated accessibility scans check for WCAG 2.2 Level AA violations: missing alt text, insufficient contrast, keyboard traps, unlabelled form fields. Manual testing with screen readers validates real usability."
+      },
+      "item5": {
+        "title": "Performance Budgets",
+        "description": "Core Web Vitals (LCP, INP, CLS) are measured on every build. Budgets are set for bundle size, image weight and request counts. Performance regressions are caught before they reach production."
+      },
+      "item6": {
+        "title": "Dependency Scanning",
+        "description": "Automated vulnerability scanning checks for known CVEs in dependencies. Security updates are applied promptly and tested before deployment."
+      },
+      "item7": {
+        "title": "Staging Sign-Off",
+        "description": "Nothing goes to production without sign-off on staging. You see and approve the working software before launch, not after."
+      }
+    },
+    "hosting": {
+      "heading": "Hosting and Environments",
+      "subtitle": "Cloud-first infrastructure with automated deployments and rollback.",
+      "p1": "Hosting is cloud-first on Microsoft Azure with separate development, staging and production environments. Containerised builds using Docker ensure consistency — what works in development works in production. Infrastructure as code (Bicep or Terraform) defines resources declaratively, making deployments reproducible and version-controlled.",
+      "p2": "CI/CD pipelines automate the build and deployment process: code is linted, type-checked and tested automatically; builds produce optimised production bundles; deployments push to staging first for review, then production after approval. Rollback procedures are built in — if a deployment introduces a regression, the previous version is restored within minutes.",
+      "p3": "Monitoring and logging track application health, error rates and performance metrics. Alerts notify on downtime, slow responses or spike in errors. Automated backups run daily with retention policies, and restore procedures are tested to confirm they work. The result: predictable, low-drama releases where problems are caught early and fixed fast."
+    },
+    "working": {
+      "heading": "Working Together",
+      "subtitle": "Clear communication, realistic expectations, and mutual respect.",
+      "p1": "I am UK-based and work in UK business hours (Monday to Friday, 9am–5pm GMT/BST). You have a single named point of contact — me, the developer — not an account manager acting as a relay. Communication happens on an agreed channel (email, Slack, Teams, or phone) with an agreed cadence for check-ins. Updates are written in plain English without unnecessary jargon, and I am honest when something is harder or cheaper than initially expected.",
+      "p2": "You own your code, your domain, and your hosting accounts from day one. There are no lock-in clauses, no proprietary platforms, and no ongoing fees required to keep your site running (other than standard hosting and domain costs). If you want to take the project in-house or to another developer, everything transfers cleanly with documentation and support during handover.",
+      "p3": "Mutual respect means realistic deadlines, honest communication when priorities conflict, and no surprises on either side. If I am unavailable (holiday, illness), you are informed in advance with a plan for urgent issues. If your requirements change, we discuss impact openly before committing to new work. Good projects are built on trust, clarity and professionalism — not overselling or underselling."
+    },
+    "faq": {
+      "heading": "Common Questions",
+      "subtitle": "Answers to frequently asked questions about the delivery process.",
+      "q1": {
+        "question": "What if my requirements change mid-project?",
+        "answer": "Requirements do change — that is normal and expected. At each milestone boundary, we can re-prioritise the backlog or adjust scope. If a change is significant, I assess the impact on cost and timeline and present options before proceeding. You are never locked into a fixed scope if the business need has evolved."
+      },
+      "q2": {
+        "question": "How do I know progress is real and not just a status update?",
+        "answer": "Every milestone delivers working software on a staging URL that you can click through and test. Progress notes include links to the staging environment and describe what was built, what changed, and what is next. You see the actual application evolving, not a Gantt chart or a percentage-complete figure."
+      },
+      "q3": {
+        "question": "Can we start small and expand later?",
+        "answer": "Yes. For larger projects, I propose phasing options where the first phase delivers a working minimum viable product (MVP) or a specific high-value feature set. You launch with something useful and proven, then expand in later phases as budget allows and business priorities become clearer. This reduces risk and allows early feedback from real users."
+      },
+      "q4": {
+        "question": "Who owns the code and the accounts?",
+        "answer": "You do. Source code is stored in a Git repository that you own (GitHub, GitLab, Azure Repos). Hosting accounts, domain registrations, and third-party service accounts (analytics, payment gateways) are created in your name or transferred to you at handover. There are no lock-in clauses or proprietary platforms. If you decide to take the project elsewhere, everything transfers cleanly."
+      },
+      "q5": {
+        "question": "What happens after launch?",
+        "answer": "Post-launch support options are discussed openly but never mandatory. I offer ongoing maintenance retainers covering bug fixes, dependency updates, content changes, and small feature additions. Alternatively, you can handle maintenance in-house or engage another developer — the codebase is documented, and I provide a handover session to ensure continuity. You are never locked in."
+      },
+      "q6": {
+        "question": "How is AI used, and is my data safe?",
+        "answer": "AI tools assist with scaffolding, boilerplate, refactoring, test generation and documentation. Every line is reviewed by a human and tested before shipping. AI does not have access to production data, secrets, API keys, or sensitive client information. If your project has strict data handling requirements, AI tooling is restricted or disabled. GDPR and confidentiality obligations are always respected."
+      }
+    }
+  },
+  "smallBusiness": {
+    "hero": {
+      "title": "A Simple Website That Makes You Look Legitimate",
+      "subtitle": "Most people check a business online before they call. A fast, professional website with your own domain gives you credibility and brings in enquiries — without the jargon or the cost of an agency."
+    },
+    "whyMatters": {
+      "heading": "Why a Website Still Matters",
+      "subtitle": "Social media is not enough — here is what a proper website gives you.",
+      "item1": {
+        "title": "Legitimacy",
+        "description": "People check you online before they call. A proper website with a real domain and a business email address signals you are an established business, not a hobby. Social media alone leaves you looking temporary and at the mercy of someone else's algorithm."
+      },
+      "item2": {
+        "title": "You Own It",
+        "description": "A Facebook page or marketplace listing can be restricted, changed or taken away. A website is an asset you control, on a domain you own. No one can shut you down or change the rules overnight."
+      },
+      "item3": {
+        "title": "Being Found",
+        "description": "Showing up when someone searches for your trade in your town, and reinforcing your Google Business Profile. A website gives search engines something to index and helps you rank locally."
+      },
+      "item4": {
+        "title": "Answering Questions Before You're Asked",
+        "description": "Opening hours, service areas, what you do and don't do, prices or price ranges if you want them shown, and how to reach you. Fewer time-wasting phone calls, and customers arrive better informed."
+      }
+    },
+    "bringEnquiries": {
+      "heading": "How a Simple Site Brings You Enquiries",
+      "subtitle": "A clear headline, obvious ways to contact you, and trust signals — that is the formula.",
+      "item1": {
+        "title": "Clear Headline",
+        "description": "A headline that says exactly what you do and where you do it. Search engines and customers both need to know within seconds whether you serve them."
+      },
+      "item2": {
+        "title": "Obvious Ways to Contact You",
+        "description": "Tap-to-call buttons on mobile, a short contact form that goes to your inbox, WhatsApp or email links. Make it easy to reach you or people will move on to the next result."
+      },
+      "item3": {
+        "title": "A Page for Each Service",
+        "description": "Plumbers need separate pages for boiler repairs, bathroom installations, and emergency callouts. Search engines match searches to pages — more pages mean more chances to be found for different searches."
+      },
+      "item4": {
+        "title": "Photos of Real Work",
+        "description": "People trust businesses more when they see real examples of the work. Before and after shots, a gallery of completed jobs, or pictures of your workspace all help build confidence."
+      },
+      "item5": {
+        "title": "Follow-Up Route",
+        "description": "Enquiries land in your inbox with all the details. Spam is filtered. Nothing gets lost in a Facebook message folder you forgot to check. You reply fast and close more work."
+      }
+    },
+    "included": {
+      "heading": "What's Included as Standard",
+      "subtitle": "Everything a small business website needs to work properly and look professional.",
+      "f1": "Mobile-first responsive design that works on any device",
+      "f2": "Fast loading on a phone signal — not bloated with unnecessary code",
+      "f3": "Accessible to people using screen readers or keyboards (WCAG 2.2 AA)",
+      "f4": "Secure HTTPS hosting with automatic certificate renewal",
+      "f5": "Your own domain and business email set up and working",
+      "f6": "Contact form delivered to your inbox with spam protection",
+      "f7": "Tap-to-call phone links and click-to-email buttons",
+      "f8": "Google Business Profile alignment and local search basics (on-page SEO)",
+      "f9": "Cookie banner and privacy policy that meet UK GDPR and PECR requirements",
+      "f10": "Sitemap, metadata and structured data for search engines",
+      "f11": "Privacy-respecting analytics so you can see what is working",
+      "f12": "A walkthrough session so you know how everything works"
+    },
+    "signs": {
+      "heading": "Signs It's Time for a Website",
+      "subtitle": "If any of these sound familiar, it is time to get a proper site.",
+      "item1": "You are relying entirely on word of mouth and struggling to reach new customers",
+      "item2": "Customers say they could not find you online or were not sure you were still trading",
+      "item3": "Your current site does not work properly on a phone or looks outdated",
+      "item4": "You are only on social media and feel like you are shouting into the void",
+      "item5": "You keep answering the same questions by phone — opening times, service areas, prices",
+      "item6": "You want to look credible when quoting against bigger competitors"
+    },
+    "cost": {
+      "heading": "What It Costs You Not to Have One",
+      "subtitle": "The hidden cost of not being visible online.",
+      "p1": "Enquiries go to a competitor who is easier to find. Customers shortlist businesses they can verify online before picking up the phone. If you do not have a website, you are not on that shortlist.",
+      "p2": "Being passed over looks like quiet periods or seasonal dips, but it is often just invisibility. Looking smaller than you are means losing work to businesses who present better online, even if your work is superior. Wasted time on repeat questions eats into your day when a website could answer them once."
+    },
+    "howWorks": {
+      "heading": "How It Works",
+      "subtitle": "A straightforward process — no jargon, no surprises.",
+      "step1": "A short chat about your business, what you offer, who you serve, and what you want the site to achieve. No obligation and no pressure.",
+      "step2": "A fixed written quote with what is included, what is not, and a realistic timeframe. You decide whether to proceed.",
+      "step3": "You send over your logo, photos and words. If you need help writing the content, guidance and templates are provided. Most small business sites need 500–1000 words total across all pages.",
+      "step4": "The site is built and you review it on a preview link. Changes are made based on your feedback. Once you are happy, it goes live and you get a walkthrough showing you how to use the contact form, update content if needed, and check analytics.",
+      "fullProcess": "Want to see the full delivery process in detail?",
+      "viewFullProcess": "View Full Process"
+    },
+    "faq": {
+      "heading": "Straight Answers",
+      "subtitle": "Common questions from small business owners.",
+      "q1": {
+        "question": "I'm not technical — will I be able to manage it?",
+        "answer": "Yes. The site is built to run without you needing to touch code. Contact form submissions come to your email. If you want to update text or add a new photo later, a simple content management interface can be included, or changes can be requested and handled for a small fee. A walkthrough session at handover shows you everything."
+      },
+      "q2": {
+        "question": "Do I need to write all the content myself?",
+        "answer": "You know your business best, so the core content (what you do, where you serve, your prices or approach) needs to come from you. However, templates and example text are provided to make it easier. If you are stuck, a content workshop can be included to pull the right words out of a conversation and turn them into clear web copy."
+      },
+      "q3": {
+        "question": "What if I already have a domain or a half-finished site?",
+        "answer": "Existing domains can be transferred or pointed to the new site without losing your email or existing setup. Half-finished sites can be replaced cleanly or, if the foundation is sound, improved and completed. Each situation is different, so this is discussed during the initial conversation."
+      },
+      "q4": {
+        "question": "Will it work on phones?",
+        "answer": "Yes. Every site is designed mobile-first, which means it is built for phones and tablets before desktops. Most small business site visitors are on mobile, so this is not optional — it is the foundation of the design."
+      },
+      "q5": {
+        "question": "Do I really need a cookie banner and privacy policy?",
+        "answer": "Yes, if you use analytics or any tracking. UK GDPR and PECR require explicit consent before setting non-essential cookies, and you must tell users what data you collect and why. A compliant cookie banner and privacy policy are included as standard, written in plain English and linked in the footer."
+      },
+      "q6": {
+        "question": "Can it grow later if my business grows?",
+        "answer": "Absolutely. Small business sites are built with clean, maintainable code on modern infrastructure. Adding a booking system, an online shop, a blog, or extra service pages later is straightforward. You are never locked into a platform that cannot scale."
+      },
+      "q7": {
+        "question": "What happens if I want changes after it's live?",
+        "answer": "Minor fixes within the first month are included. After that, small changes (text updates, new photos, an extra page) can be handled on a pay-as-you-go basis or as part of an optional monthly maintenance retainer. You are never locked in — you own the site and can take it elsewhere if you prefer."
+      }
+    },
+    "links": {
+      "heading": "Want the Technical Detail?",
+      "subtitle": "These pages cover the technology, process, and full service range.",
+      "technology": {
+        "title": "Technology",
+        "description": "Modern web development techniques: accessibility, performance, GDPR compliance, and how it all works under the surface."
+      },
+      "process": {
+        "title": "Process",
+        "description": "The full delivery lifecycle from discovery to launch, including milestones, quality gates, and how AI-assisted tooling speeds things up."
+      },
+      "services": {
+        "title": "All Services",
+        "description": "The complete range of web design and software delivery services for businesses and organisations."
+      }
     }
   },
   "contactPage": {
@@ -253,14 +740,14 @@
     "optionOther": "Other",
     "message": "Message",
     "placeholderName": "John Doe",
-    "placeholderEmail": "john@example.com",
+    "placeholderEmail": "john{'@'}example.com",
     "placeholderCompany": "Your company",
     "placeholderPhone": "+44 29 1234 5678",
     "placeholderMessage": "Tell us about your project...",
     "send": "Send Message",
     "sending": "Sending...",
     "statusSuccess": "Thank you. Your message has been sent and we will be in touch shortly.",
-    "statusError": "Something went wrong. Please try again or email us at enquiries@vanguarddigitalsolutions.co.uk.",
+    "statusError": "Something went wrong. Please try again or email us at enquiries{'@'}vanguarddigitalsolutions.co.uk.",
     "validationName": "Please enter your full name with at least 2 characters.",
     "validationEmail": "Please enter a valid email address.",
     "validationProjectType": "Please select a project type.",
@@ -326,6 +813,24 @@
       "description": "Web design services for South Wales businesses including small business websites, eCommerce stores, booking systems, and bespoke web applications.",
       "ogTitle": "Web Design Services in South Wales",
       "ogDescription": "Small business websites, eCommerce, booking sites, brochure sites, and bespoke web applications from a Bridgend-based team."
+    },
+    "technology": {
+      "title": "Web Development Technology | Vue, TypeScript, Azure, WCAG | Vanguard Digital Solutions",
+      "description": "Modern web development technology and techniques: Vue 3, Nuxt, TypeScript, REST APIs, WCAG 2.2 accessibility, UK GDPR compliance, Microsoft Azure, Docker, CI/CD, and Core Web Vitals optimisation.",
+      "ogTitle": "Web Development Technology Stack",
+      "ogDescription": "Technical depth and expertise behind modern, accessible, secure web applications built in South Wales."
+    },
+    "process": {
+      "title": "How I Work | Milestone-Driven Delivery Process | Vanguard Digital Solutions",
+      "description": "A transparent, milestone-driven software delivery process covering discovery, requirements, build, and launch. No surprises, no black boxes — always know where your project stands.",
+      "ogTitle": "Software Delivery Process and Workflow",
+      "ogDescription": "Clear, milestone-driven process from discovery to launch with quality gates, AI-assisted delivery, and transparent communication."
+    },
+    "smallBusiness": {
+      "title": "Websites for Small Businesses | Bridgend, South Wales | Vanguard Digital Solutions",
+      "description": "Affordable, professional websites for small businesses in South Wales. Fast, mobile-friendly sites for tradespeople, salons, consultants, and local firms that bring in real enquiries.",
+      "ogTitle": "Small Business Websites in South Wales",
+      "ogDescription": "Professional, affordable websites for plumbers, salons, cafes, tradespeople, and consultants across Bridgend and South Wales."
     },
     "contact": {
       "title": "Contact Us | Get a Free Quote | Vanguard Digital Solutions",

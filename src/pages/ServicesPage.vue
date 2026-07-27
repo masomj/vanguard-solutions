@@ -131,6 +131,25 @@
       </div>
     </section>
 
+    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="related-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading :subtitle="t('servicesPage.related.subtitle')">
+          {{ t('servicesPage.related.heading') }}
+        </SectionHeading>
+
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <router-link v-for="link in relatedLinks" :key="link.to" :to="link.to"
+            class="bg-white rounded-lg p-6 border border-border hover:border-primary transition-colors flex flex-col gap-3">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">
+              <span class="text-2xl">{{ link.icon }}</span>
+            </div>
+            <h3 class="text-lg font-semibold text-text">{{ link.title }}</h3>
+            <p class="text-sm text-text-light leading-relaxed flex-1">{{ link.description }}</p>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
     <CallToAction />
   </div>
 </template>
@@ -138,6 +157,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
 const { t } = useI18n()
@@ -220,6 +240,27 @@ const deliveryApproach = computed(() => [
   {
     title: t('servicesPage.bespoke.approach3Title'),
     description: t('servicesPage.bespoke.approach3Description'),
+  },
+])
+
+const relatedLinks = computed(() => [
+  {
+    to: '/technology',
+    icon: '⚡',
+    title: t('servicesPage.related.link1Title'),
+    description: t('servicesPage.related.link1Description'),
+  },
+  {
+    to: '/process',
+    icon: '📋',
+    title: t('servicesPage.related.link2Title'),
+    description: t('servicesPage.related.link2Description'),
+  },
+  {
+    to: '/small-business',
+    icon: '🎨',
+    title: t('servicesPage.related.link3Title'),
+    description: t('servicesPage.related.link3Description'),
   },
 ])
 </script>

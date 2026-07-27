@@ -4,13 +4,6 @@ export interface ServiceItem {
   description: string
 }
 
-export interface Testimonial {
-  quote: string
-  author: string
-  role: string
-  company: string
-}
-
 export interface ContactFormData {
   name: string
   email: string
@@ -40,6 +33,6 @@ declare global {
 
 declare module 'vue-router' {
   interface RouteMeta {
-    seoKey?: 'home' | 'about' | 'services' | 'contact' | 'cookiePolicy' | 'notFound'
+    seoKey?: 'home' | 'about' | 'services' | 'technology' | 'process' | 'smallBusiness' | 'contact' | 'cookiePolicy' | 'notFound'
   }
 }

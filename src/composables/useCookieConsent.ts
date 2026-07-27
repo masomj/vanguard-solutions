@@ -4,6 +4,7 @@ import type { ConsentStatus } from '../types'
 const STORAGE_KEY = 'vds_cookie_consent'
 
 function loadStoredConsent(): ConsentStatus {
+  if (typeof window === 'undefined') return 'undecided'
   try {
     const stored = localStorage.getItem(STORAGE_KEY)
     if (stored === 'accepted' || stored === 'declined') return stored
@@ -14,6 +15,7 @@ function loadStoredConsent(): ConsentStatus {
 }
 
 function persistConsent(status: ConsentStatus): void {
+  if (typeof window === 'undefined') return
   try {
     localStorage.setItem(STORAGE_KEY, status)
   } catch {

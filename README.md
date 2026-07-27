@@ -12,10 +12,13 @@ A professional company website for Vanguard Digital Solutions, a software develo
 ## Pages & Structure
 
 ```
-Home        — Hero, services overview (3 cards), why choose us, testimonials, CTA
-About       — Company story, mission/values, team overview, CTA
-Services    — Service cards (Tender Fulfillment, Custom Dev, Consulting, Support), CTA
-Contact     — Contact form (left) + contact info (right), map/address
+Home           — Hero, services overview, tech stack, why choose us, process, local presence, CTA
+About          — Story, values, how I work, skills & technologies, CTA
+Services       — Service cards, go-deeper cross-links, CTA
+Technology     — HTML/CSS/TS, Vue & Nuxt, APIs, accessibility, GDPR, cloud, containers, performance, SEO
+Process        — Request → proposal → requirements → milestone build → launch, AI-assisted delivery, FAQ
+SmallBusiness  — Why a website matters, lead generation, what's included, FAQ
+Contact        — Contact form (left) + contact info (right), map/address
 404         — Simple not-found page with link home
 ```
 

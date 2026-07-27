@@ -1,17 +1,21 @@
-import { createApp } from 'vue'
-import { createHead } from '@unhead/vue/client'
+import { ViteSSG } from 'vite-ssg'
 import emailjs from '@emailjs/browser'
 import App from './App.vue'
-import router from './router'
+import { routes, scrollBehavior } from './router'
 import { i18n } from './i18n'
 import './assets/styles/main.css'
 
-emailjs.init('xGdd0WXQy-kq81htP')
+export const createApp = ViteSSG(
+  App,
+  {
+    routes,
+    scrollBehavior,
+  },
+  ({ app, isClient }) => {
+    app.use(i18n)
 
-const app = createApp(App)
-const head = createHead()
-
-app.use(router)
-app.use(head)
-app.use(i18n)
-app.mount('#app')
+    if (isClient) {
+      emailjs.init('xGdd0WXQy-kq81htP')
+    }
+  }
+)

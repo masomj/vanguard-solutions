@@ -35,7 +35,6 @@ useHead({
           '@type': 'ContactPoint',
           contactType: 'sales',
           email: 'enquiries@vanguarddigitalsolutions.co.uk',
-          telephone: '+44-29-1234-5678',
         },
       }),
     },
@@ -44,6 +43,7 @@ useHead({
 
 const router = useRouter()
 watch(() => router.currentRoute.value.path, () => {
+  if (typeof document === 'undefined') return
   const main = document.getElementById('main-content')
   main?.focus()
 })
