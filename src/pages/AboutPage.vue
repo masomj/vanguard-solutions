@@ -12,8 +12,8 @@
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="our-story">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
-          <h2 id="our-story" class="text-3xl font-bold text-text mb-6">{{ t('about.storyHeading') }}</h2>
-          <div class="space-y-4 text-text-light leading-relaxed">
+          <h2 id="our-story" class="text-3xl font-bold text-text-primary mb-6">{{ t('about.storyHeading') }}</h2>
+          <div class="space-y-4 text-text-secondary leading-relaxed">
             <p>{{ t('about.p1') }}</p>
             <p>{{ t('about.p2') }}</p>
             <p>{{ t('about.p3') }}</p>
@@ -33,8 +33,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ value.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ value.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ value.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ value.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ value.description }}</p>
           </article>
         </div>
       </div>
@@ -51,8 +51,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -65,16 +65,16 @@
         </SectionHeading>
 
         <div class="mt-8 max-w-3xl mx-auto text-center mb-12">
-          <p class="text-text-light leading-relaxed">
+          <p class="text-text-secondary leading-relaxed">
             {{ t('about.skills.intro') }}
           </p>
         </div>
 
         <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <article v-for="group in skillGroups" :key="group.title" class="bg-white rounded-lg p-6 border border-border">
-            <h3 class="text-lg font-semibold text-text mb-4">{{ group.title }}</h3>
+            <h3 class="text-lg font-semibold text-text-primary mb-4">{{ group.title }}</h3>
             <ul class="list-none m-0 p-0 space-y-2">
-              <li v-for="skill in group.skills" :key="skill" class="text-sm text-text-light flex items-start gap-2">
+              <li v-for="skill in group.skills" :key="skill" class="text-sm text-text-secondary flex items-start gap-2">
                 <span class="text-primary mr-2" aria-hidden="true">+</span>
                 <span>{{ skill }}</span>
               </li>

@@ -22,7 +22,7 @@
           <span class="font-bold text-primary text-lg">{{ t('nav.menu') }}</span>
           <button
             ref="closeButtonRef"
-            class="p-2 rounded-md text-text-light hover:text-primary hover:bg-surface transition-colors"
+            class="p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors"
             :aria-label="t('nav.closeNavigationMenu')"
             @click="$emit('close')"
           >
@@ -36,7 +36,7 @@
           <li v-for="link in navLinks" :key="link.to">
             <router-link
               :to="link.to"
-              class="block px-4 py-3 rounded-md text-text hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
+              class="block px-4 py-3 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
               active-class="text-primary bg-surface"
               @click="$emit('close')"
             >
@@ -47,21 +47,22 @@
 
         <div class="mt-auto p-4 border-t border-border">
           <router-link
-            to="/contact"
+            :to="localePath('/contact')"
             class="block w-full text-center px-5 py-3 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors mb-3"
             @click="$emit('close')"
           >
             {{ t('nav.getQuote') }}
           </router-link>
 
-          <button
-            class="block w-full text-center px-5 py-3 border border-border text-text-light hover:text-primary hover:bg-surface rounded-md font-semibold transition-colors"
-            type="button"
+          <router-link
+            :to="alternatePath"
+            :hreflang="otherLocale"
+            class="block w-full text-center px-5 py-3 border border-border text-text-secondary hover:text-primary hover:bg-surface rounded-md font-semibold transition-colors no-underline"
             :aria-label="t('language.switchLabel')"
-            @click="$emit('toggle-locale')"
+            @click="onSwitchLocale"
           >
-            {{ localeToggleLabel }}
-          </button>
+            <span :lang="otherLocale">{{ localeToggleLabel }}</span>
+          </router-link>
         </div>
       </nav>
     </Transition>
@@ -71,24 +72,31 @@
 <script setup lang="ts">
 import { computed, ref, watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useLocale } from '../../composables/useLocale'
 
 defineProps<{
   open: boolean
   navLinks: { to: string; label: string }[]
 }>()
 
-defineEmits<{
+const emit = defineEmits<{
   close: []
-  'toggle-locale': []
 }>()
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
+const { locale, otherLocale, alternatePath, localePath, rememberChoice } = useLocale()
 
 const closeButtonRef = ref<HTMLButtonElement | null>(null)
 
+// See SiteHeader: the label is always in the language being switched *to*.
 const localeToggleLabel = computed(() => (locale.value === 'en'
   ? t('language.switchToWelsh')
   : t('language.switchToEnglish')))
+
+function onSwitchLocale() {
+  rememberChoice()
+  emit('close')
+}
 
 watch(() => closeButtonRef.value, async (btn) => {
   if (btn) {

@@ -1,61 +1,50 @@
 import { createI18n } from 'vue-i18n'
 import en from './en.json'
 import cy from './cy.json'
+import { defaultLocale, isSupportedLocale, type AppLocale } from './locales'
 
 const messages = { en, cy } as const
 
-export type AppLocale = keyof typeof messages
-
 const LOCALE_STORAGE_KEY = 'vds_locale'
 
-export const supportedLocales: AppLocale[] = ['en', 'cy']
+export { supportedLocales, defaultLocale, type AppLocale } from './locales'
 
-function isSupportedLocale(locale: string | null): locale is AppLocale {
-  return locale !== null && supportedLocales.includes(locale as AppLocale)
+/**
+ * A fresh i18n instance per app.
+ *
+ * This MUST NOT be a module-level singleton: vite-ssg renders routes
+ * concurrently in one process, and a shared instance leaks whichever locale
+ * happened to be set last into every other page. That shipped English pages
+ * with Welsh titles and body copy.
+ */
+export function createAppI18n(locale: AppLocale = defaultLocale) {
+  return createI18n({
+    legacy: false,
+    locale,
+    fallbackLocale: defaultLocale,
+    messages,
+  })
 }
 
-function detectBrowserLocale(): AppLocale {
-  if (typeof navigator === 'undefined') return 'en'
-  return navigator.language.toLowerCase().startsWith('cy') ? 'cy' : 'en'
-}
+export type AppI18n = ReturnType<typeof createAppI18n>
 
-function getInitialLocale(): AppLocale {
-  if (typeof window === 'undefined') return 'en'
-
-  const stored = window.localStorage.getItem(LOCALE_STORAGE_KEY)
-  if (isSupportedLocale(stored)) {
-    return stored
-  }
-
-  return detectBrowserLocale()
-}
-
-const initialLocale = getInitialLocale()
-
-export const i18n = createI18n({
-  legacy: false,
-  locale: initialLocale,
-  fallbackLocale: 'en',
-  messages,
-})
-
-export function setLocale(locale: AppLocale): void {
-  i18n.global.locale.value = locale
-
-  if (typeof document !== 'undefined') {
-    document.documentElement.lang = locale
-  }
-
-  if (typeof window !== 'undefined') {
+/** Records an explicit user choice, used only as a first-visit redirect hint. */
+export function rememberLocale(locale: AppLocale): void {
+  if (typeof window === 'undefined') return
+  try {
     window.localStorage.setItem(LOCALE_STORAGE_KEY, locale)
+  } catch {
+    // Private-mode / storage-disabled browsers: the URL still works, so ignore.
   }
 }
 
-export function toggleLocale(): void {
-  const nextLocale: AppLocale = i18n.global.locale.value === 'en' ? 'cy' : 'en'
-  setLocale(nextLocale)
-}
-
-if (typeof document !== 'undefined') {
-  document.documentElement.lang = initialLocale
+/** The last explicitly chosen locale, if any. */
+export function getRememberedLocale(): AppLocale | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const stored = window.localStorage.getItem(LOCALE_STORAGE_KEY)
+    return isSupportedLocale(stored) ? stored : null
+  } catch {
+    return null
+  }
 }

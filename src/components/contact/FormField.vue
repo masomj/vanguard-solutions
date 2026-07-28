@@ -5,10 +5,11 @@
       <span v-if="required" class="text-error" aria-hidden="true"> *</span>
     </label>
     <slot :id="fieldId" :aria-attrs="ariaAttrs" />
+    <!-- No role="alert" here: the error summary above the form carries the
+         announcement. Four competing live regions announced unpredictably. -->
     <p
       v-if="error"
       :id="errorId"
-      role="alert"
       class="mt-1.5 text-sm text-error"
     >
       {{ error }}

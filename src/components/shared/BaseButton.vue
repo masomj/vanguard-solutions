@@ -1,11 +1,11 @@
 <template>
   <component
     :is="to ? 'router-link' : 'button'"
-    :to="to"
+    :to="localisedTo"
     :type="to ? undefined : type"
     :disabled="disabled"
     :class="[
-      'inline-flex items-center justify-center font-semibold rounded-md transition-colors no-underline focus-visible:ring-2 focus-visible:ring-primary-light focus-visible:ring-offset-2',
+      'inline-flex items-center justify-center font-semibold rounded-md transition-colors no-underline',
       sizeClasses,
       variantClasses,
       { 'opacity-60 cursor-not-allowed': disabled },
@@ -17,6 +17,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useLocale } from '../../composables/useLocale'
 
 const props = withDefaults(defineProps<{
   variant?: 'primary' | 'secondary' | 'accent'
@@ -30,6 +31,11 @@ const props = withDefaults(defineProps<{
   type: 'button',
   disabled: false,
 })
+
+const { localePath } = useLocale()
+
+// Callers pass locale-agnostic paths ('/contact'); keep the visitor in their tree.
+const localisedTo = computed(() => (props.to ? localePath(props.to) : undefined))
 
 const sizeClasses = computed(() => ({
   sm: 'px-4 py-2 text-sm',

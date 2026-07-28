@@ -20,8 +20,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -38,14 +38,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚡</div>
               <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text">{{ t('technology.frameworks.vue.title') }}</h3>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.vue.title') }}</h3>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('technology.frameworks.vue.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in vueFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in vueFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -55,14 +55,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🚀</div>
               <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text">{{ t('technology.frameworks.nuxt.title') }}</h3>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.nuxt.title') }}</h3>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('technology.frameworks.nuxt.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in nuxtFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in nuxtFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -72,14 +72,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚙️</div>
               <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text">{{ t('technology.frameworks.vite.title') }}</h3>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.vite.title') }}</h3>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('technology.frameworks.vite.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in viteFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in viteFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -95,7 +95,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.apis.p1') }}</p>
             <p>{{ t('technology.apis.p2') }}</p>
             <p>{{ t('technology.apis.p3') }}</p>
@@ -111,7 +111,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.accessibility.p1') }}</p>
             <p>{{ t('technology.accessibility.p2') }}</p>
             <p>{{ t('technology.accessibility.p3') }}</p>
@@ -127,12 +127,12 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.gdpr.p1') }}</p>
             <p>{{ t('technology.gdpr.p2') }}</p>
             <p>{{ t('technology.gdpr.p3') }}</p>
             <div class="mt-8 rounded-xl bg-primary/5 border border-primary/10 p-5">
-              <p class="text-sm text-text-light">{{ t('technology.gdpr.disclaimer') }}</p>
+              <p class="text-sm text-text-secondary">{{ t('technology.gdpr.disclaimer') }}</p>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.cloud.p1') }}</p>
             <p>{{ t('technology.cloud.p2') }}</p>
             <p>{{ t('technology.cloud.p3') }}</p>
@@ -162,7 +162,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.containers.p1') }}</p>
             <p>{{ t('technology.containers.p2') }}</p>
             <p>{{ t('technology.containers.p3') }}</p>
@@ -178,7 +178,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.performance.p1') }}</p>
             <p>{{ t('technology.performance.p2') }}</p>
             <p>{{ t('technology.performance.p3') }}</p>
@@ -194,7 +194,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('technology.seo.p1') }}</p>
             <p>{{ t('technology.seo.p2') }}</p>
             <p>{{ t('technology.seo.p3') }}</p>

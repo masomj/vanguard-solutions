@@ -10,13 +10,13 @@
           <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm mb-4" aria-hidden="true">
             {{ step.number }}
           </div>
-          <h3 class="text-lg font-semibold text-text mb-2">{{ step.title }}</h3>
-          <p class="text-text-light text-sm leading-relaxed">{{ step.description }}</p>
+          <h3 class="text-lg font-semibold text-text-primary mb-2">{{ step.title }}</h3>
+          <p class="text-text-secondary text-sm leading-relaxed">{{ step.description }}</p>
         </article>
       </div>
 
       <div class="mt-12 max-w-3xl mx-auto text-center">
-        <p class="text-text-light leading-relaxed mb-6">
+        <p class="text-text-secondary leading-relaxed mb-6">
           {{ t('home.process.description') }}
         </p>
         <BaseButton to="/process" variant="secondary">

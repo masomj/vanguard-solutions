@@ -17,14 +17,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🎨</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.smallBusiness.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.smallBusiness.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.smallBusiness.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in smallBizFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in smallBizFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -34,14 +34,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🛒</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.ecommerce.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.ecommerce.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.ecommerce.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in ecomFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in ecomFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -51,20 +51,20 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">📅</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.booking.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.booking.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.booking.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in bookingFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in bookingFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
             <div class="mt-8 rounded-xl bg-primary/5 border border-primary/10 p-5">
-              <p class="text-sm font-semibold text-text mb-1">{{ t('servicesPage.booking.integrationsHeading') }}</p>
-              <p class="text-sm text-text-light">{{ t('servicesPage.booking.integrationsList') }}</p>
+              <p class="text-sm font-semibold text-text-primary mb-1">{{ t('servicesPage.booking.integrationsHeading') }}</p>
+              <p class="text-sm text-text-secondary">{{ t('servicesPage.booking.integrationsList') }}</p>
             </div>
           </article>
 
@@ -72,14 +72,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">📋</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.brochure.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.brochure.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.brochure.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in infoFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in infoFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -89,23 +89,23 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚙️</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.bespoke.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.bespoke.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.bespoke.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in bespokeFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in bespokeFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
             <div class="mt-10 border-t border-border pt-8">
-              <h3 class="text-lg font-semibold text-text mb-4">{{ t('servicesPage.bespoke.approachHeading') }}</h3>
+              <h3 class="text-lg font-semibold text-text-primary mb-4">{{ t('servicesPage.bespoke.approachHeading') }}</h3>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div v-for="item in deliveryApproach" :key="item.title" class="rounded-lg border border-border bg-white px-4 py-4">
-                  <p class="font-semibold text-text text-sm">{{ item.title }}</p>
-                  <p class="mt-1 text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+                  <p class="font-semibold text-text-primary text-sm">{{ item.title }}</p>
+                  <p class="mt-1 text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
                 </div>
               </div>
             </div>
@@ -115,14 +115,14 @@
             <div class="flex items-start gap-4 mb-6">
               <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🔗</div>
               <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text">{{ t('servicesPage.integrations.title') }}</h2>
-                <p class="mt-2 text-text-light leading-relaxed max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.integrations.title') }}</h2>
+                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.integrations.description') }}
                 </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in integrationFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+              <div v-for="f in integrationFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
                 <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
               </div>
             </div>
@@ -143,8 +143,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">
               <span class="text-2xl">{{ link.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text">{{ link.title }}</h3>
-            <p class="text-sm text-text-light leading-relaxed flex-1">{{ link.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary">{{ link.title }}</h3>
+            <p class="text-sm text-text-secondary leading-relaxed flex-1">{{ link.description }}</p>
           </router-link>
         </div>
       </div>
@@ -159,8 +159,10 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
+import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
+const { localePath } = useLocale()
 
 const smallBizFeatures = computed(() => [
   t('servicesPage.smallBusiness.f1'),
@@ -245,19 +247,19 @@ const deliveryApproach = computed(() => [
 
 const relatedLinks = computed(() => [
   {
-    to: '/technology',
+    to: localePath('/technology'),
     icon: '⚡',
     title: t('servicesPage.related.link1Title'),
     description: t('servicesPage.related.link1Description'),
   },
   {
-    to: '/process',
+    to: localePath('/process'),
     icon: '📋',
     title: t('servicesPage.related.link2Title'),
     description: t('servicesPage.related.link2Description'),
   },
   {
-    to: '/small-business',
+    to: localePath('/small-business'),
     icon: '🎨',
     title: t('servicesPage.related.link3Title'),
     description: t('servicesPage.related.link3Description'),

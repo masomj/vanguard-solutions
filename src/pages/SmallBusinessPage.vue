@@ -20,8 +20,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -38,8 +38,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -52,7 +52,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div v-for="feature in includedFeatures" :key="feature" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-light">
+          <div v-for="feature in includedFeatures" :key="feature" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
             <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ feature }}
           </div>
         </div>
@@ -69,7 +69,7 @@
           <article v-for="item in signsContent" :key="item.text" class="bg-white rounded-lg p-6 border border-border">
             <div class="flex items-start gap-3">
               <span class="text-2xl shrink-0" aria-hidden="true">{{ item.icon }}</span>
-              <p class="text-text text-sm leading-relaxed">{{ item.text }}</p>
+              <p class="text-text-primary text-sm leading-relaxed">{{ item.text }}</p>
             </div>
           </article>
         </div>
@@ -83,7 +83,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('smallBusiness.cost.p1') }}</p>
             <p>{{ t('smallBusiness.cost.p2') }}</p>
           </div>
@@ -103,13 +103,13 @@
               <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center font-bold shrink-0" aria-hidden="true">
                 {{ step.number }}
               </div>
-              <p class="text-text-light text-sm leading-relaxed">{{ step.description }}</p>
+              <p class="text-text-secondary text-sm leading-relaxed">{{ step.description }}</p>
             </div>
           </li>
         </ol>
 
         <div class="mt-8 max-w-4xl mx-auto text-center">
-          <p class="text-text-light text-sm mb-4">{{ t('smallBusiness.howWorks.fullProcess') }}</p>
+          <p class="text-text-secondary text-sm mb-4">{{ t('smallBusiness.howWorks.fullProcess') }}</p>
           <BaseButton to="/process" variant="secondary">{{ t('smallBusiness.howWorks.viewFullProcess') }}</BaseButton>
         </div>
       </div>
@@ -123,8 +123,8 @@
 
         <div class="mt-12 max-w-3xl mx-auto space-y-4">
           <details v-for="item in faqItems" :key="item.question" class="border border-border rounded-lg bg-white p-4 sm:p-6">
-            <summary class="cursor-pointer font-semibold text-text">{{ item.question }}</summary>
-            <p class="mt-3 text-text-light text-sm leading-relaxed">{{ item.answer }}</p>
+            <summary class="cursor-pointer font-semibold text-text-primary">{{ item.question }}</summary>
+            <p class="mt-3 text-text-secondary text-sm leading-relaxed">{{ item.answer }}</p>
           </details>
         </div>
       </div>
@@ -141,8 +141,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors" aria-hidden="true">
               <span class="text-2xl">{{ link.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2 group-hover:text-primary transition-colors">{{ link.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ link.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">{{ link.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ link.description }}</p>
           </router-link>
         </div>
       </div>
@@ -158,8 +158,10 @@ import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
 import BaseButton from '../components/shared/BaseButton.vue'
 import CallToAction from '../components/home/CallToAction.vue'
+import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
+const { localePath } = useLocale()
 
 const whyMattersContent = computed(() => [
   {
@@ -306,19 +308,19 @@ const faqItems = computed(() => [
 
 const pageLinks = computed(() => [
   {
-    to: '/technology',
+    to: localePath('/technology'),
     icon: '⚙️',
     title: t('smallBusiness.links.technology.title'),
     description: t('smallBusiness.links.technology.description'),
   },
   {
-    to: '/process',
+    to: localePath('/process'),
     icon: '📋',
     title: t('smallBusiness.links.process.title'),
     description: t('smallBusiness.links.process.description'),
   },
   {
-    to: '/services',
+    to: localePath('/services'),
     icon: '🛠️',
     title: t('smallBusiness.links.services.title'),
     description: t('smallBusiness.links.services.description'),

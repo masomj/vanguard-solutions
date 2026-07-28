@@ -9,12 +9,12 @@
         <div v-for="tech in technologies" :key="tech.label"
           class="flex flex-col items-center text-center gap-2 rounded-lg border border-border bg-white p-4">
           <span class="text-2xl" aria-hidden="true">{{ tech.icon }}</span>
-          <span class="text-sm font-semibold text-text">{{ tech.label }}</span>
+          <span class="text-sm font-semibold text-text-primary">{{ tech.label }}</span>
         </div>
       </div>
 
       <div class="mt-12 max-w-3xl mx-auto text-center">
-        <p class="text-text-light leading-relaxed mb-6">
+        <p class="text-text-secondary leading-relaxed mb-6">
           {{ t('home.techStack.description') }}
         </p>
         <BaseButton to="/technology" variant="secondary">

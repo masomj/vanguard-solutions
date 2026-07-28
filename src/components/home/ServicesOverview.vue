@@ -11,8 +11,8 @@
           <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-2xl shrink-0" aria-hidden="true">
             {{ service.icon }}
           </div>
-          <h3 class="text-lg font-semibold text-text">{{ service.title }}</h3>
-          <p class="text-sm text-text-light leading-relaxed flex-1">{{ service.description }}</p>
+          <h3 class="text-lg font-semibold text-text-primary">{{ service.title }}</h3>
+          <p class="text-sm text-text-secondary leading-relaxed flex-1">{{ service.description }}</p>
         </article>
       </div>
 

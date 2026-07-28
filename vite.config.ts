@@ -16,7 +16,9 @@ export default defineConfig({
     dirStyle: 'nested',
     formatting: 'minify',
     includedRoutes(paths: string[]) {
-      // Exclude the catch-all route from prerendering
+      // Both locale trees are static routes, so they arrive here already
+      // enumerated (/, /about, ... and /cy, /cy/about, ...). Only the
+      // catch-alls need excluding -- they have no concrete path to render.
       return paths.filter(path => !path.includes(':pathMatch'))
     },
   } satisfies ViteSSGOptions,

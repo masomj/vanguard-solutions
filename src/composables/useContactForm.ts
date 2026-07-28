@@ -48,8 +48,14 @@ export function useContactForm() {
     return !errors.name && !errors.email && !errors.projectType && !errors.message
   }
 
-  async function submit() {
-    if (!validate()) return
+  // Returns false when validation blocked the send, so the caller can move
+  // focus to the error summary.
+  async function submit(): Promise<boolean> {
+    if (!validate()) {
+      status.value = 'idle'
+      statusMessage.value = ''
+      return false
+    }
 
     status.value = 'submitting'
 
@@ -74,6 +80,8 @@ export function useContactForm() {
       status.value = 'error'
       statusMessage.value = t('contactForm.statusError')
     }
+
+    return true
   }
 
   function resetStatus() {

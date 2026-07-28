@@ -110,7 +110,7 @@
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
               {{ t('cookiePolicy.googlePolicy') }}</a>.
             {{ t('cookiePolicy.furtherInfoPart2') }}
-            <router-link to="/contact">{{ t('cookiePolicy.contactUs') }}</router-link>.
+            <router-link :to="localePath('/contact')">{{ t('cookiePolicy.contactUs') }}</router-link>.
           </p>
 
           <p class="text-sm text-text-secondary mt-12">{{ t('cookiePolicy.lastUpdated') }}</p>
@@ -125,8 +125,10 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../components/shared/BaseButton.vue'
 import { useCookieConsent } from '../composables/useCookieConsent'
+import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
+const { localePath } = useLocale()
 const { consentStatus, acceptCookies, declineCookies, resetConsent } = useCookieConsent()
 
 const statusLabel = computed(() => ({

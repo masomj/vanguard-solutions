@@ -22,14 +22,14 @@
                 {{ stage.number }}
               </div>
               <div>
-                <h3 class="text-xl sm:text-2xl font-bold text-text mb-2">{{ stage.title }}</h3>
-                <p class="text-text-light leading-relaxed">{{ stage.description }}</p>
+                <h3 class="text-xl sm:text-2xl font-bold text-text-primary mb-2">{{ stage.title }}</h3>
+                <p class="text-text-secondary leading-relaxed">{{ stage.description }}</p>
               </div>
             </div>
             <div class="ml-0 sm:ml-18 mt-4 bg-surface rounded-lg p-4">
-              <p class="font-semibold text-text text-sm mb-2">{{ t('process.lifecycle.outputs') }}</p>
+              <p class="font-semibold text-text-primary text-sm mb-2">{{ t('process.lifecycle.outputs') }}</p>
               <ul class="list-none m-0 p-0 space-y-2">
-                <li v-for="output in stage.outputs" :key="output" class="text-sm text-text-light flex items-start gap-2">
+                <li v-for="output in stage.outputs" :key="output" class="text-sm text-text-secondary flex items-start gap-2">
                   <span class="text-primary font-semibold shrink-0" aria-hidden="true">+</span>
                   <span>{{ output }}</span>
                 </li>
@@ -51,8 +51,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -66,8 +66,8 @@
 
         <div class="mt-12 max-w-5xl mx-auto space-y-6">
           <article v-for="item in aiContent" :key="item.title" class="bg-surface rounded-lg p-6 border border-border">
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -84,8 +84,8 @@
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
               <span class="text-2xl">{{ item.icon }}</span>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-            <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
           </article>
         </div>
       </div>
@@ -98,7 +98,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('process.hosting.p1') }}</p>
             <p>{{ t('process.hosting.p2') }}</p>
             <p>{{ t('process.hosting.p3') }}</p>
@@ -114,7 +114,7 @@
         </SectionHeading>
 
         <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-light leading-relaxed">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('process.working.p1') }}</p>
             <p>{{ t('process.working.p2') }}</p>
             <p>{{ t('process.working.p3') }}</p>
@@ -131,8 +131,8 @@
 
         <div class="mt-12 max-w-3xl mx-auto space-y-4">
           <details v-for="item in faqItems" :key="item.question" class="border border-border rounded-lg bg-white p-4">
-            <summary class="cursor-pointer font-semibold text-text">{{ item.question }}</summary>
-            <p class="mt-3 text-text-light text-sm leading-relaxed">{{ item.answer }}</p>
+            <summary class="cursor-pointer font-semibold text-text-primary">{{ item.question }}</summary>
+            <p class="mt-3 text-text-secondary text-sm leading-relaxed">{{ item.answer }}</p>
           </details>
         </div>
       </div>

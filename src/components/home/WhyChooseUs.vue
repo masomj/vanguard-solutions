@@ -8,12 +8,12 @@
       <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         <article v-for="item in reasons" :key="item.title" class="text-center">
           <div class="w-16 h-16 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="item.iconPath" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-text mb-2">{{ item.title }}</h3>
-          <p class="text-text-light text-sm leading-relaxed">{{ item.description }}</p>
+          <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+          <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
         </article>
       </div>
     </div>

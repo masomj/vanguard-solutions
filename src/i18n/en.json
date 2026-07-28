@@ -751,7 +751,9 @@
     "validationName": "Please enter your full name with at least 2 characters.",
     "validationEmail": "Please enter a valid email address.",
     "validationProjectType": "Please select a project type.",
-    "validationMessage": "Please enter a message with at least 10 characters."
+    "validationMessage": "Please enter a message with at least 10 characters.",
+    "errorSummaryHeading": "There is a problem",
+    "errorSummaryIntro": "Check the following before sending your message:"
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
@@ -846,9 +848,9 @@
     },
     "notFound": {
       "title": "404 Page Not Found | Vanguard Digital Solutions",
-      "description": "",
+      "description": "This page could not be found. Browse our web design and development services for Bridgend and South Wales, or get in touch for a free quote.",
       "ogTitle": "404 Page Not Found",
-      "ogDescription": ""
+      "ogDescription": "This page could not be found. Explore our web design services for South Wales businesses, or contact us for a free quote."
     },
     "fallbackTitle": "Vanguard Digital Solutions"
   }

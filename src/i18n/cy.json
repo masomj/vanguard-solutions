@@ -739,7 +739,7 @@
     "optionDevelopment": "Datblygu Meddalwedd Personol",
     "optionOther": "Arall",
     "message": "Neges",
-    "placeholderName": "John Doe",
+    "placeholderName": "Siôn Jones",
     "placeholderEmail": "john{'@'}example.com",
     "placeholderCompany": "Eich cwmni",
     "placeholderPhone": "+44 29 1234 5678",
@@ -751,7 +751,9 @@
     "validationName": "Rhowch eich enw llawn gyda o leiaf 2 nod.",
     "validationEmail": "Rhowch gyfeiriad e-bost dilys.",
     "validationProjectType": "Dewiswch fath o brosiect.",
-    "validationMessage": "Rhowch neges gyda o leiaf 10 nod."
+    "validationMessage": "Rhowch neges gyda o leiaf 10 nod.",
+    "errorSummaryHeading": "Mae problem",
+    "errorSummaryIntro": "Gwiriwch y canlynol cyn anfon eich neges:"
   },
   "cookiePolicy": {
     "title": "Polisi Cwcis",
@@ -844,9 +846,9 @@
     },
     "notFound": {
       "title": "404 Tudalen Heb ei Chanfod | Vanguard Digital Solutions",
-      "description": "",
+      "description": "Nid oedd modd dod o hyd i'r dudalen hon. Porwch ein gwasanaethau dylunio a datblygu gwe ym Mhen-y-bont a De Cymru, neu cysylltwch am ddyfynbris am ddim.",
       "ogTitle": "404 Tudalen Heb ei Chanfod",
-      "ogDescription": ""
+      "ogDescription": "Nid oedd modd dod o hyd i'r dudalen hon. Archwiliwch ein gwasanaethau gwe ar gyfer busnesau De Cymru, neu cysylltwch am ddyfynbris am ddim."
     },
     "fallbackTitle": "Vanguard Digital Solutions"
   }

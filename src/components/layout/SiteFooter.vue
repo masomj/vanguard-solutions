@@ -27,7 +27,7 @@
           <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.services') }}</h3>
           <ul class="list-none m-0 p-0 space-y-2">
             <li v-for="service in services" :key="service">
-              <router-link to="/services" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
+              <router-link :to="localePath('/services')" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
                 {{ service }}
               </router-link>
             </li>
@@ -60,19 +60,21 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import BrandLogo from '../shared/BrandLogo.vue'
+import { useLocale } from '../../composables/useLocale'
 
 const currentYear = new Date().getFullYear()
 const { t } = useI18n()
+const { localePath } = useLocale()
 
 const quickLinks = computed(() => [
-  { to: '/', label: t('nav.home') },
-  { to: '/about', label: t('footer.aboutUs') },
-  { to: '/services', label: t('nav.services') },
-  { to: '/technology', label: t('nav.technology') },
-  { to: '/process', label: t('nav.process') },
-  { to: '/small-business', label: t('nav.smallBusiness') },
-  { to: '/contact', label: t('footer.contactUs') },
-  { to: '/cookie-policy', label: t('footer.cookiePolicy') },
+  { to: localePath('/'), label: t('nav.home') },
+  { to: localePath('/about'), label: t('footer.aboutUs') },
+  { to: localePath('/services'), label: t('nav.services') },
+  { to: localePath('/technology'), label: t('nav.technology') },
+  { to: localePath('/process'), label: t('nav.process') },
+  { to: localePath('/small-business'), label: t('nav.smallBusiness') },
+  { to: localePath('/contact'), label: t('footer.contactUs') },
+  { to: localePath('/cookie-policy'), label: t('footer.cookiePolicy') },
 ])
 
 const services = computed(() => [
