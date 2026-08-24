@@ -24,7 +24,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="values-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('about.valuesSubtitle')">
+        <SectionHeading heading-id="values-heading" :subtitle="t('about.valuesSubtitle')">
           {{ t('about.valuesHeading') }}
         </SectionHeading>
 
@@ -42,7 +42,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="how-i-work-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('about.howIWork.subtitle')">
+        <SectionHeading heading-id="how-i-work-heading" :subtitle="t('about.howIWork.subtitle')">
           {{ t('about.howIWork.heading') }}
         </SectionHeading>
 
@@ -60,7 +60,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="skills-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('about.skills.subtitle')">
+        <SectionHeading heading-id="skills-heading" :subtitle="t('about.skills.subtitle')">
           {{ t('about.skills.heading') }}
         </SectionHeading>
 

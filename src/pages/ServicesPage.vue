@@ -9,9 +9,8 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="services-list-heading">
+    <section class="py-16 lg:py-24 bg-white" :aria-label="t('servicesPage.allServices')">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 id="services-list-heading" class="sr-only">{{ t('servicesPage.allServices') }}</h2>
         <div class="space-y-16">
           <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
             <div class="flex items-start gap-4 mb-6">
@@ -20,6 +19,11 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.smallBusiness.title') }}</h2>
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.smallBusiness.description') }}
+                </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/small-business')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('nav.smallBusiness') }) }} &rarr;
+                  </router-link>
                 </p>
               </div>
             </div>
@@ -38,6 +42,11 @@
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.ecommerce.description') }}
                 </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/ecommerce')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.ecommerce.navLabel') }) }} &rarr;
+                  </router-link>
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
@@ -54,6 +63,11 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.booking.title') }}</h2>
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.booking.description') }}
+                </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/booking-systems')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.booking.navLabel') }) }} &rarr;
+                  </router-link>
                 </p>
               </div>
             </div>
@@ -76,6 +90,11 @@
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.brochure.description') }}
                 </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/business-website')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.businessWebsite.navLabel') }) }} &rarr;
+                  </router-link>
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
@@ -92,6 +111,11 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.bespoke.title') }}</h2>
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.bespoke.description') }}
+                </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/bespoke-software')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.bespoke.navLabel') }) }} &rarr;
+                  </router-link>
                 </p>
               </div>
             </div>
@@ -133,11 +157,11 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="related-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('servicesPage.related.subtitle')">
+        <SectionHeading heading-id="related-heading" :subtitle="t('servicesPage.related.subtitle')">
           {{ t('servicesPage.related.heading') }}
         </SectionHeading>
 
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <router-link v-for="link in relatedLinks" :key="link.to" :to="link.to"
             class="bg-white rounded-lg p-6 border border-border hover:border-primary transition-colors flex flex-col gap-3">
             <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">
@@ -263,6 +287,12 @@ const relatedLinks = computed(() => [
     icon: '🎨',
     title: t('servicesPage.related.link3Title'),
     description: t('servicesPage.related.link3Description'),
+  },
+  {
+    to: localePath('/pricing'),
+    icon: '💷',
+    title: t('servicesPage.related.link4Title'),
+    description: t('servicesPage.related.link4Description'),
   },
 ])
 </script>

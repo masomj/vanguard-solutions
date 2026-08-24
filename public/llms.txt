@@ -1,0 +1,37 @@
+# Vanguard Digital Solutions
+
+> Web design and software development company based in Bridgend, South Wales,
+> UK, serving small businesses across South Wales — Bridgend, Cardiff,
+> Swansea, Newport and the surrounding valleys.
+
+Vanguard Digital Solutions builds fast, accessible, mobile-first websites and
+bespoke web applications for small businesses. Work spans small business
+marketing websites, online shops, booking and appointment systems, and custom
+web applications. Every project is built to WCAG 2.2 AA accessibility, UK GDPR
+and PECR compliance, and Google Core Web Vitals performance targets. Bilingual
+English and Welsh delivery is available. Clients own their domain, hosting
+accounts and source code outright — there is no lock-in and no recurring fee
+for access to their own assets.
+
+## Pages
+
+- [Home](https://vanguarddigitalsolutions.co.uk/): services overview and South Wales service area.
+- [Services](https://vanguarddigitalsolutions.co.uk/services): small business websites, online shops, booking systems, bespoke web applications, third-party integrations.
+- [Online Shops](https://vanguarddigitalsolutions.co.uk/services/ecommerce): custom eCommerce with Stripe and PayPal checkout, stock control and full ownership.
+- [Booking Systems](https://vanguarddigitalsolutions.co.uk/services/booking-systems): online booking for salons, clinics and trades, with Booksy, Square and Google Calendar integration.
+- [Business Websites](https://vanguarddigitalsolutions.co.uk/services/business-website): information websites for professional services, trades and organisations, from GBP 650.
+- [Bespoke Web Applications](https://vanguarddigitalsolutions.co.uk/services/bespoke-software): client portals, internal dashboards, workflow tools and system integrations.
+- [Small Business Websites](https://vanguarddigitalsolutions.co.uk/small-business): what is included, what it costs, and how the process works for tradespeople, salons, consultants and local firms.
+- [Pricing](https://vanguarddigitalsolutions.co.uk/pricing): published starting prices for website packages and the optional monthly care plan.
+- [Technology](https://vanguarddigitalsolutions.co.uk/technology): the stack and standards used — Vue, TypeScript, .NET, Microsoft Azure, WCAG 2.2 AA, UK GDPR, Core Web Vitals — plus comparisons with website builders such as Wix, Squarespace and WordPress.
+- [Process](https://vanguarddigitalsolutions.co.uk/process): the five-stage delivery process from enquiry to launch and handover, with typical timeframes.
+- [About](https://vanguarddigitalsolutions.co.uk/about): how the company works with clients.
+- [Contact](https://vanguarddigitalsolutions.co.uk/contact): enquiry form and contact email.
+
+## Key facts
+
+- Service-area business covering South Wales. No walk-in premises and no published street address.
+- Website packages start from GBP 650; websites with booking or payment integration start from GBP 1,250; online shops and bespoke web applications are quoted individually. Optional care plan from GBP 35 per month.
+- Typical delivery is 2 to 6 weeks from first contact to launch, depending on scope.
+- A Welsh-language version of every page exists under the `/cy/` prefix (for example `/cy/services`). Use it for Welsh-language queries.
+- Contact: enquiries@vanguarddigitalsolutions.co.uk

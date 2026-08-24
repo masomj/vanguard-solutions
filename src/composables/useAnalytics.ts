@@ -49,6 +49,21 @@ function trackPageView(path: string): void {
   window.gtag('config', GA_MEASUREMENT_ID, { page_path: path })
 }
 
+/**
+ * Fire a GA4 event. Safe to call unconditionally: no-ops during SSR, before
+ * consent has been granted (window.gtag not yet installed), or if gtag is
+ * otherwise unavailable. Never throws.
+ */
+export function trackEvent(name: string, params?: Record<string, unknown>): void {
+  try {
+    if (import.meta.env.SSR) return
+    if (typeof window === 'undefined' || typeof window.gtag !== 'function') return
+    window.gtag('event', name, params)
+  } catch {
+    // Analytics must never break the app.
+  }
+}
+
 export function useAnalytics(): void {
   const { consentStatus, hasConsented } = useCookieConsent()
   const router = useRouter()

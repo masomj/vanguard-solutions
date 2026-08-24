@@ -11,7 +11,6 @@
 <script setup lang="ts">
 import { watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { useHead } from '@unhead/vue'
 import SkipLink from './components/layout/SkipLink.vue'
 import SiteHeader from './components/layout/SiteHeader.vue'
 import SiteFooter from './components/layout/SiteFooter.vue'
@@ -21,25 +20,6 @@ import { useAnalytics } from './composables/useAnalytics'
 
 useSeoMeta()
 useAnalytics()
-
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'Vanguard Digital Solutions',
-        url: 'https://vanguarddigitalsolutions.co.uk',
-        contactPoint: {
-          '@type': 'ContactPoint',
-          contactType: 'sales',
-          email: 'enquiries@vanguarddigitalsolutions.co.uk',
-        },
-      }),
-    },
-  ],
-})
 
 const router = useRouter()
 watch(() => router.currentRoute.value.path, () => {

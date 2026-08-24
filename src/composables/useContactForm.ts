@@ -2,6 +2,7 @@ import { reactive, ref } from 'vue'
 import emailjs from '@emailjs/browser'
 import { useI18n } from 'vue-i18n'
 import type { ContactFormData, FormErrors, FormStatus } from '../types'
+import { trackEvent } from './useAnalytics'
 
 const SERVICE_ID = 'service_cw3aocj'
 const TEMPLATE_ID = 'template_wn5byer'
@@ -75,10 +76,12 @@ export function useContactForm() {
       })
       status.value = 'success'
       statusMessage.value = t('contactForm.statusSuccess')
+      trackEvent('generate_lead', { project_type: form.projectType, locale: locale.value })
       Object.assign(form, { name: '', email: '', company: '', phone: '', projectType: '', message: '' })
     } catch {
       status.value = 'error'
       statusMessage.value = t('contactForm.statusError')
+      trackEvent('form_error')
     }
 
     return true

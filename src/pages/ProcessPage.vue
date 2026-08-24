@@ -11,7 +11,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="lifecycle-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.lifecycle.subtitle')">
+        <SectionHeading heading-id="lifecycle-heading" :subtitle="t('process.lifecycle.subtitle')">
           {{ t('process.lifecycle.heading') }}
         </SectionHeading>
 
@@ -42,7 +42,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="milestones-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.milestones.subtitle')">
+        <SectionHeading heading-id="milestones-heading" :subtitle="t('process.milestones.subtitle')">
           {{ t('process.milestones.heading') }}
         </SectionHeading>
 
@@ -60,7 +60,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="ai-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.ai.subtitle')">
+        <SectionHeading heading-id="ai-heading" :subtitle="t('process.ai.subtitle')">
           {{ t('process.ai.heading') }}
         </SectionHeading>
 
@@ -75,7 +75,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="quality-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.quality.subtitle')">
+        <SectionHeading heading-id="quality-heading" :subtitle="t('process.quality.subtitle')">
           {{ t('process.quality.heading') }}
         </SectionHeading>
 
@@ -93,7 +93,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="hosting-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.hosting.subtitle')">
+        <SectionHeading heading-id="hosting-heading" :subtitle="t('process.hosting.subtitle')">
           {{ t('process.hosting.heading') }}
         </SectionHeading>
 
@@ -109,7 +109,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="working-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.working.subtitle')">
+        <SectionHeading heading-id="working-heading" :subtitle="t('process.working.subtitle')">
           {{ t('process.working.heading') }}
         </SectionHeading>
 
@@ -125,7 +125,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="faq-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('process.faq.subtitle')">
+        <SectionHeading heading-id="faq-heading" :subtitle="t('process.faq.subtitle')">
           {{ t('process.faq.heading') }}
         </SectionHeading>
 
@@ -147,6 +147,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
 import CallToAction from '../components/home/CallToAction.vue'
+import { usePageSchema, faqPageSchema } from '../composables/usePageSchema'
 
 const { t } = useI18n()
 
@@ -314,5 +315,15 @@ const faqItems = computed(() => [
     question: t('process.faq.q6.question'),
     answer: t('process.faq.q6.answer'),
   },
+  {
+    question: t('process.faq.q7.question'),
+    answer: t('process.faq.q7.answer'),
+  },
+  {
+    question: t('process.faq.q8.question'),
+    answer: t('process.faq.q8.answer'),
+  },
 ])
+
+usePageSchema(() => faqPageSchema(faqItems.value))
 </script>

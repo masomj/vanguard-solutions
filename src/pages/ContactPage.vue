@@ -35,6 +35,19 @@
                   </div>
                 </div>
               </div>
+
+              <div class="mt-8 pt-6 border-t border-border">
+                <h3 class="font-semibold text-text-primary text-sm mb-2">{{ t('contactPage.responseHeading') }}</h3>
+                <p class="text-text-secondary text-sm leading-relaxed">{{ t('contactPage.responseBody') }}</p>
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-border">
+                <h3 class="font-semibold text-text-primary text-sm mb-2">{{ t('contactPage.beforeYouAskHeading') }}</h3>
+                <p class="text-text-secondary text-sm leading-relaxed mb-3">{{ t('contactPage.beforeYouAskBody') }}</p>
+                <router-link :to="localePath('/pricing')" class="text-primary font-semibold text-sm hover:text-primary-light no-underline">
+                  {{ t('contactPage.beforeYouAskCta') }} &rarr;
+                </router-link>
+              </div>
             </div>
           </aside>
         </div>
@@ -46,6 +59,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import ContactForm from '../components/contact/ContactForm.vue'
+import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
+const { localePath } = useLocale()
 </script>

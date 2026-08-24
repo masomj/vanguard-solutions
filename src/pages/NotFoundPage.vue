@@ -11,11 +11,14 @@
       </BaseButton>
     </div>
   </section>
+
+  <CallToAction />
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../components/shared/BaseButton.vue'
+import CallToAction from '../components/home/CallToAction.vue'
 
 const { t } = useI18n()
 </script>
