@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 lg:py-24 bg-surface" aria-labelledby="tech-stack-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading :subtitle="t('home.techStack.subtitle')">
+      <SectionHeading heading-id="tech-stack-heading" :subtitle="t('home.techStack.subtitle')">
         {{ t('home.techStack.heading') }}
       </SectionHeading>
 

@@ -26,9 +26,9 @@
         <div>
           <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.services') }}</h3>
           <ul class="list-none m-0 p-0 space-y-2">
-            <li v-for="service in services" :key="service">
-              <router-link :to="localePath('/services')" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
-                {{ service }}
+            <li v-for="service in services" :key="service.label">
+              <router-link :to="service.to" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
+                {{ service.label }}
               </router-link>
             </li>
           </ul>
@@ -49,7 +49,12 @@
         </div>
       </div>
 
-      <div class="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/50">
+      <div class="mt-12 pt-8 border-t border-white/10">
+        <h3 class="font-semibold text-sm uppercase tracking-wider mb-3 text-white/90">{{ t('footer.areasHeading') }}</h3>
+        <p class="text-white/60 text-sm leading-relaxed max-w-4xl">{{ t('footer.areasBody') }}</p>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/50">
         <p>{{ t('footer.copyright', { year: currentYear }) }}</p>
       </div>
     </div>
@@ -78,6 +83,11 @@ const quickLinks = computed(() => [
 ])
 
 const services = computed(() => [
-  t('footer.customSoftwareDevelopment'),
+  { to: localePath('/small-business'), label: t('footer.serviceSmallBusiness') },
+  { to: localePath('/services'), label: t('footer.serviceEcommerce') },
+  { to: localePath('/services'), label: t('footer.serviceBooking') },
+  { to: localePath('/services'), label: t('footer.serviceBespoke') },
+  { to: localePath('/services'), label: t('footer.serviceIntegrations') },
+  { to: localePath('/pricing'), label: t('footer.pricing') },
 ])
 </script>

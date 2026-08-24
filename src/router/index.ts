@@ -10,6 +10,7 @@ const pages = [
   { path: 'technology', name: 'technology', component: () => import('../pages/TechnologyPage.vue'), seoKey: 'technology' },
   { path: 'process', name: 'process', component: () => import('../pages/ProcessPage.vue'), seoKey: 'process' },
   { path: 'small-business', name: 'small-business', component: () => import('../pages/SmallBusinessPage.vue'), seoKey: 'smallBusiness' },
+  { path: 'pricing', name: 'pricing', component: () => import('../pages/PricingPage.vue'), seoKey: 'pricing' },
   { path: 'contact', name: 'contact', component: () => import('../pages/ContactPage.vue'), seoKey: 'contact' },
   { path: 'cookie-policy', name: 'cookie-policy', component: () => import('../pages/CookiePolicyPage.vue'), seoKey: 'cookiePolicy' },
 ] as const

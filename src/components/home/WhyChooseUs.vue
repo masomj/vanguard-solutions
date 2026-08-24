@@ -1,11 +1,11 @@
 <template>
   <section class="py-16 lg:py-24 bg-surface" aria-labelledby="why-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading :subtitle="t('home.whyChoose.subtitle')">
+      <SectionHeading heading-id="why-heading" :subtitle="t('home.whyChoose.subtitle')">
         {{ t('home.whyChoose.heading') }}
       </SectionHeading>
 
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <article v-for="item in reasons" :key="item.title" class="text-center">
           <div class="w-16 h-16 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -16,6 +16,12 @@
           <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
         </article>
       </div>
+
+      <p class="mt-12 text-center">
+        <router-link :to="localePath('/about')" class="text-primary font-semibold hover:text-primary-light no-underline">
+          {{ t('home.whyChoose.aboutLinkText') }} &rarr;
+        </router-link>
+      </p>
     </div>
   </section>
 </template>
@@ -24,8 +30,10 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SectionHeading from '../shared/SectionHeading.vue'
+import { useLocale } from '../../composables/useLocale'
 
 const { t } = useI18n()
+const { localePath } = useLocale()
 
 const reasons = computed(() => [
   {
@@ -42,6 +50,11 @@ const reasons = computed(() => [
     title: t('home.whyChoose.item3Title'),
     description: t('home.whyChoose.item3Description'),
     iconPath: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
+  },
+  {
+    title: t('home.whyChoose.item4Title'),
+    description: t('home.whyChoose.item4Description'),
+    iconPath: 'M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129',
   },
 ])
 </script>

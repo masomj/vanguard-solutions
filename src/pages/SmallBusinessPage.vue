@@ -2,6 +2,9 @@
   <div>
     <section class="bg-primary text-white py-16 sm:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-wide text-white/70 mb-3">
+          {{ t('smallBusiness.hero.kicker') }}
+        </p>
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('smallBusiness.hero.title') }}</h1>
         <p class="text-lg text-white/80 max-w-2xl">
           {{ t('smallBusiness.hero.subtitle') }}
@@ -11,7 +14,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="why-matters-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.whyMatters.subtitle')">
+        <SectionHeading heading-id="why-matters-heading" :subtitle="t('smallBusiness.whyMatters.subtitle')">
           {{ t('smallBusiness.whyMatters.heading') }}
         </SectionHeading>
 
@@ -29,7 +32,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="bring-enquiries-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.bringEnquiries.subtitle')">
+        <SectionHeading heading-id="bring-enquiries-heading" :subtitle="t('smallBusiness.bringEnquiries.subtitle')">
           {{ t('smallBusiness.bringEnquiries.heading') }}
         </SectionHeading>
 
@@ -47,7 +50,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="included-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.included.subtitle')">
+        <SectionHeading heading-id="included-heading" :subtitle="t('smallBusiness.included.subtitle')">
           {{ t('smallBusiness.included.heading') }}
         </SectionHeading>
 
@@ -61,7 +64,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="signs-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.signs.subtitle')">
+        <SectionHeading heading-id="signs-heading" :subtitle="t('smallBusiness.signs.subtitle')">
           {{ t('smallBusiness.signs.heading') }}
         </SectionHeading>
 
@@ -76,9 +79,24 @@
       </div>
     </section>
 
+    <section class="py-16 lg:py-24 bg-white" aria-labelledby="who-for-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading heading-id="who-for-heading" :subtitle="t('smallBusiness.whoFor.subtitle')">
+          {{ t('smallBusiness.whoFor.heading') }}
+        </SectionHeading>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article v-for="item in whoForItems" :key="item.title" class="bg-surface rounded-lg p-6 border border-border">
+            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="cost-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.cost.subtitle')">
+        <SectionHeading heading-id="cost-heading" :subtitle="t('smallBusiness.cost.subtitle')">
           {{ t('smallBusiness.cost.heading') }}
         </SectionHeading>
 
@@ -86,6 +104,11 @@
           <div class="space-y-6 text-text-secondary leading-relaxed">
             <p>{{ t('smallBusiness.cost.p1') }}</p>
             <p>{{ t('smallBusiness.cost.p2') }}</p>
+            <p class="text-text-primary font-medium">{{ t('smallBusiness.cost.p3') }}</p>
+          </div>
+
+          <div class="mt-8 text-center">
+            <BaseButton variant="secondary" to="/pricing">{{ t('smallBusiness.cost.ctaText') }}</BaseButton>
           </div>
         </div>
       </div>
@@ -93,7 +116,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="how-works-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.howWorks.subtitle')">
+        <SectionHeading heading-id="how-works-heading" :subtitle="t('smallBusiness.howWorks.subtitle')">
           {{ t('smallBusiness.howWorks.heading') }}
         </SectionHeading>
 
@@ -117,7 +140,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="faq-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.faq.subtitle')">
+        <SectionHeading heading-id="faq-heading" :subtitle="t('smallBusiness.faq.subtitle')">
           {{ t('smallBusiness.faq.heading') }}
         </SectionHeading>
 
@@ -132,7 +155,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="links-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('smallBusiness.links.subtitle')">
+        <SectionHeading heading-id="links-heading" :subtitle="t('smallBusiness.links.subtitle')">
           {{ t('smallBusiness.links.heading') }}
         </SectionHeading>
 
@@ -159,6 +182,7 @@ import SectionHeading from '../components/shared/SectionHeading.vue'
 import BaseButton from '../components/shared/BaseButton.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 import { useLocale } from '../composables/useLocale'
+import { usePageSchema, faqPageSchema } from '../composables/usePageSchema'
 
 const { t } = useI18n()
 const { localePath } = useLocale()
@@ -326,4 +350,13 @@ const pageLinks = computed(() => [
     description: t('smallBusiness.links.services.description'),
   },
 ])
+
+const whoForItems = computed(() =>
+  [1, 2, 3, 4, 5].map((n) => ({
+    title: t(`smallBusiness.whoFor.item${n}Title`),
+    description: t(`smallBusiness.whoFor.item${n}Description`),
+  }))
+)
+
+usePageSchema(() => faqPageSchema(faqItems.value))
 </script>

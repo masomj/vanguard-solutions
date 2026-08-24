@@ -1,3 +1,41 @@
+# Vanguard Digital Solutions — robots.txt
+
 User-agent: *
 Allow: /
+
+# --- AI answer-engine / assistant crawlers ---
+# Explicitly allowed: this site wants to be cited by AI assistants and answer
+# engines. These lines are a deliberate allow-list, not an accident of the
+# wildcard above. To opt out of AI training or citation later, change these
+# lines here rather than assuming "*" covers it.
+
+# OpenAI — live ChatGPT browsing and citation
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — training crawler
+User-agent: GPTBot
+Allow: /
+
+# Anthropic — Claude web search and citation
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google — Gemini / AI Overviews signal. Separate from Googlebot, which is
+# covered by "*" above and must stay allowed for normal Search.
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl — feeds many third-party LLM training sets
+User-agent: CCBot
+Allow: /
+
+# Apple Intelligence / Siri
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://vanguarddigitalsolutions.co.uk/sitemap.xml

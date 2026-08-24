@@ -11,7 +11,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="foundations-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.foundations.subtitle')">
+        <SectionHeading heading-id="foundations-heading" :subtitle="t('technology.foundations.subtitle')">
           {{ t('technology.foundations.heading') }}
         </SectionHeading>
 
@@ -29,7 +29,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="frameworks-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.frameworks.subtitle')">
+        <SectionHeading heading-id="frameworks-heading" :subtitle="t('technology.frameworks.subtitle')">
           {{ t('technology.frameworks.heading') }}
         </SectionHeading>
 
@@ -88,9 +88,45 @@
       </div>
     </section>
 
+    <section class="py-16 lg:py-24 bg-white" aria-labelledby="static-sites-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading heading-id="static-sites-heading" :subtitle="t('technology.staticSites.subtitle')">
+          {{ t('technology.staticSites.heading') }}
+        </SectionHeading>
+
+        <div class="mt-12 max-w-4xl mx-auto">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
+            <p>{{ t('technology.staticSites.p1') }}</p>
+            <p>{{ t('technology.staticSites.p2') }}</p>
+            <p>{{ t('technology.staticSites.p3') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="builders-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading heading-id="builders-heading" :subtitle="t('technology.builders.subtitle')">
+          {{ t('technology.builders.heading') }}
+        </SectionHeading>
+
+        <div class="mt-12 max-w-4xl mx-auto">
+          <div class="space-y-6 text-text-secondary leading-relaxed">
+            <p>{{ t('technology.builders.p1') }}</p>
+            <p>{{ t('technology.builders.p2') }}</p>
+            <p>{{ t('technology.builders.p3') }}</p>
+            <p>{{ t('technology.builders.p4') }}</p>
+          </div>
+          <div class="mt-8 text-center">
+            <BaseButton variant="secondary" to="/pricing">{{ t('pricing.hero.title') }}</BaseButton>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="apis-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.apis.subtitle')">
+        <SectionHeading heading-id="apis-heading" :subtitle="t('technology.apis.subtitle')">
           {{ t('technology.apis.heading') }}
         </SectionHeading>
 
@@ -99,6 +135,7 @@
             <p>{{ t('technology.apis.p1') }}</p>
             <p>{{ t('technology.apis.p2') }}</p>
             <p>{{ t('technology.apis.p3') }}</p>
+            <p>{{ t('technology.apis.p4') }}</p>
           </div>
         </div>
       </div>
@@ -106,7 +143,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="accessibility-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.accessibility.subtitle')">
+        <SectionHeading heading-id="accessibility-heading" :subtitle="t('technology.accessibility.subtitle')">
           {{ t('technology.accessibility.heading') }}
         </SectionHeading>
 
@@ -115,6 +152,7 @@
             <p>{{ t('technology.accessibility.p1') }}</p>
             <p>{{ t('technology.accessibility.p2') }}</p>
             <p>{{ t('technology.accessibility.p3') }}</p>
+            <p>{{ t('technology.accessibility.p4') }}</p>
           </div>
         </div>
       </div>
@@ -122,7 +160,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="gdpr-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.gdpr.subtitle')">
+        <SectionHeading heading-id="gdpr-heading" :subtitle="t('technology.gdpr.subtitle')">
           {{ t('technology.gdpr.heading') }}
         </SectionHeading>
 
@@ -141,7 +179,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="cloud-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.cloud.subtitle')">
+        <SectionHeading heading-id="cloud-heading" :subtitle="t('technology.cloud.subtitle')">
           {{ t('technology.cloud.heading') }}
         </SectionHeading>
 
@@ -157,7 +195,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="containers-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.containers.subtitle')">
+        <SectionHeading heading-id="containers-heading" :subtitle="t('technology.containers.subtitle')">
           {{ t('technology.containers.heading') }}
         </SectionHeading>
 
@@ -173,7 +211,7 @@
 
     <section class="py-16 lg:py-24 bg-surface" aria-labelledby="performance-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.performance.subtitle')">
+        <SectionHeading heading-id="performance-heading" :subtitle="t('technology.performance.subtitle')">
           {{ t('technology.performance.heading') }}
         </SectionHeading>
 
@@ -189,7 +227,7 @@
 
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="seo-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading :subtitle="t('technology.seo.subtitle')">
+        <SectionHeading heading-id="seo-heading" :subtitle="t('technology.seo.subtitle')">
           {{ t('technology.seo.heading') }}
         </SectionHeading>
 
@@ -211,6 +249,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
+import BaseButton from '../components/shared/BaseButton.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
 const { t } = useI18n()

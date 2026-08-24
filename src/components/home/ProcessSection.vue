@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 lg:py-24 bg-white" aria-labelledby="process-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading :subtitle="t('home.process.subtitle')">
+      <SectionHeading heading-id="process-heading" :subtitle="t('home.process.subtitle')">
         {{ t('home.process.heading') }}
       </SectionHeading>
 

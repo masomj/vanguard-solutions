@@ -8,12 +8,12 @@
           <span class="sm:hidden">{{ t('site.shortName') }}</span>
         </router-link>
 
-        <nav class="hidden lg:block" :aria-label="t('nav.mainNavigation')">
+        <nav class="hidden xl:block" :aria-label="t('nav.mainNavigation')">
           <ul class="flex items-center gap-1 list-none m-0 p-0">
             <li v-for="link in navLinks" :key="link.to">
               <router-link
                 :to="link.to"
-                class="px-4 py-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
+                class="px-3 py-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline font-medium text-sm"
                 active-class="text-primary bg-surface"
               >
                 {{ link.label }}
@@ -22,7 +22,7 @@
             <li>
               <router-link
                 :to="localePath('/contact')"
-                class="ml-2 px-5 py-2 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors"
+                class="ml-2 px-4 py-2 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold text-sm transition-colors"
               >
                 {{ t('nav.getQuote') }}
               </router-link>
@@ -31,7 +31,7 @@
               <router-link
                 :to="alternatePath"
                 :hreflang="otherLocale"
-                class="ml-2 px-4 py-2 border border-border rounded-md text-sm font-semibold text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline"
+                class="ml-1 px-3 py-2 border border-border rounded-md text-sm font-semibold text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline"
                 :aria-label="t('language.switchLabel')"
                 @click="rememberChoice"
               >
@@ -41,7 +41,7 @@
           </ul>
         </nav>
 
-        <div class="flex items-center gap-2 lg:hidden">
+        <div class="flex items-center gap-2 xl:hidden">
           <router-link
             :to="alternatePath"
             :hreflang="otherLocale"
@@ -91,6 +91,8 @@ const navLinks = computed(() => [
   { to: localePath('/services'), label: t('nav.services') },
   { to: localePath('/technology'), label: t('nav.technology') },
   { to: localePath('/process'), label: t('nav.process') },
+  { to: localePath('/small-business'), label: t('nav.smallBusiness') },
+  { to: localePath('/pricing'), label: t('nav.pricing') },
   { to: localePath('/contact'), label: t('nav.contact') },
 ])
 
