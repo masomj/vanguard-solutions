@@ -12,11 +12,19 @@
     "welsh": "Cymraeg"
   },
   "nav": {
-    "home": "Cartref",
-    "about": "Amdanom Ni",
+    "home": "Hafan",
+    "about": "Amdanom",
+    "aboutUs": "Amdanom Ni",
     "services": "Gwasanaethau",
+    "allServices": "Pob Gwasanaeth",
+    "businessWebsites": "Gwefannau Busnes",
+    "onlineShops": "Siopau Ar-lein",
+    "bookingSystems": "Systemau Archebu",
+    "bespokeSoftware": "Meddalwedd Bwrpasol",
+    "forSmallBusiness": "I Fusnesau Bach",
     "technology": "Technoleg",
     "process": "Proses",
+    "howWeWork": "Sut Rydym yn Gweithio",
     "smallBusiness": "Busnes Bach",
     "pricing": "Prisiau",
     "contact": "Cysylltu",
@@ -24,10 +32,11 @@
     "menu": "Dewislen",
     "mainNavigation": "Prif lywio",
     "mobileNavigation": "Llywio symudol",
-    "toggleNavigationMenu": "Toglo dewislen llywio",
-    "closeNavigationMenu": "Cau dewislen llywio",
-    "homeAria": "Cartref Vanguard Digital Solutions",
-    "breadcrumb": "Briwsion Bara"
+    "toggleNavigationMenu": "Toglo'r ddewislen lywio",
+    "closeNavigationMenu": "Cau'r ddewislen lywio",
+    "submenuHint": "is-ddewislen",
+    "homeAria": "Hafan Vanguard Digital Solutions",
+    "breadcrumb": "Briwsion bara"
   },
   "skipLink": {
     "main": "Neidio i brif gynnwys"

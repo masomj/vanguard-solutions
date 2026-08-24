@@ -13,12 +13,11 @@
       <nav
         v-if="open"
         id="mobile-menu"
-        ref="menuRef"
-        class="fixed top-0 right-0 bottom-0 w-72 bg-white shadow-xl z-50 lg:hidden flex flex-col"
+        class="fixed top-0 right-0 bottom-0 w-72 max-w-[85vw] bg-white shadow-xl z-50 lg:hidden flex flex-col"
         :aria-label="t('nav.mobileNavigation')"
         @keydown.escape="$emit('close')"
       >
-        <div class="flex items-center justify-between p-4 border-b border-border">
+        <div class="flex items-center justify-between p-4 border-b border-border shrink-0">
           <span class="font-bold text-primary text-lg">{{ t('nav.menu') }}</span>
           <button
             ref="closeButtonRef"
@@ -32,20 +31,50 @@
           </button>
         </div>
 
-        <ul class="flex flex-col gap-1 p-4 list-none m-0">
-          <li v-for="link in navLinks" :key="link.to">
-            <router-link
-              :to="link.to"
-              class="block px-4 py-3 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
-              active-class="text-primary bg-surface"
-              @click="$emit('close')"
-            >
-              {{ link.label }}
-            </router-link>
-          </li>
-        </ul>
+        <!--
+          Groups render as labelled sections rather than collapsible accordions.
+          The whole tree is eleven links; hiding them behind more taps would add
+          interaction cost and a second keyboard trap for no gain.
+        -->
+        <div class="flex-1 overflow-y-auto p-4">
+          <ul class="flex flex-col gap-1 list-none m-0 p-0">
+            <template v-for="entry in navEntries" :key="entry.id">
+              <li v-if="entry.kind === 'link'">
+                <router-link
+                  :to="entry.to"
+                  class="block px-4 py-3 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
+                  active-class="text-primary bg-surface"
+                  @click="$emit('close')"
+                >
+                  {{ entry.label }}
+                </router-link>
+              </li>
 
-        <div class="mt-auto p-4 border-t border-border">
+              <li v-else class="mt-3 first:mt-0">
+                <h2
+                  :id="`mobile-group-${entry.id}`"
+                  class="px-4 pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary"
+                >
+                  {{ entry.label }}
+                </h2>
+                <ul class="flex flex-col gap-1 list-none m-0 p-0" :aria-labelledby="`mobile-group-${entry.id}`">
+                  <li v-for="item in entry.items" :key="item.to">
+                    <router-link
+                      :to="item.to"
+                      class="block px-4 py-2.5 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline"
+                      active-class="text-primary bg-surface font-semibold"
+                      @click="$emit('close')"
+                    >
+                      {{ item.label }}
+                    </router-link>
+                  </li>
+                </ul>
+              </li>
+            </template>
+          </ul>
+        </div>
+
+        <div class="p-4 border-t border-border shrink-0">
           <router-link
             :to="localePath('/contact')"
             class="block w-full text-center px-5 py-3 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors mb-3"
@@ -73,10 +102,11 @@
 import { computed, ref, watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '../../composables/useLocale'
+import type { NavEntry } from '../../types'
 
 defineProps<{
   open: boolean
-  navLinks: { to: string; label: string }[]
+  navEntries: NavEntry[]
 }>()
 
 const emit = defineEmits<{
@@ -123,5 +153,18 @@ watch(() => closeButtonRef.value, async (btn) => {
 .slide-enter-from,
 .slide-leave-to {
   transform: translateX(100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay-enter-active,
+  .overlay-leave-active,
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: none;
+  }
+  .slide-enter-from,
+  .slide-leave-to {
+    transform: none;
+  }
 }
 </style>

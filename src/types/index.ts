@@ -4,6 +4,25 @@ export interface ServiceItem {
   description: string
 }
 
+export interface NavItem {
+  to: string
+  label: string
+}
+
+export interface NavLink extends NavItem {
+  kind: 'link'
+  id: string
+}
+
+export interface NavGroup {
+  kind: 'group'
+  id: string
+  label: string
+  items: NavItem[]
+}
+
+export type NavEntry = NavLink | NavGroup
+
 export interface ContactFormData {
   name: string
   email: string
