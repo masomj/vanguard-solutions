@@ -80,6 +80,9 @@ const root = ref<HTMLDivElement | null>(null)
 const buttonRef = ref<HTMLButtonElement | null>(null)
 const menuRef = ref<HTMLUListElement | null>(null)
 const open = ref(false)
+// Tracks whether the current open state came from hover, so a click on an
+// already-hovered button does not immediately undo it. See toggle().
+const openedByHover = ref(false)
 
 // Hover-to-open is a nicety for mouse users, not the mechanism. Touch devices
 // report `hover: none` and would otherwise fire a phantom mouseenter on tap,
@@ -91,12 +94,21 @@ function hasFinePointer(): boolean {
 }
 
 function toggle() {
+  // Hover already opened it and the user has now clicked, which reads as
+  // committing to the menu rather than dismissing it. Hand control over to
+  // click so the *next* click closes, instead of this one closing immediately
+  // and making the button feel broken.
+  if (open.value && openedByHover.value) {
+    openedByHover.value = false
+    return
+  }
   open.value ? close(true) : (open.value = true)
 }
 
 function close(returnFocus: boolean) {
   if (!open.value) return
   open.value = false
+  openedByHover.value = false
   // Only pull focus back for keyboard dismissal. Doing it after a link click
   // would yank focus off the page the user just navigated to.
   if (returnFocus) buttonRef.value?.focus()
@@ -104,16 +116,21 @@ function close(returnFocus: boolean) {
 
 async function openAndFocusFirst() {
   open.value = true
+  openedByHover.value = false
   await nextTick()
   menuRef.value?.querySelector<HTMLAnchorElement>('a')?.focus()
 }
 
 function onPointerEnter() {
-  if (hasFinePointer()) open.value = true
+  if (!hasFinePointer() || open.value) return
+  open.value = true
+  openedByHover.value = true
 }
 
 function onPointerLeave() {
-  if (hasFinePointer()) open.value = false
+  if (!hasFinePointer()) return
+  open.value = false
+  openedByHover.value = false
 }
 
 // Tabbing out of the group closes it. relatedTarget is the element receiving
