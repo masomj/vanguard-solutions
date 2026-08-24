@@ -20,6 +20,11 @@
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.smallBusiness.description') }}
                 </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/small-business')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('nav.smallBusiness') }) }} &rarr;
+                  </router-link>
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
@@ -37,6 +42,11 @@
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.ecommerce.description') }}
                 </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/ecommerce')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.ecommerce.navLabel') }) }} &rarr;
+                  </router-link>
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
@@ -53,6 +63,11 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.booking.title') }}</h2>
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.booking.description') }}
+                </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/booking-systems')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.booking.navLabel') }) }} &rarr;
+                  </router-link>
                 </p>
               </div>
             </div>
@@ -75,6 +90,11 @@
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.brochure.description') }}
                 </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/business-website')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.businessWebsite.navLabel') }) }} &rarr;
+                  </router-link>
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
@@ -91,6 +111,11 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.bespoke.title') }}</h2>
                 <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
                   {{ t('servicesPage.bespoke.description') }}
+                </p>
+                <p class="mt-3">
+                  <router-link :to="localePath('/services/bespoke-software')" class="text-primary font-semibold hover:text-primary-light no-underline">
+                    {{ t('servicesPage.readMore', { service: t('serviceDetail.bespoke.navLabel') }) }} &rarr;
+                  </router-link>
                 </p>
               </div>
             </div>

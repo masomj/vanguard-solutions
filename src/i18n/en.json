@@ -26,7 +26,8 @@
     "mobileNavigation": "Mobile navigation",
     "toggleNavigationMenu": "Toggle navigation menu",
     "closeNavigationMenu": "Close navigation menu",
-    "homeAria": "Vanguard Digital Solutions Home"
+    "homeAria": "Vanguard Digital Solutions Home",
+    "breadcrumb": "Breadcrumb"
   },
   "skipLink": {
     "main": "Skip to main content"
@@ -164,7 +165,7 @@
       "q1": "How much does a small business website cost in South Wales?",
       "a1": "Our small business websites start at £650 for up to five pages with a working contact form. Sites with online booking or payment integration start at £1,250. Online shops and bespoke web applications are quoted individually because scope varies too much to price fairly in a range.",
       "q2": "How long does it take to build a website?",
-      "a2": "Most small business sites launch 4 to 8 weeks after first contact. A straightforward five-page site is 1 to 2 weeks of build time once we have your content; the rest is discovery, proposal and your review time.",
+      "a2": "Most small business sites launch 2 to 6 weeks after first contact. A straightforward five-page site is 1 to 2 weeks of build time once we have your content; the rest is discovery, proposal and your review time.",
       "q3": "Do you build websites in Welsh?",
       "a3": "Yes. We build bilingual English and Welsh sites with separate URLs for each language, correct hreflang annotations and proper language tagging, rather than a translation widget bolted on afterwards. This website is built that way.",
       "q4": "Which areas do you cover?",
@@ -336,7 +337,8 @@
       "link3Description": "Affordable, professional websites for local businesses across South Wales. See what is included, what it costs, and how the process runs.",
       "link4Title": "What It Costs",
       "link4Description": "Published starting prices for websites, booking integration and the optional monthly care plan. No phone call needed to find the ballpark."
-    }
+    },
+    "readMore": "Read more about {service}"
   },
   "technology": {
     "hero": {
@@ -464,28 +466,28 @@
   "process": {
     "hero": {
       "title": "How We Work",
-      "subtitle": "A five-stage, milestone-driven process from first enquiry to launch — typically 4 to 8 weeks, with working software and a written progress note at every step."
+      "subtitle": "A five-stage, milestone-driven process from first enquiry to launch — typically 2 to 6 weeks, with working software and a written progress note at every step."
     },
     "lifecycle": {
       "heading": "The Delivery Lifecycle",
-      "subtitle": "Five stages from first contact to launch and handover. Most small business sites run 4 to 8 weeks end to end.",
+      "subtitle": "Five stages from first contact to launch and handover. Most small business sites run 2 to 6 weeks end to end.",
       "outputs": "What you get",
       "stage1": {
-        "title": "Request and Discovery (2 to 3 days)",
+        "title": "Request and Discovery (1 to 2 days)",
         "description": "First contact is a no-obligation conversation to understand your business problem rather than jumping straight to a solution. We ask about your users, what success looks like, existing systems and constraints, budget range and realistic deadlines. Discovery is about understanding the problem deeply enough to propose the right solution, not the easiest one to build.",
         "output1": "Written summary of what was discussed",
         "output2": "Agreed problem statement",
         "output3": "Indication of feasibility and suitability"
       },
       "stage2": {
-        "title": "Proposal (2 to 5 days)",
+        "title": "Proposal (2 to 3 days)",
         "description": "A written proposal covers scope, recommended approach and technology choices with reasons, assumptions and exclusions stated plainly. For larger builds, phasing options are provided so you can start small and expand later. The proposal includes a fixed cost and a milestone plan showing what gets delivered and when. Starting prices are published on our pricing page, so the figure in the proposal should not be a surprise. No jargon, no padding — everything is explained in plain English.",
         "output1": "Proposal document with scope and approach",
         "output2": "Milestone breakdown with deliverables",
         "output3": "Clear statement of what is and is not included"
       },
       "stage3": {
-        "title": "Refining Requirements (up to a week)",
+        "title": "Refining Requirements (2 to 5 days)",
         "description": "Once the proposal is agreed, we turn it into something buildable: user stories with acceptance criteria, wireframes or clickable prototypes for key screens, data models and integration points, and non-functional requirements covering accessibility level, performance budgets, security and GDPR handling. Everything is prioritised in a backlog so we can adapt scope if needed without derailing the project.",
         "output1": "Agreed backlog of user stories with acceptance criteria",
         "output2": "Wireframes or prototypes for key screens",
@@ -493,14 +495,14 @@
         "output4": "Non-functional requirements (accessibility, performance, security)"
       },
       "stage4": {
-        "title": "Build in Milestones (2 to 4 weeks)",
+        "title": "Build in Milestones (1 to 3 weeks)",
         "description": "Development is broken into short iterations, each ending in working software you can click through on a staging URL. Regular check-in calls review progress and unblock issues. A written progress note accompanies each milestone showing what changed, what's next, and budget burn against the plan. Change requests are handled openly — impact on cost and timeline is shown before anything is agreed. Continuous integration runs lint, type checks, tests and accessibility checks on every change, catching problems early.",
         "output1": "Working software each milestone on a staging environment",
         "output2": "Written progress notes with demos",
         "output3": "Updated backlog reflecting current priorities"
       },
       "stage5": {
-        "title": "Launch, Handover and Support (about a week)",
+        "title": "Launch, Handover and Support (2 to 4 days)",
         "description": "Launch follows a pre-launch checklist: accessibility audit, performance pass, security review, analytics and consent wiring, SEO metadata, and backups configured. Deploy is controlled with rollback procedures in place. Handover includes documentation, a walkthrough session, and ownership transfer of source code and infrastructure accounts. Optional ongoing support and maintenance arrangements are discussed openly, but you are never locked in — everything is yours to take elsewhere if you choose.",
         "output1": "Live site or application on production infrastructure",
         "output2": "Handover documentation and admin walkthrough",
@@ -627,7 +629,7 @@
       },
       "q7": {
         "question": "How long does it take to build a small business website?",
-        "answer": "Most small business sites launch 4 to 8 weeks after first contact. That breaks down as 2 to 3 days of discovery, 2 to 5 days to produce the proposal, up to a week refining requirements, 2 to 4 weeks of build in weekly milestones, and about a week for launch and handover. The single biggest variable is how quickly you can get us your content — photos, service descriptions, opening hours. Projects that stall almost always stall there."
+        "answer": "Most small business sites launch 2 to 6 weeks after first contact. That breaks down as 1 to 2 days of discovery, 2 to 3 days to produce the proposal, 2 to 5 days refining requirements, 1 to 3 weeks of build in weekly milestones, and 2 to 4 days for launch and handover. The single biggest variable is how quickly you can get us your content — photos, service descriptions, opening hours. Projects that stall almost always stall there."
       },
       "q8": {
         "question": "Should I use a small studio or a large agency?",
@@ -892,6 +894,30 @@
       "ogTitle": "Web Design Services in South Wales",
       "ogDescription": "Small business websites, eCommerce, booking sites, brochure sites, and bespoke web applications from a Bridgend-based team."
     },
+    "serviceEcommerce": {
+      "title": "eCommerce Website Design – Cardiff, Swansea & South Wales",
+      "description": "Custom online shops for independent retailers across South Wales. Secure Stripe and PayPal checkout, real stock control, and no rented platform fee.",
+      "ogTitle": "Online Shops Built for South Wales Retailers",
+      "ogDescription": "Custom eCommerce with secure payments, stock control and full ownership — no rented platform and no compulsory monthly fee."
+    },
+    "serviceBooking": {
+      "title": "Online Booking Systems – Bridgend, Cardiff & Swansea",
+      "description": "Online booking built into your own website. Real availability, deposits, automatic reminders, and Booksy or Square integration. From £1,250.",
+      "ogTitle": "Stop Losing Bookings to Voicemail",
+      "ogDescription": "Booking systems for salons, clinics and trades across South Wales, wired into your own calendar with automatic reminders."
+    },
+    "serviceBusinessWebsite": {
+      "title": "Business Website Design – Bridgend, Cardiff & Swansea",
+      "description": "Professional business websites from £650 for firms across South Wales. A dedicated page per service, local SEO, and content you can update yourself.",
+      "ogTitle": "Business Websites for South Wales Firms",
+      "ogDescription": "Clear, fast, findable websites for professional services, trades and organisations across South Wales. From £650."
+    },
+    "serviceBespoke": {
+      "title": "Bespoke Software Development – South Wales",
+      "description": "Custom web applications, client portals, internal dashboards and system integrations, built on .NET and Microsoft Azure for South Wales businesses.",
+      "ogTitle": "Bespoke Web Applications and Custom Software",
+      "ogDescription": "Client portals, internal tools and integrations built around how your business actually works, with honest advice on when not to build."
+    },
     "technology": {
       "title": "Web Development Technology – Vanguard Digital Solutions",
       "description": "Vue, TypeScript, .NET and Azure, plus WCAG 2.2 accessibility, UK GDPR compliance and Core Web Vitals — the standards behind every site we build.",
@@ -900,7 +926,7 @@
     },
     "process": {
       "title": "How We Work: Our Delivery Process – Vanguard Digital Solutions",
-      "description": "Most small business sites launch in 4 to 8 weeks. Five stages from first enquiry to handover: discovery, proposal, requirements, milestone build and launch.",
+      "description": "Most small business sites launch in 2 to 6 weeks. Five stages from first enquiry to handover: discovery, proposal, requirements, milestone build and launch.",
       "ogTitle": "How We Work: From Enquiry to Launch",
       "ogDescription": "Clear, milestone-driven process from discovery to launch with quality gates, AI-assisted delivery, and transparent communication."
     },
@@ -965,7 +991,7 @@
     "business": {
       "name": "Business",
       "price": "From £1,250",
-      "timeline": "Typically 3 to 4 weeks of build time",
+      "timeline": "Typically 2 to 3 weeks of build time",
       "tagline": "Everything in Starter, plus the parts that turn browsers into bookings.",
       "forWho": "Right for a salon, clinic or trade that wants enquiries and appointments handled automatically instead of by phone tag.",
       "f1": "Everything in the Starter package",
@@ -1015,5 +1041,267 @@
     "ctaBody": "Tell us what you are trying to do and you will get a straight answer about scope, cost and timescale. No obligation and no sales pressure.",
     "ctaPrimary": "Get a Quote",
     "ctaSecondary": "See What's Included"
+  },
+  "serviceDetail": {
+    "ecommerce": {
+      "navLabel": "Online Shops",
+      "kicker": "eCommerce Website Design — Cardiff, Swansea, Newport and South Wales",
+      "title": "Online Shops That Are Yours, Not Rented",
+      "subtitle": "A proper online shop with secure payments, real stock control and no monthly platform fee attached to the site itself.",
+      "intro": {
+        "p1": "We build online shops for independent retailers across South Wales — from a single-product store to a full catalogue with variants, stock levels and delivery zones. Payments run through Stripe or PayPal, so card data never touches your site and you are not liable for storing it.",
+        "p2": "The important difference from a hosted platform is ownership. A Shopify or Wix shop is rented: the subscription never ends, the apps are billed separately, and you cannot move the shop elsewhere. What we build is yours — the code, the domain, the hosting account — with no compulsory monthly fee for the site to keep existing.",
+        "p3": "That trade-off is not right for everyone. If you are selling a handful of items and want to be live this week, a hosted platform is genuinely the better answer and we will tell you so. Custom pays back when the shop is a real sales channel, when you need it to look like nobody else's, or when it has to talk to stock or accounting systems you already run."
+      },
+      "included": {
+        "heading": "What an Online Shop Includes",
+        "subtitle": "Everything needed to take money safely and fulfil an order.",
+        "f1": "Product catalogue with categories, variants, images and search",
+        "f2": "Secure checkout through Stripe or PayPal — no card data stored on your site",
+        "f3": "Stock tracking, with low-stock and out-of-stock handling",
+        "f4": "Delivery zones, postage rules and collection options",
+        "f5": "Order confirmation and dispatch emails to you and the customer",
+        "f6": "VAT handling and downloadable order records for your bookkeeping",
+        "f7": "Product schema markup so items can appear in Google Shopping results",
+        "f8": "Mobile-first checkout — most abandoned baskets are a phone problem"
+      },
+      "whoFor": {
+        "heading": "Who Buys This",
+        "subtitle": "The shops we build most often.",
+        "item1Title": "Independent Retailers",
+        "item1Description": "Shops with a physical presence in Bridgend, Cardiff or Swansea that want to sell beyond the door without handing a percentage to a marketplace.",
+        "item2Title": "Makers and Small Producers",
+        "item2Description": "Bakers, brewers, craftspeople and small food producers selling a focused range, often with local delivery or collection windows.",
+        "item3Title": "Trade Suppliers",
+        "item3Description": "Businesses selling to other businesses, where accounts, trade pricing tiers and repeat ordering matter more than a pretty storefront.",
+        "item4Title": "Anyone Outgrowing a Hosted Platform",
+        "item4Description": "Shops paying for a stack of platform apps to work around limitations, where the monthly total has quietly passed what a custom build would have cost."
+      },
+      "pricing": {
+        "heading": "What an Online Shop Costs",
+        "body": "Online shops are quoted individually rather than priced from a list, because a ten-product shop and a two-hundred-product shop are genuinely different jobs. The variables are catalogue size, how many product options each item has, what has to integrate with your stock or accounts, and whether product photography and descriptions need writing. You get a fixed written quote before any work starts.",
+        "cta": "See all our prices"
+      },
+      "faq": {
+        "heading": "Questions About Online Shops",
+        "subtitle": "What retailers ask us before committing.",
+        "q1": {
+          "question": "Is a custom shop cheaper than Shopify or Wix in the long run?",
+          "answer": "It depends how long you run it and how many add-ons you need. A hosted platform costs roughly £20 to £100 a month once you include apps, and that never stops. A custom shop costs more up front and then only hosting, which for a static-fronted shop is a few pounds a month. Most shops break even somewhere in years two to four. If you expect to trade for a season, rent. If this is the business, own it."
+        },
+        "q2": {
+          "question": "Can I manage products myself without touching code?",
+          "answer": "Yes. You get an admin area for adding and editing products, prices, stock levels and images. If your catalogue lives somewhere else already — a spreadsheet, an EPOS system, an accounting package — we can often import from it or sync with it instead of asking you to retype everything."
+        },
+        "q3": {
+          "question": "How are card payments kept secure?",
+          "answer": "Card details are entered directly into Stripe or PayPal's own hosted checkout, so they never pass through or get stored on your site. That keeps you out of scope for the strictest parts of PCI DSS compliance. Your site only ever sees whether a payment succeeded and what was ordered."
+        },
+        "q4": {
+          "question": "Will my products show up in Google Shopping?",
+          "answer": "We add Product structured data to every item — price, availability, images, description — which is what Google reads to build a shopping result. That makes eligibility possible; it does not guarantee placement, and paid Shopping campaigns are a separate thing we do not run for you."
+        },
+        "q5": {
+          "question": "What about postage, VAT and returns?",
+          "answer": "Postage rules, delivery zones and collection options are set up as part of the build, so a Cardiff customer and a customer in Inverness can be charged differently. VAT is handled correctly on invoices. Returns policy wording is yours to decide, but we will make sure it is published where UK consumer law requires it to be."
+        }
+      },
+      "relatedHeading": "Related"
+    },
+    "booking": {
+      "navLabel": "Booking Systems",
+      "kicker": "Online Booking Systems — Bridgend, Cardiff, Swansea and South Wales",
+      "title": "Stop Losing Bookings to Voicemail",
+      "subtitle": "Let customers book themselves in, day or night, without you answering the phone mid-appointment.",
+      "intro": {
+        "p1": "Most missed bookings are not lost to a competitor's better prices. They are lost because somebody rang while you had your hands full, did not leave a message, and booked with whoever answered next. An online booking system takes that call for you at eleven at night, on a Sunday, and while you are with a client.",
+        "p2": "We build booking into your own website rather than sending customers off to a third-party marketplace. That matters for two reasons: the booking is yours, not a lead rented from a platform that also advertises your competitors, and the customer stays on your site where your prices, your photos and your reviews are.",
+        "p3": "Where you already use Booksy, Square or a similar system and it works, we integrate rather than replace — your site becomes the front door and the existing system stays the diary. Where there is no system, or the one you have does not fit how you actually work, we build one that does."
+      },
+      "included": {
+        "heading": "What a Booking System Includes",
+        "subtitle": "The parts that stop double-bookings and no-shows.",
+        "f1": "Real availability from your own calendar, not a guess",
+        "f2": "Service and duration selection, so a cut and a colour book different slots",
+        "f3": "Staff or resource assignment, where more than one person takes bookings",
+        "f4": "Confirmation and reminder emails, which is what actually reduces no-shows",
+        "f5": "Deposits or full payment up front through Stripe, if you want them",
+        "f6": "Cancellation and rescheduling rules you set, enforced automatically",
+        "f7": "Booksy, Square, Google Calendar or Outlook integration where you already use one",
+        "f8": "Buffer times, opening hours and holiday blocks that respect how you work"
+      },
+      "whoFor": {
+        "heading": "Who Buys This",
+        "subtitle": "The businesses that get the most out of online booking.",
+        "item1Title": "Salons and Barbers",
+        "item1Description": "Hairdressers, barbers and beauty salons where a full diary is the whole business and every unanswered call is a lost slot.",
+        "item2Title": "Clinics and Practitioners",
+        "item2Description": "Physios, dentists, podiatrists, counsellors and therapists who need appointment types of different lengths and sensible cancellation rules.",
+        "item3Title": "Trades Doing Site Visits",
+        "item3Description": "Electricians, plumbers and surveyors booking quote visits, where travel time between jobs has to be built into the slot.",
+        "item4Title": "Classes and Group Sessions",
+        "item4Description": "Fitness instructors, tutors and workshop hosts selling places in a session rather than one-to-one appointments, with capacity limits and waiting lists."
+      },
+      "pricing": {
+        "heading": "What a Booking System Costs",
+        "body": "A website with booking or payment integration starts at £1,250, and typically takes 2 to 3 weeks of build time. That covers a working booking flow wired into your calendar with confirmations and reminders. More complex setups — multiple staff, deposits, class capacity, syncing with an existing system — are quoted on top, in writing, before work starts.",
+        "cta": "See all our prices"
+      },
+      "faq": {
+        "heading": "Questions About Booking Systems",
+        "subtitle": "What salons and trades ask us before committing.",
+        "q1": {
+          "question": "I already use Booksy. Do I have to move?",
+          "answer": "No. If Booksy works for you, keep it — we integrate with it so your website shows real availability and hands the booking over cleanly. Moving only makes sense if you are paying for something you have outgrown, or if the platform's own marketing is pushing your customers towards competitors."
+        },
+        "q2": {
+          "question": "Will it stop people booking when I'm closed or already busy?",
+          "answer": "Yes. Availability comes from your actual calendar, with your opening hours, buffer times, holidays and existing appointments all respected. Double-booking is prevented at the point of booking, not discovered afterwards."
+        },
+        "q3": {
+          "question": "Can I take a deposit to cut down no-shows?",
+          "answer": "Yes, through Stripe — either a fixed deposit or the full amount at the point of booking, and you choose which services require it. Combined with automatic reminder emails, that is the most effective no-show reduction available. Your cancellation and refund terms are yours to set; we implement them."
+        },
+        "q4": {
+          "question": "What happens if a customer wants to change or cancel?",
+          "answer": "They get a link in their confirmation email that lets them reschedule or cancel within the window you set — say, more than 24 hours ahead. Outside that window it tells them to contact you instead. That keeps the easy changes off your phone without letting somebody cancel a Saturday slot at nine on Saturday morning."
+        },
+        "q5": {
+          "question": "Do I need a whole new website to get booking?",
+          "answer": "Not necessarily. If your existing site is in reasonable shape and you own it, booking can often be added to it. If it is on a platform you cannot modify, or it is slow and hard to find in search, you will usually get more out of rebuilding — and the booking work is the same either way."
+        }
+      },
+      "relatedHeading": "Related"
+    },
+    "businessWebsite": {
+      "navLabel": "Business Websites",
+      "kicker": "Business Website Design — Bridgend, Cardiff, Swansea and South Wales",
+      "title": "A Website That Does the Explaining For You",
+      "subtitle": "For businesses that do not sell online and do not take bookings, but do need to be found, understood and trusted.",
+      "intro": {
+        "p1": "Plenty of businesses do not need a shop or a booking diary. They need a site that turns up when somebody searches, answers the questions they get asked on every first call, and looks like it belongs to a firm worth hiring. That is a smaller job than an online shop and it should cost less.",
+        "p2": "The work is mostly in structure and clarity. One page per service, so each can rank for what people actually search — a roofer needs separate pages for flat roofs, repairs and emergency callouts, not one page listing all three. Clear contact details on every page. Enough detail that a prospect can qualify themselves before they ring you, which means the calls you do get are better ones.",
+        "p3": "This is also where the professional-credibility argument lives. If somebody is about to hand you a serious brief, they will look you up first. A site that loads fast, reads well and works properly on a phone is doing quiet work in that moment, and a slow one built in 2014 is doing the opposite."
+      },
+      "included": {
+        "heading": "What a Business Website Includes",
+        "subtitle": "The structure that makes a site findable and credible.",
+        "f1": "A dedicated page per service, so each can rank for its own search",
+        "f2": "Location and service-area content targeting the towns you actually cover",
+        "f3": "Contact details and a working enquiry form reachable from every page",
+        "f4": "Photo galleries of finished work, optimised so they do not slow the site",
+        "f5": "LocalBusiness structured data feeding Google's local results",
+        "f6": "WCAG 2.2 Level AA accessibility and Core Web Vitals performance targets",
+        "f7": "Cookie banner and privacy policy meeting UK GDPR and PECR",
+        "f8": "Content you can update yourself — hours, prices, a new service"
+      },
+      "whoFor": {
+        "heading": "Who Buys This",
+        "subtitle": "Businesses whose website is a credential, not a till.",
+        "item1Title": "Professional Services",
+        "item1Description": "Accountants, solicitors, surveyors and independent consultants, where the site has to stand up to being checked before somebody commits to a serious piece of work.",
+        "item2Title": "Trades With Multiple Specialisms",
+        "item2Description": "Builders, roofers and electricians who lose search traffic by cramming every service onto one page instead of giving each its own.",
+        "item3Title": "Established Firms With Ageing Sites",
+        "item3Description": "Businesses whose site was fine a decade ago and is now slow, unreadable on a phone, and quietly costing them the enquiries they never hear about.",
+        "item4Title": "Organisations and Community Groups",
+        "item4Description": "Charities, clubs and community organisations that need clear public information, accessible to everyone, without a budget for an agency."
+      },
+      "pricing": {
+        "heading": "What a Business Website Costs",
+        "body": "A straightforward business website starts at £650 for up to five pages, typically 1 to 2 weeks of build time once we have your content. More pages, more service-specific landing pages, or content that needs writing rather than supplying will lift that, and you get the exact figure in a written quote before anything starts.",
+        "cta": "See all our prices"
+      },
+      "faq": {
+        "heading": "Questions About Business Websites",
+        "subtitle": "What firms ask us before committing.",
+        "q1": {
+          "question": "How many pages do I actually need?",
+          "answer": "Usually one per thing you want to be found for, plus the basics. A plumber offering boiler repairs, bathroom installation and emergency callouts needs three service pages, not one page listing all three — search engines match a search to a page, so more focused pages means more chances to be found. Five pages covers most small firms; ten is common once each service gets its own."
+        },
+        "q2": {
+          "question": "Do I have to write all the content myself?",
+          "answer": "No, but supplying the raw material speeds things up and keeps the cost down. Most small business sites need 500 to 1,000 words in total. If you can give us rough notes, a list of services and some photos, we can shape it. If you would rather we wrote it from an interview, that is quoted as extra."
+        },
+        "q3": {
+          "question": "What if I already have a domain or a half-finished site?",
+          "answer": "That is normal and usually fine. We can take over an existing domain without any downtime, and an unfinished site is often still useful for its content and photos even if the build itself is not worth keeping. You keep ownership of the domain throughout."
+        },
+        "q4": {
+          "question": "Can it grow later if the business grows?",
+          "answer": "Yes. Adding pages, a blog, booking or a shop later is normal. Because you own the code and it is built on standard technology rather than a proprietary platform, expanding it does not mean starting again — and it does not have to be us that does it."
+        },
+        "q5": {
+          "question": "Will it work properly on phones?",
+          "answer": "Yes, and that is where most of your visitors will be. Every site is designed mobile-first and built to pass Google's Core Web Vitals thresholds, which measure loading, responsiveness and visual stability on real devices rather than on a developer's fast desktop."
+        }
+      },
+      "relatedHeading": "Related"
+    },
+    "bespoke": {
+      "navLabel": "Bespoke Web Applications",
+      "kicker": "Bespoke Software Development — South Wales and Remote",
+      "title": "When Off-the-Shelf Software Nearly Fits",
+      "subtitle": "Client portals, internal tools, dashboards and workflow systems, built around how your business actually runs.",
+      "intro": {
+        "p1": "Most businesses reach a point where the software is shaping the process rather than serving it. The signs are familiar: a spreadsheet nobody is allowed to touch, the same information typed into three systems, a monthly report that takes somebody two days, or a subscription paid for one feature out of forty.",
+        "p2": "We design and build custom web applications for that gap — client portals, booking and scheduling systems, internal dashboards, quoting tools, and integrations that make existing systems talk to each other. Built on .NET or Node with a typed front end, hosted on Microsoft Azure, with the same accessibility and security standards as everything else we ship.",
+        "p3": "We are also happy to tell you when not to build. If a £30-a-month product does ninety per cent of what you need, buying it is the right answer and we will say so. Custom is worth it when the remaining ten per cent is where your margin lives, when nothing off the shelf fits the workflow, or when the licence cost across your team has outgrown the cost of owning the thing outright."
+      },
+      "included": {
+        "heading": "How a Bespoke Build Runs",
+        "subtitle": "Delivered in milestones, so you see working software early.",
+        "f1": "Discovery that starts with the business problem, not a feature list",
+        "f2": "User stories with acceptance criteria, and wireframes for key screens",
+        "f3": "Phasing options, so you can launch a useful first version and expand",
+        "f4": "Working software on a staging URL at every milestone, not a progress bar",
+        "f5": "REST or GraphQL APIs with OpenAPI contracts and versioning",
+        "f6": "Authentication, role-based permissions and audit trails where needed",
+        "f7": "Automated tests, type checking and CI so it survives future changes",
+        "f8": "Source code in your own repository from day one — no lock-in"
+      },
+      "whoFor": {
+        "heading": "Who Buys This",
+        "subtitle": "The problems that justify building rather than buying.",
+        "item1Title": "Client Portals",
+        "item1Description": "Firms whose clients need somewhere to see their own documents, jobs, invoices or progress without emailing to ask.",
+        "item2Title": "Internal Tools and Dashboards",
+        "item2Description": "Businesses running on a fragile spreadsheet that has become load-bearing, where one wrong paste breaks a week.",
+        "item3Title": "Integrations Between Systems",
+        "item3Description": "Organisations retyping the same data into a booking system, an accounts package and a CRM because none of them talk to each other.",
+        "item4Title": "Products and Platforms",
+        "item4Description": "Businesses whose software is the thing they sell, needing a technical partner to build or extend it properly rather than quickly."
+      },
+      "pricing": {
+        "heading": "What Bespoke Software Costs",
+        "body": "Bespoke work is quoted individually. There is no honest range to publish, because scope varies more than in any other kind of project — the same three-word description can mean two weeks or six months. What you get instead is a free discovery conversation, an honest view on whether building is even the right call, and a fixed written quote with assumptions and exclusions stated plainly before any work begins.",
+        "cta": "Start with a conversation"
+      },
+      "faq": {
+        "heading": "Questions About Bespoke Software",
+        "subtitle": "What businesses ask before commissioning a build.",
+        "q1": {
+          "question": "How do I know custom is the right answer?",
+          "answer": "Usually it is not, and we will tell you. Buy off the shelf when a product covers the need at a sensible licence cost. Build when nothing fits the workflow, when the workaround is costing real hours every week, when the data has to move between systems that will not talk, or when per-seat licensing across a growing team has passed what owning it would cost. Discovery exists to answer that question before you spend anything."
+        },
+        "q2": {
+          "question": "Can we start small instead of committing to everything?",
+          "answer": "Yes, and for most projects that is what we recommend. The first phase delivers a genuinely useful slice — one workflow, one user group — that you can put in front of real users. What they do with it usually changes what phase two should be, which is a much cheaper way to find that out than building the whole thing first."
+        },
+        "q3": {
+          "question": "What happens if we want to take it elsewhere?",
+          "answer": "Everything transfers. Source code lives in a repository you own from day one, hosting and third-party accounts are in your name, and handover includes documentation and a walkthrough. There are no proprietary platforms and no clauses making it awkward to leave. That is deliberate — it keeps us honest."
+        },
+        "q4": {
+          "question": "Is AI used in the build, and is our data safe?",
+          "answer": "AI tools assist with scaffolding, boilerplate, refactoring, test generation and documentation, and every line is reviewed by a human and tested before it ships. AI tooling is not given access to production data, secrets, API keys or client information. If your project has specific data handling requirements, say so at discovery and they go into the written scope."
+        },
+        "q5": {
+          "question": "What about support after launch?",
+          "answer": "Discussed openly and never compulsory. Options range from a maintenance retainer covering fixes, dependency updates and small changes, through to a clean handover to your own team or another developer. The codebase is documented either way. You are not locked into us to keep your own software running."
+        }
+      },
+      "relatedHeading": "Related"
+    }
   }
 }

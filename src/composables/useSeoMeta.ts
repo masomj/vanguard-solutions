@@ -7,29 +7,31 @@ import { SITE_ORIGIN, businessId, siteSchemaGraph } from '../seo/siteSchema'
 import { useLocale } from './useLocale'
 
 /**
- * Breadcrumb label per page, keyed by the route's `seoKey`. Pages absent from
- * this map (home, 404) get no breadcrumb, which is correct -- a breadcrumb
- * trail of one item is noise.
+ * i18n label for each locale-agnostic path. The breadcrumb trail is built from
+ * the path's own segments, so `/services/ecommerce` yields Home > Services >
+ * Online Shops automatically. A new page needs one line here and nothing else.
+ * Paths absent from this map (home, 404) get no breadcrumb -- a trail of one
+ * item is noise.
  */
-const breadcrumbLabelKeys: Record<string, string> = {
-  about: 'nav.about',
-  services: 'nav.services',
-  technology: 'nav.technology',
-  process: 'nav.process',
-  smallBusiness: 'nav.smallBusiness',
-  pricing: 'nav.pricing',
-  contact: 'nav.contact',
-  cookiePolicy: 'footer.cookiePolicy',
+const pathLabelKeys: Record<string, string> = {
+  '/about': 'nav.about',
+  '/services': 'nav.services',
+  '/services/ecommerce': 'serviceDetail.ecommerce.navLabel',
+  '/services/booking-systems': 'serviceDetail.booking.navLabel',
+  '/services/business-website': 'serviceDetail.businessWebsite.navLabel',
+  '/services/bespoke-software': 'serviceDetail.bespoke.navLabel',
+  '/technology': 'nav.technology',
+  '/process': 'nav.process',
+  '/small-business': 'nav.smallBusiness',
+  '/pricing': 'nav.pricing',
+  '/contact': 'nav.contact',
+  '/cookie-policy': 'footer.cookiePolicy',
 }
 
-// NOTE: never put a "|" in an i18n message. vue-i18n treats it as the
-// pluralisation separator, silently splits the message and returns a single
-// branch -- which truncated every page title on this site until Aug 2026.
-// Use an en dash (–) as the title separator instead.
 export function useSeoMeta() {
   const route = useRoute()
   const { t } = useI18n()
-  const { locale, alternatePaths } = useLocale()
+  const { locale, basePath, alternatePaths } = useLocale()
 
   const seoKey = computed(() => (route.meta.seoKey as string | undefined) ?? null)
   const seoBaseKey = computed(() => (seoKey.value ? `seo.${seoKey.value}` : null))
@@ -95,8 +97,21 @@ export function useSeoMeta() {
    * to wire schema into the page component.
    */
   const breadcrumbSchema = computed(() => {
-    const labelKey = seoKey.value ? breadcrumbLabelKeys[seoKey.value] : undefined
-    if (!labelKey) return null
+    if (isNotFound.value || basePath.value === '/') return null
+
+    const segments = basePath.value.split('/').filter(Boolean)
+    const trail: { name: string; item: string }[] = []
+
+    for (let i = 0; i < segments.length; i += 1) {
+      const path = `/${segments.slice(0, i + 1).join('/')}`
+      const labelKey = pathLabelKeys[path]
+      if (!labelKey) return null
+
+      trail.push({
+        name: t(labelKey),
+        item: `${SITE_ORIGIN}${localisePath(path, locale.value)}`,
+      })
+    }
 
     return {
       '@context': 'https://schema.org',
@@ -106,14 +121,14 @@ export function useSeoMeta() {
           '@type': 'ListItem',
           position: 1,
           name: t('nav.home'),
-          item: `${SITE_ORIGIN}${localisePath('/', locale.value)}/`.replace(/\/+$/, '/'),
+          item: `${SITE_ORIGIN}${localisePath('/', locale.value) || '/'}`,
         },
-        {
+        ...trail.map((crumb, index) => ({
           '@type': 'ListItem',
-          position: 2,
-          name: t(labelKey),
-          item: canonical.value,
-        },
+          position: index + 2,
+          name: crumb.name,
+          item: crumb.item,
+        })),
       ],
     }
   })

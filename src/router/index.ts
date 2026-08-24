@@ -11,6 +11,10 @@ const pages = [
   { path: 'process', name: 'process', component: () => import('../pages/ProcessPage.vue'), seoKey: 'process' },
   { path: 'small-business', name: 'small-business', component: () => import('../pages/SmallBusinessPage.vue'), seoKey: 'smallBusiness' },
   { path: 'pricing', name: 'pricing', component: () => import('../pages/PricingPage.vue'), seoKey: 'pricing' },
+  { path: 'services/ecommerce', name: 'service-ecommerce', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceEcommerce', serviceKey: 'ecommerce' },
+  { path: 'services/booking-systems', name: 'service-booking', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceBooking', serviceKey: 'booking' },
+  { path: 'services/business-website', name: 'service-business-website', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceBusinessWebsite', serviceKey: 'businessWebsite' },
+  { path: 'services/bespoke-software', name: 'service-bespoke', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceBespoke', serviceKey: 'bespoke' },
   { path: 'contact', name: 'contact', component: () => import('../pages/ContactPage.vue'), seoKey: 'contact' },
   { path: 'cookie-policy', name: 'cookie-policy', component: () => import('../pages/CookiePolicyPage.vue'), seoKey: 'cookiePolicy' },
 ] as const
@@ -30,7 +34,7 @@ function buildLocaleRoutes(locale: AppLocale): RouteRecordRaw[] {
       path,
       name: routeName(page.name, locale),
       component: page.component,
-      meta: { seoKey: page.seoKey, locale },
+      meta: { seoKey: page.seoKey, locale, serviceKey: 'serviceKey' in page ? page.serviceKey : undefined },
     } as RouteRecordRaw
   })
 }

@@ -164,7 +164,7 @@
       "q1": "Faint mae gwefan busnes bach yn ei gostio yn Ne Cymru?",
       "a1": "Mae ein gwefannau busnesau bach yn dechrau o £650 am hyd at bum tudalen gyda ffurflen gyswllt weithredol. Mae safleoedd gydag archebu ar-lein neu integreiddio taliadau yn dechrau o £1,250. Mae siopau ar-lein a chymwysiadau gwe pwrpasol yn cael eu dyfynnu'n unigol gan fod y cwmpas yn amrywio gormod i'w brisio'n deg mewn ystod.",
       "q2": "Faint o amser mae'n ei gymryd i adeiladu gwefan?",
-      "a2": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 4 i 8 wythnos ar ôl y cyswllt cyntaf. Mae safle pum tudalen syml yn 1 i 2 wythnos o amser adeiladu unwaith y bydd gennym eich cynnwys; darganfod, cynnig, ac amser adolygu chi yw'r gweddill.",
+      "a2": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 2 i 6 wythnos ar ôl y cyswllt cyntaf. Mae safle pum tudalen syml yn 1 i 2 wythnos o amser adeiladu unwaith y bydd gennym eich cynnwys; darganfod, cynnig a'ch amser adolygu chi yw'r gweddill.",
       "q3": "Ydych chi'n adeiladu gwefannau yn Gymraeg?",
       "a3": "Ydym. Rydym yn adeiladu safleoedd dwyieithog Saesneg a Chymraeg gydag URLau ar wahân i bob iaith, nodiadau hreflang cywir a thagio iaith priodol, yn hytrach na widget cyfieithu wedi'i folltio ymlaen wedyn. Mae'r wefan hon wedi'i hadeiladu felly.",
       "q4": "Pa ardaloedd rydych chi'n eu gwasanaethu?",
@@ -464,28 +464,28 @@
   "process": {
     "hero": {
       "title": "Sut Rydym yn Gweithio",
-      "subtitle": "Proses bum cam, wedi'i gyrru gan gerrig milltir, o'r ymholiad cyntaf i'r lansiad — 4 i 8 wythnos fel arfer, gyda meddalwedd weithredol a nodyn cynnydd ysgrifenedig ar bob cam."
+      "subtitle": "Proses bum cam, wedi'i gyrru gan gerrig milltir, o'r ymholiad cyntaf i'r lansiad — 2 i 6 wythnos fel arfer, gyda meddalwedd weithredol a nodyn cynnydd ysgrifenedig ar bob cam."
     },
     "lifecycle": {
       "heading": "Y Cylch Bywyd Darparu",
-      "subtitle": "Pum cam o gyswllt cyntaf i lansio a throsglwyddo. Mae'r rhan fwyaf o safleoedd busnesau bach yn rhedeg 4 i 8 wythnos o'r dechrau i'r diwedd.",
+      "subtitle": "Pum cam o gyswllt cyntaf i lansio a throsglwyddo. Mae'r rhan fwyaf o safleoedd busnesau bach yn rhedeg 2 i 6 wythnos o'r dechrau i'r diwedd.",
       "outputs": "Beth rydych chi'n ei gael",
       "stage1": {
-        "title": "Cais a Darganfod (2 i 3 diwrnod)",
+        "title": "Cais a Darganfod (1 i 2 ddiwrnod)",
         "description": "Mae cyswllt cyntaf yn sgwrs ddi-rwymedigaeth i ddeall eich problem fusnes yn hytrach na neidio'n syth i ateb. Rydym yn gofyn am eich defnyddwyr, sut mae llwyddiant yn edrych, systemau a chyfyngiadau presennol, ystod cyllideb a therfynau amser realistig. Mae darganfod yn ymwneud â deall y broblem yn ddigon dwys i gynnig yr ateb cywir, nid yr un hawsaf i'w adeiladu.",
         "output1": "Crynodeb ysgrifenedig o'r hyn a drafodwyd",
         "output2": "Datganiad problem cytunedig",
         "output3": "Arwydd o ymarferoldeb ac addasrwydd"
       },
       "stage2": {
-        "title": "Cynnig (2 i 5 diwrnod)",
+        "title": "Cynnig (2 i 3 diwrnod)",
         "description": "Mae cynnig ysgrifenedig yn cynnwys cwmpas, dull argymelledig a dewisiadau technoleg gyda rhesymau, rhagdybiaethau ac eithrio wedi'u datgan yn blaen. Ar gyfer adeiladau mwy, darperir opsiynau cyfnodi fel y gallwch ddechrau'n fach ac ehangu'n ddiweddarach. Mae'r cynnig yn cynnwys cost sefydlog a chynllun cerrig milltir sy'n dangos beth sy'n cael ei gyflenwi a phryd. Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, felly ni ddylai'r ffigwr yn y cynnig fod yn syndod. Dim jargon, dim padio — mae popeth yn cael ei esbonio mewn Saesneg plaen.",
         "output1": "Dogfen gynnig gyda chwmpas a dull",
         "output2": "Toriad cerrig milltir gyda chyflenwadau",
         "output3": "Datganiad clir o'r hyn sydd ac nad yw wedi'i gynnwys"
       },
       "stage3": {
-        "title": "Mireinio Gofynion (hyd at wythnos)",
+        "title": "Mireinio Gofynion (2 i 5 diwrnod)",
         "description": "Unwaith y cytunir ar y cynnig, rydym yn ei droi'n rhywbeth y gellir ei adeiladu: straeon defnyddwyr gyda meini prawf derbyn, fframiau gwifrau neu brototeipiau cliciadwy ar gyfer sgriniau allweddol, modelau data a phwyntiau integreiddio, a gofynion anfethol yn cwmpasu lefel hygyrchedd, cyllidebau perfformiad, diogelwch a thrin GDPR. Mae popeth yn cael ei flaenoriaethu mewn stôr gefn fel y gallwn addasu cwmpas os oes angen heb dynnu'r prosiect oddi ar y cledrau.",
         "output1": "Stôr gefn cytunedig o straeon defnyddwyr gyda meini prawf derbyn",
         "output2": "Fframiau gwifrau neu brototeipiau ar gyfer sgriniau allweddol",
@@ -493,14 +493,14 @@
         "output4": "Gofynion anfethol (hygyrchedd, perfformiad, diogelwch)"
       },
       "stage4": {
-        "title": "Adeiladu mewn Cerrig Milltir (2 i 4 wythnos)",
+        "title": "Adeiladu mewn Cerrig Milltir (1 i 3 wythnos)",
         "description": "Mae datblygiad yn cael ei dorri i iteriadau byr, pob un yn gorffen gyda meddalwedd weithredol y gallwch glicio drwyddo ar URL llwyfannu. Mae galwadau gwirio rheolaidd yn adolygu cynnydd ac yn datglymu materion. Mae nodyn cynnydd ysgrifenedig yn cyd-fynd â phob carreg filltir yn dangos beth newidiodd, beth nesaf, a llosgi cyllideb yn erbyn y cynllun. Mae ceisiadau newid yn cael eu trin yn agored — mae effaith ar gost a llinell amser yn cael ei ddangos cyn i unrhyw beth gael ei gytuno. Mae integreiddio parhaus yn rhedeg lint, gwiriadau math, profion a gwiriadau hygyrchedd ar bob newid, gan ddal problemau'n gynnar.",
         "output1": "Meddalwedd weithredol pob carreg filltir ar amgylchedd llwyfannu",
         "output2": "Nodiadau cynnydd ysgrifenedig gyda dangosiadau",
         "output3": "Stôr gefn wedi'i diweddaru yn adlewyrchu blaenoriaethau cyfredol"
       },
       "stage5": {
-        "title": "Lansio, Trosglwyddo a Chymorth (tua wythnos)",
+        "title": "Lansio, Trosglwyddo a Chymorth (2 i 4 diwrnod)",
         "description": "Mae lansio yn dilyn rhestr wirio cyn-lansio: archwiliad hygyrchedd, pas perfformiad, adolygiad diogelwch, gweirio dadansoddeg a chaniatâd, metadata SEO, a ffurfweddu copïau wrth gefn. Mae darparu yn cael ei reoli gyda gweithdrefnau rholio'n ôl yn eu lle. Mae trosglwyddo yn cynnwys dogfennaeth, sesiwn trwodd, a throsglwyddiad perchnogaeth cod ffynhonnell a chyfrifon seilwaith. Mae trefniadau cymorth a chynnal a chadw parhaus dewisol yn cael eu trafod yn agored, ond nid ydych byth wedi'ch cloi i mewn — mae popeth yn eiddo i chi i'w gymryd i rywle arall os ydych yn dewis.",
         "output1": "Safle byw neu gymhwysiad ar seilwaith cynhyrchu",
         "output2": "Dogfennaeth trosglwyddo a thrwodd gweinyddol",
@@ -627,7 +627,7 @@
       },
       "q7": {
         "question": "Faint o amser mae'n ei gymryd i adeiladu gwefan busnes bach?",
-        "answer": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 4 i 8 wythnos ar ôl y cyswllt cyntaf. Mae hynny'n torri i lawr yn 2 i 3 diwrnod o ddarganfod, 2 i 5 diwrnod i gynhyrchu'r cynnig, hyd at wythnos yn mireinio gofynion, 2 i 4 wythnos o adeiladu mewn cerrig milltir wythnosol, a thua wythnos ar gyfer lansio a throsglwyddo. Y newidyn mwyaf o ddigon yw pa mor gyflym allwch chi gael eich cynnwys i ni — lluniau, disgrifiadau gwasanaeth, oriau agor. Mae prosiectau sy'n stolio bron bob amser yn stolio yn fanna."
+        "answer": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 2 i 6 wythnos ar ôl y cyswllt cyntaf. Mae hynny'n torri i lawr yn 1 i 2 ddiwrnod o ddarganfod, 2 i 3 diwrnod i gynhyrchu'r cynnig, 2 i 5 diwrnod yn mireinio gofynion, 1 i 3 wythnos o adeiladu mewn cerrig milltir wythnosol, a 2 i 4 diwrnod ar gyfer lansio a throsglwyddo. Yr amrywiolyn mwyaf o bell ffordd yw pa mor gyflym y gallwch chi gael eich cynnwys atom — lluniau, disgrifiadau gwasanaeth, oriau agor. Mae prosiectau sy'n arafu bron bob amser yn arafu yno."
       },
       "q8": {
         "question": "Ddylwn i ddefnyddio stiwdio fach neu asiantaeth fawr?",
@@ -900,7 +900,7 @@
     },
     "process": {
       "title": "Sut Rydym yn Gweithio: Ein Proses – Vanguard Digital Solutions",
-      "description": "Mae'r rhan fwyaf o wefannau busnes bach yn lansio mewn 4 i 8 wythnos. Pum cam o'r ymholiad cyntaf i'r trosglwyddo, gyda cherrig milltir clir.",
+      "description": "Mae'r rhan fwyaf o wefannau busnes bach yn lansio mewn 2 i 6 wythnos. Pum cam o'r ymholiad cyntaf i'r trosglwyddo, gyda cherrig milltir clir.",
       "ogTitle": "Sut Rydym yn Gweithio: O'r Ymholiad i'r Lansiad",
       "ogDescription": "Proses glir, wedi'i gyrru gan gerrig milltir o ddarganfod i lansio gyda gatiau ansawdd, darparu gyda chymorth AI, a chyfathrebu tryloyw."
     },
@@ -965,7 +965,7 @@
     "business": {
       "name": "Busnes",
       "price": "O £1,250",
-      "timeline": "Fel arfer 3 i 4 wythnos o amser adeiladu",
+      "timeline": "Fel arfer 2 i 3 wythnos o amser adeiladu",
       "tagline": "Popeth yn y pecyn Cychwynnol, ynghyd â'r rhannau sy'n troi pori'n archebion.",
       "forWho": "Yn iawn i salon, clinig neu grefftwr sydd eisiau i ymholiadau ac apwyntiadau gael eu trin yn awtomatig yn hytrach na thrwy chwarae tag ar y ffôn.",
       "f1": "Popeth yn y pecyn Cychwynnol",
@@ -1015,5 +1015,72 @@
     "ctaBody": "Dywedwch wrthym beth rydych chi'n ceisio ei wneud a chewch ateb syth am gwmpas, cost ac amserlen. Dim rhwymedigaeth a dim pwysau gwerthu.",
     "ctaPrimary": "Cael Dyfynbris",
     "ctaSecondary": "Gweld Beth Sydd wedi'i Gynnwys"
+  },
+  "serviceDetail": {
+    "ecommerce": {
+      "navLabel": "Siopau Ar-lein",
+      "kicker": "Dylunio Gwefan eFasnach — Caerdydd, Abertawe, Casnewydd a De Cymru",
+      "title": "Siopau Ar-lein sy'n Perthyn i Chi, Nid ar Rent",
+      "subtitle": "Siop ar-lein go iawn gyda thaliadau diogel, rheolaeth stoc go iawn a dim ffi lwyfan fisol ynghlwm wrth y safle ei hun.",
+      "intro": {
+        "p1": "Rydym yn adeiladu siopau ar-lein i fanwerthwyr annibynnol ledled De Cymru — o siop un cynnyrch i gatalog llawn gyda fariantau, lefelau stoc ac ardaloedd danfon. Mae taliadau'n rhedeg trwy Stripe neu PayPal, felly nid yw data cerdyn byth yn cyffwrdd â'ch safle ac nid ydych yn atebol am ei storio.",
+        "p2": "Y gwahaniaeth pwysig o lwyfan wedi'i letya yw perchnogaeth. Mae siop Shopify neu Wix ar rent: nid yw'r tanysgrifiad byth yn dod i ben, mae'r apiau'n cael eu bilio ar wahân, ac ni allwch symud y siop i unrhyw le arall. Mae'r hyn rydym yn ei adeiladu yn perthyn i chi — y cod, y parth, y cyfrif cynnal — heb ffi fisol orfodol i'r safle barhau i fodoli.",
+        "p3": "Nid yw'r cyfaddawd hwnnw'n iawn i bawb. Os ydych chi'n gwerthu llond llaw o eitemau ac eisiau bod yn fyw yr wythnos hon, mae llwyfan wedi'i letya wir yn ateb gwell a byddwn yn dweud hynny wrthych. Mae pwrpasol yn talu ar ei ganfed pan fo'r siop yn sianel werthu go iawn, pan fo angen iddi edrych yn wahanol i eiddo unrhyw un arall, neu pan fo'n rhaid iddi siarad â systemau stoc neu gyfrifon rydych chi eisoes yn eu rhedeg."
+      },
+      "included": {
+        "heading": "Beth Mae Siop Ar-lein yn ei Gynnwys",
+        "subtitle": "Popeth sydd ei angen i gymryd arian yn ddiogel a chyflawni archeb.",
+        "f1": "Catalog cynnyrch gyda chategorïau, fariantau, delweddau a chwilio",
+        "f2": "Talu diogel trwy Stripe neu PayPal — dim data cerdyn wedi'i storio ar eich safle",
+        "f3": "Olrhain stoc, gyda thrin stoc isel ac allan o stoc",
+        "f4": "Ardaloedd danfon, rheolau postio ac opsiynau casglu",
+        "f5": "E-byst cadarnhau archeb ac anfon i chi a'r cwsmer",
+        "f6": "Trin TAW a chofnodion archebion y gellir eu llwytho i lawr ar gyfer eich cadw cyfrifon",
+        "f7": "Marc-i-fyny sgema cynnyrch fel y gall eitemau ymddangos yng nghanlyniadau Google Shopping",
+        "f8": "Talu symudol-gyntaf — problem ffôn yw'r rhan fwyaf o fasgedi wedi'u gadael"
+      },
+      "whoFor": {
+        "heading": "Pwy sy'n Prynu Hwn",
+        "subtitle": "Y siopau rydym yn eu hadeiladu amlaf.",
+        "item1Title": "Manwerthwyr Annibynnol",
+        "item1Description": "Siopau â phresenoldeb ffisegol ym Mhen-y-bont, Caerdydd neu Abertawe sydd eisiau gwerthu y tu hwnt i'r drws heb roi canran i farchnadle.",
+        "item2Title": "Gwneuthurwyr a Chynhyrchwyr Bach",
+        "item2Description": "Pobyddion, bragwyr, crefftwyr a chynhyrchwyr bwyd bach sy'n gwerthu ystod ffocysedig, yn aml gyda ffenestri danfon neu gasglu lleol.",
+        "item3Title": "Cyflenwyr Masnach",
+        "item3Description": "Busnesau sy'n gwerthu i fusnesau eraill, lle mae cyfrifon, haenau prisio masnach ac archebu ailadroddus yn bwysicach na blaen siop ddel.",
+        "item4Title": "Unrhyw un sy'n Tyfu y Tu Hwnt i Lwyfan wedi'i Letya",
+        "item4Description": "Siopau sy'n talu am stac o apiau llwyfan i weithio o gwmpas cyfyngiadau, lle mae'r cyfanswm misol wedi mynd yn dawel heibio i'r hyn y byddai adeiladu pwrpasol wedi'i gostio."
+      },
+      "pricing": {
+        "heading": "Beth Mae Siop Ar-lein yn ei Gostio",
+        "body": "Mae siopau ar-lein yn cael eu dyfynnu'n unigol yn hytrach na'u prisio o restr, gan fod siop deg cynnyrch a siop dau gan cynnyrch yn swyddi gwirioneddol wahanol. Y newidynnau yw maint y catalog, faint o opsiynau cynnyrch sydd gan bob eitem, beth sy'n gorfod integreiddio â'ch stoc neu'ch cyfrifon, ac a oes angen ysgrifennu ffotograffiaeth a disgrifiadau cynnyrch. Rydych yn cael dyfynbris ysgrifenedig sefydlog cyn i unrhyw waith ddechrau.",
+        "cta": "Gweler ein holl brisiau"
+      },
+      "faq": {
+        "heading": "Cwestiynau am Siopau Ar-lein",
+        "subtitle": "Beth mae manwerthwyr yn ei ofyn i ni cyn ymrwymo.",
+        "q1": {
+          "question": "A yw siop bwrpasol yn rhatach na Shopify neu Wix yn y tymor hir?",
+          "answer": "Mae'n dibynnu am ba mor hir rydych chi'n ei redeg a faint o ychwanegiadau sydd eu hangen arnoch. Mae llwyfan wedi'i letya'n costio tua £20 i £100 y mis unwaith y byddwch yn cynnwys apiau, ac nid yw hynny byth yn stopio. Mae siop bwrpasol yn costio mwy ymlaen llaw ac wedyn dim ond cynnal, sydd ar gyfer siop â blaen statig yn ychydig bunnoedd y mis. Mae'r rhan fwyaf o siopau'n torri'n gyfartal rywle ym mlynyddoedd dau i bedwar. Os ydych chi'n disgwyl masnachu am dymor, rhentwch. Os mai dyma'r busnes, perchennwch ef."
+        },
+        "q2": {
+          "question": "A allaf reoli cynhyrchion fy hun heb gyffwrdd â chod?",
+          "answer": "Gallwch. Rydych yn cael ardal weinyddu ar gyfer ychwanegu a golygu cynhyrchion, prisiau, lefelau stoc a delweddau. Os yw'ch catalog eisoes yn byw yn rhywle arall — taenlen, system EPOS, pecyn cyfrifon — yn aml gallwn fewnforio ohono neu gydweddu ag ef yn hytrach na gofyn i chi aildeipio popeth."
+        },
+        "q3": {
+          "question": "Sut mae taliadau cerdyn yn cael eu cadw'n ddiogel?",
+          "answer": "Mae manylion cerdyn yn cael eu rhoi'n uniongyrchol i mewn i'r man talu wedi'i letya ei hun gan Stripe neu PayPal, felly nid ydynt byth yn mynd trwy'ch safle na'u storio arno. Mae hynny'n eich cadw allan o gwmpas rhannau mwyaf llym cydymffurfiaeth PCI DSS. Nid yw'ch safle byth ond yn gweld a lwyddodd taliad a beth gafodd ei archebu."
+        },
+        "q4": {
+          "question": "A fydd fy nghynhyrchion yn ymddangos yn Google Shopping?",
+          "answer": "Rydym yn ychwanegu data strwythuredig Cynnyrch at bob eitem — pris, argaeledd, delweddau, disgrifiad — sef yr hyn mae Google yn ei ddarllen i adeiladu canlyniad siopa. Mae hynny'n gwneud cymhwysedd yn bosibl; nid yw'n gwarantu lleoliad, ac mae ymgyrchoedd Shopping taledig yn beth ar wahân nad ydym yn ei redeg i chi."
+        },
+        "q5": {
+          "question": "Beth am bostio, TAW a dychweliadau?",
+          "answer": "Mae rheolau postio, ardaloedd danfon ac opsiynau casglu'n cael eu gosod fel rhan o'r adeiladu, fel y gellir codi tâl gwahanol ar gwsmer o Gaerdydd a chwsmer yn Inverness. Mae TAW yn cael ei drin yn gywir ar anfonebau. Mater i chi yw geiriad polisi dychweliadau, ond byddwn yn sicrhau ei fod wedi'i gyhoeddi lle mae cyfraith defnyddwyr y DU yn ei gwneud yn ofynnol iddo fod."
+        }
+      },
+      "relatedHeading": "Cysylltiedig"
+    }
   }
 }
