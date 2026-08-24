@@ -1,4 +1,4 @@
-﻿# Normalise line endings. The repo is edited on Windows and built on Linux in
+# Normalise line endings. The repo is edited on Windows and built on Linux in
 # CI, so without this every file shows as modified purely from CRLF churn and
 # git status stops being useful for spotting real changes.
 * text=auto eol=lf
