@@ -10,13 +10,18 @@ export interface ContactFormData {
   company: string
   phone: string
   projectType: string
+  budget: string
+  timeline: string
   message: string
+  /** Honeypot. Hidden from real users, so anything in it came from a bot. */
+  website: string
 }
 
 export interface FormErrors {
   name?: string
   email?: string
   projectType?: string
+  budget?: string
   message?: string
 }
 

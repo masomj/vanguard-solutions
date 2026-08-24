@@ -1,6 +1,7 @@
 <template>
-  <form @submit.prevent="onSubmit" aria-labelledby="contact-form-heading" novalidate class="space-y-1">
-    <h2 id="contact-form-heading" class="text-2xl font-bold text-text-primary mb-6">{{ t('contactForm.heading') }}</h2>
+  <form @submit.prevent="onSubmit" aria-labelledby="contact-form-heading" novalidate class="relative space-y-1">
+    <h2 id="contact-form-heading" class="text-2xl font-bold text-text-primary mb-2">{{ t('contactForm.heading') }}</h2>
+    <p class="text-text-secondary mb-6 leading-relaxed">{{ t('contactForm.intro') }}</p>
 
     <div
       v-if="errorList.length"
@@ -65,7 +66,7 @@
         </template>
       </FormField>
 
-      <FormField field-id="phone" :label="t('contactForm.phone')">
+      <FormField field-id="phone" :label="t('contactForm.phone')" :hint="t('contactForm.phoneHint')">
         <template #default="{ id, ariaAttrs }">
           <input
             :id="id"
@@ -89,14 +90,66 @@
           class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
         >
           <option value="" disabled>{{ t('contactForm.projectTypePlaceholder') }}</option>
-          <option value="tender">{{ t('contactForm.optionTender') }}</option>
-          <option value="development">{{ t('contactForm.optionDevelopment') }}</option>
+          <option value="small-business">{{ t('contactForm.optionSmallBusiness') }}</option>
+          <option value="ecommerce">{{ t('contactForm.optionEcommerce') }}</option>
+          <option value="booking">{{ t('contactForm.optionBooking') }}</option>
+          <option value="bespoke">{{ t('contactForm.optionBespoke') }}</option>
+          <option value="support">{{ t('contactForm.optionSupport') }}</option>
           <option value="other">{{ t('contactForm.optionOther') }}</option>
         </select>
       </template>
     </FormField>
 
-    <FormField field-id="message" :label="t('contactForm.message')" required :error="errors.message">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
+      <FormField
+        field-id="budget"
+        :label="t('contactForm.budget')"
+        :hint="t('contactForm.budgetHint')"
+        required
+        :error="errors.budget"
+      >
+        <template #default="{ id, ariaAttrs }">
+          <select
+            :id="id"
+            v-model="form.budget"
+            v-bind="ariaAttrs"
+            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
+          >
+            <option value="" disabled>{{ t('contactForm.budgetPlaceholder') }}</option>
+            <option value="under-650">{{ t('contactForm.budgetUnder650') }}</option>
+            <option value="650-1250">{{ t('contactForm.budget650to1250') }}</option>
+            <option value="1250-3000">{{ t('contactForm.budget1250to3000') }}</option>
+            <option value="over-3000">{{ t('contactForm.budgetOver3000') }}</option>
+            <option value="unsure">{{ t('contactForm.budgetUnsure') }}</option>
+          </select>
+        </template>
+      </FormField>
+
+      <FormField field-id="timeline" :label="t('contactForm.timeline')" :hint="t('contactForm.timelineHint')">
+        <template #default="{ id, ariaAttrs }">
+          <select
+            :id="id"
+            v-model="form.timeline"
+            v-bind="ariaAttrs"
+            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
+          >
+            <option value="">{{ t('contactForm.timelinePlaceholder') }}</option>
+            <option value="asap">{{ t('contactForm.timelineAsap') }}</option>
+            <option value="1-3-months">{{ t('contactForm.timeline1to3') }}</option>
+            <option value="flexible">{{ t('contactForm.timelineFlexible') }}</option>
+            <option value="exploring">{{ t('contactForm.timelineExploring') }}</option>
+          </select>
+        </template>
+      </FormField>
+    </div>
+
+    <FormField
+      field-id="message"
+      :label="t('contactForm.message')"
+      :hint="t('contactForm.messageHint')"
+      required
+      :error="errors.message"
+    >
       <template #default="{ id, ariaAttrs }">
         <textarea
           :id="id"
@@ -104,14 +157,31 @@
           rows="5"
           v-bind="ariaAttrs"
           class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors resize-y"
-          :placeholder="t('contactForm.placeholderMessage')"
         />
       </template>
     </FormField>
 
-    <BaseButton type="submit" variant="accent" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto">
-      {{ status === 'submitting' ? t('contactForm.sending') : t('contactForm.send') }}
-    </BaseButton>
+    <!-- Honeypot. Moved off-screen rather than display:none, which more bots
+         detect and skip. aria-hidden and tabindex="-1" keep it away from
+         screen reader and keyboard users, so only a bot can fill it. -->
+    <div class="absolute w-px h-px overflow-hidden" style="left: -9999px" aria-hidden="true">
+      <label for="website">Website</label>
+      <input
+        id="website"
+        v-model="form.website"
+        type="text"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+      <BaseButton type="submit" variant="accent" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto shrink-0">
+        {{ status === 'submitting' ? t('contactForm.sending') : t('contactForm.send') }}
+      </BaseButton>
+      <p class="text-sm text-text-secondary leading-relaxed m-0">{{ t('contactForm.replyPromise') }}</p>
+    </div>
 
     <div role="status" aria-live="polite" class="mt-4">
       <p v-if="status === 'success'" class="p-4 bg-success/10 text-success rounded-md font-medium">
@@ -137,7 +207,7 @@ const { form, errors, status, statusMessage, submit } = useContactForm()
 const errorSummary = ref<HTMLDivElement | null>(null)
 
 // Visual field order, so the summary reads in the same order as the form.
-const FIELD_ORDER = ['name', 'email', 'projectType', 'message'] as const
+const FIELD_ORDER = ['name', 'email', 'projectType', 'budget', 'message'] as const
 
 const errorList = computed(() =>
   FIELD_ORDER
