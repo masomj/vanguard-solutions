@@ -26,7 +26,8 @@
     "mobileNavigation": "Llywio symudol",
     "toggleNavigationMenu": "Toglo dewislen llywio",
     "closeNavigationMenu": "Cau dewislen llywio",
-    "homeAria": "Cartref Vanguard Digital Solutions"
+    "homeAria": "Cartref Vanguard Digital Solutions",
+    "breadcrumb": "Briwsion Bara"
   },
   "skipLink": {
     "main": "Neidio i brif gynnwys"
@@ -336,7 +337,8 @@
       "link3Description": "Gwefannau fforddiadwy, proffesiynol i fusnesau lleol ledled De Cymru. Gweler beth sydd wedi'i gynnwys, beth mae'n ei gostio, a sut mae'r broses yn rhedeg.",
       "link4Title": "Beth Mae'n Ei Gostio",
       "link4Description": "Prisiau cychwynnol wedi'u cyhoeddi ar gyfer gwefannau, integreiddio archebu a'r cynllun gofal misol dewisol. Dim angen galwad ffôn i ganfod yr ystod bras."
-    }
+    },
+    "readMore": "Darllen mwy am {service}"
   },
   "technology": {
     "hero": {
@@ -888,9 +890,33 @@
     },
     "services": {
       "title": "Gwasanaethau Dylunio Gwe De Cymru – Vanguard Digital Solutions",
-      "description": "Gwefannau busnesau bach, siopau ar-lein, systemau archebu a chymwysiadau gwe pwrpasol i fusnesau yng Nghaerdydd, Abertawe, Casnewydd a Phen-y-bont. Prisiau gonest.",
+      "description": "Gwefannau busnesau bach, siopau ar-lein, systemau archebu ac apiau gwe pwrpasol i fusnesau yng Nghaerdydd, Abertawe, Casnewydd a Phen-y-bont.",
       "ogTitle": "Gwasanaethau Dylunio Gwe yn Ne Cymru",
       "ogDescription": "Gwefannau busnesau bach, eFasnach, safleoedd archebu, safleoedd gwybodaeth, ac apiau gwe pwrpasol o dîm ym Mhen-y-bont."
+    },
+    "serviceEcommerce": {
+      "title": "Dylunio Gwefan eFasnach – Caerdydd, Abertawe a De Cymru",
+      "description": "Siopau ar-lein pwrpasol i fanwerthwyr annibynnol ledled De Cymru. Taliadau diogel Stripe a PayPal, rheolaeth stoc go iawn, a dim ffi llwyfan ar rent.",
+      "ogTitle": "Siopau Ar-lein wedi'u Hadeiladu i Fanwerthwyr De Cymru",
+      "ogDescription": "eFasnach bwrpasol gyda thaliadau diogel, rheolaeth stoc a pherchnogaeth lawn — dim llwyfan ar rent a dim ffi fisol orfodol."
+    },
+    "serviceBooking": {
+      "title": "Systemau Archebu Ar-lein – Pen-y-bont, Caerdydd ac Abertawe",
+      "description": "Archebu ar-lein yn eich gwefan eich hun. Argaeledd go iawn, blaendaliadau, atgoffiadau awtomatig, ac integreiddio Booksy neu Square. O £1,250.",
+      "ogTitle": "Stopiwch Golli Archebion i Beiriant Ateb",
+      "ogDescription": "Systemau archebu i salonau, clinigau a chrefftwyr ledled De Cymru, wedi'u cysylltu â'ch calendr eich hun gydag atgoffiadau awtomatig."
+    },
+    "serviceBusinessWebsite": {
+      "title": "Dylunio Gwefan Busnes – Pen-y-bont, Caerdydd ac Abertawe",
+      "description": "Gwefannau busnes proffesiynol o £650 i gwmnïau ledled De Cymru. Tudalen bwrpasol fesul gwasanaeth, SEO lleol, a chynnwys y gallwch ei ddiweddaru eich hun.",
+      "ogTitle": "Gwefannau Busnes i Gwmnïau De Cymru",
+      "ogDescription": "Gwefannau clir, cyflym, hawdd dod o hyd iddynt ar gyfer gwasanaethau proffesiynol, crefftwyr a sefydliadau ledled De Cymru. O £650."
+    },
+    "serviceBespoke": {
+      "title": "Datblygu Meddalwedd Pwrpasol – De Cymru",
+      "description": "Cymwysiadau gwe pwrpasol, pyrth cleientiaid, dangosfyrddau mewnol ac integreiddiadau system, wedi'u hadeiladu ar .NET a Microsoft Azure i fusnesau De Cymru.",
+      "ogTitle": "Cymwysiadau Gwe Pwrpasol a Meddalwedd Bwrpasol",
+      "ogDescription": "Pyrth cleientiaid, offer mewnol ac integreiddiadau wedi'u hadeiladu o gwmpas sut mae'ch busnes yn gweithio, gyda chyngor gonest am pryd i beidio ag adeiladu."
     },
     "technology": {
       "title": "Technoleg Datblygu Gwe – Vanguard Digital Solutions",
@@ -1078,6 +1104,201 @@
         "q5": {
           "question": "Beth am bostio, TAW a dychweliadau?",
           "answer": "Mae rheolau postio, ardaloedd danfon ac opsiynau casglu'n cael eu gosod fel rhan o'r adeiladu, fel y gellir codi tâl gwahanol ar gwsmer o Gaerdydd a chwsmer yn Inverness. Mae TAW yn cael ei drin yn gywir ar anfonebau. Mater i chi yw geiriad polisi dychweliadau, ond byddwn yn sicrhau ei fod wedi'i gyhoeddi lle mae cyfraith defnyddwyr y DU yn ei gwneud yn ofynnol iddo fod."
+        }
+      },
+      "relatedHeading": "Cysylltiedig"
+    },
+    "booking": {
+      "navLabel": "Systemau Archebu",
+      "kicker": "Systemau Archebu Ar-lein — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
+      "title": "Stopiwch Golli Archebion i Beiriant Ateb",
+      "subtitle": "Gadewch i gwsmeriaid archebu eu hunain, ddydd neu nos, heb i chi ateb y ffôn ganol apwyntiad.",
+      "intro": {
+        "p1": "Nid yw'r rhan fwyaf o archebion coll yn cael eu colli i brisiau gwell cystadleuydd. Maent yn cael eu colli am fod rhywun wedi ffonio pan oedd eich dwylo'n llawn, heb adael neges, ac wedi archebu gyda phwy bynnag atebodd nesaf. Mae system archebu ar-lein yn cymryd yr alwad honno i chi am un ar ddeg y nos, ar ddydd Sul, ac tra rydych chi gyda chleient.",
+        "p2": "Rydym yn adeiladu archebu i mewn i'ch gwefan eich hun yn hytrach nag anfon cwsmeriaid i ffwrdd at farchnadle trydydd parti. Mae hynny'n bwysig am ddau reswm: eich archeb chi ydyw, nid arweiniad ar rent gan lwyfan sydd hefyd yn hysbysebu eich cystadleuwyr, ac mae'r cwsmer yn aros ar eich safle lle mae eich prisiau, eich lluniau a'ch adolygiadau.",
+        "p3": "Lle rydych chi eisoes yn defnyddio Booksy, Square neu system debyg ac mae'n gweithio, rydym yn integreiddio yn hytrach na disodli — mae'ch safle'n dod yn ddrws ffrynt a'r system bresennol yn aros yn ddyddiadur. Lle nad oes system, neu nad yw'r un sydd gennych yn ffitio sut rydych chi wir yn gweithio, rydym yn adeiladu un sy'n gwneud hynny."
+      },
+      "included": {
+        "heading": "Beth Mae System Archebu yn ei Gynnwys",
+        "subtitle": "Y darnau sy'n stopio archebion dwbl a phobl yn peidio â throi i fyny.",
+        "f1": "Argaeledd go iawn o'ch calendr eich hun, nid dyfaliad",
+        "f2": "Dewis gwasanaeth a hyd, fel bod toriad a lliw yn archebu slotiau gwahanol",
+        "f3": "Neilltuo staff neu adnoddau, lle mae mwy nag un person yn cymryd archebion",
+        "f4": "E-byst cadarnhau ac atgoffa, sef yr hyn sydd wir yn lleihau pobl yn peidio â throi i fyny",
+        "f5": "Blaendaliadau neu daliad llawn ymlaen llaw trwy Stripe, os ydych chi eu heisiau",
+        "f6": "Rheolau canslo ac aildrefnu rydych chi'n eu gosod, wedi'u gorfodi'n awtomatig",
+        "f7": "Integreiddio Booksy, Square, Google Calendar neu Outlook lle rydych chi eisoes yn defnyddio un",
+        "f8": "Amseroedd byffer, oriau agor a blociau gwyliau sy'n parchu sut rydych chi'n gweithio"
+      },
+      "whoFor": {
+        "heading": "Pwy sy'n Prynu Hwn",
+        "subtitle": "Y busnesau sy'n cael y mwyaf allan o archebu ar-lein.",
+        "item1Title": "Salonau a Barbwyr",
+        "item1Description": "Trin gwallt, barbwyr a salonau harddwch lle mae dyddiadur llawn yn fusnes cyfan a phob galwad heb ei hateb yn slot coll.",
+        "item2Title": "Clinigau ac Ymarferwyr",
+        "item2Description": "Ffisiotherapyddion, deintyddion, podiatryddion, cwnselwyr a therapyddion sydd angen mathau o apwyntiadau o wahanol hyd a rheolau canslo synhwyrol.",
+        "item3Title": "Crefftwyr sy'n Gwneud Ymweliadau Safle",
+        "item3Description": "Trydanwyr, plymwyr a syrfewyr yn archebu ymweliadau dyfynbris, lle mae'n rhaid adeiladu amser teithio rhwng swyddi i mewn i'r slot.",
+        "item4Title": "Dosbarthiadau a Sesiynau Grŵp",
+        "item4Description": "Hyfforddwyr ffitrwydd, tiwtoriaid a chynhalwyr gweithdai'n gwerthu lleoedd mewn sesiwn yn hytrach nag apwyntiadau un i un, gyda therfynau capasiti a rhestrau aros."
+      },
+      "pricing": {
+        "heading": "Beth Mae System Archebu yn ei Gostio",
+        "body": "Mae gwefan gydag integreiddio archebu neu daliadau'n dechrau o £1,250, ac fel arfer yn cymryd 2 i 3 wythnos o amser adeiladu. Mae hynny'n cwmpasu llif archebu gweithredol wedi'i gysylltu â'ch calendr gyda chadarnhadau ac atgoffiadau. Mae gosodiadau mwy cymhleth — sawl aelod staff, blaendaliadau, capasiti dosbarth, cydweddu â system bresennol — yn cael eu dyfynnu ar ben hynny, yn ysgrifenedig, cyn i'r gwaith ddechrau.",
+        "cta": "Gweler ein holl brisiau"
+      },
+      "faq": {
+        "heading": "Cwestiynau am Systemau Archebu",
+        "subtitle": "Beth mae salonau a chrefftwyr yn ei ofyn i ni cyn ymrwymo.",
+        "q1": {
+          "question": "Rwy'n defnyddio Booksy eisoes. A oes rhaid i mi symud?",
+          "answer": "Nac oes. Os yw Booksy'n gweithio i chi, cadwch ef — rydym yn integreiddio ag ef fel bod eich gwefan yn dangos argaeledd go iawn ac yn trosglwyddo'r archeb yn lân. Dim ond os ydych chi'n talu am rywbeth rydych chi wedi tyfu y tu hwnt iddo, neu os yw marchnata'r llwyfan ei hun yn gwthio'ch cwsmeriaid tuag at gystadleuwyr, mae symud yn gwneud synnwyr."
+        },
+        "q2": {
+          "question": "A fydd yn stopio pobl rhag archebu pan fyddaf ar gau neu eisoes yn brysur?",
+          "answer": "Bydd. Mae argaeledd yn dod o'ch calendr gwirioneddol, gyda'ch oriau agor, amseroedd byffer, gwyliau ac apwyntiadau presennol i gyd yn cael eu parchu. Mae archebu dwbl yn cael ei atal ar bwynt yr archeb, nid ei ddarganfod wedyn."
+        },
+        "q3": {
+          "question": "A allaf gymryd blaendal i leihau pobl yn peidio â throi i fyny?",
+          "answer": "Gallwch, trwy Stripe — naill ai blaendal sefydlog neu'r swm llawn ar bwynt yr archeb, a chi sy'n dewis pa wasanaethau sydd ei angen arno. Ynghyd ag e-byst atgoffa awtomatig, dyna'r ffordd fwyaf effeithiol o leihau pobl yn peidio â throi i fyny sydd ar gael. Chi sy'n gosod eich telerau canslo ac ad-dalu; rydym ni'n eu gweithredu."
+        },
+        "q4": {
+          "question": "Beth sy'n digwydd os yw cwsmer eisiau newid neu ganslo?",
+          "answer": "Maent yn cael dolen yn eu e-bost cadarnhau sy'n gadael iddynt aildrefnu neu ganslo o fewn y ffenestr rydych chi'n ei gosod — dyweder, mwy na 24 awr ymlaen llaw. Y tu allan i'r ffenestr honno mae'n dweud wrthynt i gysylltu â chi yn lle hynny. Mae hynny'n cadw'r newidiadau hawdd oddi ar eich ffôn heb adael i rywun ganslo slot dydd Sadwrn am naw ar fore dydd Sadwrn."
+        },
+        "q5": {
+          "question": "A oes angen gwefan gwbl newydd arnaf i gael archebu?",
+          "answer": "Ddim o reidrwydd. Os yw'ch safle presennol mewn cyflwr rhesymol a chi sy'n berchen arno, yn aml gellir ychwanegu archebu ato. Os yw ar lwyfan na allwch ei addasu, neu os yw'n araf ac yn anodd dod o hyd iddo mewn chwiliad, fel arfer byddwch yn cael mwy allan o ailadeiladu — ac mae'r gwaith archebu yr un fath beth bynnag."
+        }
+      },
+      "relatedHeading": "Cysylltiedig"
+    },
+    "businessWebsite": {
+      "navLabel": "Gwefannau Busnes",
+      "kicker": "Dylunio Gwefan Busnes — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
+      "title": "Gwefan sy'n Gwneud yr Esbonio Drosoch",
+      "subtitle": "Ar gyfer busnesau nad ydynt yn gwerthu ar-lein ac nad ydynt yn cymryd archebion, ond sydd angen cael eu canfod, eu deall a'u trystio.",
+      "intro": {
+        "p1": "Nid oes angen siop na dyddiadur archebu ar lawer o fusnesau. Mae angen safle arnynt sy'n ymddangos pan fydd rhywun yn chwilio, yn ateb y cwestiynau maen nhw'n cael eu gofyn ar bob galwad gyntaf, ac sy'n edrych fel ei fod yn perthyn i gwmni sy'n werth ei gyflogi. Mae hynny'n swydd lai nag siop ar-lein a dylai gostio llai.",
+        "p2": "Mae'r gwaith yn bennaf mewn strwythur ac eglurder. Un dudalen fesul gwasanaeth, fel y gall pob un raddio am yr hyn mae pobl wir yn ei chwilio — mae angen tudalennau ar wahân ar doeon i doeon fflat, atgyweiriadau a galwadau brys, nid un dudalen yn rhestru'r tri. Manylion cyswllt clir ar bob tudalen. Digon o fanylion fel y gall darpar gwsmer gymhwyso ei hun cyn iddo eich ffonio, sy'n golygu bod yr alwadau rydych chi'n eu cael yn well rhai.",
+        "p3": "Dyma hefyd lle mae'r ddadl dros hygrededd proffesiynol yn byw. Os yw rhywun ar fin rhoi briff difrifol i chi, byddant yn eich edrych i fyny yn gyntaf. Mae safle sy'n llwytho'n gyflym, yn darllen yn dda ac yn gweithio'n iawn ar ffôn yn gwneud gwaith tawel yn y foment honno, ac mae un araf a adeiladwyd yn 2014 yn gwneud y gwrthwyneb."
+      },
+      "included": {
+        "heading": "Beth Mae Gwefan Busnes yn ei Gynnwys",
+        "subtitle": "Y strwythur sy'n gwneud safle'n hawdd dod o hyd iddo ac yn hygredol.",
+        "f1": "Tudalen bwrpasol fesul gwasanaeth, fel y gall pob un raddio am ei chwiliad ei hun",
+        "f2": "Cynnwys lleoliad ac ardal wasanaeth yn targedu'r trefi rydych chi wir yn eu gwasanaethu",
+        "f3": "Manylion cyswllt a ffurflen ymholiad weithredol y gellir ei chyrraedd o bob tudalen",
+        "f4": "Orielau lluniau o waith gorffenedig, wedi'u optimeiddio fel nad ydynt yn arafu'r safle",
+        "f5": "Data strwythuredig LocalBusiness yn bwydo canlyniadau lleol Google",
+        "f6": "Targedau hygyrchedd WCAG 2.2 Lefel AA a pherfformiad Core Web Vitals",
+        "f7": "Baner cwcis a pholisi preifatrwydd yn bodloni UK GDPR a PECR",
+        "f8": "Cynnwys y gallwch ei ddiweddaru eich hun — oriau, prisiau, gwasanaeth newydd"
+      },
+      "whoFor": {
+        "heading": "Pwy sy'n Prynu Hwn",
+        "subtitle": "Busnesau lle mae eu gwefan yn gymhwyster, nid til.",
+        "item1Title": "Gwasanaethau Proffesiynol",
+        "item1Description": "Cyfrifwyr, cyfreithwyr, syrfewyr ac ymgynghorwyr annibynnol, lle mae'n rhaid i'r safle sefyll i fyny i gael ei wirio cyn i rywun ymrwymo i ddarn difrifol o waith.",
+        "item2Title": "Crefftwyr â Sawl Arbenigedd",
+        "item2Description": "Adeiladwyr, toewyr a thrydanwyr sy'n colli traffig chwilio trwy stwffio pob gwasanaeth ar un dudalen yn hytrach na rhoi un iddi hi ei hun.",
+        "item3Title": "Cwmnïau Sefydledig â Safleoedd sy'n Heneiddio",
+        "item3Description": "Busnesau lle roedd eu safle'n iawn ddegawd yn ôl ac sydd bellach yn araf, yn anodd ei ddarllen ar ffôn, ac yn dawel yn costio iddynt yr ymholiadau nad ydynt byth yn clywed amdanynt.",
+        "item4Title": "Sefydliadau a Grwpiau Cymunedol",
+        "item4Description": "Elusennau, clybiau a sefydliadau cymunedol sydd angen gwybodaeth gyhoeddus glir, hygyrch i bawb, heb gyllideb ar gyfer asiantaeth."
+      },
+      "pricing": {
+        "heading": "Beth Mae Gwefan Busnes yn ei Gostio",
+        "body": "Mae gwefan fusnes syml yn dechrau o £650 ar gyfer hyd at bum tudalen, fel arfer 1 i 2 wythnos o amser adeiladu unwaith y bydd gennym eich cynnwys. Bydd mwy o dudalennau, mwy o dudalennau glanio penodol i wasanaeth, neu gynnwys sydd angen ei ysgrifennu yn hytrach na'i gyflenwi, yn codi hynny, a chewch y ffigwr union mewn dyfynbris ysgrifenedig cyn i ddim byd ddechrau.",
+        "cta": "Gweler ein holl brisiau"
+      },
+      "faq": {
+        "heading": "Cwestiynau am Wefannau Busnes",
+        "subtitle": "Beth mae cwmnïau'n ei ofyn i ni cyn ymrwymo.",
+        "q1": {
+          "question": "Faint o dudalennau sydd eu hangen arnaf mewn gwirionedd?",
+          "answer": "Fel arfer un fesul peth rydych chi eisiau cael eich canfod amdano, ynghyd â'r pethau sylfaenol. Mae angen tri thudalen gwasanaeth ar blymwr sy'n cynnig atgyweirio boeleri, gosod ystafelloedd ymolchi a galwadau brys, nid un dudalen yn rhestru'r tri — mae peiriannau chwilio'n paru chwiliad â thudalen, felly mae tudalennau mwy ffocysedig yn golygu mwy o gyfleoedd i gael eich canfod. Mae pum tudalen yn cwmpasu'r rhan fwyaf o gwmnïau bach; mae deg yn gyffredin unwaith y bydd pob gwasanaeth yn cael ei dudalen ei hun."
+        },
+        "q2": {
+          "question": "A oes rhaid i mi ysgrifennu'r holl gynnwys fy hun?",
+          "answer": "Nac oes, ond mae cyflenwi'r deunydd crai yn cyflymu pethau ac yn cadw'r gost i lawr. Mae angen 500 i 1,000 gair yn gyfan gwbl ar y rhan fwyaf o safleoedd busnesau bach. Os gallwch roi nodiadau bras i ni, rhestr o wasanaethau a rhai lluniau, gallwn ei siapio. Os byddai'n well gennych i ni ei ysgrifennu o gyfweliad, dyfynnir hynny fel ychwanegol."
+        },
+        "q3": {
+          "question": "Beth os oes gen i barth eisoes neu safle hanner gorffen?",
+          "answer": "Mae hynny'n normal ac fel arfer yn iawn. Gallwn gymryd drosodd barth presennol heb unrhyw amser segur, ac mae safle heb ei orffen yn aml dal yn ddefnyddiol am ei gynnwys a'i luniau hyd yn oed os nad yw'r adeiladu ei hun werth ei gadw. Rydych chi'n cadw perchnogaeth y parth trwy'r amser."
+        },
+        "q4": {
+          "question": "A all dyfu'n ddiweddarach os yw'r busnes yn tyfu?",
+          "answer": "Gall. Mae ychwanegu tudalennau, blog, archebu neu siop yn ddiweddarach yn normal. Am mai chi sy'n berchen ar y cod ac mae wedi'i adeiladu ar dechnoleg safonol yn hytrach na llwyfan perchnogol, nid yw ei ehangu'n golygu dechrau eto — ac nid oes rhaid mai ni sy'n ei wneud."
+        },
+        "q5": {
+          "question": "A fydd yn gweithio'n iawn ar ffonau?",
+          "answer": "Bydd, a dyna lle bydd y rhan fwyaf o'ch ymwelwyr. Mae pob safle wedi'i ddylunio'n symudol-gyntaf ac wedi'i adeiladu i basio trothwyon Core Web Vitals Google, sy'n mesur llwytho, ymatebolrwydd a sefydlogrwydd gweledol ar ddyfeisiau go iawn yn hytrach nag ar ddesg gyflym datblygwr."
+        }
+      },
+      "relatedHeading": "Cysylltiedig"
+    },
+    "bespoke": {
+      "navLabel": "Cymwysiadau Gwe Pwrpasol",
+      "kicker": "Datblygu Meddalwedd Pwrpasol — De Cymru ac o Bell",
+      "title": "Pan Fo Meddalwedd Parod Bron â Ffitio",
+      "subtitle": "Pyrth cleientiaid, offer mewnol, dangosfyrddau a systemau llif gwaith, wedi'u hadeiladu o gwmpas sut mae'ch busnes wir yn rhedeg.",
+      "intro": {
+        "p1": "Mae'r rhan fwyaf o fusnesau'n cyrraedd pwynt lle mae'r feddalwedd yn siapio'r broses yn hytrach na'i gwasanaethu. Mae'r arwyddion yn gyfarwydd: taenlen nad oes gan neb hawl i'w chyffwrdd, yr un wybodaeth wedi'i theipio i mewn i dri system, adroddiad misol sy'n cymryd deuddydd i rywun, neu danysgrifiad yn cael ei dalu am un nodwedd allan o ddeugain.",
+        "p2": "Rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol ar gyfer y bwlch hwnnw — pyrth cleientiaid, systemau archebu a threfnu, dangosfyrddau mewnol, offer dyfynbrisio, ac integreiddiadau sy'n gwneud i systemau presennol siarad â'i gilydd. Wedi'u hadeiladu ar .NET neu Node gyda blaen wedi'i deipio, wedi'u cynnal ar Microsoft Azure, gyda'r un safonau hygyrchedd a diogelwch â phopeth arall rydym yn ei gyflenwi.",
+        "p3": "Rydym hefyd yn hapus i ddweud wrthych pryd i beidio ag adeiladu. Os yw cynnyrch am £30 y mis yn gwneud naw deg y cant o'r hyn sydd ei angen arnoch, prynu ef yw'r ateb cywir a byddwn yn dweud hynny. Mae pwrpasol yn talu ar ei ganfed pan fo'r deg y cant sy'n weddill yn lle mae'ch elw'n byw, pan nad oes dim byd parod yn ffitio'r llif gwaith, neu pan fo cost trwyddedu ar draws eich tîm wedi tyfu y tu hwnt i gost perchen ar y peth yn gyfan gwbl."
+      },
+      "included": {
+        "heading": "Sut Mae Adeiladu Pwrpasol yn Rhedeg",
+        "subtitle": "Wedi'i gyflenwi mewn cerrig milltir, fel eich bod yn gweld meddalwedd yn gweithio'n gynnar.",
+        "f1": "Darganfod sy'n dechrau gyda phroblem y busnes, nid rhestr nodweddion",
+        "f2": "Straeon defnyddwyr gyda meini prawf derbyn, a fframiau gwifrau ar gyfer sgriniau allweddol",
+        "f3": "Opsiynau cyfnodi, fel y gallwch lansio fersiwn gyntaf ddefnyddiol ac ehangu",
+        "f4": "Meddalwedd sy'n gweithio ar URL staging ym mhob carreg filltir, nid bar cynnydd",
+        "f5": "APIau REST neu GraphQL gyda chontractau OpenAPI a fersiynu",
+        "f6": "Dilysu, caniatâd yn seiliedig ar rôl a llwybrau archwilio lle bo angen",
+        "f7": "Profion awtomataidd, gwirio math a CI fel ei fod yn goroesi newidiadau'r dyfodol",
+        "f8": "Cod ffynhonnell yn eich ystorfa eich hun o'r diwrnod cyntaf — dim clymu i mewn"
+      },
+      "whoFor": {
+        "heading": "Pwy sy'n Prynu Hwn",
+        "subtitle": "Y problemau sy'n cyfiawnhau adeiladu yn hytrach na phrynu.",
+        "item1Title": "Pyrth Cleientiaid",
+        "item1Description": "Cwmnïau lle mae angen i'w cleientiaid weld eu dogfennau, swyddi, anfonebau neu gynnydd eu hunain heb orfod e-bostio i ofyn.",
+        "item2Title": "Offer Mewnol a Dangosfyrddau",
+        "item2Description": "Busnesau sy'n rhedeg ar daenlen fregus sydd wedi dod yn faich-gario, lle mae un gludiad anghywir yn torri wythnos.",
+        "item3Title": "Integreiddiadau Rhwng Systemau",
+        "item3Description": "Sefydliadau'n aildeipio'r un data i mewn i system archebu, pecyn cyfrifon a CRM am nad oes yr un ohonynt yn siarad â'i gilydd.",
+        "item4Title": "Cynhyrchion a Llwyfannau",
+        "item4Description": "Busnesau lle mai eu meddalwedd yw'r peth maen nhw'n ei werthu, sydd angen partner technegol i'w adeiladu neu ei ymestyn yn iawn yn hytrach na chyflym."
+      },
+      "pricing": {
+        "heading": "Beth Mae Meddalwedd Pwrpasol yn ei Gostio",
+        "body": "Mae gwaith pwrpasol yn cael ei ddyfynnu'n unigol. Nid oes ystod onest i'w chyhoeddi, gan fod cwmpas yn amrywio mwy nag mewn unrhyw fath arall o brosiect — gall yr un disgrifiad tri gair olygu pythefnos neu chwe mis. Yr hyn rydych chi'n ei gael yn lle hynny yw sgwrs ddarganfod am ddim, barn onest ar p'un a yw adeiladu hyd yn oed y penderfyniad cywir, a dyfynbris ysgrifenedig sefydlog gyda rhagdybiaethau ac eithriadau wedi'u datgan yn blaen cyn i unrhyw waith ddechrau.",
+        "cta": "Dechreuwch gyda sgwrs"
+      },
+      "faq": {
+        "heading": "Cwestiynau am Feddalwedd Pwrpasol",
+        "subtitle": "Beth mae busnesau'n ei ofyn cyn comisiynu adeiladu.",
+        "q1": {
+          "question": "Sut ydw i'n gwybod mai pwrpasol yw'r ateb cywir?",
+          "answer": "Fel arfer nid dyna ydyw, a byddwn yn dweud hynny wrthych. Prynwch oddi ar y silff pan fo cynnyrch yn cwmpasu'r angen am gost drwyddedu synhwyrol. Adeiladwch pan nad oes dim byd yn ffitio'r llif gwaith, pan fo'r ateb dros dro'n costio oriau go iawn bob wythnos, pan fo'n rhaid i'r data symud rhwng systemau na fyddant yn siarad, neu pan fo trwyddedu fesul sedd ar draws tîm sy'n tyfu wedi mynd heibio i'r hyn y byddai ei berchen yn ei gostio. Mae darganfod yn bodoli i ateb y cwestiwn hwnnw cyn i chi wario dim."
+        },
+        "q2": {
+          "question": "A allwn ni ddechrau'n fach yn hytrach nag ymrwymo i bopeth?",
+          "answer": "Gallwch, a dyna rydym yn ei argymell ar gyfer y rhan fwyaf o brosiectau. Mae'r cam cyntaf yn cyflenwi sleisen wirioneddol ddefnyddiol — un llif gwaith, un grŵp defnyddwyr — y gallwch ei roi o flaen defnyddwyr go iawn. Mae'r hyn maen nhw'n ei wneud ag ef fel arfer yn newid yr hyn ddylai fod yn gam dau, sy'n ffordd lawer rhatach o ganfod hynny na adeiladu'r cyfan yn gyntaf."
+        },
+        "q3": {
+          "question": "Beth sy'n digwydd os ydym eisiau ei gymryd i rywle arall?",
+          "answer": "Mae popeth yn trosglwyddo. Mae cod ffynhonnell yn byw mewn ystorfa rydych chi'n berchen arni o'r diwrnod cyntaf, mae cyfrifon cynnal a thrydydd parti yn eich enw chi, ac mae trosglwyddo'n cynnwys dogfennaeth a thaith drwodd. Nid oes llwyfannau perchnogol a dim cymalau sy'n ei gwneud hi'n lletchwith i adael. Mae hynny'n fwriadol — mae'n ein cadw ni'n onest."
+        },
+        "q4": {
+          "question": "A yw AI yn cael ei ddefnyddio yn yr adeiladu, ac a yw ein data'n ddiogel?",
+          "answer": "Mae offer AI yn cynorthwyo gyda sgaffaldio, boilerplate, ailfactorio, cynhyrchu profion a dogfennaeth, ac mae pob llinell yn cael ei adolygu gan ddyn a'i brofi cyn iddi gael ei chludo. Nid oes gan offer AI fynediad i ddata cynhyrchu, cyfrinachau, allweddi API na gwybodaeth gleientiaid. Os oes gan eich prosiect ofynion trin data penodol, dywedwch hynny wrth ddarganfod a byddant yn mynd i mewn i'r cwmpas ysgrifenedig."
+        },
+        "q5": {
+          "question": "Beth am gefnogaeth ar ôl lansio?",
+          "answer": "Yn cael ei drafod yn agored ac erioed yn orfodol. Mae'r opsiynau'n amrywio o gontract cynnal sy'n cwmpasu trwsio, diweddariadau dibyniaeth a newidiadau bach, hyd at drosglwyddo glân i'ch tîm eich hun neu ddatblygwr arall. Mae'r cod wedi'i ddogfennu naill ffordd. Nid ydych wedi'ch clymu i ni i gadw'ch meddalwedd eich hun yn rhedeg."
         }
       },
       "relatedHeading": "Cysylltiedig"
