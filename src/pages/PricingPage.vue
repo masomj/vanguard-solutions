@@ -67,29 +67,22 @@
           </div>
         </div>
 
-        <div class="mt-16 max-w-5xl mx-auto bg-white rounded-lg border border-border p-6 lg:p-8">
-          <h2 class="text-xl font-bold text-text-primary mb-3">{{ t('pricing.bilingual.heading') }}</h2>
-          <p class="text-text-secondary leading-relaxed">{{ t('pricing.bilingual.p1') }}</p>
+        <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+          <div class="bg-white rounded-lg border border-border p-6 lg:p-8 h-full">
+            <h2 class="text-xl font-bold text-text-primary mb-3">{{ t('pricing.ownership.heading') }}</h2>
+            <p class="text-text-secondary leading-relaxed">{{ t('pricing.ownership.p1') }}</p>
+          </div>
+          <div class="bg-white rounded-lg border border-border p-6 lg:p-8 h-full">
+            <h2 class="text-xl font-bold text-text-primary mb-3">{{ t('pricing.bilingual.heading') }}</h2>
+            <p class="text-text-secondary leading-relaxed">{{ t('pricing.bilingual.p1') }}</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="notes-heading">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 id="notes-heading" class="text-2xl sm:text-3xl font-bold text-text-primary mb-6">
-          {{ t('pricing.notesHeading') }}
-        </h2>
-        <ul class="space-y-4">
-          <li v-for="note in notes" :key="note" class="flex items-start gap-3 text-text-secondary leading-relaxed">
-            <span class="text-primary font-bold shrink-0" aria-hidden="true">&bull;</span>
-            <span>{{ note }}</span>
-          </li>
-        </ul>
       </div>
     </section>
 
     <FaqSection
       :items="faqItems"
+      background="bg-white"
       :heading="t('pricing.faqHeading')"
       :subtitle="t('pricing.faqSubtitle')"
       heading-id="pricing-faq-heading"
@@ -158,8 +151,6 @@ const tiers = computed(() => [
     featured: false,
   },
 ])
-
-const notes = computed(() => [1, 2, 3, 4].map((n) => t(`pricing.note${n}`)))
 
 const faqItems = computed(() =>
   [1, 2, 3, 4, 5].map((n) => ({ question: t(`pricing.q${n}`), answer: t(`pricing.a${n}`) }))

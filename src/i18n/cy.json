@@ -997,18 +997,18 @@
     "hero": {
       "kicker": "Prisiau Gwefannau — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
       "title": "Rhifau Syth, yn Glir o'r Cychwyn",
-      "subtitle": "Ni ddylai fod rhaid i chi fynd ar alwad ffôn dim ond i weld a ydych chi yn yr ystod gywir. Felly dyma nhw."
+      "subtitle": "Ni ddylai fod rhaid i neb drefnu galwad dim ond i weld a ydyn nhw'n gallu fforddio'r gwaith. Felly mae'r rhifau isod."
     },
     "intro": {
-      "p1": "Mae pob busnes yn wahanol, felly triniwch y rhain fel man cychwyn yn hytrach na bil terfynol. Mae'r hyn rydych chi'n ei dalu go iawn yn dibynnu ar faint o dudalennau sydd eu hangen arnoch, a oes angen ysgrifennu cynnwys ar eich cyfer, a beth sydd angen ei integreiddio. Mae'r dyfynbris ysgrifenedig sefydlog ar gam y cynnig yn cadarnhau'r union ffigwr cyn i unrhyw waith ddechrau."
+      "p1": "Mannau cychwyn yw'r rhain, nid biliau terfynol. Mae'r hyn rydych chi'n ei dalu yn dibynnu ar faint o dudalennau sydd eu hangen arnoch, a oes angen ysgrifennu'r cynnwys ar eich cyfer, a beth sydd angen ei integreiddio. Byddwch yn cael dyfynbris ysgrifenedig sefydlog ar gam y cynnig, ac mae hwnnw'n cadarnhau'r ffigwr cyn i unrhyw waith ddechrau. Nid yw Vanguard Digital Solutions wedi'i gofrestru ar gyfer TAW, felly does dim i'w ychwanegu ar ben hynny."
     },
     "packagesHeading": "Pecynnau Gwefan",
-    "packagesSubtitle": "Prisiau cychwynnol, nid terfynau uchaf. Mae popeth yn cael ei ddyfynnu'n ysgrifenedig cyn i'r gwaith ddechrau.",
+    "packagesSubtitle": "Mae'r prisiau'n cychwyn yma. Mae popeth yn cael ei ddyfynnu'n ysgrifenedig cyn i'r gwaith ddechrau.",
     "starter": {
       "name": "Cychwynnol",
       "price": "O £650",
       "timeline": "Fel arfer 1 i 2 wythnos o amser adeiladu",
-      "tagline": "Ychydig o dudalennau, wedi'u hadeiladu'n iawn, gyda ffurflen gyswllt sy'n cyrraedd atoch chi go iawn.",
+      "tagline": "Ychydig o dudalennau, wedi'u hadeiladu'n iawn, gyda ffurflen gyswllt sy'n cyrraedd eich mewnflwch.",
       "forWho": "Yn iawn i fusnes sydd angen bodoli ar-lein a chael ei ddarganfod: crefftwr, ymgynghorydd, caffi, neu unrhyw un sy'n rhedeg ar dudalen Facebook ar hyn o bryd.",
       "f1": "Hyd at bum tudalen — Cartref, Amdanom, Gwasanaethau, Cysylltu, ac un arall",
       "f2": "Symudol-gyntaf ac wedi'i adeiladu i basio Core Web Vitals Google",
@@ -1016,8 +1016,8 @@
       "f4": "SEO ar y dudalen a SEO lleol fel eich bod yn ymddangos ar gyfer chwiliadau cyfagos",
       "f5": "Hygyrchedd WCAG 2.2 Lefel AA",
       "f6": "Baner cwcis a pholisi preifatrwydd sy'n bodloni GDPR a PECR y DU",
-      "f7": "Cynnal HTTPS diogel gydag adnewyddu tystysgrif awtomatig",
-      "f8": "Eich parth, cynnal a chod ffynhonnell yn eich enw chi"
+      "f7": "HTTPS wedi'i sefydlu gyda thystysgrifau sy'n adnewyddu'n awtomatig",
+      "f8": "Parth, cynnal a chod ffynhonnell i gyd wedi'u cofrestru yn eich enw chi"
     },
     "business": {
       "name": "Busnes",
@@ -1043,31 +1043,30 @@
     "care": {
       "heading": "Ei Gadw i Redeg",
       "price": "O £35 y mis",
-      "subtitle": "Dewisol, byth yn orfodol. Chi sy'n berchen ar y safle beth bynnag.",
-      "p1": "Cynnal, clytio diogelwch, diweddariadau dibyniaeth, copïau wrth gefn awtomataidd, monitro amser gweithredu a newidiadau cynnwys bach — oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau. Y pwynt yw nad yw'r safle'n pydru'n dawel ar ôl lansio.",
-      "p2": "Os byddai'n well gennych ei drin eich hun neu ddefnyddio datblygwr arall, mae hynny'n wirioneddol iawn. Mae'r cod wedi'i ddogfennu, mae popeth yn eich enw chi, a does dim ffi am gerdded i ffwrdd."
+      "subtitle": "Dewisol. Chi sy'n berchen ar y safle beth bynnag.",
+      "p1": "Cynnal, clytio diogelwch, diweddariadau dibyniaeth, copïau wrth gefn awtomataidd, monitro amser gweithredu a newidiadau cynnwys bach — oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau. Mae'n atal y safle rhag pydru'n dawel ar ôl lansio.",
+      "p2": "Os byddai'n well gennych ei drin eich hun neu ei drosglwyddo i ddatblygwr arall, mae hynny'n iawn. Mae'r cod wedi'i ddogfennu, mae'r cyfrifon yn eich enw chi, a does dim ffi am adael."
     },
     "bilingual": {
       "heading": "Safleoedd Cymraeg",
       "p1": "Mae fersiwn dwyieithog llawn Saesneg a Chymraeg o unrhyw becyn yn ychwanegu tua 30 i 40 y cant, gan ddibynnu ar faint o gynnwys sydd angen ei gyfieithu. Mae hynny'n cwmpasu URLau ar wahân i bob iaith, nodiadau hreflang cywir, tagio iaith priodol a newidydd iaith gweithredol — nid widget cyfieithu wedi'i folltio ar ben. Mae'r wefan hon wedi'i hadeiladu felly, fel y gallwch weld y canlyniad cyn ymrwymo."
     },
-    "notesHeading": "Ychydig o Nodiadau Gonest",
-    "note1": "Dyma brisiau cychwynnol ar gyfer cwmpas nodweddiadol. Os yw eich prosiect angen mwy na'r fersiwn nodweddiadol — mwy o dudalennau, mwy o integreiddiadau, mwy o gymhlethdod — cewch wybod hynny'n glir o'r cychwyn, cyn i unrhyw waith ddechrau, nid wedyn.",
-    "note2": "Does dim TAW i'w ychwanegu. Nid yw Vanguard Digital Solutions wedi'i gofrestru ar gyfer TAW ar hyn o bryd, felly'r pris a ddyfynnir yw'r pris a delir.",
-    "note3": "Mae cofrestru parth (fel arfer £10 i £15 y flwyddyn) ac unrhyw ffioedd gwasanaeth trydydd parti, fel taliadau trafodiad Stripe, yn cael eu talu gennych chi'n uniongyrchol i'r darparwyr hynny ac nid ydynt wedi'u cynnwys uchod.",
-    "note4": "Prisiau wedi'u hadolygu ddiwethaf Awst 2026. Os yw wedi bod tipyn o amser, dyma'r ffigurau y byddwch dal yn cael eich dyfynnu — cysylltwch a byddwn yn cadarnhau.",
+    "ownership": {
+      "heading": "Beth Sy'n Eiddo i Chi",
+      "p1": "Mae'r parth wedi'i gofrestru yn eich enw chi, nid yn ein henw ni, ac felly hefyd y cyfrif cynnal a'r cod ffynhonnell. Chi sy'n talu'r cofrestrydd yn uniongyrchol, fel arfer £10 i £15 y flwyddyn, sy'n golygu mai chi biau'r parth i'w gadw ac i fynd ag ef gyda chi os byddwch byth yn symud at ddatblygwr arall. Mae ffioedd trydydd parti, fel taliadau trafodiad Stripe, hefyd yn cael eu talu gennych chi'n uniongyrchol ac maent y tu allan i'r prisiau uchod."
+    },
     "faqHeading": "Cwestiynau Am Gost",
     "faqSubtitle": "Y pethau mae pobl yn eu gofyn cyn ymrwymo i rif.",
     "q1": "Pam cyhoeddi prisiau pan nad yw'r rhan fwyaf o ddylunwyr gwe'n gwneud hynny?",
     "a1": "Am fod y dewis arall yn gwastraffu amser pawb. Os yw ein pris cychwynnol ymhell uwchben eich cyllideb dylech allu canfod hynny mewn deg eiliad yn hytrach nag ar ôl dwy alwad ffôn, ac os yw'n gyfforddus o fewn eich cyllideb dylech allu gweld hynny cyn i chi gysylltu. Fel arfer mae prisio cudd yn golygu bod y pris yn dibynnu ar faint mae'r prynwr yn edrych fel y gallan nhw ei fforddio. Nid yw ein un ni.",
     "q2": "Ydy gwefan rhatach yn wefan waeth?",
-    "a2": "Nid yn awtomatig, ond dylech chi wybod beth rydych chi'n ei brynu. Templed gyda'ch logo wedi'i ollwng i mewn yw safle £300 fel arfer, sy'n beth cwbl resymol i'w brynu os mai dyna sydd ei angen arnoch. Yr hyn nad yw fel arfer arno yw wedi'i adeiladu i safonau hygyrchedd, wedi'i diwnio ar gyfer Core Web Vitals, neu'n gludadwy i letyw arall. Gofynnwch i unrhyw ddyfynbris beth sy'n digwydd os ydych chi eisiau ei symud i rywle arall mewn dwy flynedd.",
+    "a2": "Nid yn awtomatig, ond dylech chi wybod beth rydych chi'n ei brynu. Templed gyda'ch logo wedi'i ollwng i mewn yw safle £300 fel arfer, sy'n beth cwbl resymol i'w brynu os mai dyna sydd ei angen arnoch. Yr hyn nad ydych fel arfer yn ei gael yw safonau hygyrchedd, tiwnio Core Web Vitals, na'r gallu i'w symud i westeiwr arall. Gofynnwch i unrhyw ddyfynbris beth sy'n digwydd os ydych chi eisiau ei symud i rywle arall mewn dwy flynedd.",
     "q3": "Sut mae hyn yn cymharu â Wix neu Squarespace?",
-    "a3": "Mae adeiladwyr yn costio llai ymlaen llaw a mwy dros amser. Mae Wix yn rhedeg tua £9 i £119 y mis a Squarespace tua £12 i £79, am byth, ynghyd ag apiau wedi'u bilio ar wahân, ac ni allwch fynd â'r safle gyda chi os ydych chi'n gadael. Mae safle Cychwynnol am £650 heb ffi fisol orfodol yn talu ei ffordd yn ôl yn erbyn tanysgrifiad adeiladwr canolig o fewn tua dwy i dair blynedd, ac rydych chi'n berchen arno'n gyfan gwbl. Os oes angen rhywbeth ar-lein yr wythnos hon arnoch ac rydych chi'n hapus i'w adeiladu eich hun, adeiladwr yn wirioneddol yw'r ateb gwell, a byddwn ni'n dweud hynny wrthych.",
+    "a3": "Mae adeiladwyr yn costio llai ymlaen llaw a mwy dros amser. Mae Wix yn rhedeg tua £9 i £119 y mis a Squarespace tua £12 i £79, am byth, ynghyd ag apiau wedi'u bilio ar wahân, ac ni allwch fynd â'r safle gyda chi os ydych chi'n gadael. Mae safle Cychwynnol am £650 heb ffi fisol orfodol yn talu ei ffordd yn ôl yn erbyn tanysgrifiad adeiladwr canolig o fewn tua dwy i dair blynedd, ac rydych chi'n berchen arno'n gyfan gwbl. Os oes angen rhywbeth ar-lein yr wythnos hon arnoch ac rydych chi'n hapus i'w adeiladu eich hun, adeiladwr yw'r ateb gwell, a byddwn ni'n dweud hynny wrthych.",
     "q4": "Oes rhaid i mi dalu'r cyfan ymlaen llaw?",
     "a4": "Na. Mae'r taliad wedi'i rannu ar draws y cerrig milltir yn y cynnig — fel arfer blaendal i ddechrau, taliad ar bwynt canol cytunedig, a'r gweddill wrth lansio. Mae'r cyfan wedi'i nodi'n ysgrifenedig cyn i unrhyw beth ddechrau.",
     "q5": "Beth os yw fy mhrosiect yn tyfu hanner ffordd trwodd?",
-    "a5": "Mae newid yn normal. Ar bob ffin carreg filltir gallwn ail-flaenoriaethu neu addasu cwmpas, ac mae unrhyw beth sy'n effeithio ar gost neu linell amser yn cael ei ddangos i chi fel opsiynau cyn iddo gael ei gytuno, byth wedi'i anfonebu fel syndod wedyn.",
+    "a5": "Mae newid yn normal. Ar bob ffin carreg filltir gallwn ail-flaenoriaethu neu addasu cwmpas, ac mae unrhyw beth sy'n effeithio ar gost neu linell amser yn cael ei ddangos i chi fel opsiynau cyn iddo gael ei gytuno, nid wedi'i anfonebu fel syndod wedyn.",
     "ctaHeading": "Yn yr Ystod Gywir?",
     "ctaBody": "Dywedwch wrthym beth rydych chi'n ceisio ei wneud a chewch ateb syth am gwmpas, cost ac amserlen. Dim rhwymedigaeth a dim pwysau gwerthu.",
     "ctaPrimary": "Cael Dyfynbris",

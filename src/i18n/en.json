@@ -997,18 +997,18 @@
     "hero": {
       "kicker": "Website Prices — Bridgend, Cardiff, Swansea and South Wales",
       "title": "Straight Numbers, Up Front",
-      "subtitle": "You should not have to get on a call just to find out whether you are in the right ballpark. So here it is."
+      "subtitle": "Nobody should have to book a call just to find out whether they can afford the work. So the numbers are below."
     },
     "intro": {
-      "p1": "Every business is different, so treat these as a starting point rather than a final bill. What you actually pay depends on how many pages you need, whether content has to be written for you, and what has to be integrated. The fixed written quote at proposal stage confirms the exact figure before any work starts."
+      "p1": "These are starting points, not final bills. What you pay depends on how many pages you need, whether the content has to be written for you, and what has to be integrated. You get a fixed written quote at proposal stage, and that confirms the figure before any work begins. Vanguard Digital Solutions is not VAT registered, so there is nothing to add on top."
     },
     "packagesHeading": "Website Packages",
-    "packagesSubtitle": "Starting prices, not ceilings. Everything is quoted in writing before work begins.",
+    "packagesSubtitle": "Prices start here. Everything is quoted in writing before work begins.",
     "starter": {
       "name": "Starter",
       "price": "From £650",
       "timeline": "Typically 1 to 2 weeks of build time",
-      "tagline": "A few pages, built properly, with a contact form that actually reaches you.",
+      "tagline": "A few pages, built properly, with a contact form that reaches your inbox.",
       "forWho": "Right for a business that needs to exist online and be found: a trade, a consultant, a café, or anyone currently running on a Facebook page.",
       "f1": "Up to five pages — Home, About, Services, Contact, and one more",
       "f2": "Mobile-first and built to pass Google's Core Web Vitals",
@@ -1016,8 +1016,8 @@
       "f4": "On-page and local SEO so you show up for nearby searches",
       "f5": "WCAG 2.2 Level AA accessibility",
       "f6": "Cookie banner and privacy policy meeting UK GDPR and PECR",
-      "f7": "Secure HTTPS hosting with automatic certificate renewal",
-      "f8": "Your domain, hosting and source code in your name"
+      "f7": "HTTPS set up with certificates that renew automatically",
+      "f8": "Domain, hosting and source code all registered in your name"
     },
     "business": {
       "name": "Business",
@@ -1043,31 +1043,30 @@
     "care": {
       "heading": "Keeping It Running",
       "price": "From £35 a month",
-      "subtitle": "Optional, never compulsory. You own the site either way.",
-      "p1": "Hosting, security patching, dependency updates, automated backups, uptime monitoring and small content changes — opening hours, prices, a new service, a batch of photos. The point is that the site does not quietly rot after launch.",
-      "p2": "If you would rather handle it yourself or use another developer, that is genuinely fine. The code is documented, everything is in your name, and there is no fee for walking away."
+      "subtitle": "Optional. You own the site either way.",
+      "p1": "Hosting, security patching, dependency updates, automated backups, uptime monitoring and small content changes — opening hours, prices, a new service, a batch of photos. It stops the site quietly rotting after launch.",
+      "p2": "If you would rather handle it yourself or hand it to another developer, that is fine. The code is documented, the accounts are in your name, and there is no exit fee."
     },
     "bilingual": {
       "heading": "Welsh Language Sites",
       "p1": "A full bilingual English and Welsh version of any package adds roughly 30 to 40 per cent, depending on how much content needs translating. That covers separate URLs for each language, correct hreflang annotations, proper language tagging and a working language switcher — not a translation widget bolted on top. This website is built that way, so you can see the result before you commit."
     },
-    "notesHeading": "A Few Honest Notes",
-    "note1": "These are starting prices for typical scope. If your project needs more than the typical version — more pages, more integrations, more complexity — you are told that up front, before any work starts, not after.",
-    "note2": "There is no VAT to add. Vanguard Digital Solutions is not currently VAT registered, so the price quoted is the price paid.",
-    "note3": "Domain registration (usually £10 to £15 a year) and any third-party service fees, such as Stripe's transaction charges, are paid by you directly to those providers and are not included above.",
-    "note4": "Prices last reviewed August 2026. If it has been a while, these are still the figures you will be quoted — get in touch and we will confirm.",
+    "ownership": {
+      "heading": "What You Own",
+      "p1": "The domain is registered in your name, not ours, and so are the hosting account and the source code. You pay the registrar directly, usually £10 to £15 a year, which means the domain is yours to keep and yours to take with you if you ever move to another developer. Third-party fees, such as Stripe's transaction charges, are also paid by you directly and sit outside the prices above."
+    },
     "faqHeading": "Questions About Cost",
     "faqSubtitle": "The things people ask before they commit to a number.",
     "q1": "Why publish prices when most web designers do not?",
     "a1": "Because the alternative wastes everybody's time. If our starting price is well above your budget you should be able to find that out in ten seconds rather than after two phone calls, and if it is comfortably within your budget you should be able to see that before you get in touch. Hidden pricing usually means the price depends on how much the buyer looks like they can afford. Ours does not.",
     "q2": "Is a cheaper website a worse website?",
-    "a2": "Not automatically, but you should know what you are buying. A £300 site is usually a template with your logo dropped in, which is a perfectly reasonable thing to buy if that is what you need. What it generally is not is built to accessibility standards, tuned for Core Web Vitals, or portable to another host. Ask any quote what happens if you want to move it elsewhere in two years.",
+    "a2": "Not automatically, but you should know what you are buying. A £300 site is usually a template with your logo dropped in, which is a perfectly reasonable thing to buy if that is what you need. What you usually do not get is accessibility standards, Core Web Vitals tuning, or the ability to move it to another host. Ask any quote what happens if you want to move it elsewhere in two years.",
     "q3": "How does this compare to Wix or Squarespace?",
-    "a3": "Builders cost less up front and more over time. Wix runs roughly £9 to £119 a month and Squarespace roughly £12 to £79, forever, plus apps billed separately, and you cannot take the site with you if you leave. A Starter site at £650 with no compulsory monthly fee breaks even against a mid-tier builder subscription in around two to three years, and you own it outright. If you need something online this week and you are happy to build it yourself, a builder is genuinely the better answer, and we will tell you so.",
+    "a3": "Builders cost less up front and more over time. Wix runs roughly £9 to £119 a month and Squarespace roughly £12 to £79, forever, plus apps billed separately, and you cannot take the site with you if you leave. A Starter site at £650 with no compulsory monthly fee breaks even against a mid-tier builder subscription in around two to three years, and you own it outright. If you need something online this week and you are happy to build it yourself, a builder is the better answer, and we will say so.",
     "q4": "Do I have to pay it all up front?",
     "a4": "No. Payment is split across the milestones in the proposal — typically a deposit to start, a payment at an agreed midpoint, and the balance on launch. It is all set out in writing before anything begins.",
     "q5": "What if my project grows halfway through?",
-    "a5": "Change is normal. At each milestone boundary we can re-prioritise or adjust scope, and anything that affects cost or timeline is shown to you as options before it is agreed, never invoiced as a surprise afterwards.",
+    "a5": "Change is normal. At each milestone boundary we can re-prioritise or adjust scope, and anything that affects cost or timeline is shown to you as options before it is agreed, not invoiced as a surprise afterwards.",
     "ctaHeading": "In the Right Ballpark?",
     "ctaBody": "Tell us what you are trying to do and you will get a straight answer about scope, cost and timescale. No obligation and no sales pressure.",
     "ctaPrimary": "Get a Quote",
