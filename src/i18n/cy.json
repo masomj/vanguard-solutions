@@ -73,7 +73,7 @@
       "badge": "Wedi ein lleoli ym Mhen-y-bont - Yn gwasanaethu De Cymru a thu hwnt",
       "titleStart": "Dylunio Gwe a Datrysiadau Digidol i",
       "titleHighlight": "Fusnesau De Cymru",
-      "description": "O wefannau fforddiadwy i fusnesau bach i lwyfannau digidol pwrpasol, mae Vanguard Digital Solutions yn adeiladu safleoedd cyflym, modern ac effeithiol i fusnesau ar draws Pen-y-bont, Caerdydd, Abertawe, a De Cymru.",
+      "description": "O wefannau fforddiadwy i fusnesau bach i lwyfannau digidol pwrpasol, mae Vanguard Digital Solutions yn adeiladu safleoedd cyflym, modern wedi'u hanelu at ddod ag ymholiadau i mewn i fusnesau ar draws Pen-y-bont, Caerdydd, Abertawe, a De Cymru.",
       "ctaPrimary": "Cael Dyfynbris Am Ddim",
       "ctaSecondary": "Gweld Ein Gwasanaethau"
     },
@@ -82,17 +82,17 @@
       "subtitle": "Gwasanaethau dylunio gwe a digidol fforddiadwy i fusnesau bach ledled De Cymru.",
       "exploreAll": "Archwilio Pob Gwasanaeth",
       "card1Title": "Gwefannau Busnesau Bach",
-      "card1Description": "Gwefannau glan a phroffesiynol i fusnesau lleol fel salonau, crefftwyr, ymgynghorwyr a mwy. Cyfeillgar i symudol ac yn gyflym.",
+      "card1Description": "Gwefannau glân a phroffesiynol i fusnesau lleol: salonau, crefftwyr, ymgynghorwyr a mwy. Cyfeillgar i symudol ac yn gyflym i lwytho.",
       "card2Title": "Siopau eFasnach",
       "card2Description": "Gwerthwch ar-lein gyda siop eFasnach lawn, taliadau diogel, rheoli cynnyrch a integreiddio taliadau.",
       "card3Title": "Safleoedd Archebu ac Apwyntiadau",
       "card3Description": "Gadewch i gwsmeriaid archebu ar-lein 24/7 gyda Booksy, Square a llifoedd archebu personol.",
       "card4Title": "Safleoedd Gwybodaeth Busnes",
-      "card4Description": "Rhannwch stori eich busnes ar-lein gyda safleoedd gwybodaeth i grefftwyr, bwytai a gwasanaethau proffesiynol.",
+      "card4Description": "Safleoedd gwybodaeth i grefftwyr, bwytai, cyfreithwyr a gwasanaethau proffesiynol: pwy ydych chi, beth rydych chi'n ei wneud, ble i ddod o hyd i chi.",
       "card5Title": "Apiau Gwe Pwrpasol",
-      "card5Description": "Angen rhywbeth unigryw? Rydym yn adeiladu apiau gwe, offer mewnol, dangosfyrddau a phyrth cleientiaid.",
+      "card5Description": "Rydym yn adeiladu apiau gwe, offer mewnol, dangosfyrddau a phyrth cleientiaid, pob un wedi'i fanylu o gwmpas eich gofynion.",
       "card6Title": "Integreiddio ac Awtomeiddio",
-      "card6Description": "Cysylltwch eich gwefan gyda Booksy, Square, porth taliadau, CRM ac API i symleiddio eich busnes."
+      "card6Description": "Cysylltwch eich gwefan â Booksy, Square, pyrth taliadau, systemau CRM ac APIs fel bod eich systemau'n trosglwyddo gwybodaeth rhyngddynt."
     },
     "whyChoose": {
       "heading": "Pam Dewis Vanguard",
@@ -102,9 +102,9 @@
       "item2Title": "Prisiau Gonest",
       "item2Description": "Mae prisiau cychwynnol yn cael eu cyhoeddi ar y safle, fel y gallwch wirio eich bod yn yr ystod gywir cyn ffonio unrhyw un. Gwefannau o £650, dim ffioedd cudd, dim marc-i-fyny asiantaeth.",
       "item3Title": "Wedi ei Adeiladu i Gael ei Ddarganfod",
-      "item3Description": "Mae pob safle wedi'i adeiladu i basio Core Web Vitals Google, gyda SEO lleol, data strwythuredig a chyflenwi symudol-gyntaf yn safonol yn hytrach nag yn ychwanegiad taledig.",
+      "item3Description": "Mae pob safle wedi'i adeiladu i basio Core Web Vitals Google, gyda SEO lleol, data strwythuredig a chyflenwi symudol-gyntaf yn safonol.",
       "item4Title": "Dwyieithog yn Ddiofyn",
-      "item4Description": "Rydym yn adeiladu yn Saesneg a Chymraeg, gydag URLau ar wahân i bob iaith a nodiadau hreflang cywir wedi'u trin yn briodol yn hytrach na'u bolltio ymlaen gyda widget cyfieithu. Mae'r safle hwn yn un ohonynt.",
+      "item4Description": "Rydym yn adeiladu yn Saesneg a Chymraeg: URLau ar wahân i bob iaith, nodiadau hreflang cywir a thagio iaith priodol, wedi'u trin yn iawn yn yr adeiladwaith. Mae'r safle hwn yn un ohonynt.",
       "aboutLinkText": "Cwrdd â'r bobl sy'n gwneud y gwaith"
     },
     "localPresence": {
@@ -136,7 +136,7 @@
     },
     "techStack": {
       "heading": "Y Dechnoleg Tu ôl i'r Gwaith",
-      "subtitle": "Offer a fframweithiau modern, profedig ar gyfer atebion cyflym, hygyrch, a chynaladwy.",
+      "subtitle": "Offer a fframweithiau profedig ar gyfer safleoedd cyflym, hygyrch a chynaliadwy.",
       "tech1": "Vue 3",
       "tech2": "Nuxt",
       "tech3": "TypeScript",
@@ -149,12 +149,12 @@
       "tech10": "Docker",
       "tech11": "Piblinellau CI/CD",
       "tech12": "Hygyrchedd WCAG 2.2",
-      "description": "Mae pob prosiect yn cael ei adeiladu gyda offer a llifoedd gwaith proffesiynol modern. O TypeScript ar gyfer diogelwch math i biblinellau CI/CD sy'n dal problemau cyn iddynt gyrraedd cynhyrchiad.",
+      "description": "Mae pob prosiect yn cael ei adeiladu gydag offer a llifoedd gwaith proffesiynol modern: TypeScript ar gyfer diogelwch math, a phiblinellau CI/CD sy'n dal problemau cyn iddynt gyrraedd cynhyrchiad.",
       "learnMore": "Mwy Am Ein Technoleg"
     },
     "process": {
       "heading": "Proses Glir, Wedi'i Gyrru gan Gerrig Milltir",
-      "subtitle": "O'r cyswllt cyntaf i'r lansiad a thu hwnt, byddwch bob amser yn gwybod beth sy'n digwydd nesaf.",
+      "subtitle": "O'r cyswllt cyntaf i'r lansiad a thu hwnt, byddwch yn gwybod beth sy'n digwydd nesaf.",
       "step1Title": "Cais",
       "step1Description": "Rydych yn cysylltu. Rydym yn trafod eich nodau a'ch gofynion mewn Cymraeg neu Saesneg syml.",
       "step2Title": "Cynnig",
@@ -186,13 +186,13 @@
   },
   "about": {
     "title": "Amdanom Ni",
-    "subtitle": "Stiwdio fach yn Ne Cymru. Rydych chi'n siarad â'r bobl sy'n adeiladu eich safle, nid rheolwr cyfrif.",
+    "subtitle": "Stiwdio fach yn Ne Cymru. Rydych chi'n siarad â'r person sy'n adeiladu eich safle, nid rheolwr cyfrif.",
     "storyHeading": "Ein Hanes",
-    "p1": "Cwmni dylunio gwe a datblygu meddalwedd wedi ei leoli ym Mhen-y-bont yw Vanguard Digital Solutions, yn gweithio gyda busnesau bach ledled De Cymru. Rydym yn adeiladu'r math o wefan mae busnes lleol ei angen go iawn: cyflym, hawdd dod o hyd iddi, hawdd ei diweddaru, ac wedi'i hanelu'n uniongyrchol at ddod ag ymholiadau i mewn.",
-    "p2": "Y tu ôl i'r cwmni mae pedair blynedd o brofiad datblygu stac-lawn proffesiynol — systemau archebu, llwyfannau gwe busnes, ac integreiddio â'r offer mae busnesau eisoes yn eu defnyddio. Dyna'r un safon beirianneg rydym yn ei dwyn i safle pum tudalen i blymwr ag i borth cleient pwrpasol.",
-    "p3": "Rydym yn fwriadol fach. Mae hynny'n golygu dim haen rheolwr cyfrif, dim gorbenion asiantaeth wedi'u prisio i mewn i'ch dyfynbris, a llinell uniongyrchol i'r bobl sy'n ysgrifennu eich cod.",
+    "p1": "Cwmni dylunio gwe a datblygu meddalwedd wedi ei leoli ym Mhen-y-bont yw Vanguard Digital Solutions, yn gweithio gyda busnesau bach ledled De Cymru. Rydym yn adeiladu'r math o wefan mae busnes lleol ei angen: cyflym, hawdd dod o hyd iddi, hawdd ei diweddaru, ac wedi'i hanelu'n uniongyrchol at ddod ag ymholiadau i mewn.",
+    "p2": "Y tu ôl i'r cwmni mae pedair blynedd o brofiad datblygu stac-lawn proffesiynol: systemau archebu, llwyfannau gwe busnes, ac integreiddio â'r offer mae busnesau eisoes yn eu defnyddio. Mae safle pum tudalen i blymwr yn cael yr un safon beirianneg â phorth cleient pwrpasol.",
+    "p3": "Rydym yn fwriadol fach. Mae hynny'n golygu dim haen rheolwr cyfrif, dim gorbenion asiantaeth wedi'u prisio i mewn i'ch dyfynbris, a llinell uniongyrchol i'r person sy'n ysgrifennu eich cod.",
     "valuesHeading": "Sut Rydym yn Gwneud Busnes",
-    "valuesSubtitle": "Chwe ymrwymiad y gallwch ein dal iddyn nhw, nid chwe ansoddair.",
+    "valuesSubtitle": "Chwe ymrwymiad y gallwch ein dal iddyn nhw, ar bob swydd.",
     "value1Title": "Dim Anfonebau Syndod",
     "value1Description": "Mae pob dyfynbris yn nodi ei ragdybiaethau a'i eithriadau yn ysgrifenedig cyn i'r gwaith ddechrau. Os yw swydd yn troi allan yn symlach neu'n rhatach na'r dyfynbris, cewch wybod.",
     "value2Title": "Chi Sy'n Berchen ar Bopeth",
@@ -207,9 +207,9 @@
     "value6Description": "Os yw terfyn amser neu gyllideb yn edrych mewn perygl, cewch wybod cyn gynted ag y byddwn ni'n gwybod, nid yn y gwiriad nesaf a drefnwyd.",
     "howIWork": {
       "heading": "Sut Rydym yn Gweithio",
-      "subtitle": "Cyfathrebu clir, cyngor gonest, a dim syndod.",
+      "subtitle": "Cyfathrebu clir ac amcangyfrifon gonest, yn ysgrifenedig.",
       "item1Title": "Cyswllt Uniongyrchol",
-      "item1Description": "Rydych yn siarad â'r person sy'n ysgrifennu'r cod, nid rheolwr cyfrif. Mae cwestiynau'n cael eu hateb yn gyflym ac yn gywir.",
+      "item1Description": "Rydych yn siarad â'r person sy'n ysgrifennu'r cod. Dim rheolwr cyfrif yn trosglwyddo negeseuon, ac mae cwestiynau'n cael eu hateb yn gyflym ac yn gywir.",
       "item2Title": "Cwmpas Clir ac Amcangyfrifon Gonest",
       "item2Description": "Mae tybiaethau ac eithriadau wedi'u hysgrifennu i lawr. Byddwn ni'n dweud wrthych os yw rhywbeth yn symlach neu'n rhatach nag yr oeddech yn disgwyl.",
       "item3Title": "Cod Modern, Cynaladwy",
@@ -256,7 +256,7 @@
     "allServices": "Pob Gwasanaeth",
     "smallBusiness": {
       "title": "Gwefannau Busnesau Bach",
-      "description": "Mae gwefan broffesiynol yn un o offer busnes pwysicaf. Rydym yn adeiladu safleoedd cyflym, cyfeillgar i symudol i fusnesau lleol ym Mhen-y-bont, Caerdydd, Abertawe a ledled De Cymru, o £650.",
+      "description": "Rydym yn adeiladu gwefannau proffesiynol, cyfeillgar i symudol i fusnesau lleol ym Mhen-y-bont, Caerdydd, Abertawe a ledled De Cymru, gan ddechrau o £650. Cyflym i lwytho, hawdd dod o hyd iddynt, a hawdd eu cadw'n gyfredol.",
       "f1": "Dyluniad ymatebol symudol-gyntaf",
       "f2": "SEO lleol wedi ei optimeiddio i Google",
       "f3": "Cyflymder llwytho uchel",
@@ -294,7 +294,7 @@
     },
     "brochure": {
       "title": "Safleoedd Gwybodaeth a Broshwr",
-      "description": "Nid oes angen siop ar-lein ar bob busnes. Weithiau mae angen gwefan glir, o safon uchel sy'n esbonio pwy ydych chi, beth rydych chi'n ei wneud a sut i gysylltu â chi — y math o safle sy'n ennill gwaith i ymgynghorwyr, practisau proffesiynol a chwmnïau sefydledig ledled De Cymru.",
+      "description": "Nid oes angen siop ar-lein ar bob busnes. Weithiau mae angen gwefan glir, o safon uchel sy'n esbonio pwy ydych chi, beth rydych chi'n ei wneud a sut i gysylltu â chi: y math o safle sy'n ennill gwaith i ymgynghorwyr, practisau proffesiynol a chwmnïau sefydledig ledled De Cymru.",
       "f1": "Gwefan broffesiynol aml-dudalen",
       "f2": "Tudalennau Amdanom, Gwasanaethau, Cysylltu, ac Oriel",
       "f3": "SEO lleol ar gyfer chwiliadau yn eich ardal",
@@ -306,7 +306,7 @@
     },
     "bespoke": {
       "title": "Apiau Gwe a Meddalwedd Pwrpasol",
-      "description": "Angen rhywbeth y tu hwnt i offer parod? Rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol, systemau mewnol, pyrth cleientiaid a llwyfannau llif gwaith i fusnesau a sefydliadau yn Ne Cymru a thu hwnt.",
+      "description": "Pan fydd offer parod yn dod i ben, rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol, systemau mewnol, pyrth cleientiaid a llwyfannau llif gwaith i fusnesau a sefydliadau yn Ne Cymru a thu hwnt.",
       "f1": "Datblygu apiau gwe pwrpasol",
       "f2": "Offer busnes mewnol a dangosfyrddau",
       "f3": "Pyrth cleientiaid a chwsmeriaid",
@@ -319,13 +319,13 @@
       "approach1Title": "Darganfod a Chwmpasu",
       "approach1Description": "Rydym yn diffinio nodau busnes, gofynion technegol, a cherrig milltir cyn i'r datblygu ddechrau.",
       "approach2Title": "Adeiladu ac Itereiddio",
-      "approach2Description": "Cyflenwi cam wrth gam gyda demos rheolaidd, adborth, a gwiriadau ansawdd trwy'r broses.",
+      "approach2Description": "Cyflenwi cam wrth gam, gyda demos rheolaidd a gwiriadau ansawdd ym mhob cam o'r adeiladwaith.",
       "approach3Title": "Lansio a Gwella",
       "approach3Description": "Proses lansio barod ar gyfer cynhyrchiad gyda gwelliannau ar ol lansio yn seiliedig ar ddefnydd go iawn."
     },
     "integrations": {
       "title": "Integreiddio a Chysylltiadau Trydydd Parti",
-      "description": "Eisoes yn defnyddio Booksy, Square, Mailchimp neu CRM? Rydym yn cysylltu eich safle â'r offer mae eich busnes yn Ne Cymru eisoes yn rhedeg arnynt ac yn awtomeiddio'r trosglwyddiadau rhyngddynt, fel nad yw'r un wybodaeth yn cael ei theipio ddwywaith.",
+      "description": "Os ydych chi eisoes yn defnyddio Booksy, Square, Mailchimp neu CRM, rydym yn cysylltu eich safle â'r offer mae eich busnes yn Ne Cymru yn rhedeg arnynt ac yn awtomeiddio'r trosglwyddiadau rhyngddynt, fel nad yw'r un wybodaeth yn cael ei theipio ddwywaith.",
       "f1": "Integreiddio archebu Booksy",
       "f2": "Integreiddio Square",
       "f3": "Cysylltiadau Stripe a phorth taliadau",
@@ -341,7 +341,7 @@
       "link1Title": "Y Dechnoleg Tu ôl i'r Gwaith",
       "link1Description": "Vue 3, TypeScript, CSS modern, CI/CD, a'r fframweithiau sy'n pŵer apiau cyflym, hygyrch, cynaladwy.",
       "link2Title": "Sut Mae Prosiect yn Rhedeg, Cam wrth Gam",
-      "link2Description": "O'r cyswllt cyntaf i'r lansiad a thu hwnt. Proses glir, wedi'i gyrru gan gerrig milltir heb syndod.",
+      "link2Description": "O'r cyswllt cyntaf i'r lansiad a thu hwnt. Proses glir, wedi'i gyrru gan gerrig milltir, gam wrth gam.",
       "link3Title": "Gwefannau Syml i Fusnesau Bach",
       "link3Description": "Gwefannau fforddiadwy, proffesiynol i fusnesau lleol ledled De Cymru. Gweler beth sydd wedi'i gynnwys, beth mae'n ei gostio, a sut mae'r broses yn rhedeg.",
       "link4Title": "Beth Mae'n Ei Gostio",
@@ -352,22 +352,22 @@
   "technology": {
     "hero": {
       "title": "Y Dechnoleg y Tu ôl i'r Gwaith",
-      "subtitle": "Vue, TypeScript, .NET ac Azure, wedi'u hadeiladu i hygyrchedd WCAG 2.2 Lefel AA, cydymffurfiaeth GDPR y DU a throthwyon Core Web Vitals Google. Y safonau penodol mae pob prosiect yn cael ei ddal iddynt, nid iaith farchnata."
+      "subtitle": "Vue, TypeScript, .NET ac Azure, wedi'u hadeiladu i hygyrchedd WCAG 2.2 Lefel AA, cydymffurfiaeth GDPR y DU a throthwyon Core Web Vitals Google. Dyma'r safonau penodol mae pob prosiect yn cael ei ddal iddynt."
     },
     "foundations": {
       "heading": "Y Sylfeini",
       "subtitle": "Sylfeini cryf ar gyfer meddalwedd ddibynadwy a hygyrch.",
       "html": {
         "title": "HTML Semantig",
-        "description": "Mae pob safle wedi'i adeiladu gydag elfennau HTML5 semantig gan gynnwys rolau tirnod priodol (<header>, <nav>, <main>, <footer>, <article>, <section>). Mae hyn yn creu strwythur dogfen rhesymegol y mae peiriannau chwilio yn ei ddeall a bod technolegau cynorthwyol yn ei lywio'n effeithlon, gan wella SEO a hygyrchedd o'r cychwyn."
+        "description": "Mae pob safle wedi'i adeiladu o elfennau HTML5 semantig, gyda rolau tirnod priodol (<header>, <nav>, <main>, <footer>, <article>, <section>). Mae hynny'n rhoi strwythur dogfen rhesymegol i'r dudalen: rhywbeth y gall peiriannau chwilio ei ddarllen a thechnolegau cynorthwyol symud drwyddo'n effeithlon. Mae SEO a hygyrchedd yn elwa o'r un gwaith."
       },
       "css": {
         "title": "CSS Modern",
-        "description": "CSS Grid a Flexbox ar gyfer cynlluniau ymatebol, ymholiadau cynhwysydd ar gyfer ymatebolrwydd lefel cydran, priodweddau personol (tocynnau dylunio) ar gyfer themâu cynaliadwy, a dim fframweithiau CSS chwyddedig. Mae CSS modern yn ddigon pwerus heb yr orbwysau fframweithiau etifeddol, gan arwain at fwndeli llai a llwytho tudalen cyflymach."
+        "description": "CSS Grid a Flexbox ar gyfer cynlluniau ymatebol, ymholiadau cynhwysydd ar gyfer ymatebolrwydd lefel cydran, a phriodweddau personol (tocynnau dylunio) ar gyfer themâu sy'n aros yn gynaliadwy. Dim fframweithiau CSS chwyddedig. Mae CSS modern yn ddigon pwerus ar ei ben ei hun, ac mae gollwng y llyfrgelloedd etifeddol yn golygu bwndeli llai a llwytho tudalen cyflymach."
       },
       "typescript": {
         "title": "JavaScript & TypeScript",
-        "description": "Mae TypeScript yn dod â diogelwch math i JavaScript, gan ddal bygiau ar amser crynhoi yn lle amser rhedeg. Mae rhyngwynebau cryf wedi'u teipio yn diffinio contractau data, mae awto-gwblhau yn cyflymu datblygiad, ac mae ailfactorio yn dod yn fwy diogel. Y canlyniad yw llai o wallau cynhyrchiad, cod cliriach, a chyflymu cyflwyno ar gyfer cynhalwyr yn y dyfodol."
+        "description": "Mae TypeScript yn dod â diogelwch math i JavaScript, gan ddal bygiau ar amser crynhoi yn lle amser rhedeg. Mae rhyngwynebau wedi'u teipio'n gryf yn diffinio'r contractau data ac mae awto-gwblhau'n cyflymu'r ysgrifennu, ond y fantais fwyaf yw bod ailfactorio'n peidio â bod yn gamblo. Mae llai o wallau'n cyrraedd cynhyrchu, ac mae pwy bynnag sy'n cynnal y cod nesaf yn dod i ddeall yn gyflymach."
       }
     },
     "frameworks": {
@@ -375,7 +375,7 @@
       "subtitle": "Vue 3, Nuxt, a Vite ar gyfer cymwysiadau modern perfformiad uchel.",
       "vue": {
         "title": "Vue 3",
-        "description": "Mae Vue 3 yn fframwaith JavaScript cynyddol ar gyfer adeiladu rhyngwynebau defnyddiwr. Mae'r API Cyfansoddi yn darparu ailddefnyddioldeb rhesymeg rhagorol ac integreiddio TypeScript, mae'r system adweithedd yn effeithlon a rhagweladwy, ac mae cydrannau ffeil sengl (.vue) yn cadw templed, rhesymeg ac arddulliau ar y cyd. Mae maint bwndel bach Vue a nodweddion perfformiad yn ei wneud yn ddewis delfrydol ar gyfer safleoedd marchnata a cheisiadau cymhleth.",
+        "description": "Mae Vue 3 yn fframwaith JavaScript cynyddol ar gyfer adeiladu rhyngwynebau defnyddiwr. Mae'r API Cyfansoddi'n gwneud rhesymeg yn ailddefnyddiadwy ac yn brofadwy, ac mae'n gweithio'n iawn gyda TypeScript. Mae'r system adweithedd yn effeithlon ac yn rhagweladwy, ac mae cydrannau ffeil sengl (ffeiliau .vue) yn cadw templed, rhesymeg ac arddulliau gyda'i gilydd mewn un lle. Ychwanegwch y maint bwndel bach a'r perfformiad sy'n dod gydag ef, ac mae Vue yn addas i safleoedd marchnata a chymwysiadau cymhleth yn yr un modd.",
         "f1": "API Cyfansoddi ar gyfer rhesymeg ailddefnyddiadwy, profadwy",
         "f2": "Rhwymo data adweithiol a phriodweddau cyfrifedig",
         "f3": "Cydrannau ffeil sengl gydag arddulliau wedi'u cwmpasu",
@@ -385,7 +385,7 @@
       },
       "nuxt": {
         "title": "Nuxt",
-        "description": "Mae Nuxt yn feta-fframwaith wedi'i adeiladu ar Vue 3 sy'n darparu rendro ochr gweinydd (SSR), cynhyrchiad safle statig (SSG), a moddau rendro hybrid. Mae SSR yn cyflenwi HTML wedi'i rendro'n llawn i beiriannau chwilio a defnyddwyr ar y cais cyntaf, gan wella SEO a pherfformiad canfyddedig. Mae SSG yn rhag-rendro tudalennau ar amser adeiladu ar gyfer cyflymder uchaf a chasgliad ymyl. Mae llwybro seiliedig ar ffeil yn dileu boilerplate ac yn gwella profiad datblygwr.",
+        "description": "Mae Nuxt yn feta-fframwaith wedi'i adeiladu ar Vue 3, sy'n darparu rendro ochr gweinydd (SSR), cynhyrchu safle statig (SSG) a moddau rendro hybrid. Mae SSR yn estyn HTML wedi'i rendro'n llawn i beiriannau chwilio a defnyddwyr ar y cais cyntaf, sy'n helpu SEO a pherfformiad canfyddedig. Mae SSG yn rhag-rendro tudalennau ar amser adeiladu, fel y gellir eu gweini ar y cyflymder uchaf o storfa ymyl. Mae llwybro seiliedig ar ffeil yn torri'r boilerplate allan ac yn gwneud y sylfaen cod yn haws i weithio ynddi.",
         "f1": "Rendro ochr gweinydd (SSR) ar gyfer SEO a pherfformiad",
         "f2": "Cynhyrchiad safle statig (SSG) ar gyfer safleoedd wedi'u casgliad ymyl",
         "f3": "Adfywio statig cynyddol (ISR)",
@@ -395,7 +395,7 @@
       },
       "vite": {
         "title": "Vite a'r Bibell Adeiladu",
-        "description": "Mae Vite yn offeryn adeiladu cenhedlaeth nesaf sy'n manteisio ar fodiwlau ES brodorol ar gyfer dechrau gweinydd ar unwaith ac amnewid modiwl poeth cyflym iawn (HMR). Mae adeiladau cynhyrchiad yn defnyddio Rollup ar gyfer bwndeli wedi'u hoptimeiddio gyda hollti cod, ysgwyd coed i ddileu cod marw, ac awtomaiddio hollti darn gwerthwr. Y canlyniad yw datblygiad cyflymach a bwndeli cynhyrchiad llai.",
+        "description": "Mae Vite yn offeryn adeiladu sy'n defnyddio modiwlau ES brodorol, felly mae'r gweinydd datblygu'n cychwyn ar unwaith ac mae amnewid modiwl poeth (HMR) bron yn syth. Mae adeiladau cynhyrchu'n rhedeg trwy Rollup: bwndeli wedi'u hoptimeiddio gyda hollti cod, ysgwyd coed i dynnu cod marw allan, a hollti darnau gwerthwr yn awtomatig. Mae datblygu'n mynd yn gyflymach ac mae'r bwndeli rydych chi'n eu cludo'n mynd yn llai.",
         "f1": "Dechrau gweinydd ar unwaith gyda ESM brodorol",
         "f2": "Amnewid modiwl poeth cyflym iawn (HMR)",
         "f3": "Adeiladau cynhyrchiad wedi'u hoptimeiddio yn seiliedig ar Rollup",
@@ -407,75 +407,75 @@
     "apis": {
       "heading": "APIau ac Integreiddio",
       "subtitle": "Dyluniad API diogel, wedi'i fersiwn, a wedi'i ddogfennu'n dda.",
-      "p1": "Mae cymwysiadau modern yn aml yn gofyn am APIau cefndir i drin data, dilysu, taliadau, ac integreiddio trydydd parti. Rydym yn dylunio ac yn adeiladu APIau REST a GraphQL gyda chontractau OpenAPI clir, fersiwn semantig, a dogfennaeth gynhwysfawr. Mae pwyntiau REST yn dilyn codau statws HTTP safonol (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) ac yn defnyddio berfau idempotent (GET, POST, PUT, DELETE) yn gyson.",
-      "p2": "Mae dilysu yn cael ei drin gan ddefnyddio protocolau safonol diwydiant gan gynnwys OAuth 2.0 ar gyfer mynediad dirprwyedig a JWT (JSON Web Tokens) ar gyfer rheoli sesiwn diwladwriaeth. Mae cyfyngu cyfradd yn amddiffyn APIau rhag camddefnyddio, ac mae polisïau CORS wedi'u ffurfweddu'n gywir ar gyfer ceisiadau traws-darddiad. Mae gwasanaethau cefndir wedi'u hadeiladu yn .NET (C#) neu Node.js yn dibynnu ar ofynion prosiect, y ddau yn defnyddio ieithoedd wedi'u teipio'n gryf a fframweithiau cadarn.",
+      "p1": "Mae digon o gymwysiadau angen API cefndir i drin data, dilysu, taliadau ac integreiddio trydydd parti. Rydym yn dylunio ac yn adeiladu APIau REST a GraphQL gyda chontractau OpenAPI clir, fersiynu semantig a dogfennaeth briodol. Mae pwyntiau terfyn REST yn dilyn codau statws HTTP safonol (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) ac yn defnyddio berfau HTTP (GET, POST, PUT, DELETE) yn gyson.",
+      "p2": "Mae dilysu'n defnyddio protocolau sefydledig: OAuth 2.0 ar gyfer mynediad dirprwyedig a JWT (JSON Web Tokens) ar gyfer rheoli sesiwn diwladwriaeth. Mae cyfyngu cyfradd yn amddiffyn APIau rhag camddefnyddio, ac mae polisïau CORS wedi'u ffurfweddu'n gywir ar gyfer ceisiadau traws-darddiad. Mae gwasanaethau cefndir wedi'u hadeiladu yn .NET (C#) neu Node.js yn dibynnu ar anghenion y prosiect, y ddau wedi'u teipio'n gryf a'r ddau gyda fframweithiau aeddfed y tu ôl iddynt.",
       "p3": "Mae cadwraeth data yn defnyddio cronfeydd data perthynol (SQL Server, PostgreSQL, MySQL) gyda dyluniad sgema wedi'i normaleiddio, mynegeio priodol, ac uniondeb trafodiadol. Mae integreiddio trydydd parti yn cynnwys pyrth taliadau (Stripe, PayPal), systemau archebu (Booksy, Square), llwyfannau CRM (HubSpot, Zoho), a gwasanaethau e-bost (Mailchimp, SendGrid). Mae pob integreiddiad wedi'i haniaethu y tu ôl i ryngwyneb glân fel y gellir cyfnewid dibyniaethau heb ailysgrifennu rhesymeg cymhwysiad.",
-      "p4": "Mae REST a GraphQL yn datrys yr un broblem mewn ffyrdd gwahanol. Mae REST yn rhoi un URL i chi fesul adnodd ac yn symlach i'w gadw yn y storfa dros dro, ei ddadfygio a'i ddogfennu — dyna'r diofyn cywir ar gyfer y rhan fwyaf o wefannau busnes ac integreiddiadau. Mae GraphQL yn rhoi un pwynt terfyn i'r cleient ac yn gadael iddo ofyn am union y meysydd mae eu hangen, sy'n talu ar ei ganfed pan fydd un sgrin yn tynnu o sawl ffynhonnell neu pan fo lled band symudol yn gyfyngiad go iawn, ar draul storfa fwy cymhleth a chromlin ddysgu serth. Ar gyfer safle busnes bach gyda ffurflen gyswllt ac integreiddio archebu, REST bron bob amser yw'r ateb cywir, a byddwn ni'n dweud hynny yn hytrach na gwerthu cymhlethdod nad oes ei angen arnoch."
+      "p4": "Mae REST a GraphQL yn datrys yr un broblem mewn ffyrdd gwahanol. Mae REST yn rhoi un URL i chi fesul adnodd ac yn symlach i'w gadw yn y storfa dros dro, ei ddadfygio a'i ddogfennu, sy'n ei wneud yn ddiofyn cywir ar gyfer y rhan fwyaf o wefannau busnes ac integreiddiadau. Mae GraphQL yn rhoi un pwynt terfyn i'r cleient ac yn gadael iddo ofyn am union y meysydd mae eu hangen. Mae hynny'n talu ar ei ganfed pan fydd un sgrin yn tynnu o sawl ffynhonnell, neu pan fo lled band symudol yn gyfyngiad go iawn, ac mae'n costio storfa fwy cymhleth a chromlin ddysgu serthach i chi. Ar gyfer safle busnes bach gyda ffurflen gyswllt ac integreiddio archebu, REST bron bob amser yw'r ateb cywir, a byddwn ni'n dweud hynny yn hytrach na gwerthu cymhlethdod nad oes ei angen arnoch."
     },
     "accessibility": {
-      "heading": "Hygyrchedd wedi'i Adeiladu i Mewn, Nid wedi'i Folltio Ymlaen",
+      "heading": "Hygyrchedd wedi'i Adeiladu i Mewn o'r Cychwyn",
       "subtitle": "Cydymffurfiaeth WCAG 2.2 ar gyfer profiadau gwe cynhwysol a defnyddiadwy.",
-      "p1": "Nid yw hygyrchedd yn ôl-feddwl — mae wedi'i adeiladu i mewn i bob penderfyniad o'r cychwyn. Mae pob safle rydym yn ei adeiladu yn targedu cydymffurfiaeth WCAG 2.2 Lefel AA, sy'n cwmpasu'r meini prawf llwyddiant mwyaf effeithiol ar gyfer gweithredoldeb bysellfwrdd, cymorth darllenydd sgrin, cyferbyniad lliw, a thrin gwallau. Mae priodoleddau WAI-ARIA (aria-label, aria-labelledby, aria-describedby, aria-live, role) yn cael eu defnyddio'n brin ac yn gywir i wella semanteg lle mae HTML ar ei ben ei hun yn annigonol, byth fel amnewid ar gyfer marcio semantig priodol.",
-      "p2": "Mae gweithredoldeb bysellfwrdd yn cael ei brofi'n drwyadl: mae pob elfen ryngweithiol yn derbyn dangosyddion ffocws gweladwy, mae trefn ffocws yn dilyn trefn ddarllen rhesymegol, ac mae trapiau ffocws yn cael eu dileu. Mae profi darllenydd sgrin yn cael ei berfformio gan ddefnyddio NVDA (Windows) a VoiceOver (macOS/iOS) i sicrhau bod cyhoeddiadau yn glir, bod tirnodau yn lywiadwy, a bod diweddariadau cynnwys dynamig yn cael eu cyfathrebu trwy ranbarthau byw. Mae cyferbyniad lliw yn bodloni neu'n rhagori ar gymarebau WCAG AA (4.5:1 ar gyfer testun normal, 3:1 ar gyfer testun mawr), ac nid yw gwybodaeth byth yn cael ei chyfleu gan liw yn unig. Mae defnyddwyr sy'n ffafrio symudiad gostyngedig yn derbyn animeiddiadau amgen neu gynlluniau statig trwy'r ymholiad cyfrwng prefers-reduced-motion.",
-      "p3": "Mae ffurflenni wedi'u dylunio ar gyfer eglurder ac adferiad gwall: mae labeli wedi'u cysylltu'n briodol ag mewnbynnau, mae gwallau dilysu yn cael eu cyhoeddi i ddarllenwyr sgrin ac yn cael eu cysylltu trwy aria-describedby, ac mae negeseuon gwall yn darparu arweiniad gweithredol. Yn gyfreithiol, mae gwefannau hygyrch yn ofynnol dan Ddeddf Cydraddoldeb y DU 2010 ar gyfer busnesau sy'n darparu gwasanaethau i'r cyhoedd, ac mae'n rhaid i gyrff sector cyhoeddus fodloni Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) 2018. Yn fasnachol, mae hygyrchedd yn cynyddu eich cynulleidfa, yn gwella defnyddioldeb i bob defnyddiwr, ac yn cyfrannu at raniadau SEO gwell gan fod peiriannau chwilio yn gwobrwyo marcio semantig, strwythuredig.",
-      "p4": "Mae WCAG 2.2, a gyhoeddwyd ym mis Hydref 2023, yn ychwanegu naw maen prawf llwyddiant ar ben WCAG 2.1 yn hytrach na'i ddisodli — felly mae safle sy'n bodloni Lefel AA 2.2 hefyd yn bodloni Lefel AA 2.1. Mae'r ychwanegiadau'n ymwneud yn bennaf â gweladwyedd ac ymddangosiad ffocws, dewisiadau amgen i lusgo, maint targed (isafswm o 24 wrth 24 picsel CSS ar gyfer rheolyddion rhyngweithiol), lleoliad cyson ar gyfer help, a lleihau baich gwybyddol dilysu a mewnbynnu data dybledig. Os gofynnir i chi fodloni \"WCAG 2.1 AA\" mewn contract neu dendr, mae adeiladu i 2.2 yn ei fodloni gyda lle i sbario."
+      "p1": "Mae pob safle rydym yn ei adeiladu yn targedu WCAG 2.2 Lefel AA. Dyna'r safon y cyfeirir ati gan rwymedigaethau hygyrchedd y DU a'r lefel y mae'r rhan fwyaf o gontractau masnachol a sector cyhoeddus yn gofyn amdani, ac mae'n cwmpasu'r meini prawf llwyddiant sy'n cyfrif fwyaf yn ymarferol: gweithredoldeb bysellfwrdd, cymorth darllenydd sgrin, cyferbyniad lliw a thrin gwallau. Mae hygyrchedd yn cael ei ddylunio i mewn o'r penderfyniad cyntaf yn hytrach na'i ôl-osod cyn lansio, am mai ôl-osod yw lle mae'r gost yn glanio. Mae priodoleddau WAI-ARIA (aria-label, aria-labelledby, aria-describedby, aria-live, role) yn cael eu defnyddio'n brin ac yn gywir, i ychwanegu semanteg lle mae HTML ar ei ben ei hun yn annigonol yn hytrach na chlytio dros farcio a ddylai fod wedi bod yn semantig yn y lle cyntaf.",
+      "p2": "Mae gweithredoldeb bysellfwrdd yn cael ei brofi'n iawn: mae gan bob elfen ryngweithiol ddangosydd ffocws gweladwy, mae trefn ffocws yn dilyn trefn ddarllen, ac mae trapiau bysellfwrdd yn cael eu dileu. Mae profi darllenydd sgrin yn cael ei wneud gyda NVDA (Windows) a VoiceOver (macOS/iOS), gan wirio bod cyhoeddiadau'n glir, bod modd llywio tirnodau, a bod diweddariadau cynnwys dynamig yn cael eu cyfathrebu trwy ranbarthau byw. Mae cyferbyniad lliw yn bodloni neu'n rhagori ar gymarebau WCAG AA (4.5:1 ar gyfer testun arferol, 3:1 ar gyfer testun mawr), ac nid yw lliw byth yn cario gwybodaeth ar ei ben ei hun. I ddefnyddwyr sy'n ffafrio llai o symud, mae'r ymholiad cyfrwng prefers-reduced-motion yn gweini animeiddiadau amgen neu gynlluniau statig.",
+      "p3": "Mae ffurflenni wedi'u hadeiladu ar gyfer eglurder ac adfer o wallau. Mae labeli wedi'u cysylltu'n briodol ag mewnbynnau, mae gwallau dilysu'n cael eu cyhoeddi i ddarllenwyr sgrin ac yn cael eu cysylltu trwy aria-describedby, ac mae negeseuon gwall yn dweud wrth y defnyddiwr beth i'w wneud yn eu cylch. Mae ochr gyfreithiol hefyd: mae gwefannau hygyrch yn ofynnol dan Ddeddf Cydraddoldeb y DU 2010 ar gyfer busnesau sy'n darparu gwasanaethau i'r cyhoedd, ac mae'n rhaid i gyrff sector cyhoeddus fodloni Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) 2018. Mae'r achos masnachol yn symlach. Gall mwy o bobl ddefnyddio'r safle, mae pawb yn ei chael hi'n haws i'w ddefnyddio, ac mae peiriannau chwilio'n gwobrwyo marcio semantig, strwythuredig.",
+      "p4": "Mae WCAG 2.2, a gyhoeddwyd ym mis Hydref 2023, yn ychwanegu naw maen prawf llwyddiant ar ben WCAG 2.1 yn hytrach na'i ddisodli, felly mae safle sy'n bodloni Lefel AA 2.2 hefyd yn bodloni Lefel AA 2.1. Mae'r ychwanegiadau'n ymwneud yn bennaf â gweladwyedd ac ymddangosiad ffocws, dewisiadau amgen i lusgo, maint targed (isafswm o 24 wrth 24 picsel CSS ar gyfer rheolyddion rhyngweithiol), lleoliad cyson ar gyfer help, a lleihau baich gwybyddol dilysu a mewnbynnu data dyblyg. Os gofynnir i chi fodloni \"WCAG 2.1 AA\" mewn contract neu dendr, mae adeiladu i 2.2 yn ei fodloni gyda lle i sbario."
     },
     "gdpr": {
       "heading": "GDPR y DU a Diogelu Data",
       "subtitle": "Dyluniad preifatrwydd-gyntaf a chydymffurfiaeth â chyfraith diogelu data'r DU.",
-      "p1": "Mae pob prosiect wedi'i ddylunio gyda chydymffurfiaeth GDPR y DU o'r cychwyn. Mae prosesu data personol yn seiliedig ar sail gyfreithlon (caniatâd, anghenraid contractiol, buddiannau cyfreithlon, rhwymedigaeth gyfreithiol) a dogfennwyd yn glir mewn polisïau preifatrwydd. Mae lleihau data yn golygu casglu dim ond yr hyn sy'n angenrheidiol; mae cyfyngiad pwrpas yn sicrhau bod data yn cael ei ddefnyddio ar gyfer y pwrpas a nodir yn unig; ac mae cyfyngiad storio yn diffinio cyfnodau cadw ar ôl y mae data yn cael ei ddileu'n ddiogel. Mae caniatâd ar gyfer cwcis dadansoddeg a marchnata yn cael ei gael yn benodol trwy faneri opt-in dan PECR (Rheoliadau Preifatrwydd a Chyfathrebiadau Electronig), a gall defnyddwyr dynnu caniatâd yn ôl ar unrhyw adeg, gan sbarduno dileu uniongyrchol o gwcis tracio.",
-      "p2": "Mae ffurfweddiadau dadansoddeg yn parchu preifatrwydd: mae Google Analytics 4 wedi'i ffurfweddu gydag anhysbysu IP wedi'i alluogi, mae data sensitif wedi'i eithrio o baramedrau digwyddiadau, ac mae cyfnodau cadw data wedi'u gosod yn briodol. Lle bo'n bosibl, mae dewisiadau dadansoddeg canolbwynt preifatrwydd yn cael eu hargymell. Mae hawliau testun data dan GDPR y DU — gan gynnwys yr hawl i gael mynediad (ceisiadau mynediad testun), cywiro, dileu (hawl i gael ei anghofio), cludadwyedd data, a gwrthwynebiad — yn cael eu cefnogi trwy brosesau clir a gweithrediad technegol. Mae'r ICO (Swyddfa'r Comisiynydd Gwybodaeth) yn darparu arweiniad rheoleiddiol, ac rydym yn helpu cleientiaid i ddeall eu rhwymedigaethau fel rheolwyr data.",
-      "p3": "Mae data mewn trafnidiaeth wedi'i amgryptio gan ddefnyddio TLS 1.2 neu uwch (HTTPS ym mhobman), ac mae data sensitif yn gorffwys wedi'i amgryptio gan ddefnyddio algorithmau safonol diwydiant (AES-256). Lle mae data yn cael ei gynnal, mae preswyliaeth data'r DU neu'r UE yn cael ei ffafrio i osgoi cymhlethdodau trosglwyddo rhyngwladol, yn enwedig wrth ddefnyddio rhanbarthau UK South neu UK West Microsoft Azure. Mae wrth gefn wedi'u hamgryptio ac yn cael eu profi'n rheolaidd, ac mae gweithdrefnau adfer ar ôl trychineb yn sicrhau y gellir adfer data o fewn amcanion amser adfer diffiniedig (RTO) ac amcanion pwynt adfer (RPO).",
+      "p1": "Mae pob prosiect wedi'i ddylunio ar gyfer cydymffurfiaeth GDPR y DU o'r cychwyn. Mae prosesu data personol yn gorffwys ar sail gyfreithlon (caniatâd, anghenraid contractiol, buddiannau cyfreithlon, rhwymedigaeth gyfreithiol), wedi'i ddogfennu'n glir yn y polisi preifatrwydd. Mae lleihau data'n golygu casglu dim ond yr hyn sy'n angenrheidiol. Mae cyfyngiad pwrpas yn cadw'r data hwnnw at y pwrpas a nodwyd, ac mae cyfyngiad storio'n gosod y cyfnod cadw ac ar ei ôl mae'r data'n cael ei ddileu'n ddiogel. Mae caniatâd ar gyfer cwcis dadansoddeg a marchnata'n cael ei gael yn benodol trwy faneri opt-in dan PECR (Rheoliadau Preifatrwydd a Chyfathrebiadau Electronig), a gall defnyddiwr dynnu'r caniatâd hwnnw'n ôl ar unrhyw adeg, sy'n sbarduno dileu cwcis tracio ar unwaith.",
+      "p2": "Mae ffurfweddiadau dadansoddeg yn parchu preifatrwydd. Mae Google Analytics 4 wedi'i osod gydag anhysbysu IP wedi'i alluogi, data sensitif wedi'i gadw allan o baramedrau digwyddiadau, a chyfnodau cadw data wedi'u gosod yn briodol. Lle mae dewis amgen sy'n canolbwyntio ar breifatrwydd yn gweddu i'r prosiect, byddwn yn ei argymell. Mae hawliau testun data dan GDPR y DU (mynediad trwy geisiadau mynediad testun, cywiro, dileu neu'r hawl i gael eich anghofio, cludadwyedd data, a gwrthwynebiad) yn cael eu cefnogi trwy brosesau clir a'r gweithrediad technegol i'w hategu. Mae'r ICO (Swyddfa'r Comisiynydd Gwybodaeth) yn cyhoeddi'r arweiniad rheoleiddiol, ac rydym yn helpu cleientiaid i weithio allan beth mae'n ei olygu iddyn nhw fel rheolwyr data.",
+      "p3": "Mae data mewn trawsgludiad wedi'i amgryptio gan ddefnyddio TLS 1.2 neu uwch (HTTPS ym mhobman), ac mae data sensitif sy'n gorffwys wedi'i amgryptio gan ddefnyddio algorithmau safonol y diwydiant (AES-256). Lle mae data'n cael ei gynnal, mae'n well gennym breswyliaeth data yn y DU neu'r UE er mwyn osgoi cymhlethdodau trosglwyddo rhyngwladol, sy'n syml ar Microsoft Azure gan ddefnyddio rhanbarthau UK South neu UK West. Mae copïau wrth gefn wedi'u hamgryptio ac yn cael eu profi'n rheolaidd, ac mae gweithdrefnau adfer ar ôl trychineb wedi'u hysgrifennu yn erbyn amcanion amser adfer (RTO) ac amcanion pwynt adfer (RPO) diffiniedig.",
       "disclaimer": "Darperir y wybodaeth hon ar gyfer arweiniad cyffredinol ac nid yw'n cynrychioli cyngor cyfreithiol. Ymgynghorwch â chyfreithiwr diogelu data cymwys ar gyfer gofynion cyfreithiol penodol."
     },
     "cloud": {
       "heading": "Cynnal Cwmwl-Gyntaf",
       "subtitle": "Microsoft Azure a seilwaith wedi'i optimeiddio ymyl.",
-      "p1": "Mae cynnal modern yn gwmwl-gyntaf: mae Microsoft Azure yn darparu seilwaith graddadwy, dibynadwy gyda chyflenwi ymyl byd-eang trwy Azure Static Web Apps, Azure App Service, ac Azure CDN. Mae safleoedd statig yn cael eu defnyddio i rwydwaith ymyl Azure, gan gyflenwi cynnwys o'r pwynt presenoldeb agosaf (PoP) i'r defnyddiwr ar gyfer y lleihad cudd. Mae TLS/HTTPS wedi'i alluogi yn ddiofyn gydag adnewyddu tystysgrif awtomatig trwy Let's Encrypt neu dystysgrifau a reolir gan Azure, gan sicrhau cysylltiadau wedi'u hamgryptio a dangosyddion ymddiriedaeth mewn porwyr.",
-      "p2": "Mae amgylcheddau wedi'u gwahanu'n rhesymegol (datblygu, llwyfanu, cynhyrchiad) gan ddefnyddio grwpiau adnoddau Azure a slotiau defnyddio, gan ganiatáu profi diogel cyn rhyddhad cynhyrchiad. Mae awto-raddio yn trin sbigiau traffig heb ymyrraeth â llaw, ac mae amser gweithredu yn cael ei fonitro gan ddefnyddio Azure Monitor ac Application Insights, gyda rhybuddio wedi'i ffurfweddu ar gyfer dirywiad perfformiad, gwallau, neu amser segur. Mae costau yn cael eu rheoli trwy dagio adnoddau, rhybuddion cyllideb, a maint cywir o adnoddau cyfrifo a storio — nid oes angen i seilwaith cwmwl fod yn ddrud, yn enwedig ar gyfer busnesau bach gyda phatrymau traffig rhagweladwy.",
-      "p3": "Mae seilwaith fel cod (IaC) yn cael ei ddefnyddio lle bo'n briodol, gan ddiffinio adnoddau yn ddatganiadol mewn templedi Bicep neu Terraform ar gyfer defnyddiadau atgynhyrchiadwy a newidiadau seilwaith wedi'u rheoli fersiwn. Mae wrth gefn wedi'u hawtomeiddio ac yn cael eu profi'n rheolaidd i wirio gweithdrefnau adfer, ac mae mecanweithiau rhol yn ôl yn eu lle i wrthdroi defnyddiadau os caiff materion eu canfod ar ôl rhyddhad. Mae rhanbarthau'r DU Azure (UK South, UK West) yn cadw data o fewn ffiniau'r DU, gan symleiddio cydymffurfiaeth GDPR a bodloni gofynion preswyliaeth data sefydliadol."
+      "p1": "Mae cynnal modern yn gwmwl-gyntaf. Mae Microsoft Azure yn darparu seilwaith graddadwy, dibynadwy gyda chyflenwi ymyl byd-eang trwy Azure Static Web Apps, Azure App Service ac Azure CDN. Mae safleoedd statig yn cael eu defnyddio i rwydwaith ymyl Azure a'u gweini o'r pwynt presenoldeb (PoP) agosaf at y defnyddiwr, sy'n cadw hwyrni'n isel. Mae TLS/HTTPS ymlaen yn ddiofyn, gyda thystysgrifau'n adnewyddu'n awtomatig trwy Let's Encrypt neu dystysgrifau a reolir gan Azure, felly mae cysylltiadau'n aros wedi'u hamgryptio ac mae porwyr yn dangos y dangosyddion ymddiriedaeth mae ymwelwyr yn chwilio amdanynt.",
+      "p2": "Mae amgylcheddau'n cael eu cadw ar wahân (datblygu, llwyfannu, cynhyrchu) gan ddefnyddio grwpiau adnoddau Azure a slotiau defnyddio, fel y gellir profi newidiadau'n ddiogel cyn iddynt gyrraedd cynhyrchu. Mae awto-raddio'n amsugno sbigiau traffig heb i neb ymyrryd. Mae amser gweithredu'n cael ei fonitro gydag Azure Monitor ac Application Insights, gyda rhybuddio wedi'i ffurfweddu ar gyfer dirywiad perfformiad, gwallau neu amser segur. Mae costau'n aros dan reolaeth trwy dagio adnoddau, rhybuddion cyllideb a maint cywir o adnoddau cyfrifo a storio. Nid oes angen i seilwaith cwmwl fod yn ddrud, yn enwedig i fusnes bach gyda phatrymau traffig rhagweladwy.",
+      "p3": "Mae seilwaith fel cod (IaC) yn cael ei ddefnyddio lle mae'n ennill ei le, gan ddiffinio adnoddau'n ddatganiadol mewn templedi Bicep neu Terraform fel bod defnyddiadau'n atgynhyrchiadwy a newidiadau seilwaith wedi'u rheoli gan fersiwn. Mae copïau wrth gefn yn rhedeg yn awtomatig ac yn cael eu profi i gadarnhau bod y weithdrefn adfer yn gweithio, ac mae mecanweithiau rholio'n ôl yn eu lle os yw problem yn ymddangos ar ôl rhyddhau. Mae rhanbarthau'r DU Azure (UK South, UK West) yn cadw data o fewn ffiniau'r DU, sy'n symleiddio cydymffurfiaeth GDPR ac yn bodloni gofynion preswyliaeth data sefydliadol."
     },
     "containers": {
       "heading": "Cynhwysedd a CI/CD",
       "subtitle": "Docker a phibellau awtomataidd ar gyfer defnyddiadau dibynadwy.",
-      "p1": "Mae cynwysyddion Docker yn pecynnu cymwysiadau a dibyniaethau i mewn i ddelweddau atgynhyrchiadwy, cludadwy sy'n rhedeg yn union yr un fath mewn datblygu, llwyfanu, a chynhyrchiad. Mae hyn yn dileu'r broblem 'mae'n gweithio ar fy mheiriant' ac yn sicrhau cysondeb ar draws amgylcheddau. Mae Dockerfiles yn diffinio adeiladau aml-lwyfan: mae camau crynhoi a phrofi yn taflu ffeiliau diangen, a dim ond y ddelwedd amser rhedeg olaf (sy'n cynnwys y cymhwysiad wedi'i grynhoi a dibyniaethau cynhyrchiad) sy'n cael ei ddefnyddio, gan leihau maint delwedd ac arwynebedd ymosodiad.",
-      "p2": "Mae delweddau cynhwysydd yn cael eu gwthio i gofrestrau cynhwysydd (Azure Container Registry, Docker Hub) gyda thagiau fersiwn semantig, gan alluogi rhol yn ôl i fersiynau blaenorol os bydd defnyddiadau'n methu. Mae delweddau sylfaen yn cael eu cadw'n gyfredol gyda chywiriadau diogelwch, ac mae offer sganio bregusrwydd (Trivy, Snyk, Azure Defender) yn nodi CVEau hysbys mewn dibyniaethau. Mae haenau delwedd yn cael eu creu'n ddeallus i gyflymu ailadeiladau: mae haenau gosod dibyniaeth yn cael eu creu ar wahân o haenau cod cymhwysiad, felly caiff lawrlwythiadau dibyniaeth eu sgipiau os nad yw maniffestiadau pecyn wedi newid.",
-      "p3": "Mae pibellau CI/CD yn awtomeiddio'r broses cyflenwi meddalwedd trwy gamau diffiniedig clir: mae gwiriadau lint yn gorfodi arddull cod, mae gwiriadau math yn gwirio cywirdeb TypeScript, mae profion uned ac integreiddio yn dilysu ymddygiad, mae adeiladau yn cynhyrchu bwndeli wedi'u hoptimeiddio, ac mae defnyddiadau yn gwthio i amgylcheddau targed. Mae defnyddiadau rhagolwg awtomataidd yn creu amgylcheddau byrhoedlog ar gyfer ceisiadau tynnu, gan ganiatáu i randdeiliaid adolygu newidiadau cyn uno i brif. Os yw defnyddiad yn cyflwyno byg, mae polisïau rhol yn ôl awtomataidd yn dychwelyd i'r fersiwn dda olaf, gan leihau amser segur ac effaith defnyddiwr."
+      "p1": "Mae cynwysyddion Docker yn pecynnu cymhwysiad a'i ddibyniaethau i mewn i ddelwedd atgynhyrchiadwy, gludadwy sy'n rhedeg yr un ffordd mewn datblygu, llwyfannu a chynhyrchu. Dyna ddiwedd ar 'mae'n gweithio ar ein peiriant ni'. Mae Dockerfiles yn diffinio adeiladau aml-gam: mae'r camau crynhoi a phrofi'n taflu popeth nad oes ei angen, a dim ond y ddelwedd amser rhedeg olaf, sy'n dal y cymhwysiad wedi'i grynhoi a'i ddibyniaethau cynhyrchu, sy'n cael ei defnyddio. Delwedd lai, arwynebedd ymosod llai.",
+      "p2": "Mae delweddau cynhwysydd yn cael eu gwthio i gofrestrfa gynhwysydd (Azure Container Registry, Docker Hub) gyda thagiau fersiynu semantig, fel y gellir rholio defnyddiad sydd wedi methu yn ôl i fersiwn flaenorol. Mae delweddau sylfaen yn cael eu cadw'n gyfredol gyda chlytiau diogelwch, ac mae offer sganio bregusrwydd (Trivy, Snyk, Azure Defender) yn codi CVEau hysbys mewn dibyniaethau. Mae haenau delwedd yn cael eu storio dros dro gyda pheth meddwl: mae gosod dibyniaethau'n cael ei storio ar wahân i god y cymhwysiad, felly caiff lawrlwythiadau dibyniaeth eu hepgor pan nad yw maniffestau pecyn wedi newid.",
+      "p3": "Mae piblinellau CI/CD yn awtomeiddio cyflenwi trwy gamau diffiniedig clir. Mae gwiriadau lint yn gorfodi arddull cod, mae gwiriadau math yn gwirio cywirdeb TypeScript, mae profion uned ac integreiddio'n dilysu ymddygiad, mae adeiladau'n cynhyrchu bwndeli wedi'u hoptimeiddio, ac mae defnyddiadau'n gwthio i'r amgylchedd targed. Mae defnyddiadau rhagolwg awtomataidd yn creu amgylcheddau byrhoedlog ar gyfer ceisiadau tynnu, fel y gall rhanddeiliaid adolygu newidiadau cyn i unrhyw beth gael ei uno i main. Os yw defnyddiad yn cyflwyno byg, mae polisïau rholio'n ôl awtomataidd yn dychwelyd i'r fersiwn dda olaf hysbys ac mae'r amser segur yn aros yn fyr."
     },
     "performance": {
       "heading": "Perfformiad a Core Web Vitals",
       "subtitle": "Profiadau defnyddiwr cyflym, mesuradwy sy'n gyrru trosiadau.",
-      "p1": "Nid yw perfformiad yn oddrychol — mae'n cael ei fesur gan ddefnyddio Core Web Vitals Google: mae Largest Contentful Paint (LCP) yn mesur perfformiad llwytho a dylai ddigwydd o fewn 2.5 eiliad, mae Interaction to Next Paint (INP) yn mesur ymatebolrwydd i fewnbwn defnyddiwr a dylai fod o dan 200ms, ac mae Cumulative Layout Shift (CLS) yn mesur sefydlogrwydd gweledol a dylai fod o dan 0.1. Mae'r metrigau hyn yn effeithio'n uniongyrchol ar brofiad defnyddiwr, cyfraddau trosi, a safleoedd chwilio Google, felly rydym yn optimeiddio pob prosiect i fodloni neu ragori ar drothwyon Da.",
-      "p2": "Mae delweddau yn cael eu cyflenwi mewn fformatau modern (AVIF gyda chwymp WebP yn ôl) gan ddefnyddio cystrawen delwedd ymatebol (srcset a phriodoleddau maint) i wasanaethu delweddau maint priodol ar gyfer pob porth golwg. Mae llwytho diog yn gohirio delweddau oddi ar y sgrin nes bod y defnyddiwr yn sgrolio'n agos atynt, gan leihau pwysau tudalen cychwynnol. Mae llwytho ffont yn defnyddio font-display: swap i atal testun anweledig (FOIT) ac issetau ffontiau i gynnwys dim ond ystodau nod gofynnol. Mae CSS critigol yn cael ei mewnlinio yn y pen dogfen i rendro cynnwys uwchben y blyg ar unwaith, ac mae CSS nad yw'n gritigol yn cael ei lwytho'n asyncronaidd.",
-      "p3": "Mae bwndeli JavaScript yn cael eu hollti cod yn ôl llwybr, felly dim ond cod ar gyfer y tudalennau maent yn ymweld â nhw y mae defnyddwyr yn ei lawrlwytho. Mae sgriptiau trydydd parti (dadansoddeg, widgetau sgwrs) yn cael eu llwytho'n asyncronaidd neu'n cael eu gohirio i osgoi blocio'r prif linyn. Mae penawdau cael eu ffurfweddu'n ymosodol ar gyfer asedau statig (mae ffeiliau anghyfnewidiol yn cael eu casgliad am flwyddyn gyda hash bustio cael yn enwau ffeil), ac mae strategaethau stale-while-revalidate yn gwasanaethu cynnwys wedi'i gasgliad ar unwaith wrth gael diweddariadau yn y cefndir. Y canlyniad yw profiadau cyflym, llyfn sy'n cadw defnyddwyr wedi'u hymgysylltu ac yn gyrru gwelliannau mesuradwy mewn ffledi trosi."
+      "p1": "Nid mater o farn yw perfformiad. Mae'n cael ei fesur, gan ddefnyddio Core Web Vitals Google: mae Largest Contentful Paint (LCP) yn mesur perfformiad llwytho a dylai ddigwydd o fewn 2.5 eiliad, mae Interaction to Next Paint (INP) yn mesur ymatebolrwydd i fewnbwn defnyddiwr a dylai fod o dan 200ms, ac mae Cumulative Layout Shift (CLS) yn mesur sefydlogrwydd gweledol a dylai fod o dan 0.1. Mae'r rhifau hynny'n bwydo profiad defnyddiwr, cyfraddau trosi a safleoedd chwilio Google, felly rydym yn optimeiddio pob prosiect i fodloni neu ragori ar y trothwyon Da.",
+      "p2": "Mae delweddau'n cael eu cyflenwi mewn fformatau modern (AVIF gyda WebP yn ôl-gwymp) a'u maintio fesul porth golwg gan ddefnyddio cystrawen delwedd ymatebol (priodoleddau srcset a sizes). Mae llwytho diog yn dal delweddau oddi ar y sgrin yn ôl nes bod y defnyddiwr yn sgrolio'n agos atynt, sy'n torri pwysau'r dudalen gychwynnol. Mae ffontiau'n defnyddio font-display: swap i osgoi testun anweledig (FOIT), wedi'u his-setio i lawr i'r ystodau nod sydd eu hangen arnoch. Mae CSS critigol yn cael ei fewnlinio ym mhen y ddogfen fel bod cynnwys uwchben y blyg yn rendro ar unwaith, ac mae'r gweddill yn cael ei lwytho'n asyncronaidd.",
+      "p3": "Mae bwndeli JavaScript yn cael eu hollti'n god yn ôl llwybr, felly dim ond y cod ar gyfer y tudalennau maent yn eu hagor y mae ymwelydd yn ei lawrlwytho. Mae sgriptiau trydydd parti (dadansoddeg, widgetau sgwrs) yn cael eu llwytho'n asyncronaidd neu eu gohirio fel nad ydynt yn blocio'r prif linyn. Mae penawdau storio dros dro'n cael eu gosod yn ymosodol ar gyfer asedau statig: mae ffeiliau anghyfnewidiol yn cael eu storio am flwyddyn gyda hashiau torri storfa yn yr enwau ffeil, ac mae stale-while-revalidate yn gweini'r copi wedi'i storio ar unwaith wrth nôl diweddariad yn y cefndir. Mae tudalennau'n gorffen yn teimlo'n gyflym i'w defnyddio, ac mae hynny'n dangos yn y ffigurau trosi."
     },
     "seo": {
       "heading": "SEO Technegol",
       "subtitle": "SEO technegol ac optimeiddio peiriannau ateb, wedi'i adeiladu i mewn o'r cychwyn.",
-      "p1": "Mae SEO technegol yn sicrhau bod peiriannau chwilio yn gallu cribo, mynegeio, a graddio eich cynnwys yn effeithiol. Mae strwythur HTML semantig gyda hierarchaeth pennawd cywir (un h1 y dudalen, nythu rhesymegol h2-h6) yn cyfathrebu pwysigrwydd cynnwys a pherthnasoedd. Mae metadata yn cynnwys tagiau teitl (55-60 nod), disgrifiadau meta (150-160 nod), a thagiau Open Graph ar gyfer rhagolygon cyfryngau cymdeithasol cyfoethog. Mae data strwythuredig JSON-LD (marcio Schema.org) yn darparu cyd-destun semantig eglur: mae sgemas LocalBusiness, Product, Article, BreadcrumbList, ac FAQPage yn helpu peiriannau chwilio i ddeall mathau cynnwys a dangos canlyniadau cyfoethog mewn SERPau.",
-      "p2": "Mae mapiau safle (XML ac HTML) yn rhestru pob tudalen ar gyfer cribwyr, ac mae ffeiliau robots.txt yn rheoli mynediad cribwr i lwybrau penodol. Mae URLau canonaidd (rel=canonical) yn atal cosbau cynnwys dyblyg, ac mae ailgyfeiriadau 301 yn arwain peiriannau chwilio pan fydd URLau yn newid. Mae rendro ochr gweinydd (SSR) yn cyflenwi HTML wedi'i rendro'n llawn i gribwyr ar gais cyntaf, gan sicrhau bod cymwysiadau trwm JavaScript yn fynegeiadwy — yn wahanol i rendro ochr cleient, sy'n gofyn i gribwyr weithredu JavaScript (nid pob un yn gwneud hynny'n ddibynadwy). Mae modd SSR Nuxt yn datrys y broblem hon yn gelfydd.",
-      "p3": "Mae rhyngwladoli (i18n) gyda thagiau hreflang yn signalu amrywiadau iaith a rhanbarthol i beiriannau chwilio, gan atal materion cynnwys dyblyg ar gyfer safleoedd amlieithog. Mae'r safle hwn ei hun yn ddwyieithog (Saesneg a Chymraeg) gydag anodiadau hreflang cywir. Mae optimeddiadau perfformiad (LCP cyflym, CLS isel) yn cyfrannu'n uniongyrchol at raniadau SEO dan signalau profiad tudalen Google. Mae archwiliadau rheolaidd gan ddefnyddio offer fel Lighthouse, Search Console, a Screaming Frog yn nodi materion technegol (dolenni toredig, testun alt ar goll, tudalennau araf) ac yn olrhain gwelliannau graddio dros amser."
+      "p1": "SEO technegol yw'r hyn sy'n gadael i beiriannau chwilio gribo, mynegeio a graddio eich cynnwys. Mae strwythur HTML semantig gyda hierarchaeth pennawd gywir (un h1 y dudalen, nythu rhesymegol h2-h6) yn dweud wrthynt beth sy'n cyfrif a sut mae'n cysylltu. Mae metadata'n cynnwys tagiau teitl (55-60 nod), disgrifiadau meta (150-160 nod) a thagiau Open Graph ar gyfer rhagolygon cyfryngau cymdeithasol cyfoethog. Mae data strwythuredig JSON-LD (marcio Schema.org) yn ychwanegu cyd-destun semantig eglur: mae sgemas LocalBusiness, Product, Article, BreadcrumbList ac FAQPage yn helpu peiriannau chwilio i adnabod mathau o gynnwys a dangos canlyniadau cyfoethog mewn SERPau.",
+      "p2": "Mae mapiau safle (XML ac HTML) yn rhestru pob tudalen ar gyfer cribwyr, ac mae ffeiliau robots.txt yn rheoli mynediad cribwr i lwybrau penodol. Mae URLau canonaidd (rel=canonical) yn atal cosbau cynnwys dyblyg, ac mae ailgyfeiriadau 301 yn arwain peiriannau chwilio pan fydd URLau'n newid. Mae rendro ochr gweinydd (SSR) yn cyflenwi HTML wedi'i rendro'n llawn i gribwyr ar y cais cyntaf, a dyna sy'n gwneud cymwysiadau trwm o ran JavaScript yn fynegeiadwy. Mae rendro ochr cleient yn gadael i'r cribwr weithredu'r JavaScript ei hun, ac nid yw pob un yn gwneud hynny'n ddibynadwy. Mae modd SSR Nuxt yn ei drin.",
+      "p3": "Mae rhyngwladoli (i18n) gyda thagiau hreflang yn signalu amrywiadau iaith a rhanbarthol i beiriannau chwilio, sy'n atal problemau cynnwys dyblyg ar safleoedd amlieithog. Mae'r safle hwn yn ddwyieithog, Saesneg a Chymraeg, gyda'r anodiadau hreflang wedi'u gwneud yn iawn. Mae gwaith perfformiad (LCP cyflym, CLS isel) yn bwydo safleoedd SEO yn uniongyrchol trwy signalau profiad tudalen Google. Mae archwiliadau rheolaidd gan ddefnyddio Lighthouse, Search Console a Screaming Frog yn codi problemau technegol (dolenni toredig, testun alt ar goll, tudalennau araf) ac yn olrhain sut mae safleoedd yn symud dros amser."
     },
     "staticSites": {
       "heading": "Beth Yw Safle Statig, a Pham Mae'n Bwysig i Chi",
       "subtitle": "Y model cyflenwi y tu ôl i wefannau cyflym, rhad i'w rhedeg, ac anodd eu torri.",
       "p1": "Mae safle statig yn un lle mae pob tudalen yn cael ei adeiladu'n HTML gorffenedig ymlaen llaw, ar yr union eiliad y caiff y safle ei gyhoeddi, yn hytrach na'i gydosod gan weinydd bob tro mae rhywun yn ymweld. Mae porwr yr ymwelydd yn cael tudalen gyflawn ar unwaith. Does dim ymholiad cronfa ddata, dim cam rendro ochr gweinydd, a dim aros.",
-      "p2": "Yn ymarferol mae hynny'n golygu tri pheth i fusnes. Mae'n gyflym, gan fod y dudalen eisoes wedi'i gwneud — sy'n helpu Core Web Vitals yn uniongyrchol ac felly'r safle chwilio. Mae'n rhad i'w redeg, gan fod gwasanaethu ffeiliau yn costio ffracsiwn o redeg gweinydd cymhwysiad. Ac mae'n anodd iawn torri i mewn iddo, gan nad oes cronfa ddata i'w peryglu, dim mewngofnodi gweinyddol wedi'i ddatgelu i'r rhyngrwyd, a dim ecosystem ategyn i'w gadw wedi'i glytio.",
-      "p3": "Y gyfaddawd yw bod unrhyw beth gwirioneddol ddeinamig — lefelau stoc byw, ardal gyfrif cwsmer, calendr archebu sy'n dangos argaeledd go iawn — dal angen gwasanaeth y tu ôl iddo. Dyna pam mae'r rhan fwyaf o'n hadeiladwaith yn dudalennau statig gyda darnau deinamig penodol wedi'u galw i mewn yn ôl y galw, yn hytrach na dewis popeth-neu-ddim. Mae'r wefan hon wedi'i hadeiladu yn union felly: mae pob tudalen yn Saesneg a Chymraeg wedi'i rhagrendro ar amser adeiladu."
+      "p2": "Yn ymarferol mae hynny'n golygu tri pheth i fusnes. Mae'n gyflym, gan fod y dudalen eisoes wedi'i gwneud, ac mae hynny'n bwydo'n syth i Core Web Vitals ac felly i'r safle chwilio. Mae'n rhad i'w redeg: mae gweini ffeiliau'n costio ffracsiwn o redeg gweinydd cymhwysiad. Ac mae torri i mewn yn anodd pan nad oes cronfa ddata i'w pheryglu, dim mewngofnodi gweinyddol wedi'i ddatgelu i'r rhyngrwyd a dim ecosystem ategyn i'w chadw wedi'i chlytio.",
+      "p3": "Y cyfaddawd yw bod unrhyw beth gwirioneddol ddeinamig (lefelau stoc byw, ardal gyfrif cwsmer, calendr archebu sy'n dangos argaeledd go iawn) dal angen gwasanaeth y tu ôl iddo. Felly mae'r rhan fwyaf o'n hadeiladwaith yn dudalennau statig gyda darnau deinamig penodol wedi'u galw i mewn yn ôl y galw, yn hytrach na dewis popeth-neu-ddim. Mae'r wefan hon wedi'i hadeiladu yn union felly: mae pob tudalen yn Saesneg a Chymraeg wedi'i rhagrendro ar amser adeiladu."
     },
     "builders": {
       "heading": "Adeiladwyr Gwefan yn erbyn Adeiladwaith Pwrpasol",
       "subtitle": "Cymhariaeth onest o Wix, Squarespace, WordPress a safle pwrpasol.",
-      "p1": "Mae adeiladwyr gwefan yn wirioneddol dda am yr hyn maen nhw'n ei wneud. Mae cynlluniau Wix yn rhedeg o oddeutu £9 i £119 y mis a Squarespace o oddeutu £12 i £79 y mis, y ddau gyda thempledi, cynnal a golygydd gweledol wedi'u cynnwys. Os oes angen rhywbeth ar-lein yr wythnos hon arnoch, rydych yn gyfforddus yn ei wneud eich hun, ac mae'r safle'n ffryntsiop syml, mae adeiladwr yn ateb rhesymol a byddwn ni'n dweud hynny wrthych.",
-      "p2": "Mae'r costau'n ymddangos yn ddiweddarach. Nid yw tanysgrifiadau byth yn stopio, ac maen nhw'n codi. Mae templedi'n cyfyngu ar yr hyn y gallwch ei wneud, felly mae'r safle'n dod i edrych fel pob busnes arall sy'n defnyddio'r templed hwnnw. Mae perfformiad a hygyrchedd i raddau helaeth allan o'ch dwylo, sy'n bwysig gan fod y ddau'n bwydo i safle chwilio. Mae apiau ac ychwanegion yn cael eu bilio ar wahân, yn aml £5 i £30 y mis yr un. Ac nid yw eich safle'n gludadwy — ni allwch fynd â safle Wix i letyw arall, felly rydych chi'n rhentu, nid yn berchen.",
-      "p3": "Mae WordPress yn eistedd rhwng y ddau: gwirioneddol hyblyg a chludadwy, ond mae'n gymhwysiad sydd angen ei gynnal. Mae'n rhaid cymhwyso diweddariadau craidd, thema ac ategyn, a'r llwybr mwyaf cyffredin i mewn i wefan busnes bach yw ategion heb eu clytio. Naill ai rydych chi'n gwneud y gwaith hwnnw'n fisol neu rydych chi'n talu rhywun i'w wneud.",
-      "p4": "Mae adeiladwaith pwrpasol yn costio mwy ymlaen llaw ac yn cymryd mwy o amser. Yr hyn rydych chi'n ei gael am hynny yw safle nad oes gan neb arall, wedi'i adeiladu i safonau hygyrchedd a pherfformiad y gallwch bwyntio atynt, heb danysgrifiad ynghlwm wrth y safle ei hun a pherchnogaeth lawn ar y cod a'r cyfrifon. I fusnes lle mae'r wefan yn sianel werthu wirioneddol yn hytrach na ffurfioldeb, mae hynny fel arfer yn talu ei ffordd yn ôl. I fusnes sydd angen rhywbeth dros dro ar-lein erbyn dydd Gwener, nid yw, ac adeiladwr yw'r argymhelliad gonest."
+      "p1": "Mae adeiladwyr gwefan yn dda am yr hyn maen nhw'n ei wneud. Mae cynlluniau Wix yn rhedeg o oddeutu £9 i £119 y mis a Squarespace o oddeutu £12 i £79 y mis, y ddau gyda thempledi, cynnal a golygydd gweledol wedi'u cynnwys. Os oes angen rhywbeth ar-lein yr wythnos hon arnoch, rydych yn gyfforddus yn ei wneud eich hun, ac mae'r safle'n ffryntsiop syml, mae adeiladwr yn ateb rhesymol a byddwn ni'n dweud hynny wrthych.",
+      "p2": "Mae'r costau'n ymddangos yn ddiweddarach. Nid yw tanysgrifiadau'n stopio, ac maen nhw'n codi. Mae templedi'n cyfyngu ar yr hyn y gallwch ei wneud, felly mae'r safle'n dod i edrych fel pob busnes arall sy'n defnyddio'r templed hwnnw. Mae perfformiad a hygyrchedd i raddau helaeth allan o'ch dwylo, ac mae'r ddau'n bwydo i safle chwilio. Mae apiau ac ychwanegion yn cael eu bilio ar wahân, yn aml £5 i £30 y mis yr un. Ac nid yw'r safle'n gludadwy: ni allwch fynd â safle Wix i westeiwr arall, felly rhentu ydych chi.",
+      "p3": "Mae WordPress yn eistedd rhwng y ddau: hyblyg a chludadwy, ond mae'n gymhwysiad sydd angen ei gynnal. Mae'n rhaid cymhwyso diweddariadau craidd, thema ac ategyn, a'r llwybr mwyaf cyffredin i mewn i wefan busnes bach yw ategion heb eu clytio. Naill ai rydych chi'n gwneud y gwaith hwnnw'n fisol neu rydych chi'n talu rhywun i'w wneud.",
+      "p4": "Mae adeiladwaith pwrpasol yn costio mwy ymlaen llaw ac yn cymryd mwy o amser. Yr hyn rydych chi'n ei gael am hynny yw safle nad oes gan neb arall, wedi'i adeiladu i safonau hygyrchedd a pherfformiad y gallwch bwyntio atynt, heb danysgrifiad ynghlwm wrth y safle ei hun a pherchnogaeth lawn ar y cod a'r cyfrifon. I fusnes lle mae'r wefan yn sianel werthu go iawn yn hytrach na ffurfioldeb, mae hynny fel arfer yn talu ei ffordd yn ôl. Os mai dim ond rhywbeth dros dro ar-lein erbyn dydd Gwener sydd ei angen arnoch, nid yw, ac adeiladwr yw'r argymhelliad gonest."
     }
   },
   "process": {
     "hero": {
       "title": "Sut Rydym yn Gweithio",
-      "subtitle": "Proses bum cam, wedi'i gyrru gan gerrig milltir, o'r ymholiad cyntaf i'r lansiad — 2 i 6 wythnos fel arfer, gyda meddalwedd weithredol a nodyn cynnydd ysgrifenedig ar bob cam."
+      "subtitle": "Proses bum cam, wedi'i gyrru gan gerrig milltir, o'r ymholiad cyntaf i'r lansiad. 2 i 6 wythnos fel arfer, gyda meddalwedd weithredol a nodyn cynnydd ysgrifenedig ar bob cam."
     },
     "lifecycle": {
       "heading": "Y Cylch Bywyd Darparu",
@@ -483,14 +483,14 @@
       "outputs": "Beth rydych chi'n ei gael",
       "stage1": {
         "title": "Cais a Darganfod (1 i 2 ddiwrnod)",
-        "description": "Mae cyswllt cyntaf yn sgwrs ddi-rwymedigaeth i ddeall eich problem fusnes yn hytrach na neidio'n syth i ateb. Rydym yn gofyn am eich defnyddwyr, sut mae llwyddiant yn edrych, systemau a chyfyngiadau presennol, ystod cyllideb a therfynau amser realistig. Mae darganfod yn ymwneud â deall y broblem yn ddigon dwys i gynnig yr ateb cywir, nid yr un hawsaf i'w adeiladu.",
+        "description": "Mae'r cyswllt cyntaf yn sgwrs ddi-rwymedigaeth am eich problem fusnes, cyn i neb ddechrau cynnig atebion. Rydym yn gofyn am eich defnyddwyr, sut mae llwyddiant yn edrych, systemau a chyfyngiadau presennol, ystod cyllideb a therfynau amser realistig. Y nod yw deall y broblem yn ddigon da i gynnig yr ateb cywir yn hytrach na'r un cyflymaf i'w adeiladu.",
         "output1": "Crynodeb ysgrifenedig o'r hyn a drafodwyd",
         "output2": "Datganiad problem cytunedig",
         "output3": "Arwydd o ymarferoldeb ac addasrwydd"
       },
       "stage2": {
         "title": "Cynnig (2 i 3 diwrnod)",
-        "description": "Mae cynnig ysgrifenedig yn cynnwys cwmpas, dull argymelledig a dewisiadau technoleg gyda rhesymau, rhagdybiaethau ac eithrio wedi'u datgan yn blaen. Ar gyfer adeiladau mwy, darperir opsiynau cyfnodi fel y gallwch ddechrau'n fach ac ehangu'n ddiweddarach. Mae'r cynnig yn cynnwys cost sefydlog a chynllun cerrig milltir sy'n dangos beth sy'n cael ei gyflenwi a phryd. Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, felly ni ddylai'r ffigwr yn y cynnig fod yn syndod. Dim jargon, dim padio — mae popeth yn cael ei esbonio mewn Saesneg plaen.",
+        "description": "Mae cynnig ysgrifenedig yn cynnwys cwmpas, dull argymelledig a dewisiadau technoleg gyda rhesymau, gyda rhagdybiaethau ac eithriadau wedi'u datgan yn blaen. Ar gyfer adeiladau mwy, darperir opsiynau cyfnodi fel y gallwch ddechrau'n fach ac ehangu'n ddiweddarach. Mae'r cynnig yn cynnwys cost sefydlog a chynllun cerrig milltir sy'n dangos beth sy'n cael ei gyflenwi a phryd. Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, felly ni ddylai'r ffigwr yn y cynnig fod yn syndod. Mae wedi'i ysgrifennu mewn iaith blaen, heb jargon na phadio.",
         "output1": "Dogfen gynnig gyda chwmpas a dull",
         "output2": "Toriad cerrig milltir gyda chyflenwadau",
         "output3": "Datganiad clir o'r hyn sydd ac nad yw wedi'i gynnwys"
@@ -505,14 +505,14 @@
       },
       "stage4": {
         "title": "Adeiladu mewn Cerrig Milltir (1 i 3 wythnos)",
-        "description": "Mae datblygiad yn cael ei dorri i iteriadau byr, pob un yn gorffen gyda meddalwedd weithredol y gallwch glicio drwyddo ar URL llwyfannu. Mae galwadau gwirio rheolaidd yn adolygu cynnydd ac yn datglymu materion. Mae nodyn cynnydd ysgrifenedig yn cyd-fynd â phob carreg filltir yn dangos beth newidiodd, beth nesaf, a llosgi cyllideb yn erbyn y cynllun. Mae ceisiadau newid yn cael eu trin yn agored — mae effaith ar gost a llinell amser yn cael ei ddangos cyn i unrhyw beth gael ei gytuno. Mae integreiddio parhaus yn rhedeg lint, gwiriadau math, profion a gwiriadau hygyrchedd ar bob newid, gan ddal problemau'n gynnar.",
+        "description": "Mae datblygiad yn cael ei dorri'n iteriadau byr, pob un yn gorffen gyda meddalwedd weithredol y gallwch glicio drwyddi ar URL llwyfannu. Mae galwadau gwirio rheolaidd yn adolygu cynnydd ac yn datglymu materion. Mae nodyn cynnydd ysgrifenedig yn cyd-fynd â phob carreg filltir yn dangos beth newidiodd, beth sydd nesaf, a llosgi cyllideb yn erbyn y cynllun. Ar gyfer ceisiadau newid, rydych chi'n gweld yr effaith ar gost a llinell amser cyn i unrhyw beth gael ei gytuno. Mae integreiddio parhaus yn rhedeg lint, gwiriadau math, profion a gwiriadau hygyrchedd ar bob newid, fel bod problemau'n dod i'r amlwg yn gynnar.",
         "output1": "Meddalwedd weithredol pob carreg filltir ar amgylchedd llwyfannu",
         "output2": "Nodiadau cynnydd ysgrifenedig gyda dangosiadau",
         "output3": "Stôr gefn wedi'i diweddaru yn adlewyrchu blaenoriaethau cyfredol"
       },
       "stage5": {
         "title": "Lansio, Trosglwyddo a Chymorth (2 i 4 diwrnod)",
-        "description": "Mae lansio yn dilyn rhestr wirio cyn-lansio: archwiliad hygyrchedd, pas perfformiad, adolygiad diogelwch, gweirio dadansoddeg a chaniatâd, metadata SEO, a ffurfweddu copïau wrth gefn. Mae darparu yn cael ei reoli gyda gweithdrefnau rholio'n ôl yn eu lle. Mae trosglwyddo yn cynnwys dogfennaeth, sesiwn trwodd, a throsglwyddiad perchnogaeth cod ffynhonnell a chyfrifon seilwaith. Mae trefniadau cymorth a chynnal a chadw parhaus dewisol yn cael eu trafod yn agored, ond nid ydych byth wedi'ch cloi i mewn — mae popeth yn eiddo i chi i'w gymryd i rywle arall os ydych yn dewis.",
+        "description": "Mae lansio yn dilyn rhestr wirio cyn-lansio: archwiliad hygyrchedd, pas perfformiad, adolygiad diogelwch, cysylltu dadansoddeg a chaniatâd, metadata SEO, a ffurfweddu copïau wrth gefn. Mae darparu yn cael ei reoli gyda gweithdrefnau rholio'n ôl yn eu lle. Mae trosglwyddo yn cynnwys dogfennaeth, sesiwn gerdded drwodd, a throsglwyddiad perchnogaeth cod ffynhonnell a chyfrifon seilwaith. Mae cymorth a chynnal a chadw parhaus yn ddewisol, ac mae popeth yn eiddo i chi i'w gymryd i rywle arall os byddwch yn dewis gwneud hynny.",
         "output1": "Safle byw neu gymhwysiad ar seilwaith cynhyrchu",
         "output2": "Dogfennaeth trosglwyddo a thrwodd gweinyddol",
         "output3": "Perchnogaeth cod ffynhonnell a seilwaith wedi'i throsglwyddo",
@@ -520,19 +520,19 @@
       }
     },
     "milestones": {
-      "heading": "Cerrig Milltir, Nid Dirgelwch",
-      "subtitle": "Gwiriadau rheolaidd fel eich bod bob amser yn gwybod lle mae'r prosiect yn sefyll.",
+      "heading": "Sut Mae Cerrig Milltir yn Gweithio",
+      "subtitle": "Gwiriadau rheolaidd fel eich bod yn gwybod lle mae'r prosiect yn sefyll.",
       "item1": {
         "title": "Adolygiadau Cerrig Milltir",
-        "description": "Mae pob carreg filltir yn gorffen gyda demo o feddalwedd weithredol, nodyn ysgrifenedig yn cwmpasu beth newidiodd a beth nesaf, a gwiriad cyllideb yn erbyn y cynllun. Dim byd yn cael ei guddio."
+        "description": "Mae pob carreg filltir yn gorffen gyda demo o feddalwedd weithredol, nodyn ysgrifenedig yn cwmpasu beth newidiodd a beth sydd nesaf, a gwiriad cyllideb yn erbyn y cynllun."
       },
       "item2": {
-        "title": "Tryloywder",
-        "description": "Rydych chi'n gweld yr amgylchedd llwyfannu bob amser. Rydych chi'n gweld y stôr gefn. Rydych chi'n gweld nodiadau cynnydd. Rydych chi'n gwybod lle mae'r gyllideb yn sefyll. Does dim syndod."
+        "title": "Beth Gallwch Chi ei Weld",
+        "description": "Mae gennych fynediad i'r amgylchedd llwyfannu ac i'r stôr gefn drwy'r amser, ac mae pob nodyn cynnydd yn dweud lle mae'r gyllideb yn sefyll. Gallwch wirio unrhyw un ohonynt heb aros am alwad."
       },
       "item3": {
         "title": "Addasu neu Stopio",
-        "description": "Mae blaenoriaethau yn newid, cyllidebau yn tynhau, neu ofynion yn esblygu. Ar unrhyw ffin carreg filltir, gallwn ail-gwmpasu neu stopio gwaith — nid ydych byth wedi'ch cloi i mewn i gontract nad yw'n ffitio mwyach."
+        "description": "Mae blaenoriaethau'n newid a chyllidebau'n tynhau. Ar unrhyw ffin carreg filltir, gallwn ail-gwmpasu neu stopio gwaith, felly nid ydych wedi'ch clymu i gontract nad yw'n ffitio mwyach."
       },
       "item4": {
         "title": "Gadael Unrhyw Bryd",
@@ -552,11 +552,11 @@
       },
       "item3": {
         "title": "Mwy o Werth, Llai o Deipio",
-        "description": "Y canlyniad: mae mwy o'ch cyllideb yn mynd i mewn i fireinio gofynion, dylunio profiad defnyddiwr, a phrofi trylwyr yn hytrach na theipio boilerplate y gall peiriant ei ysgrifennu'n gyflymach ac yn fwy cywir."
+        "description": "Mae mwy o'ch cyllideb yn mynd i fireinio gofynion, dylunio profiad defnyddiwr a phrofi, a llai i deipio boilerplate y gall peiriant ei ysgrifennu'n gyflymach ac yn fwy cywir."
       },
       "item4": {
         "title": "Atebolrwydd Dynol ac Adolygu",
-        "description": "Mae pob llinell o god yn cael ei adolygu gan ddyn cyn iddo gael ei gludo. Dim byd yn cael ei uno heb basio gwiriadau awtomatig (lintio, gwirio math, profion, sganiau hygyrchedd) ac adolygu cod â llaw. Mae AI yn arf, nid yn amnewid barn. Mae'r datblygwr yn parhau'n atebol am yr allbwn."
+        "description": "Mae pob llinell o god yn cael ei hadolygu gan berson cyn iddi gael ei rhyddhau. Nid oes dim yn cael ei uno heb basio gwiriadau awtomatig (lintio, gwirio math, profion, sganiau hygyrchedd) ac adolygiad cod â llaw. Mae'r datblygwr yn parhau'n atebol am yr allbwn, pa offeryn bynnag a gynhyrchodd y drafft cyntaf."
       },
       "item5": {
         "title": "Preifatrwydd Data a Rhagreolaethau",
@@ -576,7 +576,7 @@
       },
       "item3": {
         "title": "Gwirio Math",
-        "description": "Mae TypeScript yn dal gwallau math, bugs cyfeirio nwl a chamgymathau rhyngwyneb ar amser crynhoi, gan leihau gwallau amser rhedeg yn ddramatig."
+        "description": "Mae TypeScript yn dal gwallau math, namau cyfeirio nwl ac anghysondebau rhyngwyneb ar amser crynhoi, sy'n dileu dosbarth cyfan o wallau amser rhedeg."
       },
       "item4": {
         "title": "Gwiriadau Hygyrchedd",
@@ -592,29 +592,29 @@
       },
       "item7": {
         "title": "Arwyddo Llwyfannu",
-        "description": "Dim byd yn mynd i gynhyrchu heb arwyddo ar lwyfannu. Rydych chi'n gweld ac yn cymeradwyo'r feddalwedd weithredol cyn lansio, nid ar ôl."
+        "description": "Nid oes dim yn mynd i gynhyrchu heb arwyddo i ffwrdd ar lwyfannu. Rydych chi'n gweld ac yn cymeradwyo'r feddalwedd weithredol cyn iddi lansio."
       }
     },
     "hosting": {
       "heading": "Cynnal a Amgylcheddau",
       "subtitle": "Seilwaith cwmwl-gyntaf gyda darparu awtomatig a rholio'n ôl.",
-      "p1": "Mae cynnal yn cwmwl-gyntaf ar Microsoft Azure gydag amgylcheddau datblygu, llwyfannu a chynhyrchu ar wahân. Mae adeiladau wedi'u cynhwyso gan ddefnyddio Docker yn sicrhau cysondeb — mae'r hyn sy'n gweithio mewn datblygiad yn gweithio mewn cynhyrchu. Mae seilwaith fel cod (Bicep neu Terraform) yn diffinio adnoddau yn ddatganol, gan wneud darparu yn atgynhyrchiadwy ac wedi'i reoli fersiwn.",
-      "p2": "Mae piblinellau CI/CD yn awtomeiddio'r broses adeiladu a darparu: mae cod yn cael ei lintio, ei wirio math a'i brofi'n awtomatig; mae adeiladau yn cynhyrchu bwndeli cynhyrchu wedi'u optimeiddio; mae darparu yn gwthio i lwyfannu yn gyntaf ar gyfer adolygiad, yna cynhyrchu ar ôl cymeradwyaeth. Mae gweithdrefnau rholio'n ôl wedi'u hadeiladu i mewn — os yw darparu yn cyflwyno atchweliad, mae'r fersiwn flaenorol yn cael ei hadfer o fewn munudau.",
-      "p3": "Mae monitro a logiau yn olrhain iechyd cymhwysiad, cyfraddau gwall a metrigau perfformiad. Mae rhybuddion yn hysbysu ar amser segur, ymatebion araf neu sbigyn mewn gwallau. Mae copïau wrth gefn awtomatig yn rhedeg bob dydd gyda pholisïau cadw, ac mae gweithdrefnau adfer yn cael eu profi i gadarnhau eu bod yn gweithio. Y canlyniad: rhyddhau rhagweladwy, dim drama lle mae problemau'n cael eu dal yn gynnar a'u trwsio'n gyflym."
+      "p1": "Mae cynnal yn gwmwl-gyntaf ar Microsoft Azure gydag amgylcheddau datblygu, llwyfannu a chynhyrchu ar wahân. Mae adeiladau wedi'u cynhwyso gan ddefnyddio Docker yn eu cadw'n gyson, felly mae'r hyn sy'n gweithio mewn datblygiad yn gweithio mewn cynhyrchu. Mae seilwaith fel cod (Bicep neu Terraform) yn diffinio adnoddau'n ddatganol, gan wneud darparu yn atgynhyrchiadwy ac wedi'i reoli gan fersiwn.",
+      "p2": "Mae piblinellau CI/CD yn awtomeiddio'r broses adeiladu a darparu: mae cod yn cael ei lintio, ei wirio o ran math a'i brofi'n awtomatig; mae adeiladau yn cynhyrchu bwndeli cynhyrchu wedi'u optimeiddio; mae darparu yn gwthio i lwyfannu yn gyntaf ar gyfer adolygiad, yna cynhyrchu ar ôl cymeradwyaeth. Mae rholio'n ôl wedi'i ymgorffori. Os yw darpariaeth yn cyflwyno atchweliad, mae'r fersiwn flaenorol yn cael ei hadfer o fewn munudau.",
+      "p3": "Mae monitro a chofnodi yn olrhain iechyd cymhwysiad, cyfraddau gwall a metrigau perfformiad. Mae rhybuddion yn hysbysu ar amser segur, ymatebion araf neu sbigyn mewn gwallau. Mae copïau wrth gefn awtomatig yn rhedeg bob dydd gyda pholisïau cadw, ac mae gweithdrefnau adfer yn cael eu profi i gadarnhau eu bod yn gweithio. Mae rhyddhau yn y pen draw yn rhagweladwy ac yn ddi-ddrama, gyda phroblemau'n cael eu dal yn gynnar a'u trwsio'n gyflym."
     },
     "working": {
       "heading": "Gweithio Gyda'n Gilydd",
-      "subtitle": "Cyfathrebu clir, disgwyliadau realistig, a pharch deuol.",
-      "p1": "Rydym wedi ein lleoli yn y DU ac yn gweithio yn oriau busnes y DU (Llun i Wener, 9am–5pm GMT/BST). Mae gennych un pwynt cyswllt enwedig — y datblygwyr sy'n ei adeiladu — nid rheolwr cyfrif yn gweithredu fel cyfnewid. Mae cyfathrebu yn digwydd ar sianel gytunedig (e-bost, Slack, Teams, neu ffôn) gyda chadence cytunedig ar gyfer gwiriadau. Mae diweddariadau'n cael eu hysgrifennu mewn Saesneg plaen heb jargon diangen, ac rydym yn onest pan fydd rhywbeth yn galetach neu'n rhatach nag a ddisgwylid yn wreiddiol.",
-      "p2": "Rydych chi'n berchen ar eich cod, eich parth, a'ch cyfrifon cynnal o ddydd un. Does dim cymalau cloi i mewn, dim llwyfannau priodol, a dim ffioedd parhaus sydd eu hangen i gadw'ch safle yn rhedeg (ar wahân i gostau cynnal a pharth safonol). Os ydych chi am gymryd y prosiect yn fewnol neu i ddatblygwr arall, mae popeth yn trosglwyddo'n lân gyda dogfennaeth a chymorth yn ystod trosglwyddo.",
-      "p3": "Mae parch deuol yn golygu terfynau amser realistig, cyfathrebu onest pan fydd blaenoriaethau'n gwrthdaro, a dim syndod ar unrhyw ochr. Os ydym yn anghyraeddadwy (gwyliau, salwch), cewch eich hysbysu ymlaen llaw gyda chynllun ar gyfer materion brys. Os yw eich gofynion yn newid, rydym yn trafod effaith yn agored cyn ymrwymo i waith newydd. Os yw terfyn amser neu gyllideb yn edrych mewn perygl, cewch wybod cyn gynted ag y byddwn ni'n gwybod, nid yn y gwiriad nesaf a drefnwyd."
+      "subtitle": "Beth gallwch chi ei ddisgwyl gennym ni, a beth fydd ei angen arnom gennych chi.",
+      "p1": "Rydym wedi ein lleoli yn y DU ac yn gweithio yn oriau busnes y DU (Llun i Wener, 9am–5pm GMT/BST). Mae gennych un pwynt cyswllt penodedig, sef y person sy'n adeiladu'r safle, nid rheolwr cyfrif yn trosglwyddo negeseuon. Mae cyfathrebu yn digwydd ar sianel gytunedig (e-bost, Slack, Teams, neu ffôn) gyda rhythm cytunedig ar gyfer gwiriadau. Mae diweddariadau'n cael eu hysgrifennu mewn iaith blaen, ac fe ddywedwn wrthych pan fydd rhywbeth yn troi allan yn galetach neu'n rhatach nag a feddyliem i ddechrau.",
+      "p2": "Rydych chi'n berchen ar eich cod, eich parth, a'ch cyfrifon cynnal o ddydd un. Does dim cymalau cloi i mewn, dim llwyfannau perchnogol, a dim ffioedd parhaus sydd eu hangen i gadw'ch safle yn rhedeg y tu hwnt i gostau cynnal a pharth safonol. Os ydych chi am gymryd y prosiect yn fewnol neu i ddatblygwr arall, mae popeth yn trosglwyddo gyda dogfennaeth a chymorth yn ystod trosglwyddo.",
+      "p3": "Byddwn yn cytuno ar derfynau amser rydym yn credu eu bod yn gyraeddadwy, ac yn dweud hynny pan fydd blaenoriaethau'n gwrthdaro. Rydym yn rhoi gwybod am wyliau a salwch ymlaen llaw, gyda chynllun ar gyfer unrhyw beth brys yn y cyfamser. Pan fydd eich gofynion yn newid, rydym yn gweithio allan yr effaith ar gost a llinell amser cyn ymrwymo i waith newydd. Ac os yw terfyn amser neu gyllideb yn dechrau edrych mewn perygl, cewch wybod cyn gynted ag y byddwn ni'n gwybod yn hytrach nag yn y gwiriad nesaf a drefnwyd."
     },
     "faq": {
       "heading": "Cwestiynau Cyffredin",
       "subtitle": "Atebion i gwestiynau a ofynnir yn aml am y broses darparu.",
       "q1": {
         "question": "Beth os yw fy ngofynion yn newid ar ganol y prosiect?",
-        "answer": "Mae gofynion yn newid — mae hynny'n normal ac i'w ddisgwyl. Ar bob ffin carreg filltir, gallwn ail-flaenoriaethu'r stôr gefn neu addasu cwmpas. Os yw newid yn sylweddol, rydym yn asesu'r effaith ar gost a llinell amser ac yn cyflwyno opsiynau cyn mynd ymlaen. Nid ydych byth wedi'ch cloi i mewn i gwmpas sefydlog os yw'r angen busnes wedi esblygu."
+        "answer": "Mae gofynion yn newid ar y rhan fwyaf o brosiectau. Ar bob ffin carreg filltir, gallwn ail-flaenoriaethu'r stôr gefn neu addasu cwmpas. Os yw newid yn sylweddol, rydym yn asesu'r effaith ar gost a llinell amser ac yn cyflwyno opsiynau cyn mynd ymlaen. Nid yw cwmpas sefydlog a gytunwyd ar y dechrau yn eich rhwymo unwaith y bydd yr angen busnes wedi symud yn ei flaen."
       },
       "q2": {
         "question": "Sut ydw i'n gwybod bod cynnydd yn real ac nid dim ond diweddariad statws?",
@@ -626,42 +626,42 @@
       },
       "q4": {
         "question": "Pwy sy'n berchen ar y cod a'r cyfrifon?",
-        "answer": "Chi sy'n berchen. Mae cod ffynhonnell yn cael ei storio mewn ystorfa Git rydych chi'n berchen arni (GitHub, GitLab, Azure Repos). Mae cyfrifon cynnal, cofrestriadau parth, a chyfrifon gwasanaeth trydydd parti (dadansoddeg, pyrth talu) yn cael eu creu yn eich enw neu'n cael eu trosglwyddo i chi wrth drosglwyddo. Does dim cymalau cloi i mewn na llwyfannau priodol. Os ydych chi'n penderfynu mynd â'r prosiect i rywle arall, mae popeth yn trosglwyddo'n lân."
+        "answer": "Chi sy'n berchen. Mae cod ffynhonnell yn cael ei storio mewn ystorfa Git rydych chi'n berchen arni (GitHub, GitLab, Azure Repos). Mae cyfrifon cynnal, cofrestriadau parth, a chyfrifon gwasanaeth trydydd parti (dadansoddeg, pyrth talu) yn cael eu creu yn eich enw neu'n cael eu trosglwyddo i chi adeg y trosglwyddo. Does dim cymalau cloi i mewn na llwyfannau perchnogol. Os ydych chi'n penderfynu mynd â'r prosiect i rywle arall, mae'r cyfan yn mynd gyda chi."
       },
       "q5": {
         "question": "Beth sy'n digwydd ar ôl lansio?",
-        "answer": "Mae opsiynau cymorth ôl-lansio yn cael eu trafod yn agored ond byth yn orfodol. Rydym yn cynnig archebolion cynnal a chadw parhaus yn cwmpasu trwsio bugs, diweddariadau dibyniaeth, newidiadau cynnwys, ac ychwanegiadau nodwedd bach. Fel arall, gallwch chi drin cynnal a chadw yn fewnol neu ymgysylltu â datblygwr arall — mae'r codebase wedi'i ddogfennu, ac rydym yn darparu sesiwn trosglwyddo i sicrhau parhad. Nid ydych byth wedi'ch cloi i mewn."
+        "answer": "Mae cymorth ar ôl lansio yn ddewisol. Rydym yn cynnig cytundebau cadw ar gyfer cynnal a chadw parhaus sy'n cwmpasu trwsio namau, diweddariadau dibyniaethau, newidiadau cynnwys, ac ychwanegiadau nodwedd bach. Fel arall, gallwch chi drin cynnal a chadw yn fewnol neu ymgysylltu â datblygwr arall. Mae'r sylfaen cod wedi'i dogfennu, ac rydym yn cynnal sesiwn drosglwyddo fel y gall pwy bynnag sy'n ei chymryd ymlaen barhau heb ddyfalu. Nid oes dim am yr adeiladwaith sy'n gofyn i chi ddal ati i dalu i ni."
       },
       "q6": {
         "question": "Sut mae AI yn cael ei ddefnyddio, ac a yw fy data'n ddiogel?",
-        "answer": "Mae offer AI yn cynorthwyo gyda sgaffaldio, boilerplate, ailfactorio, cynhyrchu profion a dogfennaeth. Mae pob llinell yn cael ei adolygu gan ddyn a'i brofi cyn ei gludo. Nid oes gan AI fynediad i ddata cynhyrchu, cyfrinachau, allweddi API, na gwybodaeth gleientiaid sensitif. Os oes gan eich prosiect ofynion trin data llym, mae offer AI yn cael ei gyfyngu neu ei analluogi. Mae rhwymedigaethau GDPR a chyfrinachedd bob amser yn cael eu parchu."
+        "answer": "Mae offer AI yn cynorthwyo gyda sgaffaldio, boilerplate, ailfactorio, cynhyrchu profion a dogfennaeth. Mae pob llinell yn cael ei hadolygu gan berson a'i phrofi cyn ei rhyddhau. Nid oes gan AI fynediad i ddata cynhyrchu, cyfrinachau, allweddi API, na gwybodaeth gleientiaid sensitif. Os oes gan eich prosiect ofynion trin data llym, mae offer AI yn cael ei gyfyngu neu ei analluogi. Rhwymedigaethau GDPR a chyfrinachedd sy'n penderfynu beth y gellir ei rannu â gwasanaeth trydydd parti o gwbl."
       },
       "q7": {
         "question": "Faint o amser mae'n ei gymryd i adeiladu gwefan busnes bach?",
-        "answer": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 2 i 6 wythnos ar ôl y cyswllt cyntaf. Mae hynny'n torri i lawr yn 1 i 2 ddiwrnod o ddarganfod, 2 i 3 diwrnod i gynhyrchu'r cynnig, 2 i 5 diwrnod yn mireinio gofynion, 1 i 3 wythnos o adeiladu mewn cerrig milltir wythnosol, a 2 i 4 diwrnod ar gyfer lansio a throsglwyddo. Yr amrywiolyn mwyaf o bell ffordd yw pa mor gyflym y gallwch chi gael eich cynnwys atom — lluniau, disgrifiadau gwasanaeth, oriau agor. Mae prosiectau sy'n arafu bron bob amser yn arafu yno."
+        "answer": "Mae'r rhan fwyaf o safleoedd busnesau bach yn lansio 2 i 6 wythnos ar ôl y cyswllt cyntaf. Mae hynny'n rhannu'n 1 i 2 ddiwrnod o ddarganfod, 2 i 3 diwrnod i gynhyrchu'r cynnig, 2 i 5 diwrnod yn mireinio gofynion, 1 i 3 wythnos o adeiladu mewn cerrig milltir wythnosol, a 2 i 4 diwrnod ar gyfer lansio a throsglwyddo. Y ffactor mwyaf o ddigon yw pa mor gyflym y gallwch chi gael eich cynnwys atom: lluniau, disgrifiadau gwasanaeth, oriau agor. Mae prosiectau sy'n mynd yn sownd bron bob amser yn mynd yn sownd yno."
       },
       "q8": {
         "question": "Ddylwn i ddefnyddio stiwdio fach neu asiantaeth fawr?",
-        "answer": "Mae asiantaeth fawr yn rhoi dyfnder mainc i chi: dylunwyr, copïwyr, rheolwyr prosiect a datblygwyr o dan yr un to, sy'n bwysig ar adeiladwaith mawr aml-dîm. Rydych chi'n talu am y strwythur hwnnw, ac fel arfer rydych chi'n siarad â rheolwr cyfrif yn hytrach na'r person sy'n gwneud y gwaith. Mae stiwdio fach fel ni'n rhoi llinell uniongyrchol i'r datblygwyr, gorbenion is yn y dyfynbris, a phenderfyniadau cyflymach i chi — ar draul y dyfnder mainc hwnnw. I wefan busnes bach, siop ar-lein neu system archebu, mae strwythur asiantaeth yn orbenion rydych chi'n talu amdano ac yn anaml yn ei ddefnyddio."
+        "answer": "Mae asiantaeth fawr yn rhoi dyfnder mainc i chi: dylunwyr, copïwyr, rheolwyr prosiect a datblygwyr o dan yr un to, sy'n bwysig ar adeiladwaith mawr aml-dîm. Rydych chi'n talu am y strwythur hwnnw, ac fel arfer rydych chi'n siarad â rheolwr cyfrif yn hytrach na'r person sy'n gwneud y gwaith. Mae stiwdio fach fel ni'n rhoi llinell uniongyrchol i'r datblygwyr, gorbenion is yn y dyfynbris, a phenderfyniadau cyflymach i chi, ar draul y dyfnder mainc hwnnw. I wefan busnes bach, siop ar-lein neu system archebu, mae strwythur asiantaeth yn orbenion rydych chi'n talu amdano ac yn anaml yn ei ddefnyddio."
       }
     }
   },
   "smallBusiness": {
     "hero": {
       "title": "Gwefan Syml sy'n Eich Gwneud Chi'n Edrych yn Gyfreithlon",
-      "subtitle": "Mae'r rhan fwyaf o bobl yn gwirio busnes ar-lein cyn iddynt ffonio. Mae gwefan broffesiynol, gyflym gyda'ch parth eich hun yn rhoi hygrededd i chi ac yn dod ag ymholiadau i mewn — heb y jargon na chost asiantaeth.",
-      "kicker": "Dylunio Gwefan Busnes Bach — Pen-y-bont, Caerdydd, Abertawe a De Cymru"
+      "subtitle": "Mae'r rhan fwyaf o bobl yn gwirio busnes ar-lein cyn iddynt ffonio. Mae gwefan broffesiynol, gyflym gyda'ch parth eich hun yn rhoi hygrededd i chi ac yn dod ag ymholiadau i mewn, heb y jargon na chost asiantaeth.",
+      "kicker": "Dylunio Gwefan Busnes Bach: Pen-y-bont, Caerdydd, Abertawe a De Cymru"
     },
     "whyMatters": {
       "heading": "Pam Mae Gwefan Dal yn Bwysig",
-      "subtitle": "Nid yw cyfryngau cymdeithasol yn ddigon — dyma beth mae gwefan briodol yn ei roi i chi.",
+      "subtitle": "Nid yw cyfryngau cymdeithasol yn ddigon. Dyma beth mae gwefan briodol yn ei roi i chi.",
       "item1": {
         "title": "Cyfreithlondeb",
-        "description": "Mae pobl yn eich gwirio ar-lein cyn iddynt ffonio. Mae gwefan briodol gyda pharth go iawn a chyfeiriad e-bost busnes yn arwyddo eich bod yn fusnes sefydledig, nid hobi. Mae cyfryngau cymdeithasol yn unig yn eich gadael yn edrych yn dros dro ac ar drugaredd algorithm rhywun arall."
+        "description": "Mae pobl yn eich gwirio cyn iddynt ffonio. Mae gwefan briodol gyda pharth go iawn a chyfeiriad e-bost busnes yn arwyddo eich bod yn fusnes sefydledig, nid hobi. Mae cyfryngau cymdeithasol yn unig yn eich gadael yn edrych yn dros dro ac ar drugaredd algorithm rhywun arall."
       },
       "item2": {
         "title": "Chi sy'n Berchen Arni",
-        "description": "Gall tudalen Facebook neu restr marchnad gael ei chyfyngu, ei newid neu ei chymryd i ffwrdd. Mae gwefan yn ased rydych chi'n ei reoli, ar barth rydych chi'n berchen arno. Ni all neb eich cau chi i lawr na newid y rheolau dros nos."
+        "description": "Gall tudalen Facebook neu restr marchnad gael ei chyfyngu, ei newid neu ei chymryd i ffwrdd. Mae gwefan yn eistedd ar barth rydych chi'n berchen arno ac yn ei reoli. Ni all neb arall newid y rheolau arnoch dros nos."
       },
       "item3": {
         "title": "Cael Eich Darganfod",
@@ -674,7 +674,7 @@
     },
     "bringEnquiries": {
       "heading": "Sut Mae Safle Syml yn Dod ag Ymholiadau i Chi",
-      "subtitle": "Pennawd clir, ffyrdd amlwg o gysylltu â chi, ac arwyddion ymddiriedaeth — dyna'r fformiwla.",
+      "subtitle": "Pennawd clir, ffyrdd amlwg o gysylltu â chi, a rhywfaint o brawf bod y gwaith yn real.",
       "item1": {
         "title": "Pennawd Clir",
         "description": "Pennawd sy'n dweud yn union beth rydych chi'n ei wneud a ble rydych chi'n ei wneud. Mae peiriannau chwilio a chwsmeriaid ill dau angen gwybod o fewn eiliadau a ydych chi'n eu gwasanaethu."
@@ -685,7 +685,7 @@
       },
       "item3": {
         "title": "Tudalen ar gyfer Pob Gwasanaeth",
-        "description": "Mae angen tudalennau ar wahân ar blymwyr ar gyfer trwsio boeleri, gosod ystafelloedd ymolchi, a galwadau brys. Mae peiriannau chwilio yn paru chwiliadau â thudalennau — mae mwy o dudalennau yn golygu mwy o gyfleoedd i gael eich darganfod ar gyfer chwiliadau gwahanol."
+        "description": "Mae angen tudalennau ar wahân ar blymwyr ar gyfer trwsio boeleri, gosod ystafelloedd ymolchi a galwadau brys. Mae peiriannau chwilio'n paru chwiliadau â thudalennau, felly mae mwy o dudalennau'n golygu mwy o ffyrdd i bobl ddod o hyd i chi."
       },
       "item4": {
         "title": "Lluniau o Waith Go Iawn",
@@ -700,7 +700,7 @@
       "heading": "Beth sy'n Cael Ei Gynnwys fel Safonol",
       "subtitle": "Popeth y mae ei angen ar wefan busnes bach i weithio'n iawn ac edrych yn broffesiynol.",
       "f1": "Dyluniad ymatebol symudol-gyntaf sy'n gweithio ar unrhyw ddyfais",
-      "f2": "Llwytho cyflym ar signal ffôn — heb fod yn orlawn â chod diangen",
+      "f2": "Llwytho cyflym ar signal ffôn, heb god diangen yn ei arafu",
       "f3": "Hygyrch i bobl sy'n defnyddio darllenwyr sgrin neu fysellfrddau (WCAG 2.2 AA)",
       "f4": "Cynnal HTTPS diogel gydag adnewyddu tystysgrif awtomatig",
       "f5": "Eich parth eich hun ac e-bost busnes wedi'i osod a'i weithio",
@@ -714,25 +714,25 @@
     },
     "signs": {
       "heading": "Arwyddion ei Bod hi'n Amser am Wefan",
-      "subtitle": "Os yw unrhyw un o'r rhain yn swnio'n gyfarwydd, mae hi'n amser cael safle priodol.",
+      "subtitle": "Os yw unrhyw un o'r rhain yn swnio'n gyfarwydd, mae hi'n hen bryd i chi gael safle priodol.",
       "item1": "Rydych chi'n dibynnu'n llwyr ar air o'r geg ac yn cael trafferth cyrraedd cwsmeriaid newydd",
       "item2": "Mae cwsmeriaid yn dweud na allent ddod o hyd i chi ar-lein neu nad oeddent yn siŵr eich bod yn dal i fasnachu",
       "item3": "Nid yw eich safle presennol yn gweithio'n iawn ar ffôn neu'n edrych yn hen ffasiwn",
       "item4": "Rydych chi ar gyfryngau cymdeithasol yn unig ac yn teimlo fel eich bod yn gweiddi i'r gwacter",
-      "item5": "Rydych chi'n parhau i ateb yr un cwestiynau dros y ffôn — oriau agor, ardaloedd gwasanaeth, prisiau",
+      "item5": "Rydych chi'n parhau i ateb yr un cwestiynau dros y ffôn: oriau agor, ardaloedd gwasanaeth, prisiau",
       "item6": "Rydych chi eisiau edrych yn gredadwy wrth ddyfynnu yn erbyn cystadleuwyr mwy"
     },
     "cost": {
       "heading": "Beth Mae'n Ei Gostio i Chi Beidio â Chael Un",
       "subtitle": "Y gost gudd o beidio â bod yn weladwy ar-lein.",
       "p1": "Mae ymholiadau'n mynd i gystadleuydd sy'n haws dod o hyd iddo. Mae cwsmeriaid yn rhestru byrion busnesau y gallant eu gwirio ar-lein cyn codi'r ffôn. Os nad oes gennych wefan, nid ydych ar y rhestr fer honno.",
-      "p2": "Mae cael eich anwybyddu yn edrych fel cyfnodau tawel neu ostyngiadau tymhorol, ond yn aml dim ond anwelededd ydyw. Mae edrych yn llai nag ydych chi'n golygu colli gwaith i fusnesau sy'n cyflwyno'n well ar-lein, hyd yn oed os yw eich gwaith yn well. Mae amser gwastraff ar gwestiynau ailadroddus yn cnoi i mewn i'ch diwrnod pan allai gwefan eu hateb unwaith.",
-      "p3": "Am yr hyn mae'n ei gostio i gael un: mae ein gwefannau busnesau bach yn dechrau o £650, ac mae safleoedd gydag archebu ar-lein neu integreiddio taliadau yn dechrau o £1,250. Mae'r prisiau cychwynnol llawn, gan gynnwys y cynllun gofal dewisol, wedi'u cyhoeddi ar ein tudalen prisiau — does dim angen ffonio unrhyw un i weld a ydych chi yn yr ystod gywir.",
+      "p2": "Mae cael eich anwybyddu yn edrych fel cyfnod tawel neu ostyngiad tymhorol, ond yn aml anwelededd ydyw. Rydych yn colli gwaith i fusnesau sy'n cyflwyno'n well ar-lein, hyd yn oed pan fo'ch gwaith chi'n well na'u gwaith nhw. Ac mae'r un cwestiynau'n dal i gnoi i mewn i'ch diwrnod pan allai tudalen eu hateb unwaith.",
+      "p3": "Yn erbyn hynny: mae ein gwefannau busnesau bach yn dechrau o £650, ac mae safleoedd gydag archebu ar-lein neu integreiddio taliadau yn dechrau o £1,250. Mae'r prisiau cychwynnol llawn, gan gynnwys y cynllun gofal dewisol, ar ein tudalen prisiau. Does dim rhaid i chi ffonio neb i weld a ydych chi yn yr ystod gywir.",
       "ctaText": "Gweler faint mae gwefan yn ei gostio"
     },
     "howWorks": {
       "heading": "Sut Mae'n Gweithio",
-      "subtitle": "Proses syml — dim jargon, dim syndod.",
+      "subtitle": "Proses syml, heb jargon a heb syndod.",
       "step1": "Sgwrs fer am eich busnes, beth rydych chi'n ei gynnig, pwy rydych chi'n ei wasanaethu, a beth rydych chi eisiau i'r safle ei gyflawni. Dim rhwymedigaeth a dim pwysau.",
       "step2": "Dyfynbris ysgrifenedig sefydlog gyda beth sy'n cael ei gynnwys, beth nad yw, ac amserlen realistig. Chi sy'n penderfynu a ydych chi'n bwrw ymlaen.",
       "step3": "Rydych chi'n anfon eich logo, lluniau a geiriau. Os oes angen help arnoch chi i ysgrifennu'r cynnwys, mae arweiniad a thempledi yn cael eu darparu. Mae angen tua 500–1000 o eiriau ar y rhan fwyaf o safleoedd busnes bach ar draws yr holl dudalennau.",
@@ -744,12 +744,12 @@
       "heading": "Atebion Syth",
       "subtitle": "Cwestiynau cyffredin gan berchnogion busnesau bach.",
       "q1": {
-        "question": "Nid wyf yn dechnegol — a fyddaf yn gallu ei reoli?",
+        "question": "Nid wyf yn dechnegol. A fyddaf yn gallu ei reoli?",
         "answer": "Byddwch. Mae'r safle wedi'i adeiladu i redeg heb i chi orfod cyffwrdd â chod. Mae cyflwyniadau ffurflen gyswllt yn dod i'ch e-bost. Os ydych chi eisiau diweddaru testun neu ychwanegu llun newydd yn ddiweddarach, gellir cynnwys rhyngwyneb rheoli cynnwys syml, neu gellir gofyn am newidiadau a'u trin am ffi fach. Mae sesiwn arwain drwodd wrth drosglwyddo yn dangos popeth i chi."
       },
       "q2": {
         "question": "A oes rhaid i mi ysgrifennu'r holl gynnwys fy hun?",
-        "answer": "Chi sy'n gwybod eich busnes orau, felly mae angen i'r cynnwys craidd (beth rydych chi'n ei wneud, ble rydych chi'n gwasanaethu, eich prisiau neu'ch dull) ddod gennych chi. Fodd bynnag, mae templedi a thestun enghreifftiol yn cael eu darparu i'w gwneud hi'n haws. Os ydych chi'n sownd, gellir cynnwys gweithdy cynnwys i dynnu'r geiriau cywir allan o sgwrs a'u troi'n gopïo gwe clir."
+        "answer": "Chi sy'n gwybod eich busnes orau, felly mae angen i'r cynnwys craidd (beth rydych chi'n ei wneud, ble rydych chi'n gwasanaethu, eich prisiau neu'ch dull) ddod gennych chi. Ond mae templedi a thestun enghreifftiol yn cael eu darparu i'w gwneud hi'n haws. Os ydych chi'n sownd, gellir cynnwys gweithdy cynnwys i dynnu'r geiriau cywir allan o sgwrs a'u troi'n gopi gwe clir."
       },
       "q3": {
         "question": "Beth os oes gen i eisoes barth neu safle hanner gorffen?",
@@ -757,19 +757,19 @@
       },
       "q4": {
         "question": "A fydd yn gweithio ar ffonau?",
-        "answer": "Bydd. Mae pob safle wedi'i ddylunio'n symudol-gyntaf, sy'n golygu ei fod wedi'i adeiladu ar gyfer ffonau a thabledi cyn desgiau. Mae'r rhan fwyaf o ymwelwyr safle busnes bach ar symudol, felly nid yw hyn yn ddewisol — mae'n sylfaen y dyluniad."
+        "answer": "Bydd. Mae pob safle wedi'i ddylunio'n symudol-gyntaf, sy'n golygu ei fod wedi'i adeiladu ar gyfer ffonau a thabledi cyn cyfrifiaduron bwrdd gwaith. Mae'r rhan fwyaf o ymwelwyr safle busnes bach ar ffôn, felly dyna lle mae'r dyluniad yn dechrau."
       },
       "q5": {
-        "question": "A oes gwir angen baner cwcis a pholisi preifatrwydd arnaf?",
+        "question": "A oes angen baner cwcis a pholisi preifatrwydd arnaf?",
         "answer": "Oes, os ydych chi'n defnyddio dadansoddeg neu unrhyw dracio. Mae GDPR a PECR y DU yn gofyn am ganiatâd penodol cyn gosod cwcis anhanfodol, a rhaid i chi ddweud wrth ddefnyddwyr pa ddata rydych chi'n ei gasglu a pham. Mae baner cwcis a pholisi preifatrwydd cydymffurfiol yn cael eu cynnwys fel safonol, wedi'u hysgrifennu mewn Saesneg plaen a'u cysylltu yn y troedyn."
       },
       "q6": {
         "question": "All o dyfu'n ddiweddarach os yw fy musnes yn tyfu?",
-        "answer": "Yn sicr. Mae safleoedd busnes bach wedi'u hadeiladu gyda chod glân, cynaliadwy ar seilwaith modern. Mae ychwanegu system archebu, siop ar-lein, blog, neu dudalennau gwasanaeth ychwanegol yn ddiweddarach yn syml. Nid ydych byth wedi'ch cloi i mewn i lwyfan na all raddio."
+        "answer": "Oes. Mae safleoedd busnes bach wedi'u hadeiladu gyda chod glân, cynaliadwy ar seilwaith modern. Mae ychwanegu system archebu, siop ar-lein, blog neu dudalennau gwasanaeth ychwanegol yn ddiweddarach yn syml. Nid yw'r gosodiad yn eich cyfyngu wrth i'r busnes dyfu."
       },
       "q7": {
         "question": "Beth sy'n digwydd os wyf eisiau newidiadau ar ôl iddo fod yn fyw?",
-        "answer": "Mae trwsiadau mân o fewn y mis cyntaf yn cael eu cynnwys. Ar ôl hynny, gellir trin newidiadau bach (diweddariadau testun, lluniau newydd, tudalen ychwanegol) ar sail talu wrth fynd neu fel rhan o archeblin cynnal a chadw misol dewisol. Nid ydych byth wedi'ch cloi i mewn — chi sy'n berchen ar y safle a gallwch ei gymryd i rywle arall os yn well gennych."
+        "answer": "Mae mân drwsiadau o fewn y mis cyntaf yn cael eu cynnwys. Ar ôl hynny, gellir trin newidiadau bach (diweddariadau testun, lluniau newydd, tudalen ychwanegol) ar sail talu wrth fynd neu fel rhan o gontract cynnal a chadw misol dewisol. Chi sy'n berchen ar y safle a gallwch ei gymryd i rywle arall pryd bynnag y dymunwch."
       }
     },
     "links": {
@@ -796,7 +796,7 @@
       "item2Title": "Salonau a Chlinigau",
       "item2Description": "Trinwyr gwallt, barbwyr, salonau harddwch, ffisiotherapyddion a deintyddion. Bron bob amser wedi'u paru ag archebu ar-lein fel bod apwyntiadau'n stopio mynd i beiriant ateb.",
       "item3Title": "Caffis, Siopau a Lletygarwch",
-      "item3Description": "Bwydlenni, oriau agor, lleoliad a lluniau — y pedwar peth mae pobl yn eu gwirio cyn iddyn nhw gychwyn allan. Yn hawdd i chi eu diweddaru eich hun.",
+      "item3Description": "Bwydlenni, oriau agor, lleoliad a lluniau: y pedwar peth mae pobl yn eu gwirio cyn iddyn nhw gychwyn allan. Yn hawdd i chi eu diweddaru eich hun.",
       "item4Title": "Ymgynghorwyr a Gwasanaethau Proffesiynol",
       "item4Description": "Cyfrifwyr, cyfreithwyr, syrfewyr ac ymgynghorwyr annibynnol. Safle credadwy sy'n gwrthsefyll cael ei wirio cyn i rywun drosglwyddo briff difrifol.",
       "item5Title": "Unrhyw Un Sy'n Rhedeg ar Dudalen Facebook ar Hyn o Bryd",
@@ -805,13 +805,13 @@
   },
   "contactPage": {
     "title": "Cysylltu",
-    "subtitle": "Dywedwch wrthym beth sydd ei angen arnoch a byddwn yn dod yn ôl gydag ateb syth. Dim rhwymedigaeth, dim pwysau gwerthu.",
+    "subtitle": "Dywedwch wrthym beth sydd ei angen arnoch a byddwn yn dod yn ôl gydag ateb syth. Dim rhwymedigaeth.",
     "contactInformation": "Gwybodaeth Gyswllt",
     "email": "E-bost",
     "responseHeading": "Pryd Fyddwch Chi'n Clywed yn Ôl",
-    "responseBody": "Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr. Fel arfer mae ymholiadau'n cael eu hateb gyda'r nos, dydd Llun i ddydd Iau, a bore dydd Sadwrn.",
+    "responseBody": "Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr. Fel arfer mae atebion yn mynd allan gyda'r nos, dydd Llun i ddydd Iau, a bore dydd Sadwrn.",
     "beforeYouAskHeading": "Cyn i Chi Ofyn",
-    "beforeYouAskBody": "Meddwl am gost? Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, fel y gallwch wirio eich bod yn yr ystod gywir cyn i chi gysylltu.",
+    "beforeYouAskBody": "Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, fel y gallwch wirio eich bod yn yr ystod gywir cyn i chi gysylltu.",
     "beforeYouAskCta": "Gweler y prisiau"
   },
   "contactForm": {
@@ -820,7 +820,7 @@
     "name": "Enw Llawn",
     "email": "Cyfeiriad E-bost",
     "company": "Cwmni neu Sefydliad",
-    "phone": "Rhif Ff\u00f4n",
+    "phone": "Rhif Ffôn",
     "phoneHint": "Dewisol. Rydym yn ateb drwy e-bost, felly dim ond os byddai'n well gennych i ni ffonio y mae angen hwn.",
     "projectType": "Beth sydd ei angen arnoch?",
     "projectTypePlaceholder": "Dewiswch yr un agosaf",
@@ -833,33 +833,33 @@
     "budget": "Cyllideb fras",
     "budgetHint": "Mae ystod yn iawn. Mae'n ein helpu i'ch cyfeirio at yr opsiwn cywir yn lle dyfalu.",
     "budgetPlaceholder": "Dewiswch ystod cyllideb",
-    "budgetUnder650": "O dan \u00a3650",
-    "budget650to1250": "\u00a3650 i \u00a31,250",
-    "budget1250to3000": "\u00a31,250 i \u00a33,000",
-    "budgetOver3000": "Dros \u00a33,000",
-    "budgetUnsure": "Ddim yn si\u0175r eto",
+    "budgetUnder650": "O dan £650",
+    "budget650to1250": "£650 i £1,250",
+    "budget1250to3000": "£1,250 i £3,000",
+    "budgetOver3000": "Dros £3,000",
+    "budgetUnsure": "Ddim yn siŵr eto",
     "timeline": "Pryd mae ei angen arnoch?",
     "timelineHint": "Dewisol.",
     "timelinePlaceholder": "Dewiswch amserlen",
-    "timelineAsap": "Cyn gynted \u00e2 phosibl",
+    "timelineAsap": "Cyn gynted â phosibl",
     "timeline1to3": "O fewn un i dri mis",
     "timelineFlexible": "Dim dyddiad cau penodol",
     "timelineExploring": "Dim ond archwilio opsiynau",
     "message": "Neges",
-    "messageHint": "Beth mae'r busnes yn ei wneud, beth sydd angen i'r wefan ei wneud, ac unrhyw beth sydd gennych eisoes \u2014 parth, logo, neu wefan bresennol.",
-    "placeholderName": "Si\u00f4n Jones",
+    "messageHint": "Beth mae'r busnes yn ei wneud, beth sydd angen i'r wefan ei wneud, ac unrhyw beth sydd gennych eisoes: parth, logo, neu wefan bresennol.",
+    "placeholderName": "Siôn Jones",
     "placeholderEmail": "john{'@'}example.com",
     "placeholderCompany": "Eich cwmni",
     "placeholderPhone": "+44 29 1234 5678",
     "send": "Anfon Neges",
     "sending": "Yn anfon...",
-    "replyPromise": "Stiwdio un person. Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr \u2014 dim galwad gwerthu.",
+    "replyPromise": "Stiwdio un person. Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr.",
     "statusSuccess": "Diolch. Mae eich ymholiad wedi ei anfon, a chewch ateb ysgrifenedig drwy e-bost o fewn 24 awr.",
     "statusError": "Aeth rhywbeth o'i le. Ceisiwch eto neu e-bostiwch enquiries{'@'}vanguarddigitalsolutions.co.uk.",
     "validationName": "Rhowch eich enw llawn gyda o leiaf 2 nod.",
     "validationEmail": "Rhowch gyfeiriad e-bost dilys.",
     "validationProjectType": "Dywedwch wrthym beth sydd ei angen arnoch.",
-    "validationBudget": "Dewiswch ystod cyllideb, neu dewiswch Ddim yn si\u0175r eto.",
+    "validationBudget": "Dewiswch ystod cyllideb, neu dewiswch Ddim yn siŵr eto.",
     "validationMessage": "Rhowch neges gyda o leiaf 10 nod.",
     "errorSummaryHeading": "Mae problem",
     "errorSummaryIntro": "Gwiriwch y canlynol cyn anfon eich neges:"
@@ -929,7 +929,7 @@
       "title": "Dylunio Gwefan eFasnach – Caerdydd, Abertawe a De Cymru",
       "description": "Siopau ar-lein pwrpasol i fanwerthwyr annibynnol ledled De Cymru. Taliadau diogel Stripe a PayPal, rheolaeth stoc go iawn, a dim ffi llwyfan ar rent.",
       "ogTitle": "Siopau Ar-lein wedi'u Hadeiladu i Fanwerthwyr De Cymru",
-      "ogDescription": "eFasnach bwrpasol gyda thaliadau diogel, rheolaeth stoc a pherchnogaeth lawn — dim llwyfan ar rent a dim ffi fisol orfodol."
+      "ogDescription": "eFasnach bwrpasol gyda thaliadau diogel, rheolaeth stoc a pherchnogaeth lawn. Dim llwyfan ar rent a dim ffi fisol orfodol."
     },
     "serviceBooking": {
       "title": "Systemau Archebu Ar-lein – Pen-y-bont, Caerdydd ac Abertawe",
@@ -951,7 +951,7 @@
     },
     "technology": {
       "title": "Technoleg Datblygu Gwe – Vanguard Digital Solutions",
-      "description": "Vue, TypeScript, .NET ac Azure, ynghyd â hygyrchedd WCAG 2.2, cydymffurfiaeth GDPR y DU a Core Web Vitals — y safonau y tu ôl i bob safle rydym yn ei adeiladu.",
+      "description": "Vue, TypeScript, .NET ac Azure, ynghyd â hygyrchedd WCAG 2.2, cydymffurfiaeth GDPR y DU a Core Web Vitals: y safonau y tu ôl i bob safle rydym yn ei adeiladu.",
       "ogTitle": "Stac Technoleg Datblygu Gwe",
       "ogDescription": "Dyfnder technegol ac arbenigedd y tu ôl i gymwysiadau gwe modern, hygyrch, diogel wedi'u hadeiladu yn Ne Cymru."
     },
@@ -969,7 +969,7 @@
     },
     "pricing": {
       "title": "Prisiau Gwefannau – O £650 – Vanguard Digital Solutions",
-      "description": "Beth mae gwefan busnes bach wir yn ei gostio yn Ne Cymru. Gwefannau o £650, integreiddio archebu a thaliadau o £1,250, cynllun gofal o £35 y mis.",
+      "description": "Beth mae gwefan busnes bach yn ei gostio yn Ne Cymru. Gwefannau o £650, integreiddio archebu a thaliadau o £1,250, cynllun gofal o £35 y mis.",
       "ogTitle": "Prisiau Gwefannau, wedi'u Cyhoeddi'n Glir",
       "ogDescription": "Prisiau cychwynnol ar gyfer gwefannau busnesau bach, siopau ar-lein a systemau archebu yn Ne Cymru. Dim angen galwad ffôn i ganfod yr ystod bras."
     },
@@ -995,7 +995,7 @@
   },
   "pricing": {
     "hero": {
-      "kicker": "Prisiau Gwefannau — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
+      "kicker": "Prisiau Gwefannau: Pen-y-bont, Caerdydd, Abertawe a De Cymru",
       "title": "Rhifau Syth, yn Glir o'r Cychwyn",
       "subtitle": "Ni ddylai fod rhaid i neb drefnu galwad dim ond i weld a ydyn nhw'n gallu fforddio'r gwaith. Felly mae'r rhifau isod."
     },
@@ -1010,7 +1010,7 @@
       "timeline": "Fel arfer 1 i 2 wythnos o amser adeiladu",
       "tagline": "Ychydig o dudalennau, wedi'u hadeiladu'n iawn, gyda ffurflen gyswllt sy'n cyrraedd eich mewnflwch.",
       "forWho": "Yn iawn i fusnes sydd angen bodoli ar-lein a chael ei ddarganfod: crefftwr, ymgynghorydd, caffi, neu unrhyw un sy'n rhedeg ar dudalen Facebook ar hyn o bryd.",
-      "f1": "Hyd at bum tudalen — Cartref, Amdanom, Gwasanaethau, Cysylltu, ac un arall",
+      "f1": "Hyd at bum tudalen: Cartref, Amdanom, Gwasanaethau, Cysylltu, ac un arall",
       "f2": "Symudol-gyntaf ac wedi'i adeiladu i basio Core Web Vitals Google",
       "f3": "Ffurflen gyswllt wedi'i danfon yn syth i'ch mewnflwch",
       "f4": "SEO ar y dudalen a SEO lleol fel eich bod yn ymddangos ar gyfer chwiliadau cyfagos",
@@ -1026,30 +1026,30 @@
       "tagline": "Popeth yn y pecyn Cychwynnol, ynghyd â'r rhannau sy'n troi pori'n archebion.",
       "forWho": "Yn iawn i salon, clinig neu grefftwr sydd eisiau i ymholiadau ac apwyntiadau gael eu trin yn awtomatig yn hytrach na thrwy chwarae tag ar y ffôn.",
       "f1": "Popeth yn y pecyn Cychwynnol",
-      "f2": "Archebu ar-lein neu integreiddio taliadau — Booksy, Square neu Stripe",
+      "f2": "Archebu ar-lein neu integreiddio taliadau gyda Booksy, Square neu Stripe",
       "f3": "Mwy o dudalennau, orielau, neu adran newyddion a chynigion syml",
       "f4": "SEO lleol wedi'i wella gyda data strwythuredig ar gyfer eich ardal wasanaeth",
       "f5": "Aliniad Proffil Busnes Google fel bod eich manylion yn cyfateb ym mhobman",
-      "f6": "Dadansoddeg wedi'i gosod i ddangos pa dudalennau sy'n cynhyrchu ymholiadau go iawn"
+      "f6": "Dadansoddeg wedi'i gosod i ddangos pa dudalennau sy'n cynhyrchu ymholiadau"
     },
     "bespoke": {
       "name": "Siopau Ar-lein, Apiau Pwrpasol ac Integreiddiadau",
       "price": "Yn cael ei ddyfynnu'n unigol",
       "timeline": "Amserlen wedi'i chytuno ar gam y cynnig",
       "tagline": "Siopau ar-lein, pyrth cleientiaid, dangosfyrddau ac unrhyw beth wedi'i adeiladu'n bwrpasol.",
-      "forWho": "Mae'r rhain yn amrywio gormod o ran cwmpas i'w prisio'n deg gyda ffigwr cyhoeddedig — mae siop deg cynnyrch a siop dau gant o gynnyrch yn swyddi gwahanol. Dywedwch wrthym beth sydd ei angen arnoch a chewch ddyfynbris clir, wedi'i eitemeiddio heb unrhyw rwymedigaeth.",
+      "forWho": "Mae'r rhain yn amrywio gormod o ran cwmpas i'w prisio'n deg gyda ffigwr cyhoeddedig. Mae siop deg cynnyrch a siop dau gant o gynhyrchion yn swyddi gwahanol. Dywedwch wrthym beth sydd ei angen arnoch a chewch ddyfynbris clir, wedi'i eitemeiddio heb unrhyw rwymedigaeth.",
       "cta": "Dywedwch wrthym beth sydd ei angen arnoch"
     },
     "care": {
       "heading": "Ei Gadw i Redeg",
       "price": "O £35 y mis",
       "subtitle": "Dewisol. Chi sy'n berchen ar y safle beth bynnag.",
-      "p1": "Cynnal, clytio diogelwch, diweddariadau dibyniaeth, copïau wrth gefn awtomataidd, monitro amser gweithredu a newidiadau cynnwys bach — oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau. Mae'n atal y safle rhag pydru'n dawel ar ôl lansio.",
+      "p1": "Cynnal, clytio diogelwch, diweddariadau dibyniaeth, copïau wrth gefn awtomataidd, monitro amser gweithredu a newidiadau cynnwys bach: oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau. Mae'n atal y safle rhag pydru'n dawel ar ôl lansio.",
       "p2": "Os byddai'n well gennych ei drin eich hun neu ei drosglwyddo i ddatblygwr arall, mae hynny'n iawn. Mae'r cod wedi'i ddogfennu, mae'r cyfrifon yn eich enw chi, a does dim ffi am adael."
     },
     "bilingual": {
       "heading": "Safleoedd Cymraeg",
-      "p1": "Mae fersiwn dwyieithog llawn Saesneg a Chymraeg o unrhyw becyn yn ychwanegu tua 30 i 40 y cant, gan ddibynnu ar faint o gynnwys sydd angen ei gyfieithu. Mae hynny'n cwmpasu URLau ar wahân i bob iaith, nodiadau hreflang cywir, tagio iaith priodol a newidydd iaith gweithredol — nid widget cyfieithu wedi'i folltio ar ben. Mae'r wefan hon wedi'i hadeiladu felly, fel y gallwch weld y canlyniad cyn ymrwymo."
+      "p1": "Mae fersiwn dwyieithog llawn Saesneg a Chymraeg o unrhyw becyn yn ychwanegu tua 30 i 40 y cant, gan ddibynnu ar faint o gynnwys sydd angen ei gyfieithu. Mae hynny'n cwmpasu URLau ar wahân i bob iaith, nodiadau hreflang cywir, tagio iaith priodol a newidydd iaith gweithredol, yn hytrach na widget cyfieithu wedi'i folltio ar ben. Mae'r wefan hon wedi'i hadeiladu felly, fel y gallwch weld y canlyniad cyn ymrwymo."
     },
     "ownership": {
       "heading": "Beth Sy'n Eiddo i Chi",
@@ -1064,7 +1064,7 @@
     "q3": "Sut mae hyn yn cymharu â Wix neu Squarespace?",
     "a3": "Mae adeiladwyr yn costio llai ymlaen llaw a mwy dros amser. Mae Wix yn rhedeg tua £9 i £119 y mis a Squarespace tua £12 i £79, am byth, ynghyd ag apiau wedi'u bilio ar wahân, ac ni allwch fynd â'r safle gyda chi os ydych chi'n gadael. Mae safle Cychwynnol am £650 heb ffi fisol orfodol yn talu ei ffordd yn ôl yn erbyn tanysgrifiad adeiladwr canolig o fewn tua dwy i dair blynedd, ac rydych chi'n berchen arno'n gyfan gwbl. Os oes angen rhywbeth ar-lein yr wythnos hon arnoch ac rydych chi'n hapus i'w adeiladu eich hun, adeiladwr yw'r ateb gwell, a byddwn ni'n dweud hynny wrthych.",
     "q4": "Oes rhaid i mi dalu'r cyfan ymlaen llaw?",
-    "a4": "Na. Mae'r taliad wedi'i rannu ar draws y cerrig milltir yn y cynnig — fel arfer blaendal i ddechrau, taliad ar bwynt canol cytunedig, a'r gweddill wrth lansio. Mae'r cyfan wedi'i nodi'n ysgrifenedig cyn i unrhyw beth ddechrau.",
+    "a4": "Na. Mae'r taliad wedi'i rannu ar draws y cerrig milltir yn y cynnig: fel arfer blaendal i ddechrau, taliad ar bwynt canol cytunedig, a'r gweddill wrth lansio. Mae'r cyfan wedi'i nodi'n ysgrifenedig cyn i unrhyw beth ddechrau.",
     "q5": "Beth os yw fy mhrosiect yn tyfu hanner ffordd trwodd?",
     "a5": "Mae newid yn normal. Ar bob ffin carreg filltir gallwn ail-flaenoriaethu neu addasu cwmpas, ac mae unrhyw beth sy'n effeithio ar gost neu linell amser yn cael ei ddangos i chi fel opsiynau cyn iddo gael ei gytuno, nid wedi'i anfonebu fel syndod wedyn.",
     "ctaHeading": "Yn yr Ystod Gywir?",
@@ -1075,25 +1075,25 @@
   "serviceDetail": {
     "ecommerce": {
       "navLabel": "Siopau Ar-lein",
-      "kicker": "Dylunio Gwefan eFasnach — Caerdydd, Abertawe, Casnewydd a De Cymru",
-      "title": "Siopau Ar-lein sy'n Perthyn i Chi, Nid ar Rent",
+      "kicker": "Dylunio Gwefan eFasnach: Caerdydd, Abertawe, Casnewydd a De Cymru",
+      "title": "Siopau Ar-lein sy'n Eiddo i Chi i'w Cadw",
       "subtitle": "Siop ar-lein go iawn gyda thaliadau diogel, rheolaeth stoc go iawn a dim ffi lwyfan fisol ynghlwm wrth y safle ei hun.",
       "intro": {
-        "p1": "Rydym yn adeiladu siopau ar-lein i fanwerthwyr annibynnol ledled De Cymru — o siop un cynnyrch i gatalog llawn gyda fariantau, lefelau stoc ac ardaloedd danfon. Mae taliadau'n rhedeg trwy Stripe neu PayPal, felly nid yw data cerdyn byth yn cyffwrdd â'ch safle ac nid ydych yn atebol am ei storio.",
-        "p2": "Y gwahaniaeth pwysig o lwyfan wedi'i letya yw perchnogaeth. Mae siop Shopify neu Wix ar rent: nid yw'r tanysgrifiad byth yn dod i ben, mae'r apiau'n cael eu bilio ar wahân, ac ni allwch symud y siop i unrhyw le arall. Mae'r hyn rydym yn ei adeiladu yn perthyn i chi — y cod, y parth, y cyfrif cynnal — heb ffi fisol orfodol i'r safle barhau i fodoli.",
-        "p3": "Nid yw'r cyfaddawd hwnnw'n iawn i bawb. Os ydych chi'n gwerthu llond llaw o eitemau ac eisiau bod yn fyw yr wythnos hon, mae llwyfan wedi'i letya wir yn ateb gwell a byddwn yn dweud hynny wrthych. Mae pwrpasol yn talu ar ei ganfed pan fo'r siop yn sianel werthu go iawn, pan fo angen iddi edrych yn wahanol i eiddo unrhyw un arall, neu pan fo'n rhaid iddi siarad â systemau stoc neu gyfrifon rydych chi eisoes yn eu rhedeg."
+        "p1": "Rydym yn adeiladu siopau ar-lein i fanwerthwyr annibynnol ledled De Cymru, o siop un cynnyrch i gatalog llawn gyda fariantau, lefelau stoc ac ardaloedd danfon. Mae taliadau'n rhedeg trwy Stripe neu PayPal, felly nid yw data cerdyn byth yn cyffwrdd â'ch safle ac nid ydych yn atebol am ei storio.",
+        "p2": "Y gwahaniaeth pwysig o lwyfan wedi'i letya yw perchnogaeth. Mae siop Shopify neu Wix ar rent: nid yw'r tanysgrifiad byth yn dod i ben, mae'r apiau'n cael eu bilio ar wahân, ac ni allwch symud y siop i unrhyw le arall. Mae'r hyn rydym yn ei adeiladu yn perthyn i chi (y cod, y parth, y cyfrif cynnal), a does dim ffi fisol orfodol i'r safle barhau i fodoli.",
+        "p3": "Nid yw'r cyfaddawd hwnnw'n iawn i bawb. Os ydych chi'n gwerthu llond llaw o eitemau ac eisiau bod yn fyw yr wythnos hon, mae llwyfan wedi'i letya'n ateb gwell a byddwn yn dweud hynny wrthych. Mae pwrpasol yn talu ar ei ganfed pan fo'r siop yn sianel werthu go iawn, pan fo'n rhaid iddi edrych yn wahanol i eiddo unrhyw un arall, neu pan fo angen iddi siarad â'r systemau stoc a chyfrifon rydych chi eisoes yn eu rhedeg."
       },
       "included": {
         "heading": "Beth Mae Siop Ar-lein yn ei Gynnwys",
         "subtitle": "Popeth sydd ei angen i gymryd arian yn ddiogel a chyflawni archeb.",
         "f1": "Catalog cynnyrch gyda chategorïau, fariantau, delweddau a chwilio",
-        "f2": "Talu diogel trwy Stripe neu PayPal — dim data cerdyn wedi'i storio ar eich safle",
+        "f2": "Talu diogel trwy Stripe neu PayPal, heb ddata cerdyn yn cael ei storio ar eich safle",
         "f3": "Olrhain stoc, gyda thrin stoc isel ac allan o stoc",
         "f4": "Ardaloedd danfon, rheolau postio ac opsiynau casglu",
         "f5": "E-byst cadarnhau archeb ac anfon i chi a'r cwsmer",
         "f6": "Trin TAW a chofnodion archebion y gellir eu llwytho i lawr ar gyfer eich cadw cyfrifon",
         "f7": "Marc-i-fyny sgema cynnyrch fel y gall eitemau ymddangos yng nghanlyniadau Google Shopping",
-        "f8": "Talu symudol-gyntaf — problem ffôn yw'r rhan fwyaf o fasgedi wedi'u gadael"
+        "f8": "Talu symudol-gyntaf. Problem ffôn yw'r rhan fwyaf o fasgedi wedi'u gadael"
       },
       "whoFor": {
         "heading": "Pwy sy'n Prynu Hwn",
@@ -1109,7 +1109,7 @@
       },
       "pricing": {
         "heading": "Beth Mae Siop Ar-lein yn ei Gostio",
-        "body": "Mae siopau ar-lein yn cael eu dyfynnu'n unigol yn hytrach na'u prisio o restr, gan fod siop deg cynnyrch a siop dau gan cynnyrch yn swyddi gwirioneddol wahanol. Y newidynnau yw maint y catalog, faint o opsiynau cynnyrch sydd gan bob eitem, beth sy'n gorfod integreiddio â'ch stoc neu'ch cyfrifon, ac a oes angen ysgrifennu ffotograffiaeth a disgrifiadau cynnyrch. Rydych yn cael dyfynbris ysgrifenedig sefydlog cyn i unrhyw waith ddechrau.",
+        "body": "Mae siopau ar-lein yn cael eu dyfynnu'n unigol yn hytrach na'u prisio o restr, gan fod siop deg cynnyrch a siop dau gant o gynhyrchion yn swyddi gwahanol. Y newidynnau yw maint y catalog, faint o opsiynau cynnyrch sydd gan bob eitem, beth sy'n gorfod integreiddio â'ch stoc neu'ch cyfrifon, ac a oes angen ysgrifennu ffotograffiaeth a disgrifiadau cynnyrch. Rydych yn cael dyfynbris ysgrifenedig sefydlog cyn i unrhyw waith ddechrau.",
         "cta": "Gweler ein holl brisiau"
       },
       "faq": {
@@ -1117,11 +1117,11 @@
         "subtitle": "Beth mae manwerthwyr yn ei ofyn i ni cyn ymrwymo.",
         "q1": {
           "question": "A yw siop bwrpasol yn rhatach na Shopify neu Wix yn y tymor hir?",
-          "answer": "Mae'n dibynnu am ba mor hir rydych chi'n ei redeg a faint o ychwanegiadau sydd eu hangen arnoch. Mae llwyfan wedi'i letya'n costio tua £20 i £100 y mis unwaith y byddwch yn cynnwys apiau, ac nid yw hynny byth yn stopio. Mae siop bwrpasol yn costio mwy ymlaen llaw ac wedyn dim ond cynnal, sydd ar gyfer siop â blaen statig yn ychydig bunnoedd y mis. Mae'r rhan fwyaf o siopau'n torri'n gyfartal rywle ym mlynyddoedd dau i bedwar. Os ydych chi'n disgwyl masnachu am dymor, rhentwch. Os mai dyma'r busnes, perchennwch ef."
+          "answer": "Mae'n dibynnu am ba mor hir rydych chi'n ei redeg a faint o ychwanegiadau sydd eu hangen arnoch. Mae llwyfan wedi'i letya'n costio tua £20 i £100 y mis unwaith y byddwch yn cynnwys apiau, am gyhyd ag y byddwch yn masnachu. Mae siop bwrpasol yn costio mwy ymlaen llaw ac wedyn dim ond cynnal, sydd ar gyfer siop â blaen statig yn ychydig bunnoedd y mis. Mae'r rhan fwyaf o siopau'n torri'n gyfartal rywle ym mlynyddoedd dau i bedwar. Os ydych chi'n disgwyl masnachu am dymor, rhentwch. Os mai dyma'r busnes, perchnogwch ef."
         },
         "q2": {
           "question": "A allaf reoli cynhyrchion fy hun heb gyffwrdd â chod?",
-          "answer": "Gallwch. Rydych yn cael ardal weinyddu ar gyfer ychwanegu a golygu cynhyrchion, prisiau, lefelau stoc a delweddau. Os yw'ch catalog eisoes yn byw yn rhywle arall — taenlen, system EPOS, pecyn cyfrifon — yn aml gallwn fewnforio ohono neu gydweddu ag ef yn hytrach na gofyn i chi aildeipio popeth."
+          "answer": "Gallwch. Rydych yn cael ardal weinyddu ar gyfer ychwanegu a golygu cynhyrchion, prisiau, lefelau stoc a delweddau. Os yw'ch catalog eisoes yn byw yn rhywle arall (taenlen, system EPOS, pecyn cyfrifon), yn aml gallwn fewnforio ohono neu gydweddu ag ef yn hytrach na gofyn i chi aildeipio popeth."
         },
         "q3": {
           "question": "Sut mae taliadau cerdyn yn cael eu cadw'n ddiogel?",
@@ -1129,7 +1129,7 @@
         },
         "q4": {
           "question": "A fydd fy nghynhyrchion yn ymddangos yn Google Shopping?",
-          "answer": "Rydym yn ychwanegu data strwythuredig Cynnyrch at bob eitem — pris, argaeledd, delweddau, disgrifiad — sef yr hyn mae Google yn ei ddarllen i adeiladu canlyniad siopa. Mae hynny'n gwneud cymhwysedd yn bosibl; nid yw'n gwarantu lleoliad, ac mae ymgyrchoedd Shopping taledig yn beth ar wahân nad ydym yn ei redeg i chi."
+          "answer": "Rydym yn ychwanegu data strwythuredig Product at bob eitem: pris, argaeledd, delweddau, disgrifiad. Dyna beth mae Google yn ei ddarllen i adeiladu canlyniad siopa. Mae'n gwneud cymhwysedd yn bosibl heb warantu lleoliad, ac mae ymgyrchoedd Shopping taledig yn beth ar wahân nad ydym yn ei redeg i chi."
         },
         "q5": {
           "question": "Beth am bostio, TAW a dychweliadau?",
@@ -1140,13 +1140,13 @@
     },
     "booking": {
       "navLabel": "Systemau Archebu",
-      "kicker": "Systemau Archebu Ar-lein — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
+      "kicker": "Systemau Archebu Ar-lein: Pen-y-bont, Caerdydd, Abertawe a De Cymru",
       "title": "Stopiwch Golli Archebion i Beiriant Ateb",
       "subtitle": "Gadewch i gwsmeriaid archebu eu hunain, ddydd neu nos, heb i chi ateb y ffôn ganol apwyntiad.",
       "intro": {
-        "p1": "Nid yw'r rhan fwyaf o archebion coll yn cael eu colli i brisiau gwell cystadleuydd. Maent yn cael eu colli am fod rhywun wedi ffonio pan oedd eich dwylo'n llawn, heb adael neges, ac wedi archebu gyda phwy bynnag atebodd nesaf. Mae system archebu ar-lein yn cymryd yr alwad honno i chi am un ar ddeg y nos, ar ddydd Sul, ac tra rydych chi gyda chleient.",
-        "p2": "Rydym yn adeiladu archebu i mewn i'ch gwefan eich hun yn hytrach nag anfon cwsmeriaid i ffwrdd at farchnadle trydydd parti. Mae hynny'n bwysig am ddau reswm: eich archeb chi ydyw, nid arweiniad ar rent gan lwyfan sydd hefyd yn hysbysebu eich cystadleuwyr, ac mae'r cwsmer yn aros ar eich safle lle mae eich prisiau, eich lluniau a'ch adolygiadau.",
-        "p3": "Lle rydych chi eisoes yn defnyddio Booksy, Square neu system debyg ac mae'n gweithio, rydym yn integreiddio yn hytrach na disodli — mae'ch safle'n dod yn ddrws ffrynt a'r system bresennol yn aros yn ddyddiadur. Lle nad oes system, neu nad yw'r un sydd gennych yn ffitio sut rydych chi wir yn gweithio, rydym yn adeiladu un sy'n gwneud hynny."
+        "p1": "Nid oes gan y rhan fwyaf o archebion coll ddim i'w wneud â phrisiau gwell cystadleuydd. Maent yn cael eu colli am fod rhywun wedi ffonio pan oedd eich dwylo'n llawn, heb adael neges, ac wedi archebu gyda phwy bynnag atebodd nesaf. Mae system archebu ar-lein yn cymryd yr alwad honno i chi am un ar ddeg y nos, ar ddydd Sul, a thra rydych chi gyda chleient.",
+        "p2": "Rydym yn adeiladu archebu i mewn i'ch gwefan eich hun yn hytrach nag anfon cwsmeriaid i ffwrdd at farchnadle trydydd parti. Dau reswm am hynny. Chi sy'n berchen ar yr archeb, yn hytrach na'i bod yn arweiniad ar rent gan lwyfan sydd hefyd yn hysbysebu eich cystadleuwyr. Ac mae'r cwsmer yn aros ar eich safle, gyda'ch prisiau, eich lluniau a'ch adolygiadau o'i flaen.",
+        "p3": "Lle rydych chi eisoes yn defnyddio Booksy, Square neu rywbeth tebyg ac mae'n gweithio, rydym yn integreiddio yn hytrach na disodli. Mae'ch safle'n dod yn ddrws ffrynt ac mae'r system bresennol yn aros yn ddyddiadur. Os nad oes system, neu os nad yw'r un sydd gennych yn ffitio sut rydych chi'n gweithio, rydym yn adeiladu un sy'n gwneud hynny."
       },
       "included": {
         "heading": "Beth Mae System Archebu yn ei Gynnwys",
@@ -1154,7 +1154,7 @@
         "f1": "Argaeledd go iawn o'ch calendr eich hun, nid dyfaliad",
         "f2": "Dewis gwasanaeth a hyd, fel bod toriad a lliw yn archebu slotiau gwahanol",
         "f3": "Neilltuo staff neu adnoddau, lle mae mwy nag un person yn cymryd archebion",
-        "f4": "E-byst cadarnhau ac atgoffa, sef yr hyn sydd wir yn lleihau pobl yn peidio â throi i fyny",
+        "f4": "E-byst cadarnhau ac atgoffa, sef yr hyn sy'n lleihau nifer y bobl sy'n peidio â throi i fyny",
         "f5": "Blaendaliadau neu daliad llawn ymlaen llaw trwy Stripe, os ydych chi eu heisiau",
         "f6": "Rheolau canslo ac aildrefnu rydych chi'n eu gosod, wedi'u gorfodi'n awtomatig",
         "f7": "Integreiddio Booksy, Square, Google Calendar neu Outlook lle rydych chi eisoes yn defnyddio un",
@@ -1174,7 +1174,7 @@
       },
       "pricing": {
         "heading": "Beth Mae System Archebu yn ei Gostio",
-        "body": "Mae gwefan gydag integreiddio archebu neu daliadau'n dechrau o £1,250, ac fel arfer yn cymryd 2 i 3 wythnos o amser adeiladu. Mae hynny'n cwmpasu llif archebu gweithredol wedi'i gysylltu â'ch calendr gyda chadarnhadau ac atgoffiadau. Mae gosodiadau mwy cymhleth — sawl aelod staff, blaendaliadau, capasiti dosbarth, cydweddu â system bresennol — yn cael eu dyfynnu ar ben hynny, yn ysgrifenedig, cyn i'r gwaith ddechrau.",
+        "body": "Mae gwefan gydag integreiddio archebu neu daliadau'n dechrau o £1,250, ac fel arfer yn cymryd 2 i 3 wythnos o amser adeiladu. Mae hynny'n cwmpasu llif archebu gweithredol wedi'i gysylltu â'ch calendr, gyda chadarnhadau ac atgoffiadau. Mae gosodiadau mwy cymhleth (sawl aelod staff, blaendaliadau, capasiti dosbarth, cydweddu â system bresennol) yn cael eu dyfynnu ar ben hynny, yn ysgrifenedig, cyn i'r gwaith ddechrau.",
         "cta": "Gweler ein holl brisiau"
       },
       "faq": {
@@ -1182,7 +1182,7 @@
         "subtitle": "Beth mae salonau a chrefftwyr yn ei ofyn i ni cyn ymrwymo.",
         "q1": {
           "question": "Rwy'n defnyddio Booksy eisoes. A oes rhaid i mi symud?",
-          "answer": "Nac oes. Os yw Booksy'n gweithio i chi, cadwch ef — rydym yn integreiddio ag ef fel bod eich gwefan yn dangos argaeledd go iawn ac yn trosglwyddo'r archeb yn lân. Dim ond os ydych chi'n talu am rywbeth rydych chi wedi tyfu y tu hwnt iddo, neu os yw marchnata'r llwyfan ei hun yn gwthio'ch cwsmeriaid tuag at gystadleuwyr, mae symud yn gwneud synnwyr."
+          "answer": "Nac oes. Os yw Booksy'n gweithio i chi, cadwch ef. Rydym yn integreiddio ag ef fel bod eich gwefan yn dangos argaeledd go iawn ac yn trosglwyddo'r archeb yn lân. Dim ond os ydych chi'n talu am rywbeth rydych chi wedi tyfu y tu hwnt iddo, neu os yw marchnata'r llwyfan ei hun yn gwthio'ch cwsmeriaid tuag at gystadleuwyr, y mae symud yn gwneud synnwyr."
         },
         "q2": {
           "question": "A fydd yn stopio pobl rhag archebu pan fyddaf ar gau neu eisoes yn brysur?",
@@ -1190,40 +1190,40 @@
         },
         "q3": {
           "question": "A allaf gymryd blaendal i leihau pobl yn peidio â throi i fyny?",
-          "answer": "Gallwch, trwy Stripe — naill ai blaendal sefydlog neu'r swm llawn ar bwynt yr archeb, a chi sy'n dewis pa wasanaethau sydd ei angen arno. Ynghyd ag e-byst atgoffa awtomatig, dyna'r ffordd fwyaf effeithiol o leihau pobl yn peidio â throi i fyny sydd ar gael. Chi sy'n gosod eich telerau canslo ac ad-dalu; rydym ni'n eu gweithredu."
+          "answer": "Gallwch, trwy Stripe: naill ai blaendal sefydlog neu'r swm llawn ar bwynt yr archeb, a chi sy'n dewis pa wasanaethau sy'n gofyn amdano. Ynghyd ag e-byst atgoffa awtomatig, dyna'r ffordd fwyaf effeithiol sydd ar gael o leihau nifer y bobl sy'n peidio â throi i fyny. Chi sy'n gosod eich telerau canslo ac ad-dalu; rydym ni'n eu gweithredu."
         },
         "q4": {
           "question": "Beth sy'n digwydd os yw cwsmer eisiau newid neu ganslo?",
-          "answer": "Maent yn cael dolen yn eu e-bost cadarnhau sy'n gadael iddynt aildrefnu neu ganslo o fewn y ffenestr rydych chi'n ei gosod — dyweder, mwy na 24 awr ymlaen llaw. Y tu allan i'r ffenestr honno mae'n dweud wrthynt i gysylltu â chi yn lle hynny. Mae hynny'n cadw'r newidiadau hawdd oddi ar eich ffôn heb adael i rywun ganslo slot dydd Sadwrn am naw ar fore dydd Sadwrn."
+          "answer": "Maent yn cael dolen yn eu e-bost cadarnhau sy'n gadael iddynt aildrefnu neu ganslo o fewn y ffenestr rydych chi'n ei gosod (dyweder, mwy na 24 awr ymlaen llaw). Y tu allan i'r ffenestr honno mae'n dweud wrthynt am gysylltu â chi yn lle hynny. Mae hynny'n cadw'r newidiadau hawdd oddi ar eich ffôn heb adael i rywun ganslo slot dydd Sadwrn am naw ar fore dydd Sadwrn."
         },
         "q5": {
           "question": "A oes angen gwefan gwbl newydd arnaf i gael archebu?",
-          "answer": "Ddim o reidrwydd. Os yw'ch safle presennol mewn cyflwr rhesymol a chi sy'n berchen arno, yn aml gellir ychwanegu archebu ato. Os yw ar lwyfan na allwch ei addasu, neu os yw'n araf ac yn anodd dod o hyd iddo mewn chwiliad, fel arfer byddwch yn cael mwy allan o ailadeiladu — ac mae'r gwaith archebu yr un fath beth bynnag."
+          "answer": "Ddim o reidrwydd. Yn aml gellir ychwanegu archebu at safle presennol os yw mewn cyflwr rhesymol a chi sy'n berchen arno. Ar lwyfan na allwch ei addasu, neu ar safle sy'n araf ac yn anodd dod o hyd iddo mewn chwiliad, fel arfer byddwch yn cael mwy allan o ailadeiladu. Mae'r gwaith archebu yr un fath beth bynnag."
         }
       },
       "relatedHeading": "Cysylltiedig"
     },
     "businessWebsite": {
       "navLabel": "Gwefannau Busnes",
-      "kicker": "Dylunio Gwefan Busnes — Pen-y-bont, Caerdydd, Abertawe a De Cymru",
+      "kicker": "Dylunio Gwefan Busnes: Pen-y-bont, Caerdydd, Abertawe a De Cymru",
       "title": "Gwefan sy'n Gwneud yr Esbonio Drosoch",
       "subtitle": "Ar gyfer busnesau nad ydynt yn gwerthu ar-lein ac nad ydynt yn cymryd archebion, ond sydd angen cael eu canfod, eu deall a'u trystio.",
       "intro": {
         "p1": "Nid oes angen siop na dyddiadur archebu ar lawer o fusnesau. Mae angen safle arnynt sy'n ymddangos pan fydd rhywun yn chwilio, yn ateb y cwestiynau maen nhw'n cael eu gofyn ar bob galwad gyntaf, ac sy'n edrych fel ei fod yn perthyn i gwmni sy'n werth ei gyflogi. Mae hynny'n swydd lai nag siop ar-lein a dylai gostio llai.",
-        "p2": "Mae'r gwaith yn bennaf mewn strwythur ac eglurder. Un dudalen fesul gwasanaeth, fel y gall pob un raddio am yr hyn mae pobl wir yn ei chwilio — mae angen tudalennau ar wahân ar doeon i doeon fflat, atgyweiriadau a galwadau brys, nid un dudalen yn rhestru'r tri. Manylion cyswllt clir ar bob tudalen. Digon o fanylion fel y gall darpar gwsmer gymhwyso ei hun cyn iddo eich ffonio, sy'n golygu bod yr alwadau rydych chi'n eu cael yn well rhai.",
+        "p2": "Mae'r gwaith yn bennaf mewn strwythur ac eglurder. Un dudalen fesul gwasanaeth, fel y gall pob un raddio am yr hyn mae pobl yn chwilio amdano. Mae angen tudalennau ar wahân ar doiwr ar gyfer toeon fflat, atgyweiriadau a galwadau brys, nid un dudalen yn rhestru'r tri. Manylion cyswllt clir ar bob tudalen. Digon o fanylion fel y gall darpar gwsmer gymhwyso ei hun cyn iddo eich ffonio, fel bod yr alwadau rydych chi'n eu cael yn rhai gwell.",
         "p3": "Dyma hefyd lle mae'r ddadl dros hygrededd proffesiynol yn byw. Os yw rhywun ar fin rhoi briff difrifol i chi, byddant yn eich edrych i fyny yn gyntaf. Mae safle sy'n llwytho'n gyflym, yn darllen yn dda ac yn gweithio'n iawn ar ffôn yn gwneud gwaith tawel yn y foment honno, ac mae un araf a adeiladwyd yn 2014 yn gwneud y gwrthwyneb."
       },
       "included": {
         "heading": "Beth Mae Gwefan Busnes yn ei Gynnwys",
         "subtitle": "Y strwythur sy'n gwneud safle'n hawdd dod o hyd iddo ac yn hygredol.",
         "f1": "Tudalen bwrpasol fesul gwasanaeth, fel y gall pob un raddio am ei chwiliad ei hun",
-        "f2": "Cynnwys lleoliad ac ardal wasanaeth yn targedu'r trefi rydych chi wir yn eu gwasanaethu",
+        "f2": "Cynnwys lleoliad ac ardal wasanaeth ar gyfer y trefi rydych chi'n eu gwasanaethu",
         "f3": "Manylion cyswllt a ffurflen ymholiad weithredol y gellir ei chyrraedd o bob tudalen",
         "f4": "Orielau lluniau o waith gorffenedig, wedi'u optimeiddio fel nad ydynt yn arafu'r safle",
         "f5": "Data strwythuredig LocalBusiness yn bwydo canlyniadau lleol Google",
         "f6": "Targedau hygyrchedd WCAG 2.2 Lefel AA a pherfformiad Core Web Vitals",
         "f7": "Baner cwcis a pholisi preifatrwydd yn bodloni UK GDPR a PECR",
-        "f8": "Cynnwys y gallwch ei ddiweddaru eich hun — oriau, prisiau, gwasanaeth newydd"
+        "f8": "Cynnwys y gallwch ei ddiweddaru eich hun: oriau, prisiau, gwasanaeth newydd"
       },
       "whoFor": {
         "heading": "Pwy sy'n Prynu Hwn",
@@ -1247,11 +1247,11 @@
         "subtitle": "Beth mae cwmnïau'n ei ofyn i ni cyn ymrwymo.",
         "q1": {
           "question": "Faint o dudalennau sydd eu hangen arnaf mewn gwirionedd?",
-          "answer": "Fel arfer un fesul peth rydych chi eisiau cael eich canfod amdano, ynghyd â'r pethau sylfaenol. Mae angen tri thudalen gwasanaeth ar blymwr sy'n cynnig atgyweirio boeleri, gosod ystafelloedd ymolchi a galwadau brys, nid un dudalen yn rhestru'r tri — mae peiriannau chwilio'n paru chwiliad â thudalen, felly mae tudalennau mwy ffocysedig yn golygu mwy o gyfleoedd i gael eich canfod. Mae pum tudalen yn cwmpasu'r rhan fwyaf o gwmnïau bach; mae deg yn gyffredin unwaith y bydd pob gwasanaeth yn cael ei dudalen ei hun."
+          "answer": "Fel arfer un fesul peth rydych chi eisiau cael eich canfod amdano, ynghyd â'r pethau sylfaenol. Mae angen tair tudalen gwasanaeth ar blymwr sy'n cynnig atgyweirio boeleri, gosod ystafelloedd ymolchi a galwadau brys. Mae peiriannau chwilio'n paru chwiliad â thudalen, felly mae tudalennau mwy ffocysedig yn golygu mwy o gyfleoedd i gael eich canfod. Mae pum tudalen yn cwmpasu'r rhan fwyaf o gwmnïau bach; mae deg yn gyffredin unwaith y bydd pob gwasanaeth yn cael ei dudalen ei hun."
         },
         "q2": {
           "question": "A oes rhaid i mi ysgrifennu'r holl gynnwys fy hun?",
-          "answer": "Nac oes, ond mae cyflenwi'r deunydd crai yn cyflymu pethau ac yn cadw'r gost i lawr. Mae angen 500 i 1,000 gair yn gyfan gwbl ar y rhan fwyaf o safleoedd busnesau bach. Os gallwch roi nodiadau bras i ni, rhestr o wasanaethau a rhai lluniau, gallwn ei siapio. Os byddai'n well gennych i ni ei ysgrifennu o gyfweliad, dyfynnir hynny fel ychwanegol."
+          "answer": "Nac oes, ond mae cyflenwi'r deunydd crai yn cyflymu pethau ac yn cadw'r gost i lawr. Mae angen 500 i 1,000 gair i gyd ar y rhan fwyaf o safleoedd busnesau bach. Rhowch nodiadau bras i ni, rhestr o wasanaethau a rhai lluniau, a gallwn ei siapio o'r fan honno. Os byddai'n well gennych i ni ei ysgrifennu o gyfweliad, dyfynnir hynny fel ychwanegol."
         },
         "q3": {
           "question": "Beth os oes gen i barth eisoes neu safle hanner gorffen?",
@@ -1259,7 +1259,7 @@
         },
         "q4": {
           "question": "A all dyfu'n ddiweddarach os yw'r busnes yn tyfu?",
-          "answer": "Gall. Mae ychwanegu tudalennau, blog, archebu neu siop yn ddiweddarach yn normal. Am mai chi sy'n berchen ar y cod ac mae wedi'i adeiladu ar dechnoleg safonol yn hytrach na llwyfan perchnogol, nid yw ei ehangu'n golygu dechrau eto — ac nid oes rhaid mai ni sy'n ei wneud."
+          "answer": "Gall. Mae ychwanegu tudalennau, blog, archebu neu siop yn ddiweddarach yn normal. Am mai chi sy'n berchen ar y cod a'i fod wedi'i adeiladu ar dechnoleg safonol yn hytrach na llwyfan perchnogol, nid yw ei ehangu'n golygu dechrau eto. Nid oes rhaid mai ni sy'n ei wneud, chwaith."
         },
         "q5": {
           "question": "A fydd yn gweithio'n iawn ar ffonau?",
@@ -1270,25 +1270,25 @@
     },
     "bespoke": {
       "navLabel": "Cymwysiadau Gwe Pwrpasol",
-      "kicker": "Datblygu Meddalwedd Pwrpasol — De Cymru ac o Bell",
+      "kicker": "Datblygu Meddalwedd Pwrpasol: De Cymru ac o Bell",
       "title": "Pan Fo Meddalwedd Parod Bron â Ffitio",
-      "subtitle": "Pyrth cleientiaid, offer mewnol, dangosfyrddau a systemau llif gwaith, wedi'u hadeiladu o gwmpas sut mae'ch busnes wir yn rhedeg.",
+      "subtitle": "Pyrth cleientiaid, offer mewnol, dangosfyrddau a systemau llif gwaith, wedi'u hadeiladu o gwmpas y ffordd mae'ch busnes yn rhedeg.",
       "intro": {
         "p1": "Mae'r rhan fwyaf o fusnesau'n cyrraedd pwynt lle mae'r feddalwedd yn siapio'r broses yn hytrach na'i gwasanaethu. Mae'r arwyddion yn gyfarwydd: taenlen nad oes gan neb hawl i'w chyffwrdd, yr un wybodaeth wedi'i theipio i mewn i dri system, adroddiad misol sy'n cymryd deuddydd i rywun, neu danysgrifiad yn cael ei dalu am un nodwedd allan o ddeugain.",
-        "p2": "Rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol ar gyfer y bwlch hwnnw — pyrth cleientiaid, systemau archebu a threfnu, dangosfyrddau mewnol, offer dyfynbrisio, ac integreiddiadau sy'n gwneud i systemau presennol siarad â'i gilydd. Wedi'u hadeiladu ar .NET neu Node gyda blaen wedi'i deipio, wedi'u cynnal ar Microsoft Azure, gyda'r un safonau hygyrchedd a diogelwch â phopeth arall rydym yn ei gyflenwi.",
+        "p2": "Rydym yn dylunio ac yn adeiladu cymwysiadau gwe pwrpasol ar gyfer y bwlch hwnnw: pyrth cleientiaid, systemau archebu a threfnu, dangosfyrddau mewnol, offer dyfynbrisio, ac integreiddiadau sy'n gwneud i systemau presennol siarad â'i gilydd. Wedi'u hadeiladu ar .NET neu Node gyda blaen wedi'i deipio, wedi'u cynnal ar Microsoft Azure, gyda'r un safonau hygyrchedd a diogelwch â phopeth arall rydym yn ei gyflenwi.",
         "p3": "Rydym hefyd yn hapus i ddweud wrthych pryd i beidio ag adeiladu. Os yw cynnyrch am £30 y mis yn gwneud naw deg y cant o'r hyn sydd ei angen arnoch, prynu ef yw'r ateb cywir a byddwn yn dweud hynny. Mae pwrpasol yn talu ar ei ganfed pan fo'r deg y cant sy'n weddill yn lle mae'ch elw'n byw, pan nad oes dim byd parod yn ffitio'r llif gwaith, neu pan fo cost trwyddedu ar draws eich tîm wedi tyfu y tu hwnt i gost perchen ar y peth yn gyfan gwbl."
       },
       "included": {
         "heading": "Sut Mae Adeiladu Pwrpasol yn Rhedeg",
         "subtitle": "Wedi'i gyflenwi mewn cerrig milltir, fel eich bod yn gweld meddalwedd yn gweithio'n gynnar.",
-        "f1": "Darganfod sy'n dechrau gyda phroblem y busnes, nid rhestr nodweddion",
+        "f1": "Darganfod sy'n dechrau gyda'r broblem fusnes y mae angen i chi ei datrys",
         "f2": "Straeon defnyddwyr gyda meini prawf derbyn, a fframiau gwifrau ar gyfer sgriniau allweddol",
         "f3": "Opsiynau cyfnodi, fel y gallwch lansio fersiwn gyntaf ddefnyddiol ac ehangu",
-        "f4": "Meddalwedd sy'n gweithio ar URL staging ym mhob carreg filltir, nid bar cynnydd",
+        "f4": "Meddalwedd sy'n gweithio y gallwch ei defnyddio ar URL staging ym mhob carreg filltir",
         "f5": "APIau REST neu GraphQL gyda chontractau OpenAPI a fersiynu",
         "f6": "Dilysu, caniatâd yn seiliedig ar rôl a llwybrau archwilio lle bo angen",
         "f7": "Profion awtomataidd, gwirio math a CI fel ei fod yn goroesi newidiadau'r dyfodol",
-        "f8": "Cod ffynhonnell yn eich ystorfa eich hun o'r diwrnod cyntaf — dim clymu i mewn"
+        "f8": "Cod ffynhonnell yn eich ystorfa eich hun o'r diwrnod cyntaf, heb glymu i mewn"
       },
       "whoFor": {
         "heading": "Pwy sy'n Prynu Hwn",
@@ -1304,7 +1304,7 @@
       },
       "pricing": {
         "heading": "Beth Mae Meddalwedd Pwrpasol yn ei Gostio",
-        "body": "Mae gwaith pwrpasol yn cael ei ddyfynnu'n unigol. Nid oes ystod onest i'w chyhoeddi, gan fod cwmpas yn amrywio mwy nag mewn unrhyw fath arall o brosiect — gall yr un disgrifiad tri gair olygu pythefnos neu chwe mis. Yr hyn rydych chi'n ei gael yn lle hynny yw sgwrs ddarganfod am ddim, barn onest ar p'un a yw adeiladu hyd yn oed y penderfyniad cywir, a dyfynbris ysgrifenedig sefydlog gyda rhagdybiaethau ac eithriadau wedi'u datgan yn blaen cyn i unrhyw waith ddechrau.",
+        "body": "Mae gwaith pwrpasol yn cael ei ddyfynnu'n unigol. Nid oes ystod onest i'w chyhoeddi, gan fod cwmpas yn amrywio mwy nag mewn unrhyw fath arall o brosiect. Gall yr un disgrifiad tri gair olygu pythefnos neu chwe mis. Yr hyn rydych chi'n ei gael yn lle hynny yw sgwrs ddarganfod am ddim, barn onest ar p'un a yw adeiladu hyd yn oed yn benderfyniad cywir, a dyfynbris ysgrifenedig sefydlog gyda rhagdybiaethau ac eithriadau wedi'u datgan yn blaen cyn i unrhyw waith ddechrau.",
         "cta": "Dechreuwch gyda sgwrs"
       },
       "faq": {
@@ -1316,11 +1316,11 @@
         },
         "q2": {
           "question": "A allwn ni ddechrau'n fach yn hytrach nag ymrwymo i bopeth?",
-          "answer": "Gallwch, a dyna rydym yn ei argymell ar gyfer y rhan fwyaf o brosiectau. Mae'r cam cyntaf yn cyflenwi sleisen wirioneddol ddefnyddiol — un llif gwaith, un grŵp defnyddwyr — y gallwch ei roi o flaen defnyddwyr go iawn. Mae'r hyn maen nhw'n ei wneud ag ef fel arfer yn newid yr hyn ddylai fod yn gam dau, sy'n ffordd lawer rhatach o ganfod hynny na adeiladu'r cyfan yn gyntaf."
+          "answer": "Gallwch, a dyna rydym yn ei argymell ar gyfer y rhan fwyaf o brosiectau. Mae'r cam cyntaf yn cyflenwi sleisen ddefnyddiol o'r peth (un llif gwaith, un grŵp defnyddwyr) y gallwch ei roi o flaen defnyddwyr go iawn. Mae'r hyn maen nhw'n ei wneud ag ef fel arfer yn newid yr hyn ddylai cam dau fod, ac mae canfod hynny'n gynnar yn llawer rhatach nag adeiladu'r cyfan yn gyntaf."
         },
         "q3": {
           "question": "Beth sy'n digwydd os ydym eisiau ei gymryd i rywle arall?",
-          "answer": "Mae popeth yn trosglwyddo. Mae cod ffynhonnell yn byw mewn ystorfa rydych chi'n berchen arni o'r diwrnod cyntaf, mae cyfrifon cynnal a thrydydd parti yn eich enw chi, ac mae trosglwyddo'n cynnwys dogfennaeth a thaith drwodd. Nid oes llwyfannau perchnogol a dim cymalau sy'n ei gwneud hi'n lletchwith i adael. Mae hynny'n fwriadol — mae'n ein cadw ni'n onest."
+          "answer": "Mae popeth yn trosglwyddo. Mae'r cod ffynhonnell yn byw mewn ystorfa rydych chi'n berchen arni o'r diwrnod cyntaf, mae'r cyfrifon cynnal a thrydydd parti yn eich enw chi, ac mae'r trosglwyddo'n cynnwys dogfennaeth a sesiwn dywys. Nid oes llwyfannau perchnogol na chymalau sy'n ei gwneud hi'n lletchwith i adael."
         },
         "q4": {
           "question": "A yw AI yn cael ei ddefnyddio yn yr adeiladu, ac a yw ein data'n ddiogel?",
@@ -1328,7 +1328,7 @@
         },
         "q5": {
           "question": "Beth am gefnogaeth ar ôl lansio?",
-          "answer": "Yn cael ei drafod yn agored ac erioed yn orfodol. Mae'r opsiynau'n amrywio o gontract cynnal sy'n cwmpasu trwsio, diweddariadau dibyniaeth a newidiadau bach, hyd at drosglwyddo glân i'ch tîm eich hun neu ddatblygwr arall. Mae'r cod wedi'i ddogfennu naill ffordd. Nid ydych wedi'ch clymu i ni i gadw'ch meddalwedd eich hun yn rhedeg."
+          "answer": "Mae cefnogaeth yn ddewisol, a byddwn yn ei thrafod yn agored. Gall fod yn gontract cynnal sy'n cwmpasu trwsio, diweddariadau dibyniaeth a newidiadau bach, neu'n drosglwyddiad glân i'ch tîm eich hun neu i ddatblygwr arall. Mae'r cod wedi'i ddogfennu y naill ffordd neu'r llall, felly nid yw cadw'ch meddalwedd i redeg yn dibynnu arnom ni."
         }
       },
       "relatedHeading": "Cysylltiedig"

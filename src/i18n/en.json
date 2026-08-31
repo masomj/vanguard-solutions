@@ -73,7 +73,7 @@
       "badge": "Based in Bridgend - Serving South Wales and Beyond",
       "titleStart": "Web Design and Digital Solutions for",
       "titleHighlight": "South Wales Businesses",
-      "description": "From affordable small business websites to bespoke digital platforms, Vanguard Digital Solutions builds fast, modern, and results-driven sites for businesses across Bridgend, Cardiff, Swansea, and South Wales.",
+      "description": "From affordable small business websites to bespoke digital platforms, Vanguard Digital Solutions builds fast, modern sites aimed at bringing in enquiries for businesses across Bridgend, Cardiff, Swansea and South Wales.",
       "ctaPrimary": "Get a Free Quote",
       "ctaSecondary": "See Our Services"
     },
@@ -82,17 +82,17 @@
       "subtitle": "Affordable, professional web design and digital services for small businesses across South Wales.",
       "exploreAll": "Explore All Services",
       "card1Title": "Small Business Websites",
-      "card1Description": "Clean, professional websites for local businesses including salons, trades, consultants, and more. Mobile-friendly, fast, and built to impress.",
+      "card1Description": "Clean, professional websites for local businesses: salons, trades, consultants and more. Mobile-friendly and quick to load.",
       "card2Title": "eCommerce Stores",
       "card2Description": "Sell your products online with fully-featured eCommerce stores, secure checkout, product management, and payment integration.",
       "card3Title": "Booking and Appointment Sites",
       "card3Description": "Let customers book online 24/7 with Booksy, Square, and custom booking integrations for salons, clinics, and service businesses.",
       "card4Title": "Business Information Sites",
-      "card4Description": "Tell your story online with information sites for tradespeople, restaurants, solicitors, and professional services.",
+      "card4Description": "Information sites for tradespeople, restaurants, solicitors and professional services: who you are, what you do, where to find you.",
       "card5Title": "Bespoke Web Applications",
-      "card5Description": "Need something custom? We build web apps, internal tools, dashboards, and client portals tailored to your requirements.",
+      "card5Description": "We build web apps, internal tools, dashboards and client portals, each one specified around your requirements.",
       "card6Title": "Integrations and Automation",
-      "card6Description": "Connect your website with Booksy, Square, payment gateways, CRMs, and APIs to streamline your business."
+      "card6Description": "Connect your website to Booksy, Square, payment gateways, CRMs and APIs so your systems pass information between them."
     },
     "whyChoose": {
       "heading": "Why Choose Vanguard",
@@ -102,9 +102,9 @@
       "item2Title": "Honest Pricing",
       "item2Description": "Starting prices are published on the site, so you can check you are in the right ballpark before you ring anyone. Websites from £650, no hidden fees, no agency markup.",
       "item3Title": "Built to Be Found",
-      "item3Description": "Every site is built to pass Google's Core Web Vitals, with local SEO, structured data and mobile-first delivery as standard rather than a paid extra.",
+      "item3Description": "Every site is built to pass Google's Core Web Vitals, with local SEO, structured data and mobile-first delivery included as standard.",
       "item4Title": "Bilingual by Default",
-      "item4Description": "We build in English and Welsh, with separate URLs per language and correct hreflang annotations handled properly rather than bolted on with a translation widget. This site is one.",
+      "item4Description": "We build in English and Welsh: separate URLs per language, correct hreflang annotations and proper language tagging, handled properly in the build. This site is one of them.",
       "aboutLinkText": "Meet the people behind the work"
     },
     "localPresence": {
@@ -136,7 +136,7 @@
     },
     "techStack": {
       "heading": "The Technology Behind the Work",
-      "subtitle": "Modern, proven tools and frameworks for fast, accessible, and maintainable solutions.",
+      "subtitle": "Proven tools and frameworks for sites that are fast, accessible and maintainable.",
       "tech1": "Vue 3",
       "tech2": "Nuxt",
       "tech3": "TypeScript",
@@ -149,12 +149,12 @@
       "tech10": "Docker",
       "tech11": "CI/CD Pipelines",
       "tech12": "WCAG 2.2 Accessibility",
-      "description": "Every project is built with modern, professional-grade tools and workflows. From TypeScript for type safety to CI/CD pipelines that catch issues before they reach production.",
+      "description": "Every project is built with modern, professional-grade tools and workflows: TypeScript for type safety, and CI/CD pipelines that catch problems before they reach production.",
       "learnMore": "More About Our Technology"
     },
     "process": {
       "heading": "A Clear, Milestone-Driven Process",
-      "subtitle": "From first contact to launch and beyond, you'll always know what's happening next.",
+      "subtitle": "From first contact to launch and after it, you'll know what's happening next.",
       "step1Title": "Request",
       "step1Description": "You get in touch. We discuss your goals and requirements in plain English.",
       "step2Title": "Proposal",
@@ -186,13 +186,13 @@
   },
   "about": {
     "title": "About Vanguard Digital Solutions",
-    "subtitle": "A small South Wales studio. You speak to the people building your site, not an account manager.",
+    "subtitle": "A small South Wales studio. You speak to the person building your site, not an account manager.",
     "storyHeading": "Our Story",
-    "p1": "Vanguard Digital Solutions is a web design and software development company based in Bridgend, working with small businesses across South Wales. We build the kind of website a local business actually needs: fast, easy to find, easy to update, and pointed squarely at bringing in enquiries.",
-    "p2": "Behind the company is four years of professional full-stack development experience — booking systems, business web platforms, and integrations with the tools businesses already run on. That is the same engineering standard we bring to a five-page site for a plumber as to a bespoke client portal.",
-    "p3": "We are deliberately small. That means no account-manager layer, no agency overheads priced into your quote, and a direct line to the people writing your code.",
+    "p1": "Vanguard Digital Solutions is a web design and software development company based in Bridgend, working with small businesses across South Wales. We build the kind of website a local business needs: fast, easy to find, easy to update, and pointed squarely at bringing in enquiries.",
+    "p2": "Behind the company is four years of professional full-stack development experience: booking systems, business web platforms, and integrations with the tools businesses already run on. A five-page site for a plumber gets the same engineering standard as a bespoke client portal.",
+    "p3": "We are deliberately small. That means no account-manager layer, no agency overheads priced into your quote, and a direct line to the person writing your code.",
     "valuesHeading": "How We Do Business",
-    "valuesSubtitle": "Six commitments you can hold us to, not six adjectives.",
+    "valuesSubtitle": "Six commitments you can hold us to, on every job.",
     "value1Title": "No Surprise Invoices",
     "value1Description": "Every quote states its assumptions and exclusions in writing before work starts. If a job turns out simpler or cheaper than quoted, you are told.",
     "value2Title": "You Own Everything",
@@ -207,9 +207,9 @@
     "value6Description": "If a deadline or a budget looks at risk, you hear about it as soon as we know, not at the next scheduled check-in.",
     "howIWork": {
       "heading": "How We Work",
-      "subtitle": "Clear communication, honest advice, and no surprises.",
+      "subtitle": "Clear communication and honest estimates, in writing.",
       "item1Title": "Direct Contact",
-      "item1Description": "You speak to the person writing the code, not an account manager relay. Questions get answered quickly and accurately.",
+      "item1Description": "You speak to the person writing the code. No account manager relaying messages, and questions get answered quickly and accurately.",
       "item2Title": "Clear Scope and Honest Estimates",
       "item2Description": "Assumptions and exclusions are written down. We will tell you if something is simpler or cheaper than you expected.",
       "item3Title": "Modern, Maintainable Code",
@@ -256,7 +256,7 @@
     "allServices": "All Services",
     "smallBusiness": {
       "title": "Small Business Websites",
-      "description": "A professional website is one of your most important business tools. We build fast, mobile-friendly sites for local businesses in Bridgend, Cardiff, Swansea and across South Wales, starting at £650.",
+      "description": "We build professional, mobile-friendly websites for local businesses in Bridgend, Cardiff, Swansea and across South Wales, starting at £650. Quick to load, easy to find, and easy to keep up to date.",
       "f1": "Mobile-first responsive design",
       "f2": "Google-optimised local SEO",
       "f3": "Fast loading speeds",
@@ -294,7 +294,7 @@
     },
     "brochure": {
       "title": "Business Information and Brochure Sites",
-      "description": "Not every business needs an online store. Sometimes you need a clear, high-quality website that explains who you are, what you do and how to contact you — the kind of site that wins work for consultants, professional practices and established firms across South Wales.",
+      "description": "Not every business needs an online store. Sometimes you need a clear, high-quality website that explains who you are, what you do and how to contact you: the kind of site that wins work for consultants, professional practices and established firms across South Wales.",
       "f1": "Professional multi-page website",
       "f2": "About, Services, Contact, and Gallery pages",
       "f3": "Local SEO for area-based searches",
@@ -306,7 +306,7 @@
     },
     "bespoke": {
       "title": "Bespoke Web Applications and Software",
-      "description": "Need something beyond off-the-shelf tools? We design and build custom web applications, internal systems, client portals and workflow platforms for businesses and organisations in South Wales and further afield.",
+      "description": "When off-the-shelf tools run out, we design and build custom web applications, internal systems, client portals and workflow platforms for businesses and organisations in South Wales and further afield.",
       "f1": "Custom web application development",
       "f2": "Internal business tools and dashboards",
       "f3": "Client and customer portals",
@@ -319,13 +319,13 @@
       "approach1Title": "Discovery and Scoping",
       "approach1Description": "We define business goals, technical requirements, and delivery milestones before development starts.",
       "approach2Title": "Build and Iterate",
-      "approach2Description": "Incremental delivery with regular demos, feedback loops, and quality checks throughout the build.",
+      "approach2Description": "Incremental delivery, with regular demos and quality checks at every stage of the build.",
       "approach3Title": "Launch and Improve",
       "approach3Description": "A production-ready launch process with post-launch refinement based on real usage."
     },
     "integrations": {
       "title": "Integrations and Third-Party Connections",
-      "description": "Already using Booksy, Square, Mailchimp or a CRM? We connect your site to the tools your South Wales business already runs on and automate the handoffs between them, so the same information is not typed in twice.",
+      "description": "If you already use Booksy, Square, Mailchimp or a CRM, we connect your site to the tools your South Wales business runs on and automate the handoffs between them, so the same information is not typed in twice.",
       "f1": "Booksy booking integration",
       "f2": "Square integration",
       "f3": "Stripe and payment gateway connections",
@@ -341,7 +341,7 @@
       "link1Title": "The Technology Behind the Work",
       "link1Description": "Vue 3, TypeScript, modern CSS, CI/CD, and the frameworks that power fast, accessible, maintainable applications.",
       "link2Title": "How a Project Runs, Step by Step",
-      "link2Description": "From first contact to launch and beyond. A clear, milestone-driven process with no surprises.",
+      "link2Description": "From first contact to launch and after it. A clear, milestone-driven process, step by step.",
       "link3Title": "Simple Websites for Small Businesses",
       "link3Description": "Affordable, professional websites for local businesses across South Wales. See what is included, what it costs, and how the process runs.",
       "link4Title": "What It Costs",
@@ -352,22 +352,22 @@
   "technology": {
     "hero": {
       "title": "The Technology Behind the Work",
-      "subtitle": "Vue, TypeScript, .NET and Azure, built to WCAG 2.2 Level AA accessibility, UK GDPR compliance and Google's Core Web Vitals thresholds. The specific standards every project is held to, not marketing language."
+      "subtitle": "Vue, TypeScript, .NET and Azure, built to WCAG 2.2 Level AA accessibility, UK GDPR compliance and Google's Core Web Vitals thresholds. These are the specific standards every project is held to."
     },
     "foundations": {
       "heading": "The Foundations",
       "subtitle": "Strong fundamentals for reliable, accessible software.",
       "html": {
         "title": "Semantic HTML",
-        "description": "Every site is built with semantic HTML5 elements including proper landmark roles (<header>, <nav>, <main>, <footer>, <article>, <section>). This creates a logical document structure that search engines understand and that assistive technologies navigate efficiently, improving both SEO and accessibility from the ground up."
+        "description": "Every site is built from semantic HTML5 elements, with proper landmark roles (<header>, <nav>, <main>, <footer>, <article>, <section>). That gives the page a logical document structure: something search engines can read and assistive technologies can move through efficiently. SEO and accessibility both benefit from the same work."
       },
       "css": {
         "title": "Modern CSS",
-        "description": "CSS Grid and Flexbox for responsive layouts, container queries for component-level responsiveness, custom properties (design tokens) for maintainable theming, and no bloated CSS frameworks. Modern CSS is powerful enough without the overhead of legacy libraries, resulting in smaller bundles and faster page loads."
+        "description": "CSS Grid and Flexbox for responsive layouts, container queries for component-level responsiveness, and custom properties (design tokens) for theming that stays maintainable. No bloated CSS frameworks. Modern CSS is powerful enough on its own, and dropping the legacy libraries means smaller bundles and faster page loads."
       },
       "typescript": {
         "title": "JavaScript & TypeScript",
-        "description": "TypeScript brings type safety to JavaScript, catching bugs at compile time instead of runtime. Strongly typed interfaces define data contracts, autocomplete speeds development, and refactoring becomes safer. The result is fewer production errors, clearer code, and faster onboarding for future maintainers."
+        "description": "TypeScript brings type safety to JavaScript, catching bugs at compile time instead of runtime. Strongly typed interfaces define the data contracts and autocomplete speeds up the writing, but the bigger win is that refactoring stops being a gamble. Fewer errors reach production, and whoever maintains the code next gets up to speed faster."
       }
     },
     "frameworks": {
@@ -375,7 +375,7 @@
       "subtitle": "Vue 3, Nuxt, and Vite for high-performance modern applications.",
       "vue": {
         "title": "Vue 3",
-        "description": "Vue 3 is a progressive JavaScript framework for building user interfaces. The Composition API provides excellent logic reusability and TypeScript integration, the reactivity system is efficient and predictable, and single-file components (.vue files) keep template, logic, and styles co-located. Vue's small bundle size and performance characteristics make it an ideal choice for both marketing sites and complex applications.",
+        "description": "Vue 3 is a progressive JavaScript framework for building user interfaces. The Composition API makes logic reusable and testable, and it works properly with TypeScript. The reactivity system is efficient and predictable, and single-file components (.vue files) keep template, logic and styles together in one place. Add the small bundle size and the performance that comes with it, and Vue suits marketing sites and complex applications equally well.",
         "f1": "Composition API for reusable, testable logic",
         "f2": "Reactive data binding and computed properties",
         "f3": "Single-file components with scoped styles",
@@ -385,7 +385,7 @@
       },
       "nuxt": {
         "title": "Nuxt",
-        "description": "Nuxt is a meta-framework built on Vue 3 that provides server-side rendering (SSR), static site generation (SSG), and hybrid rendering modes. SSR delivers fully-rendered HTML to search engines and users on the first request, improving SEO and perceived performance. SSG pre-renders pages at build time for maximum speed and edge caching. File-based routing eliminates boilerplate and improves developer experience.",
+        "description": "Nuxt is a meta-framework built on Vue 3, providing server-side rendering (SSR), static site generation (SSG) and hybrid rendering modes. SSR hands fully-rendered HTML to search engines and users on the first request, which helps SEO and perceived performance. SSG pre-renders pages at build time, so they can be served at maximum speed from an edge cache. File-based routing cuts out the boilerplate and makes the codebase easier to work in.",
         "f1": "Server-side rendering (SSR) for SEO and performance",
         "f2": "Static site generation (SSG) for edge-cached sites",
         "f3": "Incremental static regeneration (ISR)",
@@ -395,7 +395,7 @@
       },
       "vite": {
         "title": "Vite & the Build Pipeline",
-        "description": "Vite is a next-generation build tool that leverages native ES modules for instant server start and lightning-fast hot module replacement (HMR). Production builds use Rollup for optimised bundles with code splitting, tree shaking to eliminate dead code, and automatic vendor chunk splitting. The result is faster development and smaller production bundles.",
+        "description": "Vite is a build tool that uses native ES modules, so the dev server starts instantly and hot module replacement (HMR) is near-immediate. Production builds run through Rollup: optimised bundles with code splitting, tree shaking to strip out dead code, and automatic vendor chunk splitting. Development gets quicker and the bundles you ship get smaller.",
         "f1": "Instant server start with native ESM",
         "f2": "Lightning-fast hot module replacement (HMR)",
         "f3": "Optimised Rollup-based production builds",
@@ -407,75 +407,75 @@
     "apis": {
       "heading": "APIs and Integrations",
       "subtitle": "Secure, versioned, and well-documented API design.",
-      "p1": "Modern applications often require backend APIs to handle data, authentication, payments, and third-party integrations. We design and build REST and GraphQL APIs with clear OpenAPI contracts, semantic versioning, and comprehensive documentation. REST endpoints follow standard HTTP status codes (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) and use idempotent verbs (GET, POST, PUT, DELETE) consistently.",
-      "p2": "Authentication is handled using industry-standard protocols including OAuth 2.0 for delegated access and JWT (JSON Web Tokens) for stateless session management. Rate limiting protects APIs from abuse, and CORS policies are configured correctly for cross-origin requests. Backend services are built in .NET (C#) or Node.js depending on project requirements, both using strongly typed languages and robust frameworks.",
+      "p1": "Plenty of applications need a backend API to handle data, authentication, payments and third-party integrations. We design and build REST and GraphQL APIs with clear OpenAPI contracts, semantic versioning and proper documentation. REST endpoints follow standard HTTP status codes (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) and use HTTP verbs (GET, POST, PUT, DELETE) consistently.",
+      "p2": "Authentication uses established protocols: OAuth 2.0 for delegated access and JWT (JSON Web Tokens) for stateless session management. Rate limiting protects APIs from abuse, and CORS policies are configured correctly for cross-origin requests. Backend services are built in .NET (C#) or Node.js depending on what the project needs, both strongly typed and both with mature frameworks behind them.",
       "p3": "Data persistence uses relational databases (SQL Server, PostgreSQL, MySQL) with normalised schema design, appropriate indexing, and transactional integrity. Third-party integrations include payment gateways (Stripe, PayPal), booking systems (Booksy, Square), CRM platforms (HubSpot, Zoho), and email services (Mailchimp, SendGrid). Each integration is abstracted behind a clean interface so dependencies can be swapped without rewriting application logic.",
-      "p4": "REST and GraphQL solve the same problem differently. REST gives you one URL per resource and is simpler to cache, debug and document — it is the right default for most business websites and integrations. GraphQL gives the client a single endpoint and lets it ask for exactly the fields it needs, which earns its keep when one screen pulls from many sources or when mobile bandwidth is a real constraint, at the cost of more complex caching and a steeper learning curve. For a small business site with a contact form and a booking integration, REST is almost always the correct answer, and we will say so rather than sell you complexity you do not need."
+      "p4": "REST and GraphQL solve the same problem differently. REST gives you one URL per resource and is simpler to cache, debug and document, which makes it the right default for most business websites and integrations. GraphQL gives the client a single endpoint and lets it ask for exactly the fields it needs. That earns its keep when one screen pulls from many sources, or when mobile bandwidth is a real constraint, and it costs you more complex caching and a steeper learning curve. For a small business site with a contact form and a booking integration, REST is almost always the correct answer, and we will say so rather than sell you complexity you do not need."
     },
     "accessibility": {
-      "heading": "Accessibility Built In, Not Bolted On",
+      "heading": "Accessibility Built In From the Start",
       "subtitle": "WCAG 2.2 compliance for inclusive, usable web experiences.",
-      "p1": "Every site we build targets WCAG 2.2 Level AA, the standard referenced by UK accessibility obligations and the level most commercial and public sector contracts require. It covers the success criteria that matter most in practice: keyboard operability, screen reader support, colour contrast and error handling. Accessibility is designed in from the first decision rather than retrofitted before launch, because retrofitting is where the cost is. WAI-ARIA attributes (aria-label, aria-labelledby, aria-describedby, aria-live, role) are used sparingly and correctly to enhance semantics where HTML alone is insufficient, never as a replacement for proper semantic markup.",
-      "p2": "Keyboard operability is tested rigorously: all interactive elements receive visible focus indicators, focus order follows logical reading order, and keyboard traps are eliminated. Screen reader testing is performed using NVDA (Windows) and VoiceOver (macOS/iOS) to ensure announcements are clear, landmarks are navigable, and dynamic content updates are communicated via live regions. Colour contrast meets or exceeds WCAG AA ratios (4.5:1 for normal text, 3:1 for large text), and information is never conveyed by colour alone. Users who prefer reduced motion receive alternative animations or static layouts via the prefers-reduced-motion media query.",
-      "p3": "Forms are designed for clarity and error recovery: labels are properly associated with inputs, validation errors are announced to screen readers and linked via aria-describedby, and error messages provide actionable guidance. Legally, accessible websites are required under the UK Equality Act 2010 for businesses providing services to the public, and public sector bodies must meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018. Commercially, accessibility increases your audience, improves usability for all users, and contributes to better SEO rankings since search engines reward well-structured, semantic markup.",
-      "p4": "WCAG 2.2, published in October 2023, adds nine success criteria on top of WCAG 2.1 rather than replacing it — so a site that meets 2.2 Level AA also meets 2.1 Level AA. The additions mostly concern focus visibility and appearance, dragging alternatives, target size (a minimum 24 by 24 CSS pixels for interactive controls), consistent help placement, and reducing the cognitive load of authentication and redundant data entry. If you are asked to meet \"WCAG 2.1 AA\" in a contract or tender, building to 2.2 satisfies it with room to spare."
+      "p1": "Every site we build targets WCAG 2.2 Level AA. That is the standard referenced by UK accessibility obligations and the level most commercial and public sector contracts ask for, and it covers the success criteria that matter most in practice: keyboard operability, screen reader support, colour contrast and error handling. Accessibility is designed in from the first decision rather than retrofitted before launch, because retrofitting is where the cost lands. WAI-ARIA attributes (aria-label, aria-labelledby, aria-describedby, aria-live, role) are used sparingly and correctly, to add semantics where HTML alone falls short rather than to patch over markup that should have been semantic in the first place.",
+      "p2": "Keyboard operability gets tested properly: every interactive element has a visible focus indicator, focus order follows reading order, and keyboard traps are removed. Screen reader testing is done with NVDA (Windows) and VoiceOver (macOS/iOS), checking that announcements are clear, that landmarks can be navigated and that dynamic content updates are communicated through live regions. Colour contrast meets or exceeds WCAG AA ratios (4.5:1 for normal text, 3:1 for large text), and colour is never the only thing carrying information. For users who prefer reduced motion, the prefers-reduced-motion media query serves alternative animations or static layouts.",
+      "p3": "Forms are built for clarity and error recovery. Labels are properly associated with inputs, validation errors are announced to screen readers and linked via aria-describedby, and error messages tell the user what to do about it. There is a legal side too: accessible websites are required under the UK Equality Act 2010 for businesses providing services to the public, and public sector bodies must meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018. The commercial case is simpler. More people can use the site, everyone finds it easier to use, and search engines reward well-structured, semantic markup.",
+      "p4": "WCAG 2.2, published in October 2023, adds nine success criteria on top of WCAG 2.1 rather than replacing it, so a site that meets 2.2 Level AA also meets 2.1 Level AA. The additions mostly concern focus visibility and appearance, dragging alternatives, target size (a minimum 24 by 24 CSS pixels for interactive controls), consistent help placement, and reducing the cognitive load of authentication and redundant data entry. If a contract or tender asks you to meet \"WCAG 2.1 AA\", building to 2.2 satisfies it with room to spare."
     },
     "gdpr": {
       "heading": "UK GDPR and Data Protection",
       "subtitle": "Privacy-first design and compliance with UK data protection law.",
-      "p1": "Every project is designed with UK GDPR compliance from the outset. Personal data processing is based on a lawful basis (consent, contractual necessity, legitimate interests, legal obligation) and documented clearly in privacy policies. Data minimisation means collecting only what is necessary; purpose limitation ensures data is used only for the stated purpose; and storage limitation defines retention periods after which data is securely deleted. Consent for analytics and marketing cookies is obtained explicitly via opt-in banners under PECR (Privacy and Electronic Communications Regulations), and users can withdraw consent at any time, triggering immediate deletion of tracking cookies.",
-      "p2": "Analytics configurations respect privacy: Google Analytics 4 is configured with IP anonymisation enabled, sensitive data is excluded from event parameters, and data retention periods are set appropriately. Where possible, privacy-focused analytics alternatives are recommended. Data subject rights under UK GDPR — including the right to access (subject access requests), rectification, erasure (right to be forgotten), data portability, and objection — are supported through clear processes and technical implementation. The ICO (Information Commissioner's Office) provides regulatory guidance, and we help clients understand their obligations as data controllers.",
-      "p3": "Data in transit is encrypted using TLS 1.2 or higher (HTTPS everywhere), and sensitive data at rest is encrypted using industry-standard algorithms (AES-256). Where data is hosted, UK or EU data residency is preferred to avoid international transfer complexities, particularly when using Microsoft Azure's UK South or UK West regions. Backups are encrypted and tested regularly, and disaster recovery procedures ensure data can be restored within defined recovery time objectives (RTO) and recovery point objectives (RPO).",
+      "p1": "Every project is designed for UK GDPR compliance from the outset. Personal data processing rests on a lawful basis (consent, contractual necessity, legitimate interests, legal obligation), documented clearly in the privacy policy. Data minimisation means collecting only what is necessary. Purpose limitation keeps that data to the stated purpose, and storage limitation sets the retention period after which it is securely deleted. Consent for analytics and marketing cookies is obtained explicitly through opt-in banners under PECR (Privacy and Electronic Communications Regulations), and a user can withdraw that consent at any time, which triggers immediate deletion of tracking cookies.",
+      "p2": "Analytics configurations respect privacy. Google Analytics 4 is set up with IP anonymisation enabled, sensitive data kept out of event parameters, and data retention periods set appropriately. Where a privacy-focused alternative fits the project, we will recommend it. Data subject rights under UK GDPR (access through subject access requests, rectification, erasure or the right to be forgotten, data portability, and objection) are supported through clear processes and the technical implementation to back them. The ICO (Information Commissioner's Office) publishes the regulatory guidance, and we help clients work out what it means for them as data controllers.",
+      "p3": "Data in transit is encrypted using TLS 1.2 or higher (HTTPS everywhere), and sensitive data at rest is encrypted using industry-standard algorithms (AES-256). Where data is hosted, we prefer UK or EU data residency to avoid the complications of international transfers, which is straightforward on Microsoft Azure using the UK South or UK West regions. Backups are encrypted and tested regularly, and disaster recovery procedures are written against defined recovery time objectives (RTO) and recovery point objectives (RPO).",
       "disclaimer": "This information is provided for general guidance and does not constitute legal advice. Consult a qualified data protection solicitor for specific legal requirements."
     },
     "cloud": {
       "heading": "Cloud-First Hosting",
       "subtitle": "Microsoft Azure and edge-optimised infrastructure.",
-      "p1": "Modern hosting is cloud-first: Microsoft Azure provides scalable, reliable infrastructure with global edge delivery via Azure Static Web Apps, Azure App Service, and Azure CDN. Static sites are deployed to Azure's edge network, delivering content from the closest point of presence (PoP) to the user for minimum latency. TLS/HTTPS is enabled by default with automatic certificate renewal via Let's Encrypt or Azure-managed certificates, ensuring encrypted connections and trust indicators in browsers.",
-      "p2": "Environments are separated logically (development, staging, production) using Azure resource groups and deployment slots, allowing safe testing before production release. Auto-scaling handles traffic spikes without manual intervention, and uptime is monitored using Azure Monitor and Application Insights, with alerting configured for performance degradation, errors, or downtime. Costs are controlled through resource tagging, budget alerts, and right-sizing of compute and storage resources — cloud infrastructure does not need to be expensive, especially for small businesses with predictable traffic patterns.",
-      "p3": "Infrastructure as code (IaC) is used where appropriate, defining resources declaratively in Bicep or Terraform templates for reproducible deployments and version-controlled infrastructure changes. Backups are automated and tested regularly to verify restore procedures, and rollback mechanisms are in place to revert deployments if issues are detected post-release. Azure's UK regions (UK South, UK West) keep data within UK borders, simplifying GDPR compliance and meeting organisational data residency requirements."
+      "p1": "Modern hosting is cloud-first. Microsoft Azure provides scalable, reliable infrastructure with global edge delivery through Azure Static Web Apps, Azure App Service and Azure CDN. Static sites are deployed to Azure's edge network and served from the closest point of presence (PoP) to the user, which keeps latency down. TLS/HTTPS is on by default, with certificates renewed automatically through Let's Encrypt or Azure-managed certificates, so connections stay encrypted and browsers show the trust indicators visitors look for.",
+      "p2": "Environments are kept separate (development, staging, production) using Azure resource groups and deployment slots, so changes can be tested safely before they reach production. Auto-scaling absorbs traffic spikes without anyone intervening. Uptime is monitored with Azure Monitor and Application Insights, with alerting configured for performance degradation, errors or downtime. Costs stay under control through resource tagging, budget alerts and right-sizing of compute and storage. Cloud infrastructure does not need to be expensive, particularly for a small business with predictable traffic patterns.",
+      "p3": "Infrastructure as code (IaC) is used where it earns its place, defining resources declaratively in Bicep or Terraform templates so deployments are reproducible and infrastructure changes are version-controlled. Backups run automatically and are tested to confirm the restore procedure works, and rollback mechanisms are in place if a problem shows up after release. Azure's UK regions (UK South, UK West) keep data inside UK borders, which simplifies GDPR compliance and meets organisational data residency requirements."
     },
     "containers": {
       "heading": "Containerisation and CI/CD",
       "subtitle": "Docker and automated pipelines for reliable deployments.",
-      "p1": "Docker containers package applications and dependencies into reproducible, portable images that run identically in development, staging, and production. This eliminates the 'works on our machine' problem and ensures consistency across environments. Dockerfiles define multi-stage builds: compile and test stages discard unnecessary files, and only the final runtime image (containing the compiled application and production dependencies) is deployed, reducing image size and attack surface.",
-      "p2": "Container images are pushed to container registries (Azure Container Registry, Docker Hub) with semantic versioning tags, enabling rollback to previous versions if deployments fail. Base images are kept up to date with security patches, and vulnerability scanning tools (Trivy, Snyk, Azure Defender) identify known CVEs in dependencies. Image layers are cached intelligently to speed rebuilds: dependency installation layers are cached separately from application code layers, so dependency downloads are skipped if package manifests haven't changed.",
-      "p3": "CI/CD pipelines automate the software delivery process through clearly defined stages: lint checks enforce code style, type checks verify TypeScript correctness, unit and integration tests validate behaviour, builds produce optimised bundles, and deployments push to target environments. Automated preview deployments create ephemeral environments for pull requests, allowing stakeholders to review changes before merging to main. If a deployment introduces a bug, automated rollback policies revert to the last known good version, minimising downtime and user impact."
+      "p1": "Docker containers package an application and its dependencies into a reproducible, portable image that runs the same way in development, staging and production. That is the end of 'works on our machine'. Dockerfiles define multi-stage builds: the compile and test stages throw away everything that is not needed, and only the final runtime image, holding the compiled application and its production dependencies, gets deployed. Smaller image, smaller attack surface.",
+      "p2": "Container images are pushed to a container registry (Azure Container Registry, Docker Hub) with semantic versioning tags, so a failed deployment can be rolled back to a previous version. Base images are kept up to date with security patches, and vulnerability scanning tools (Trivy, Snyk, Azure Defender) pick up known CVEs in dependencies. Image layers are cached with some thought: dependency installation is cached separately from application code, so dependency downloads are skipped when package manifests haven't changed.",
+      "p3": "CI/CD pipelines automate delivery through clearly defined stages. Lint checks enforce code style, type checks verify TypeScript correctness, unit and integration tests validate behaviour, builds produce optimised bundles, and deployments push to the target environment. Automated preview deployments spin up ephemeral environments for pull requests, so stakeholders can review changes before anything is merged to main. If a deployment introduces a bug, automated rollback policies revert to the last known good version and the downtime stays short."
     },
     "performance": {
       "heading": "Performance and Core Web Vitals",
       "subtitle": "Fast, measurable user experiences that drive conversions.",
-      "p1": "Performance is not subjective — it is measured using Google's Core Web Vitals: Largest Contentful Paint (LCP) measures loading performance and should occur within 2.5 seconds, Interaction to Next Paint (INP) measures responsiveness to user input and should be below 200ms, and Cumulative Layout Shift (CLS) measures visual stability and should be below 0.1. These metrics directly impact user experience, conversion rates, and Google search rankings, so we optimise every project to meet or exceed Good thresholds.",
-      "p2": "Images are delivered in modern formats (AVIF with WebP fallback) using responsive image syntax (srcset and sizes attributes) to serve appropriately sized images for each viewport. Lazy loading defers offscreen images until the user scrolls near them, reducing initial page weight. Font loading uses font-display: swap to prevent invisible text (FOIT) and subset fonts to include only required character ranges. Critical CSS is inlined in the document head to render above-the-fold content immediately, and non-critical CSS is loaded asynchronously.",
-      "p3": "JavaScript bundles are code-split by route, so users only download code for the pages they visit. Third-party scripts (analytics, chat widgets) are loaded asynchronously or deferred to avoid blocking the main thread. Caching headers are configured aggressively for static assets (immutable files are cached for one year with cache-busting hashes in filenames), and stale-while-revalidate strategies serve cached content instantly while fetching updates in the background. The result is fast, smooth experiences that keep users engaged and drive measurable improvements in conversion funnels."
+      "p1": "Performance is not a matter of opinion. It is measured, using Google's Core Web Vitals: Largest Contentful Paint (LCP) measures loading performance and should occur within 2.5 seconds, Interaction to Next Paint (INP) measures responsiveness to user input and should be below 200ms, and Cumulative Layout Shift (CLS) measures visual stability and should be below 0.1. Those numbers feed user experience, conversion rates and Google search rankings, so we optimise every project to meet or beat the Good thresholds.",
+      "p2": "Images are delivered in modern formats (AVIF with WebP fallback) and sized per viewport using responsive image syntax (srcset and sizes attributes). Lazy loading holds offscreen images back until the user scrolls near them, which cuts the initial page weight. Fonts use font-display: swap to avoid invisible text (FOIT), subset down to the character ranges you need. Critical CSS is inlined in the document head so above-the-fold content renders immediately, and the rest is loaded asynchronously.",
+      "p3": "JavaScript bundles are code-split by route, so a visitor only downloads the code for the pages they open. Third-party scripts (analytics, chat widgets) are loaded asynchronously or deferred so they do not block the main thread. Caching headers are set aggressively for static assets: immutable files are cached for one year with cache-busting hashes in the filenames, and stale-while-revalidate serves the cached copy instantly while fetching an update in the background. Pages end up feeling fast to use, and that shows up in the conversion figures."
     },
     "seo": {
       "heading": "Technical SEO",
       "subtitle": "Technical SEO and answer-engine optimisation, built in from the start.",
-      "p1": "Technical SEO ensures that search engines can crawl, index, and rank your content effectively. Semantic HTML structure with correct heading hierarchy (one h1 per page, logical h2-h6 nesting) communicates content importance and relationships. Metadata includes title tags (55-60 characters), meta descriptions (150-160 characters), and Open Graph tags for rich social media previews. JSON-LD structured data (Schema.org markup) provides explicit semantic context: LocalBusiness, Product, Article, BreadcrumbList, and FAQPage schemas help search engines understand content types and display rich results in SERPs.",
-      "p2": "Sitemaps (XML and HTML) list all pages for crawlers, and robots.txt files control crawler access to specific paths. Canonical URLs (rel=canonical) prevent duplicate content penalties, and 301 redirects guide search engines when URLs change. Server-side rendering (SSR) delivers fully-rendered HTML to crawlers on first request, ensuring JavaScript-heavy applications are indexable — unlike client-side rendering, which requires crawlers to execute JavaScript (not all do reliably). Nuxt's SSR mode solves this problem elegantly.",
-      "p3": "Internationalisation (i18n) with hreflang tags signals language and regional variants to search engines, preventing duplicate content issues for multilingual sites. This very site is bilingual (English and Welsh) with correct hreflang annotations. Performance optimisations (fast LCP, low CLS) contribute directly to SEO rankings under Google's page experience signals. Regular audits using tools like Lighthouse, Search Console, and Screaming Frog identify technical issues (broken links, missing alt text, slow pages) and track ranking improvements over time."
+      "p1": "Technical SEO is what lets search engines crawl, index and rank your content. Semantic HTML structure with a correct heading hierarchy (one h1 per page, logical h2-h6 nesting) tells them what matters and how it relates. Metadata covers title tags (55-60 characters), meta descriptions (150-160 characters) and Open Graph tags for rich social media previews. JSON-LD structured data (Schema.org markup) adds explicit semantic context: LocalBusiness, Product, Article, BreadcrumbList and FAQPage schemas help search engines identify content types and show rich results in SERPs.",
+      "p2": "Sitemaps (XML and HTML) list all pages for crawlers, and robots.txt files control crawler access to specific paths. Canonical URLs (rel=canonical) prevent duplicate content penalties, and 301 redirects guide search engines when URLs change. Server-side rendering (SSR) delivers fully-rendered HTML to crawlers on first request, which is what makes JavaScript-heavy applications indexable. Client-side rendering leaves the crawler to execute the JavaScript itself, and not all of them do that reliably. Nuxt's SSR mode handles it.",
+      "p3": "Internationalisation (i18n) with hreflang tags signals language and regional variants to search engines, which heads off duplicate content problems on multilingual sites. This site is bilingual, English and Welsh, with the hreflang annotations done properly. Performance work (fast LCP, low CLS) feeds SEO rankings directly through Google page experience signals. Regular audits using Lighthouse, Search Console and Screaming Frog turn up technical problems (broken links, missing alt text, slow pages) and track how rankings move over time."
     },
     "staticSites": {
       "heading": "What a Static Site Is, and Why It Matters to You",
       "subtitle": "The delivery model behind fast, cheap-to-run, hard-to-break websites.",
       "p1": "A static site is one where every page is built into finished HTML ahead of time, at the moment the site is published, rather than assembled by a server each time somebody visits. The visitor's browser is handed a complete page immediately. There is no database query, no server-side rendering step, and no waiting.",
-      "p2": "In practice that means three things for a business. It is fast, because the page is already made — which directly helps Core Web Vitals and therefore search ranking. It is cheap to run, because serving files costs a fraction of running an application server. And it is very hard to break into, because there is no database to compromise, no admin login exposed to the internet, and no plugin ecosystem to keep patched.",
-      "p3": "The trade-off is that anything genuinely dynamic — live stock levels, a customer account area, a booking calendar showing real availability — still needs a service behind it. That is why most of our builds are static pages with specific dynamic pieces called in as needed, rather than an all-or-nothing choice. This website is built exactly that way: every page in both English and Welsh is prerendered at build time."
+      "p2": "In practice that means three things for a business. It is fast, because the page is already made, and that feeds straight into Core Web Vitals and therefore search ranking. It is cheap to run: serving files costs a fraction of running an application server. And breaking in is hard when there is no database to compromise, no admin login exposed to the internet and no plugin ecosystem to keep patched.",
+      "p3": "The trade-off is that anything properly dynamic (live stock levels, a customer account area, a booking calendar showing real availability) still needs a service behind it. So most of our builds are static pages with specific dynamic pieces called in as needed, rather than an all-or-nothing choice. This website is built exactly that way: every page in both English and Welsh is prerendered at build time."
     },
     "builders": {
       "heading": "Website Builders vs a Custom Build",
       "subtitle": "An honest comparison of Wix, Squarespace, WordPress and a bespoke site.",
-      "p1": "Website builders are genuinely good at what they do. Wix plans run from around £9 to £119 a month and Squarespace from around £12 to £79 a month, both with templates, hosting and a visual editor included. If you need something online this week, you are comfortable doing it yourself, and the site is a simple shopfront, a builder is a reasonable answer and we will tell you so.",
-      "p2": "The costs show up later. Subscriptions never stop, and they rise. Templates constrain what you can do, so the site ends up looking like every other business using that template. Performance and accessibility are largely out of your hands, which matters because both feed search ranking. Apps and add-ons are billed separately, often £5 to £30 a month each. And your site is not portable — you cannot take a Wix site to another host, so you are renting, not owning.",
-      "p3": "WordPress sits in between: genuinely flexible and portable, but it is an application that needs maintaining. Core, theme and plugin updates have to be applied, and unpatched plugins are the single most common route into a small business website. Either you do that work monthly or you pay somebody to.",
-      "p4": "A custom build costs more up front and takes longer. What you get for it is a site nobody else has, built to accessibility and performance standards you can point at, with no subscription attached to the site itself and full ownership of the code and accounts. For a business where the website is a genuine sales channel rather than a formality, that usually pays back. For a business that needs a placeholder online by Friday, it does not, and a builder is the honest recommendation."
+      "p1": "Website builders are good at what they do. Wix plans run from around £9 to £119 a month and Squarespace from around £12 to £79 a month, both with templates, hosting and a visual editor included. If you need something online this week, you are comfortable doing it yourself, and the site is a simple shopfront, a builder is a reasonable answer and we will tell you so.",
+      "p2": "The costs show up later. Subscriptions do not stop, and they rise. Templates constrain what you can do, so the site ends up looking like every other business using that template. Performance and accessibility are largely out of your hands, and both feed search ranking. Apps and add-ons are billed separately, often £5 to £30 a month each. And the site is not portable: you cannot take a Wix site to another host, so what you have is a rental.",
+      "p3": "WordPress sits in between: flexible and portable, but it is an application that needs maintaining. Core, theme and plugin updates have to be applied, and unpatched plugins are the single most common route into a small business website. Either you do that work monthly or you pay somebody to.",
+      "p4": "A custom build costs more up front and takes longer. What you get for it is a site nobody else has, built to accessibility and performance standards you can point at, with no subscription attached to the site itself and full ownership of the code and accounts. For a business where the website is a real sales channel rather than a formality, that usually pays back. If you just need a placeholder online by Friday, it does not, and a builder is the honest recommendation."
     }
   },
   "process": {
     "hero": {
       "title": "How We Work",
-      "subtitle": "A five-stage, milestone-driven process from first enquiry to launch — typically 2 to 6 weeks, with working software and a written progress note at every step."
+      "subtitle": "A five-stage, milestone-driven process from first enquiry to launch. Typically 2 to 6 weeks, with working software and a written progress note at every step."
     },
     "lifecycle": {
       "heading": "The Delivery Lifecycle",
@@ -483,14 +483,14 @@
       "outputs": "What you get",
       "stage1": {
         "title": "Request and Discovery (1 to 2 days)",
-        "description": "First contact is a no-obligation conversation to understand your business problem rather than jumping straight to a solution. We ask about your users, what success looks like, existing systems and constraints, budget range and realistic deadlines. Discovery is about understanding the problem deeply enough to propose the right solution, not the easiest one to build.",
+        "description": "First contact is a no-obligation conversation about your business problem, before anyone starts proposing solutions. We ask about your users, what success looks like, existing systems and constraints, budget range and realistic deadlines. The aim is to understand the problem well enough to propose the right solution rather than the quickest one to build.",
         "output1": "Written summary of what was discussed",
         "output2": "Agreed problem statement",
         "output3": "Indication of feasibility and suitability"
       },
       "stage2": {
         "title": "Proposal (2 to 3 days)",
-        "description": "A written proposal covers scope, recommended approach and technology choices with reasons, assumptions and exclusions stated plainly. For larger builds, phasing options are provided so you can start small and expand later. The proposal includes a fixed cost and a milestone plan showing what gets delivered and when. Starting prices are published on our pricing page, so the figure in the proposal should not be a surprise. No jargon, no padding — everything is explained in plain English.",
+        "description": "A written proposal covers scope, recommended approach and technology choices with reasons, assumptions and exclusions stated plainly. For larger builds, phasing options are provided so you can start small and expand later. The proposal includes a fixed cost and a milestone plan showing what gets delivered and when. Starting prices are published on our pricing page, so the figure in the proposal should not be a surprise. It is written in plain English, without jargon or padding.",
         "output1": "Proposal document with scope and approach",
         "output2": "Milestone breakdown with deliverables",
         "output3": "Clear statement of what is and is not included"
@@ -505,14 +505,14 @@
       },
       "stage4": {
         "title": "Build in Milestones (1 to 3 weeks)",
-        "description": "Development is broken into short iterations, each ending in working software you can click through on a staging URL. Regular check-in calls review progress and unblock issues. A written progress note accompanies each milestone showing what changed, what's next, and budget burn against the plan. Change requests are handled openly — impact on cost and timeline is shown before anything is agreed. Continuous integration runs lint, type checks, tests and accessibility checks on every change, catching problems early.",
+        "description": "Development is broken into short iterations, each ending in working software you can click through on a staging URL. Regular check-in calls review progress and unblock issues. A written progress note accompanies each milestone showing what changed, what's next, and budget burn against the plan. For change requests, you see the impact on cost and timeline before anything is agreed. Continuous integration runs lint, type checks, tests and accessibility checks on every change, so problems surface early.",
         "output1": "Working software each milestone on a staging environment",
         "output2": "Written progress notes with demos",
         "output3": "Updated backlog reflecting current priorities"
       },
       "stage5": {
         "title": "Launch, Handover and Support (2 to 4 days)",
-        "description": "Launch follows a pre-launch checklist: accessibility audit, performance pass, security review, analytics and consent wiring, SEO metadata, and backups configured. Deploy is controlled with rollback procedures in place. Handover includes documentation, a walkthrough session, and ownership transfer of source code and infrastructure accounts. Optional ongoing support and maintenance arrangements are discussed openly, but you are never locked in — everything is yours to take elsewhere if you choose.",
+        "description": "Launch follows a pre-launch checklist: accessibility audit, performance pass, security review, analytics and consent wiring, SEO metadata, and backups configured. Deploy is controlled with rollback procedures in place. Handover includes documentation, a walkthrough session, and ownership transfer of source code and infrastructure accounts. Ongoing support and maintenance are optional, and everything is yours to take elsewhere if you decide to.",
         "output1": "Live site or application on production infrastructure",
         "output2": "Handover documentation and admin walkthrough",
         "output3": "Source code and infrastructure ownership transferred",
@@ -520,19 +520,19 @@
       }
     },
     "milestones": {
-      "heading": "Milestones, Not Mystery",
-      "subtitle": "Regular check-ins so you always know where the project stands.",
+      "heading": "How Milestones Work",
+      "subtitle": "Regular check-ins so you know where the project stands.",
       "item1": {
         "title": "Milestone Reviews",
-        "description": "Each milestone ends with a demo of working software, a written note covering what changed and what's next, and a budget check against the plan. Nothing is hidden."
+        "description": "Each milestone ends with a demo of working software, a written note covering what changed and what's next, and a budget check against the plan."
       },
       "item2": {
-        "title": "Transparency",
-        "description": "You see the staging environment at all times. You see the backlog. You see progress notes. You know where the budget stands. There are no surprises."
+        "title": "What You Can See",
+        "description": "You have access to the staging environment and the backlog throughout, and every progress note says where the budget stands. Check any of it without waiting for a call."
       },
       "item3": {
         "title": "Adapt or Stop",
-        "description": "Priorities change, budgets tighten, or requirements evolve. At any milestone boundary, we can re-scope or stop work — you are never locked into a contract that no longer fits."
+        "description": "Priorities change and budgets tighten. At any milestone boundary we can re-scope or stop work, so you are not tied to a contract that no longer fits."
       },
       "item4": {
         "title": "Exit Anytime",
@@ -552,11 +552,11 @@
       },
       "item3": {
         "title": "More Value, Less Typing",
-        "description": "The result: more of your budget goes into requirements refinement, user experience design, and thorough testing rather than typing boilerplate that a machine can write faster and more accurately."
+        "description": "More of your budget goes into requirements refinement, user experience design and testing, and less into typing boilerplate that a machine can write faster and more accurately."
       },
       "item4": {
         "title": "Human Accountability and Review",
-        "description": "Every line of code is reviewed by a human before it ships. Nothing is merged without passing automated checks (linting, type checking, tests, accessibility scans) and manual code review. AI is a tool, not a replacement for judgment. The developer remains accountable for the output."
+        "description": "Every line of code is reviewed by a human before it ships. Nothing is merged without passing automated checks (linting, type checking, tests, accessibility scans) and manual code review. The developer remains accountable for the output, whatever tool produced the first draft."
       },
       "item5": {
         "title": "Data Privacy and Guardrails",
@@ -576,7 +576,7 @@
       },
       "item3": {
         "title": "Type Checking",
-        "description": "TypeScript catches type errors, null reference bugs and interface mismatches at compile time, reducing runtime errors dramatically."
+        "description": "TypeScript catches type errors, null reference bugs and interface mismatches at compile time, which removes a whole class of runtime errors."
       },
       "item4": {
         "title": "Accessibility Checks",
@@ -592,29 +592,29 @@
       },
       "item7": {
         "title": "Staging Sign-Off",
-        "description": "Nothing goes to production without sign-off on staging. You see and approve the working software before launch, not after."
+        "description": "Nothing goes to production without sign-off on staging. You see and approve the working software before it launches."
       }
     },
     "hosting": {
       "heading": "Hosting and Environments",
       "subtitle": "Cloud-first infrastructure with automated deployments and rollback.",
-      "p1": "Hosting is cloud-first on Microsoft Azure with separate development, staging and production environments. Containerised builds using Docker ensure consistency — what works in development works in production. Infrastructure as code (Bicep or Terraform) defines resources declaratively, making deployments reproducible and version-controlled.",
-      "p2": "CI/CD pipelines automate the build and deployment process: code is linted, type-checked and tested automatically; builds produce optimised production bundles; deployments push to staging first for review, then production after approval. Rollback procedures are built in — if a deployment introduces a regression, the previous version is restored within minutes.",
-      "p3": "Monitoring and logging track application health, error rates and performance metrics. Alerts notify on downtime, slow responses or spike in errors. Automated backups run daily with retention policies, and restore procedures are tested to confirm they work. The result: predictable, low-drama releases where problems are caught early and fixed fast."
+      "p1": "Hosting is cloud-first on Microsoft Azure with separate development, staging and production environments. Containerised builds using Docker keep them consistent, so what works in development works in production. Infrastructure as code (Bicep or Terraform) defines resources declaratively, making deployments reproducible and version-controlled.",
+      "p2": "CI/CD pipelines automate the build and deployment process: code is linted, type-checked and tested automatically; builds produce optimised production bundles; deployments push to staging first for review, then production after approval. Rollback is built in. If a deployment introduces a regression, the previous version is restored within minutes.",
+      "p3": "Monitoring and logging track application health, error rates and performance metrics. Alerts notify on downtime, slow responses or a spike in errors. Automated backups run daily with retention policies, and restore procedures are tested to confirm they work. Releases end up predictable and low-drama, with problems caught early and fixed fast."
     },
     "working": {
       "heading": "Working Together",
-      "subtitle": "Clear communication, realistic expectations, and mutual respect.",
-      "p1": "We are UK-based and work in UK business hours (Monday to Friday, 9am–5pm GMT/BST). You have a single named point of contact — the developers building it — not an account manager acting as a relay. Communication happens on an agreed channel (email, Slack, Teams, or phone) with an agreed cadence for check-ins. Updates are written in plain English without unnecessary jargon, and we are honest when something is harder or cheaper than initially expected.",
-      "p2": "You own your code, your domain, and your hosting accounts from day one. There are no lock-in clauses, no proprietary platforms, and no ongoing fees required to keep your site running (other than standard hosting and domain costs). If you want to take the project in-house or to another developer, everything transfers cleanly with documentation and support during handover.",
-      "p3": "Mutual respect means realistic deadlines, honest communication when priorities conflict, and no surprises on either side. If we are unavailable (holiday, illness), you are informed in advance with a plan for urgent issues. If your requirements change, we discuss impact openly before committing to new work. If a deadline or a budget looks at risk, you hear about it as soon as we know, not at the next scheduled check-in."
+      "subtitle": "What you can expect from us, and what we will need from you.",
+      "p1": "We are UK-based and work UK business hours (Monday to Friday, 9am–5pm GMT/BST). You have one named point of contact, the person building the site, not an account manager relaying messages. Communication happens on an agreed channel (email, Slack, Teams, or phone) with an agreed cadence for check-ins. Updates are written in plain English, and we will tell you when something turns out harder or cheaper than we first thought.",
+      "p2": "You own your code, your domain and your hosting accounts from day one. There are no lock-in clauses, no proprietary platforms, and no ongoing fees required to keep your site running beyond standard hosting and domain costs. If you want to take the project in-house or to another developer, everything transfers with documentation and support during handover.",
+      "p3": "We will agree deadlines we think are achievable, and say so when priorities conflict. Holidays and illness are flagged in advance, with a plan for anything urgent in the meantime. When your requirements change, we work out the impact on cost and timeline before committing to new work. And if a deadline or a budget starts to look at risk, you hear about it as soon as we know rather than at the next scheduled check-in."
     },
     "faq": {
       "heading": "Common Questions",
       "subtitle": "Straight answers to the questions we get asked most about how projects run.",
       "q1": {
         "question": "What if my requirements change mid-project?",
-        "answer": "Requirements do change — that is normal and expected. At each milestone boundary, we can re-prioritise the backlog or adjust scope. If a change is significant, we assess the impact on cost and timeline and present options before proceeding. You are never locked into a fixed scope if the business need has evolved."
+        "answer": "Requirements change on most projects. At each milestone boundary, we can re-prioritise the backlog or adjust scope. If a change is significant, we assess the impact on cost and timeline and present options before proceeding. A fixed scope agreed at the start does not bind you once the business need has moved on."
       },
       "q2": {
         "question": "How do I know progress is real and not just a status update?",
@@ -626,42 +626,42 @@
       },
       "q4": {
         "question": "Who owns the code and the accounts?",
-        "answer": "You do. Source code is stored in a Git repository that you own (GitHub, GitLab, Azure Repos). Hosting accounts, domain registrations, and third-party service accounts (analytics, payment gateways) are created in your name or transferred to you at handover. There are no lock-in clauses or proprietary platforms. If you decide to take the project elsewhere, everything transfers cleanly."
+        "answer": "You do. Source code is stored in a Git repository that you own (GitHub, GitLab, Azure Repos). Hosting accounts, domain registrations, and third-party service accounts (analytics, payment gateways) are created in your name or transferred to you at handover. There are no lock-in clauses or proprietary platforms. If you decide to take the project elsewhere, it all goes with you."
       },
       "q5": {
         "question": "What happens after launch?",
-        "answer": "Post-launch support options are discussed openly but never mandatory. We offer ongoing maintenance retainers covering bug fixes, dependency updates, content changes, and small feature additions. Alternatively, you can handle maintenance in-house or engage another developer — the codebase is documented, and we provide a handover session to ensure continuity. You are never locked in."
+        "answer": "Support after launch is optional. We offer ongoing maintenance retainers covering bug fixes, dependency updates, content changes, and small feature additions. Alternatively, you can handle maintenance in-house or engage another developer. The codebase is documented, and we run a handover session so whoever takes it on can pick it up without guessing. Nothing about the build requires you to keep paying us."
       },
       "q6": {
         "question": "How is AI used, and is my data safe?",
-        "answer": "AI tools assist with scaffolding, boilerplate, refactoring, test generation and documentation. Every line is reviewed by a human and tested before shipping. AI does not have access to production data, secrets, API keys, or sensitive client information. If your project has strict data handling requirements, AI tooling is restricted or disabled. GDPR and confidentiality obligations are always respected."
+        "answer": "AI tools assist with scaffolding, boilerplate, refactoring, test generation and documentation. Every line is reviewed by a human and tested before shipping. AI does not have access to production data, secrets, API keys, or sensitive client information. If your project has strict data handling requirements, AI tooling is restricted or disabled. GDPR and confidentiality obligations decide what can be shared with a third-party service at all."
       },
       "q7": {
         "question": "How long does it take to build a small business website?",
-        "answer": "Most small business sites launch 2 to 6 weeks after first contact. That breaks down as 1 to 2 days of discovery, 2 to 3 days to produce the proposal, 2 to 5 days refining requirements, 1 to 3 weeks of build in weekly milestones, and 2 to 4 days for launch and handover. The single biggest variable is how quickly you can get us your content — photos, service descriptions, opening hours. Projects that stall almost always stall there."
+        "answer": "Most small business sites launch 2 to 6 weeks after first contact. That breaks down as 1 to 2 days of discovery, 2 to 3 days to produce the proposal, 2 to 5 days refining requirements, 1 to 3 weeks of build in weekly milestones, and 2 to 4 days for launch and handover. The single biggest variable is how quickly you can get us your content: photos, service descriptions, opening hours. Projects that stall almost always stall there."
       },
       "q8": {
         "question": "Should I use a small studio or a large agency?",
-        "answer": "A large agency gives you depth of bench: designers, copywriters, project managers and developers under one roof, which matters on a big multi-team build. You pay for that structure, and you usually talk to an account manager rather than the person doing the work. A small studio like ours gives you a direct line to the developers, lower overheads in the quote, and faster decisions — at the cost of that bench depth. For a small business website, an online shop or a booking system, the agency structure is overhead you are paying for and rarely using."
+        "answer": "A large agency gives you depth of bench: designers, copywriters, project managers and developers under one roof, which matters on a big multi-team build. You pay for that structure, and you usually talk to an account manager rather than the person doing the work. A small studio like ours gives you a direct line to the developers, lower overheads in the quote, and faster decisions, at the cost of that bench depth. For a small business website, an online shop or a booking system, the agency structure is overhead you are paying for and rarely using."
       }
     }
   },
   "smallBusiness": {
     "hero": {
       "title": "A Simple Website That Makes You Look Legitimate",
-      "subtitle": "Most people check a business online before they call. A fast, professional website with your own domain gives you credibility and brings in enquiries — without the jargon or the cost of an agency.",
-      "kicker": "Small Business Website Design — Bridgend, Cardiff, Swansea and South Wales"
+      "subtitle": "Most people check a business online before they call. A fast, professional website with your own domain gives you credibility and brings in enquiries, without the jargon or the cost of an agency.",
+      "kicker": "Small Business Website Design: Bridgend, Cardiff, Swansea and South Wales"
     },
     "whyMatters": {
       "heading": "Why a Website Still Matters",
-      "subtitle": "Social media is not enough — here is what a proper website gives you.",
+      "subtitle": "Social media is not enough. Here is what a proper website gives you.",
       "item1": {
         "title": "Legitimacy",
-        "description": "People check you online before they call. A proper website with a real domain and a business email address signals you are an established business, not a hobby. Social media alone leaves you looking temporary and at the mercy of someone else's algorithm."
+        "description": "People look you up before they call. A proper website with a real domain and a business email address signals you are an established business, not a hobby. Social media alone leaves you looking temporary and at the mercy of someone else's algorithm."
       },
       "item2": {
         "title": "You Own It",
-        "description": "A Facebook page or marketplace listing can be restricted, changed or taken away. A website is an asset you control, on a domain you own. No one can shut you down or change the rules overnight."
+        "description": "A Facebook page or marketplace listing can be restricted, changed or taken away. A website sits on a domain you own and control. Nobody else gets to change the rules on you overnight."
       },
       "item3": {
         "title": "Being Found",
@@ -674,7 +674,7 @@
     },
     "bringEnquiries": {
       "heading": "How a Simple Site Brings You Enquiries",
-      "subtitle": "A clear headline, obvious ways to contact you, and trust signals — that is the formula.",
+      "subtitle": "A clear headline, obvious ways to contact you, and some proof the work is real.",
       "item1": {
         "title": "Clear Headline",
         "description": "A headline that says exactly what you do and where you do it. Search engines and customers both need to know within seconds whether you serve them."
@@ -685,7 +685,7 @@
       },
       "item3": {
         "title": "A Page for Each Service",
-        "description": "Plumbers need separate pages for boiler repairs, bathroom installations, and emergency callouts. Search engines match searches to pages — more pages mean more chances to be found for different searches."
+        "description": "Plumbers need separate pages for boiler repairs, bathroom installations and emergency callouts. Search engines match searches to pages, so more pages mean more ways for people to find you."
       },
       "item4": {
         "title": "Photos of Real Work",
@@ -700,7 +700,7 @@
       "heading": "What's Included as Standard",
       "subtitle": "Everything a small business website needs to work properly and look professional.",
       "f1": "Mobile-first responsive design that works on any device",
-      "f2": "Fast loading on a phone signal — not bloated with unnecessary code",
+      "f2": "Fast loading on a phone signal, with no unnecessary code slowing it down",
       "f3": "Accessible to people using screen readers or keyboards (WCAG 2.2 AA)",
       "f4": "Secure HTTPS hosting with automatic certificate renewal",
       "f5": "Your own domain and business email set up and working",
@@ -714,25 +714,25 @@
     },
     "signs": {
       "heading": "Signs It's Time for a Website",
-      "subtitle": "If any of these sound familiar, it is time to get a proper site.",
+      "subtitle": "If any of these sound familiar, you are overdue a proper site.",
       "item1": "You are relying entirely on word of mouth and struggling to reach new customers",
       "item2": "Customers say they could not find you online or were not sure you were still trading",
       "item3": "Your current site does not work properly on a phone or looks outdated",
       "item4": "You are only on social media and feel like you are shouting into the void",
-      "item5": "You keep answering the same questions by phone — opening times, service areas, prices",
+      "item5": "You keep answering the same questions by phone: opening times, service areas, prices",
       "item6": "You want to look credible when quoting against bigger competitors"
     },
     "cost": {
       "heading": "What It Costs You Not to Have One",
       "subtitle": "The hidden cost of not being visible online.",
       "p1": "Enquiries go to a competitor who is easier to find. Customers shortlist businesses they can verify online before picking up the phone. If you do not have a website, you are not on that shortlist.",
-      "p2": "Being passed over looks like quiet periods or seasonal dips, but it is often just invisibility. Looking smaller than you are means losing work to businesses who present better online, even if your work is superior. Wasted time on repeat questions eats into your day when a website could answer them once.",
-      "p3": "For what it costs to have one: our small business websites start at £650, and sites with online booking or payment integration start at £1,250. Full starting prices, including the optional care plan, are published on our pricing page — you do not need to ring anyone to find out whether you are in the right ballpark.",
+      "p2": "Being passed over looks like a quiet spell or a seasonal dip, when often it is invisibility. You lose work to businesses that present better online, even when your work is better than theirs. And the same questions keep eating into your day when a page could answer them once.",
+      "p3": "Against that: our small business websites start at £650, and sites with online booking or payment integration start at £1,250. Full starting prices, including the optional care plan, are on our pricing page. You do not have to ring anyone to work out whether you are in the right ballpark.",
       "ctaText": "See what a website costs"
     },
     "howWorks": {
       "heading": "How It Works",
-      "subtitle": "A straightforward process — no jargon, no surprises.",
+      "subtitle": "A straightforward process, with no jargon and no surprises.",
       "step1": "A short chat about your business, what you offer, who you serve, and what you want the site to achieve. No obligation and no pressure.",
       "step2": "A fixed written quote with what is included, what is not, and a realistic timeframe. You decide whether to proceed.",
       "step3": "You send over your logo, photos and words. If you need help writing the content, guidance and templates are provided. Most small business sites need 500–1000 words total across all pages.",
@@ -744,12 +744,12 @@
       "heading": "Straight Answers",
       "subtitle": "Common questions from small business owners.",
       "q1": {
-        "question": "I'm not technical — will I be able to manage it?",
+        "question": "I'm not technical. Will I be able to manage it?",
         "answer": "Yes. The site is built to run without you needing to touch code. Contact form submissions come to your email. If you want to update text or add a new photo later, a simple content management interface can be included, or changes can be requested and handled for a small fee. A walkthrough session at handover shows you everything."
       },
       "q2": {
         "question": "Do I need to write all the content myself?",
-        "answer": "You know your business best, so the core content (what you do, where you serve, your prices or approach) needs to come from you. However, templates and example text are provided to make it easier. If you are stuck, a content workshop can be included to pull the right words out of a conversation and turn them into clear web copy."
+        "answer": "You know your business best, so the core content (what you do, where you serve, your prices or approach) needs to come from you. But templates and example text are provided to make it easier. If you are stuck, a content workshop can be included to pull the right words out of a conversation and turn them into clear web copy."
       },
       "q3": {
         "question": "What if I already have a domain or a half-finished site?",
@@ -757,19 +757,19 @@
       },
       "q4": {
         "question": "Will it work on phones?",
-        "answer": "Yes. Every site is designed mobile-first, which means it is built for phones and tablets before desktops. Most small business site visitors are on mobile, so this is not optional — it is the foundation of the design."
+        "answer": "Yes. Every site is designed mobile-first, which means it is built for phones and tablets before desktops. Most visitors to a small business site are on a phone, so that is where the design starts."
       },
       "q5": {
-        "question": "Do I really need a cookie banner and privacy policy?",
+        "question": "Do I need a cookie banner and privacy policy?",
         "answer": "Yes, if you use analytics or any tracking. UK GDPR and PECR require explicit consent before setting non-essential cookies, and you must tell users what data you collect and why. A compliant cookie banner and privacy policy are included as standard, written in plain English and linked in the footer."
       },
       "q6": {
         "question": "Can it grow later if my business grows?",
-        "answer": "Absolutely. Small business sites are built with clean, maintainable code on modern infrastructure. Adding a booking system, an online shop, a blog, or extra service pages later is straightforward. You are never locked into a platform that cannot scale."
+        "answer": "Yes. Small business sites are built with clean, maintainable code on modern infrastructure. Adding a booking system, an online shop, a blog or extra service pages later is straightforward. The setup does not box you in as the business grows."
       },
       "q7": {
         "question": "What happens if I want changes after it's live?",
-        "answer": "Minor fixes within the first month are included. After that, small changes (text updates, new photos, an extra page) can be handled on a pay-as-you-go basis or as part of an optional monthly maintenance retainer. You are never locked in — you own the site and can take it elsewhere if you prefer."
+        "answer": "Minor fixes within the first month are included. After that, small changes (text updates, new photos, an extra page) can be handled on a pay-as-you-go basis or as part of an optional monthly maintenance retainer. You own the site and can take it elsewhere whenever you like."
       }
     },
     "links": {
@@ -796,7 +796,7 @@
       "item2Title": "Salons and Clinics",
       "item2Description": "Hairdressers, barbers, beauty salons, physios and dentists. Almost always paired with online booking so appointments stop going to voicemail.",
       "item3Title": "Cafés, Shops and Hospitality",
-      "item3Description": "Menus, opening hours, location and photos — the four things people check before they set off. Kept easy for you to update yourself.",
+      "item3Description": "Menus, opening hours, location and photos: the four things people check before they set off. Kept easy for you to update yourself.",
       "item4Title": "Consultants and Professional Services",
       "item4Description": "Accountants, solicitors, surveyors and independent consultants. A credible site that stands up to being checked before somebody hands over a serious brief.",
       "item5Title": "Anyone Currently Running on a Facebook Page",
@@ -805,13 +805,13 @@
   },
   "contactPage": {
     "title": "Contact Us",
-    "subtitle": "Tell us what you need and we will come back with a straight answer. No obligation, no sales pressure.",
+    "subtitle": "Tell us what you need and we will come back with a straight answer. No obligation.",
     "contactInformation": "Contact Information",
     "email": "Email",
     "responseHeading": "When You'll Hear Back",
-    "responseBody": "Every enquiry gets a written reply by email within 24 hours. Enquiries are usually answered in the evenings, Monday to Thursday, and on Saturday mornings.",
+    "responseBody": "Every enquiry gets a written reply by email within 24 hours. Replies usually go out in the evenings, Monday to Thursday, and on Saturday mornings.",
     "beforeYouAskHeading": "Before You Ask",
-    "beforeYouAskBody": "Wondering about cost? Starting prices are published on our pricing page, so you can check you are in the right ballpark before you get in touch.",
+    "beforeYouAskBody": "Starting prices are published on our pricing page, so you can check you are in the right ballpark before you get in touch.",
     "beforeYouAskCta": "See pricing"
   },
   "contactForm": {
@@ -833,10 +833,10 @@
     "budget": "Rough budget",
     "budgetHint": "A band is fine. It helps us point you at the right option instead of guessing.",
     "budgetPlaceholder": "Select a budget range",
-    "budgetUnder650": "Under \u00a3650",
-    "budget650to1250": "\u00a3650 to \u00a31,250",
-    "budget1250to3000": "\u00a31,250 to \u00a33,000",
-    "budgetOver3000": "Over \u00a33,000",
+    "budgetUnder650": "Under £650",
+    "budget650to1250": "£650 to £1,250",
+    "budget1250to3000": "£1,250 to £3,000",
+    "budgetOver3000": "Over £3,000",
     "budgetUnsure": "Not sure yet",
     "timeline": "When do you need it?",
     "timelineHint": "Optional.",
@@ -846,14 +846,14 @@
     "timelineFlexible": "No fixed deadline",
     "timelineExploring": "Just exploring options",
     "message": "Message",
-    "messageHint": "What the business does, what the site needs to do, and anything you already have \u2014 a domain, a logo, or an existing site.",
+    "messageHint": "What the business does, what the site needs to do, and anything you already have: a domain, a logo, or an existing site.",
     "placeholderName": "John Doe",
     "placeholderEmail": "john{'@'}example.com",
     "placeholderCompany": "Your company",
     "placeholderPhone": "+44 29 1234 5678",
     "send": "Send Message",
     "sending": "Sending...",
-    "replyPromise": "One-person studio. Every enquiry gets a written reply by email within 24 hours \u2014 no sales call.",
+    "replyPromise": "One-person studio. Every enquiry gets a written reply by email within 24 hours.",
     "statusSuccess": "Thank you. Your enquiry has been sent, and you will get a written reply by email within 24 hours.",
     "statusError": "Something went wrong. Please try again or email us at enquiries{'@'}vanguarddigitalsolutions.co.uk.",
     "validationName": "Please enter your full name with at least 2 characters.",
@@ -929,7 +929,7 @@
       "title": "eCommerce Website Design – Cardiff, Swansea & South Wales",
       "description": "Custom online shops for independent retailers across South Wales. Secure Stripe and PayPal checkout, real stock control, and no rented platform fee.",
       "ogTitle": "Online Shops Built for South Wales Retailers",
-      "ogDescription": "Custom eCommerce with secure payments, stock control and full ownership — no rented platform and no compulsory monthly fee."
+      "ogDescription": "Custom eCommerce with secure payments, stock control and full ownership. No rented platform and no compulsory monthly fee."
     },
     "serviceBooking": {
       "title": "Online Booking Systems – Bridgend, Cardiff & Swansea",
@@ -947,11 +947,11 @@
       "title": "Bespoke Software Development – South Wales",
       "description": "Custom web applications, client portals, internal dashboards and system integrations, built on .NET and Microsoft Azure for South Wales businesses.",
       "ogTitle": "Bespoke Web Applications and Custom Software",
-      "ogDescription": "Client portals, internal tools and integrations built around how your business actually works, with honest advice on when not to build."
+      "ogDescription": "Client portals, internal tools and integrations built around how your business works, with honest advice on when not to build."
     },
     "technology": {
       "title": "Web Development Technology – Vanguard Digital Solutions",
-      "description": "Vue, TypeScript, .NET and Azure, plus WCAG 2.2 accessibility, UK GDPR compliance and Core Web Vitals — the standards behind every site we build.",
+      "description": "Vue, TypeScript, .NET and Azure, plus WCAG 2.2 accessibility, UK GDPR compliance and Core Web Vitals: the standards behind every site we build.",
       "ogTitle": "Web Development Technology Stack",
       "ogDescription": "Technical depth and expertise behind modern, accessible, secure web applications built in South Wales."
     },
@@ -969,7 +969,7 @@
     },
     "pricing": {
       "title": "Website Prices – From £650 – Vanguard Digital Solutions",
-      "description": "What a small business website actually costs in South Wales. Websites from £650, booking and payment integration from £1,250, care plan from £35 a month.",
+      "description": "What a small business website costs in South Wales. Websites from £650, booking and payment integration from £1,250, care plan from £35 a month.",
       "ogTitle": "Website Prices, Published Up Front",
       "ogDescription": "Starting prices for small business websites, online shops and booking systems in South Wales. No phone call needed to find out the ballpark."
     },
@@ -995,7 +995,7 @@
   },
   "pricing": {
     "hero": {
-      "kicker": "Website Prices — Bridgend, Cardiff, Swansea and South Wales",
+      "kicker": "Website Prices: Bridgend, Cardiff, Swansea and South Wales",
       "title": "Straight Numbers, Up Front",
       "subtitle": "Nobody should have to book a call just to find out whether they can afford the work. So the numbers are below."
     },
@@ -1010,7 +1010,7 @@
       "timeline": "Typically 1 to 2 weeks of build time",
       "tagline": "A few pages, built properly, with a contact form that reaches your inbox.",
       "forWho": "Right for a business that needs to exist online and be found: a trade, a consultant, a café, or anyone currently running on a Facebook page.",
-      "f1": "Up to five pages — Home, About, Services, Contact, and one more",
+      "f1": "Up to five pages: Home, About, Services, Contact, and one more",
       "f2": "Mobile-first and built to pass Google's Core Web Vitals",
       "f3": "Contact form delivered straight to your inbox",
       "f4": "On-page and local SEO so you show up for nearby searches",
@@ -1026,30 +1026,30 @@
       "tagline": "Everything in Starter, plus the parts that turn browsers into bookings.",
       "forWho": "Right for a salon, clinic or trade that wants enquiries and appointments handled automatically instead of by phone tag.",
       "f1": "Everything in the Starter package",
-      "f2": "Online booking or payment integration — Booksy, Square or Stripe",
+      "f2": "Online booking or payment integration with Booksy, Square or Stripe",
       "f3": "More pages, galleries, or a simple news and offers section",
       "f4": "Enhanced local SEO with structured data for your service area",
       "f5": "Google Business Profile alignment so your details match everywhere",
-      "f6": "Analytics set up to show which pages actually produce enquiries"
+      "f6": "Analytics set up to show which pages produce enquiries"
     },
     "bespoke": {
       "name": "Online Shops, Bespoke Apps and Integrations",
       "price": "Quoted individually",
       "timeline": "Timeline agreed at proposal stage",
       "tagline": "Online shops, client portals, dashboards and anything custom-built.",
-      "forWho": "These vary far too much in scope to price fairly with a published figure — a ten-product shop and a two-hundred-product shop are different jobs. Tell us what you need and you get a clear, itemised quote with no obligation.",
+      "forWho": "These vary far too much in scope to price fairly with a published figure. A ten-product shop and a two-hundred-product shop are different jobs. Tell us what you need and you get a clear, itemised quote with no obligation.",
       "cta": "Tell us what you need"
     },
     "care": {
       "heading": "Keeping It Running",
       "price": "From £35 a month",
       "subtitle": "Optional. You own the site either way.",
-      "p1": "Hosting, security patching, dependency updates, automated backups, uptime monitoring and small content changes — opening hours, prices, a new service, a batch of photos. It stops the site quietly rotting after launch.",
+      "p1": "Hosting, security patching, dependency updates, automated backups, uptime monitoring and small content changes: opening hours, prices, a new service, a batch of photos. It stops the site quietly rotting after launch.",
       "p2": "If you would rather handle it yourself or hand it to another developer, that is fine. The code is documented, the accounts are in your name, and there is no exit fee."
     },
     "bilingual": {
       "heading": "Welsh Language Sites",
-      "p1": "A full bilingual English and Welsh version of any package adds roughly 30 to 40 per cent, depending on how much content needs translating. That covers separate URLs for each language, correct hreflang annotations, proper language tagging and a working language switcher — not a translation widget bolted on top. This website is built that way, so you can see the result before you commit."
+      "p1": "A full bilingual English and Welsh version of any package adds roughly 30 to 40 per cent, depending on how much content needs translating. That covers separate URLs for each language, correct hreflang annotations, proper language tagging and a working language switcher, rather than a translation widget bolted on top. This website is built that way, so you can see the result before you commit."
     },
     "ownership": {
       "heading": "What You Own",
@@ -1064,7 +1064,7 @@
     "q3": "How does this compare to Wix or Squarespace?",
     "a3": "Builders cost less up front and more over time. Wix runs roughly £9 to £119 a month and Squarespace roughly £12 to £79, forever, plus apps billed separately, and you cannot take the site with you if you leave. A Starter site at £650 with no compulsory monthly fee breaks even against a mid-tier builder subscription in around two to three years, and you own it outright. If you need something online this week and you are happy to build it yourself, a builder is the better answer, and we will say so.",
     "q4": "Do I have to pay it all up front?",
-    "a4": "No. Payment is split across the milestones in the proposal — typically a deposit to start, a payment at an agreed midpoint, and the balance on launch. It is all set out in writing before anything begins.",
+    "a4": "No. Payment is split across the milestones in the proposal: typically a deposit to start, a payment at an agreed midpoint, and the balance on launch. It is all set out in writing before anything begins.",
     "q5": "What if my project grows halfway through?",
     "a5": "Change is normal. At each milestone boundary we can re-prioritise or adjust scope, and anything that affects cost or timeline is shown to you as options before it is agreed, not invoiced as a surprise afterwards.",
     "ctaHeading": "In the Right Ballpark?",
@@ -1075,25 +1075,25 @@
   "serviceDetail": {
     "ecommerce": {
       "navLabel": "Online Shops",
-      "kicker": "eCommerce Website Design — Cardiff, Swansea, Newport and South Wales",
-      "title": "Online Shops That Are Yours, Not Rented",
+      "kicker": "eCommerce Website Design: Cardiff, Swansea, Newport and South Wales",
+      "title": "Online Shops That Are Yours to Keep",
       "subtitle": "A proper online shop with secure payments, real stock control and no monthly platform fee attached to the site itself.",
       "intro": {
-        "p1": "We build online shops for independent retailers across South Wales — from a single-product store to a full catalogue with variants, stock levels and delivery zones. Payments run through Stripe or PayPal, so card data never touches your site and you are not liable for storing it.",
-        "p2": "The important difference from a hosted platform is ownership. A Shopify or Wix shop is rented: the subscription never ends, the apps are billed separately, and you cannot move the shop elsewhere. What we build is yours — the code, the domain, the hosting account — with no compulsory monthly fee for the site to keep existing.",
-        "p3": "That trade-off is not right for everyone. If you are selling a handful of items and want to be live this week, a hosted platform is genuinely the better answer and we will tell you so. Custom pays back when the shop is a real sales channel, when you need it to look like nobody else's, or when it has to talk to stock or accounting systems you already run."
+        "p1": "We build online shops for independent retailers across South Wales, from a single-product store to a full catalogue with variants, stock levels and delivery zones. Payments run through Stripe or PayPal, so card data never touches your site and you are not liable for storing it.",
+        "p2": "The important difference from a hosted platform is ownership. A Shopify or Wix shop is rented: the subscription never ends, the apps are billed separately, and you cannot move the shop elsewhere. What we build is yours (the code, the domain, the hosting account) and there is no compulsory monthly fee for the site to keep existing.",
+        "p3": "That trade-off is not right for everyone. If you are selling a handful of items and want to be live this week, a hosted platform is the better answer and we will tell you so. Custom pays back when the shop is a real sales channel, when it has to look like nobody else's, or when it needs to talk to the stock and accounting systems you already run."
       },
       "included": {
         "heading": "What an Online Shop Includes",
         "subtitle": "Everything needed to take money safely and fulfil an order.",
         "f1": "Product catalogue with categories, variants, images and search",
-        "f2": "Secure checkout through Stripe or PayPal — no card data stored on your site",
+        "f2": "Secure checkout through Stripe or PayPal, with no card data stored on your site",
         "f3": "Stock tracking, with low-stock and out-of-stock handling",
         "f4": "Delivery zones, postage rules and collection options",
         "f5": "Order confirmation and dispatch emails to you and the customer",
         "f6": "VAT handling and downloadable order records for your bookkeeping",
         "f7": "Product schema markup so items can appear in Google Shopping results",
-        "f8": "Mobile-first checkout — most abandoned baskets are a phone problem"
+        "f8": "Mobile-first checkout. Most abandoned baskets are a phone problem"
       },
       "whoFor": {
         "heading": "Who Buys This",
@@ -1109,7 +1109,7 @@
       },
       "pricing": {
         "heading": "What an Online Shop Costs",
-        "body": "Online shops are quoted individually rather than priced from a list, because a ten-product shop and a two-hundred-product shop are genuinely different jobs. The variables are catalogue size, how many product options each item has, what has to integrate with your stock or accounts, and whether product photography and descriptions need writing. You get a fixed written quote before any work starts.",
+        "body": "Online shops are quoted individually rather than priced from a list, because a ten-product shop and a two-hundred-product shop are different jobs. The variables are catalogue size, how many product options each item has, what has to integrate with your stock or accounts, and whether product photography and descriptions need writing. You get a fixed written quote before any work starts.",
         "cta": "See all our prices"
       },
       "faq": {
@@ -1117,11 +1117,11 @@
         "subtitle": "What retailers ask us before committing.",
         "q1": {
           "question": "Is a custom shop cheaper than Shopify or Wix in the long run?",
-          "answer": "It depends how long you run it and how many add-ons you need. A hosted platform costs roughly £20 to £100 a month once you include apps, and that never stops. A custom shop costs more up front and then only hosting, which for a static-fronted shop is a few pounds a month. Most shops break even somewhere in years two to four. If you expect to trade for a season, rent. If this is the business, own it."
+          "answer": "It depends how long you run it and how many add-ons you need. A hosted platform costs roughly £20 to £100 a month once you include apps, for as long as you trade. A custom shop costs more up front and then only hosting, which for a static-fronted shop is a few pounds a month. Most shops break even somewhere in years two to four. If you expect to trade for a season, rent. Own it if this is the business."
         },
         "q2": {
           "question": "Can I manage products myself without touching code?",
-          "answer": "Yes. You get an admin area for adding and editing products, prices, stock levels and images. If your catalogue lives somewhere else already — a spreadsheet, an EPOS system, an accounting package — we can often import from it or sync with it instead of asking you to retype everything."
+          "answer": "Yes. You get an admin area for adding and editing products, prices, stock levels and images. If your catalogue already lives somewhere else (a spreadsheet, an EPOS system, an accounting package), we can often import from it or sync with it instead of asking you to retype everything."
         },
         "q3": {
           "question": "How are card payments kept secure?",
@@ -1129,7 +1129,7 @@
         },
         "q4": {
           "question": "Will my products show up in Google Shopping?",
-          "answer": "We add Product structured data to every item — price, availability, images, description — which is what Google reads to build a shopping result. That makes eligibility possible; it does not guarantee placement, and paid Shopping campaigns are a separate thing we do not run for you."
+          "answer": "We add Product structured data to every item: price, availability, images, description. That is what Google reads to build a shopping result. It makes eligibility possible without guaranteeing placement, and paid Shopping campaigns are a separate thing we do not run for you."
         },
         "q5": {
           "question": "What about postage, VAT and returns?",
@@ -1140,13 +1140,13 @@
     },
     "booking": {
       "navLabel": "Booking Systems",
-      "kicker": "Online Booking Systems — Bridgend, Cardiff, Swansea and South Wales",
+      "kicker": "Online Booking Systems: Bridgend, Cardiff, Swansea and South Wales",
       "title": "Stop Losing Bookings to Voicemail",
       "subtitle": "Let customers book themselves in, day or night, without you answering the phone mid-appointment.",
       "intro": {
-        "p1": "Most missed bookings are not lost to a competitor's better prices. They are lost because somebody rang while you had your hands full, did not leave a message, and booked with whoever answered next. An online booking system takes that call for you at eleven at night, on a Sunday, and while you are with a client.",
-        "p2": "We build booking into your own website rather than sending customers off to a third-party marketplace. That matters for two reasons: the booking is yours, not a lead rented from a platform that also advertises your competitors, and the customer stays on your site where your prices, your photos and your reviews are.",
-        "p3": "Where you already use Booksy, Square or a similar system and it works, we integrate rather than replace — your site becomes the front door and the existing system stays the diary. Where there is no system, or the one you have does not fit how you actually work, we build one that does."
+        "p1": "Most missed bookings have nothing to do with a competitor's better prices. They are lost because somebody rang while you had your hands full, did not leave a message, and booked with whoever answered next. An online booking system takes that call for you at eleven at night, on a Sunday, and while you are with a client.",
+        "p2": "We build booking into your own website rather than sending customers off to a third-party marketplace. Two reasons for that. The booking belongs to you rather than being a lead rented from a platform that also advertises your competitors. And the customer stays on your site, with your prices, photos and reviews in front of them.",
+        "p3": "Where you already use Booksy, Square or something similar and it works, we integrate rather than replace. Your site becomes the front door and the existing system stays the diary. If there is no system, or the one you have does not fit how you work, we build one that does."
       },
       "included": {
         "heading": "What a Booking System Includes",
@@ -1154,7 +1154,7 @@
         "f1": "Real availability from your own calendar, not a guess",
         "f2": "Service and duration selection, so a cut and a colour book different slots",
         "f3": "Staff or resource assignment, where more than one person takes bookings",
-        "f4": "Confirmation and reminder emails, which is what actually reduces no-shows",
+        "f4": "Confirmation and reminder emails, which is what brings no-shows down",
         "f5": "Deposits or full payment up front through Stripe, if you want them",
         "f6": "Cancellation and rescheduling rules you set, enforced automatically",
         "f7": "Booksy, Square, Google Calendar or Outlook integration where you already use one",
@@ -1174,7 +1174,7 @@
       },
       "pricing": {
         "heading": "What a Booking System Costs",
-        "body": "A website with booking or payment integration starts at £1,250, and typically takes 2 to 3 weeks of build time. That covers a working booking flow wired into your calendar with confirmations and reminders. More complex setups — multiple staff, deposits, class capacity, syncing with an existing system — are quoted on top, in writing, before work starts.",
+        "body": "A website with booking or payment integration starts at £1,250 and typically takes 2 to 3 weeks of build time. That covers a working booking flow wired into your calendar, with confirmations and reminders. More complex setups (multiple staff, deposits, class capacity, syncing with an existing system) are quoted on top, in writing, before work starts.",
         "cta": "See all our prices"
       },
       "faq": {
@@ -1182,48 +1182,48 @@
         "subtitle": "What salons and trades ask us before committing.",
         "q1": {
           "question": "I already use Booksy. Do I have to move?",
-          "answer": "No. If Booksy works for you, keep it — we integrate with it so your website shows real availability and hands the booking over cleanly. Moving only makes sense if you are paying for something you have outgrown, or if the platform's own marketing is pushing your customers towards competitors."
+          "answer": "No. If Booksy works for you, keep it. We integrate with it so your website shows real availability and hands the booking over cleanly. Moving only makes sense if you are paying for something you have outgrown, or if the platform's own marketing is pushing your customers towards competitors."
         },
         "q2": {
           "question": "Will it stop people booking when I'm closed or already busy?",
-          "answer": "Yes. Availability comes from your actual calendar, with your opening hours, buffer times, holidays and existing appointments all respected. Double-booking is prevented at the point of booking, not discovered afterwards."
+          "answer": "Yes. Availability comes from your actual calendar, with your opening hours, buffer times, holidays and existing appointments all respected. Double-booking is prevented at the point of booking rather than discovered afterwards."
         },
         "q3": {
           "question": "Can I take a deposit to cut down no-shows?",
-          "answer": "Yes, through Stripe — either a fixed deposit or the full amount at the point of booking, and you choose which services require it. Combined with automatic reminder emails, that is the most effective no-show reduction available. Your cancellation and refund terms are yours to set; we implement them."
+          "answer": "Yes, through Stripe: either a fixed deposit or the full amount at the point of booking, and you choose which services require it. Combined with automatic reminder emails, that is the most effective no-show reduction available. Your cancellation and refund terms are yours to set and we implement them."
         },
         "q4": {
           "question": "What happens if a customer wants to change or cancel?",
-          "answer": "They get a link in their confirmation email that lets them reschedule or cancel within the window you set — say, more than 24 hours ahead. Outside that window it tells them to contact you instead. That keeps the easy changes off your phone without letting somebody cancel a Saturday slot at nine on Saturday morning."
+          "answer": "They get a link in their confirmation email that lets them reschedule or cancel within the window you set, say more than 24 hours ahead. Outside that window it tells them to contact you instead. That keeps the easy changes off your phone without letting somebody cancel a Saturday slot at nine on Saturday morning."
         },
         "q5": {
           "question": "Do I need a whole new website to get booking?",
-          "answer": "Not necessarily. If your existing site is in reasonable shape and you own it, booking can often be added to it. If it is on a platform you cannot modify, or it is slow and hard to find in search, you will usually get more out of rebuilding — and the booking work is the same either way."
+          "answer": "Not necessarily. Booking can often be added to an existing site if it is in reasonable shape and you own it. On a platform you cannot modify, or a site that is slow and hard to find in search, you will usually get more out of rebuilding. The booking work is the same either way."
         }
       },
       "relatedHeading": "Related"
     },
     "businessWebsite": {
       "navLabel": "Business Websites",
-      "kicker": "Business Website Design — Bridgend, Cardiff, Swansea and South Wales",
+      "kicker": "Business Website Design: Bridgend, Cardiff, Swansea and South Wales",
       "title": "A Website That Does the Explaining For You",
       "subtitle": "For businesses that do not sell online and do not take bookings, but do need to be found, understood and trusted.",
       "intro": {
         "p1": "Plenty of businesses do not need a shop or a booking diary. They need a site that turns up when somebody searches, answers the questions they get asked on every first call, and looks like it belongs to a firm worth hiring. That is a smaller job than an online shop and it should cost less.",
-        "p2": "The work is mostly in structure and clarity. One page per service, so each can rank for what people actually search — a roofer needs separate pages for flat roofs, repairs and emergency callouts, not one page listing all three. Clear contact details on every page. Enough detail that a prospect can qualify themselves before they ring you, which means the calls you do get are better ones.",
+        "p2": "The work is mostly in structure and clarity. One page per service, so each can rank for what people search for. A roofer needs separate pages for flat roofs, repairs and emergency callouts rather than one page listing all three. Clear contact details on every page. Enough detail that a prospect can qualify themselves before they ring you, so the calls you do get are better ones.",
         "p3": "This is also where the professional-credibility argument lives. If somebody is about to hand you a serious brief, they will look you up first. A site that loads fast, reads well and works properly on a phone is doing quiet work in that moment, and a slow one built in 2014 is doing the opposite."
       },
       "included": {
         "heading": "What a Business Website Includes",
         "subtitle": "The structure that makes a site findable and credible.",
         "f1": "A dedicated page per service, so each can rank for its own search",
-        "f2": "Location and service-area content targeting the towns you actually cover",
+        "f2": "Location and service-area content for the towns you cover",
         "f3": "Contact details and a working enquiry form reachable from every page",
         "f4": "Photo galleries of finished work, optimised so they do not slow the site",
         "f5": "LocalBusiness structured data feeding Google's local results",
         "f6": "WCAG 2.2 Level AA accessibility and Core Web Vitals performance targets",
         "f7": "Cookie banner and privacy policy meeting UK GDPR and PECR",
-        "f8": "Content you can update yourself — hours, prices, a new service"
+        "f8": "Content you can update yourself: hours, prices, a new service"
       },
       "whoFor": {
         "heading": "Who Buys This",
@@ -1247,11 +1247,11 @@
         "subtitle": "What firms ask us before committing.",
         "q1": {
           "question": "How many pages do I actually need?",
-          "answer": "Usually one per thing you want to be found for, plus the basics. A plumber offering boiler repairs, bathroom installation and emergency callouts needs three service pages, not one page listing all three — search engines match a search to a page, so more focused pages means more chances to be found. Five pages covers most small firms; ten is common once each service gets its own."
+          "answer": "Usually one per thing you want to be found for, plus the basics. A plumber offering boiler repairs, bathroom installation and emergency callouts needs three service pages. Search engines match a search to a page, so more focused pages means more chances to be found. Five pages covers most small firms; ten is common once each service gets its own."
         },
         "q2": {
           "question": "Do I have to write all the content myself?",
-          "answer": "No, but supplying the raw material speeds things up and keeps the cost down. Most small business sites need 500 to 1,000 words in total. If you can give us rough notes, a list of services and some photos, we can shape it. If you would rather we wrote it from an interview, that is quoted as extra."
+          "answer": "No, but supplying the raw material speeds things up and keeps the cost down. Most small business sites need 500 to 1,000 words in total. Give us rough notes, a list of services and some photos and we can shape it from there. If you would rather we wrote it from an interview, that is quoted as extra."
         },
         "q3": {
           "question": "What if I already have a domain or a half-finished site?",
@@ -1259,7 +1259,7 @@
         },
         "q4": {
           "question": "Can it grow later if the business grows?",
-          "answer": "Yes. Adding pages, a blog, booking or a shop later is normal. Because you own the code and it is built on standard technology rather than a proprietary platform, expanding it does not mean starting again — and it does not have to be us that does it."
+          "answer": "Yes. Adding pages, a blog, booking or a shop later is normal. Because you own the code and it is built on standard technology rather than a proprietary platform, expanding it does not mean starting again. It does not have to be us that does it, either."
         },
         "q5": {
           "question": "Will it work properly on phones?",
@@ -1270,25 +1270,25 @@
     },
     "bespoke": {
       "navLabel": "Bespoke Web Applications",
-      "kicker": "Bespoke Software Development — South Wales and Remote",
+      "kicker": "Bespoke Software Development: South Wales and Remote",
       "title": "When Off-the-Shelf Software Nearly Fits",
-      "subtitle": "Client portals, internal tools, dashboards and workflow systems, built around how your business actually runs.",
+      "subtitle": "Client portals, internal tools, dashboards and workflow systems, built around the way your business runs.",
       "intro": {
         "p1": "Most businesses reach a point where the software is shaping the process rather than serving it. The signs are familiar: a spreadsheet nobody is allowed to touch, the same information typed into three systems, a monthly report that takes somebody two days, or a subscription paid for one feature out of forty.",
-        "p2": "We design and build custom web applications for that gap — client portals, booking and scheduling systems, internal dashboards, quoting tools, and integrations that make existing systems talk to each other. Built on .NET or Node with a typed front end, hosted on Microsoft Azure, with the same accessibility and security standards as everything else we ship.",
+        "p2": "We design and build custom web applications for that gap: client portals, booking and scheduling systems, internal dashboards, quoting tools, and integrations that make existing systems talk to each other. Built on .NET or Node with a typed front end, hosted on Microsoft Azure, with the same accessibility and security standards as everything else we ship.",
         "p3": "We are also happy to tell you when not to build. If a £30-a-month product does ninety per cent of what you need, buying it is the right answer and we will say so. Custom is worth it when the remaining ten per cent is where your margin lives, when nothing off the shelf fits the workflow, or when the licence cost across your team has outgrown the cost of owning the thing outright."
       },
       "included": {
         "heading": "How a Bespoke Build Runs",
         "subtitle": "Delivered in milestones, so you see working software early.",
-        "f1": "Discovery that starts with the business problem, not a feature list",
+        "f1": "Discovery that starts with the business problem you need solved",
         "f2": "User stories with acceptance criteria, and wireframes for key screens",
         "f3": "Phasing options, so you can launch a useful first version and expand",
-        "f4": "Working software on a staging URL at every milestone, not a progress bar",
+        "f4": "Working software you can use on a staging URL at every milestone",
         "f5": "REST or GraphQL APIs with OpenAPI contracts and versioning",
         "f6": "Authentication, role-based permissions and audit trails where needed",
         "f7": "Automated tests, type checking and CI so it survives future changes",
-        "f8": "Source code in your own repository from day one — no lock-in"
+        "f8": "Source code in your own repository from day one, with no lock-in"
       },
       "whoFor": {
         "heading": "Who Buys This",
@@ -1304,7 +1304,7 @@
       },
       "pricing": {
         "heading": "What Bespoke Software Costs",
-        "body": "Bespoke work is quoted individually. There is no honest range to publish, because scope varies more than in any other kind of project — the same three-word description can mean two weeks or six months. What you get instead is a free discovery conversation, an honest view on whether building is even the right call, and a fixed written quote with assumptions and exclusions stated plainly before any work begins.",
+        "body": "Bespoke work is quoted individually. There is no honest range to publish, because scope varies more than in any other kind of project. The same three-word description can mean two weeks or six months. What you get instead is a free discovery conversation, a straight view on whether building is even the right call, and a fixed written quote with assumptions and exclusions stated plainly before any work begins.",
         "cta": "Start with a conversation"
       },
       "faq": {
@@ -1316,11 +1316,11 @@
         },
         "q2": {
           "question": "Can we start small instead of committing to everything?",
-          "answer": "Yes, and for most projects that is what we recommend. The first phase delivers a genuinely useful slice — one workflow, one user group — that you can put in front of real users. What they do with it usually changes what phase two should be, which is a much cheaper way to find that out than building the whole thing first."
+          "answer": "Yes, and for most projects that is what we recommend. The first phase delivers a useful slice of the thing (one workflow, one user group) that you can put in front of real users. What they do with it usually changes what phase two should be, and finding that out early is much cheaper than building the whole thing first."
         },
         "q3": {
           "question": "What happens if we want to take it elsewhere?",
-          "answer": "Everything transfers. Source code lives in a repository you own from day one, hosting and third-party accounts are in your name, and handover includes documentation and a walkthrough. There are no proprietary platforms and no clauses making it awkward to leave. That is deliberate — it keeps us honest."
+          "answer": "Everything transfers. Source code lives in a repository you own from day one, hosting and third-party accounts are in your name, and handover includes documentation and a walkthrough. There are no proprietary platforms and no clauses making it awkward to leave."
         },
         "q4": {
           "question": "Is AI used in the build, and is our data safe?",
@@ -1328,7 +1328,7 @@
         },
         "q5": {
           "question": "What about support after launch?",
-          "answer": "Discussed openly and never compulsory. Options range from a maintenance retainer covering fixes, dependency updates and small changes, through to a clean handover to your own team or another developer. The codebase is documented either way. You are not locked into us to keep your own software running."
+          "answer": "Support is optional, and we will talk it through openly. It can be a maintenance retainer covering fixes, dependency updates and small changes, or a clean handover to your own team or another developer. The codebase is documented either way, so keeping your software running does not depend on us."
         }
       },
       "relatedHeading": "Related"
