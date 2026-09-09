@@ -5,22 +5,15 @@
         <p class="text-sm font-semibold uppercase tracking-wide text-white/70 mb-3">
           {{ t('pricing.hero.kicker') }}
         </p>
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('pricing.hero.title') }}</h1>
-        <p class="text-lg text-white/80 max-w-2xl">{{ t('pricing.hero.subtitle') }}</p>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">   
+          {{ t('pricing.packagesHeading') }}
+        </h1>
       </div>
     </section>
-
     <section class="py-16 lg:py-24 bg-white" aria-labelledby="packages-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="max-w-3xl mx-auto text-center text-lg text-text-secondary leading-relaxed mb-16">
-          {{ t('pricing.intro.p1') }}
-        </p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        
 
-        <SectionHeading heading-id="packages-heading" :subtitle="t('pricing.packagesSubtitle')">
-          {{ t('pricing.packagesHeading') }}
-        </SectionHeading>
-
-        <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <article
             v-for="tier in tiers"
             :key="tier.key"
@@ -61,18 +54,19 @@
             <p class="text-3xl font-bold text-primary mb-2">{{ t('pricing.care.price') }}</p>
             <p class="text-text-secondary">{{ t('pricing.care.subtitle') }}</p>
           </div>
-          <div class="space-y-4 text-text-secondary leading-relaxed">
-            <p>{{ t('pricing.care.p1') }}</p>
-            <p>{{ t('pricing.care.p2') }}</p>
+          <div class="text-text-secondary leading-relaxed">
+            <ul class="space-y-3">
+              <li v-for="feature in careFeatures" :key="feature" class="flex items-start gap-3 text-sm">
+                <span class="text-primary font-bold shrink-0" aria-hidden="true">&check;</span>
+                <span>{{ feature }}</span>
+              </li>
+            </ul>
+            <p class="mt-4 text-sm">{{ t('pricing.care.note') }}</p>
           </div>
         </div>
 
-        <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-          <div class="bg-white rounded-lg border border-border p-6 lg:p-8 h-full">
-            <h2 class="text-xl font-bold text-text-primary mb-3">{{ t('pricing.ownership.heading') }}</h2>
-            <p class="text-text-secondary leading-relaxed">{{ t('pricing.ownership.p1') }}</p>
-          </div>
-          <div class="bg-white rounded-lg border border-border p-6 lg:p-8 h-full">
+        <div class="mt-16 max-w-2xl mx-auto">
+          <div class="bg-white rounded-lg border border-border p-6 lg:p-8">
             <h2 class="text-xl font-bold text-text-primary mb-3">{{ t('pricing.bilingual.heading') }}</h2>
             <p class="text-text-secondary leading-relaxed">{{ t('pricing.bilingual.p1') }}</p>
           </div>
@@ -151,6 +145,8 @@ const tiers = computed(() => [
     featured: false,
   },
 ])
+
+const careFeatures = computed(() => [1, 2, 3, 4, 5].map((n) => t(`pricing.care.f${n}`)))
 
 const faqItems = computed(() =>
   [1, 2, 3, 4, 5].map((n) => ({ question: t(`pricing.q${n}`), answer: t(`pricing.a${n}`) }))

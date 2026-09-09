@@ -1044,16 +1044,16 @@
       "heading": "Keeping It Running",
       "price": "From £35 a month",
       "subtitle": "Optional. You own the site either way.",
-      "p1": "Hosting, security patching, dependency updates, automated backups, uptime monitoring and small content changes: opening hours, prices, a new service, a batch of photos. It stops the site quietly rotting after launch.",
-      "p2": "If you would rather handle it yourself or hand it to another developer, that is fine. The code is documented, the accounts are in your name, and there is no exit fee."
+      "f1": "Hosting",
+      "f2": "Security patching and dependency updates",
+      "f3": "Automated backups",
+      "f4": "Uptime monitoring",
+      "f5": "Small content changes: updated hours, prices, a new service, a batch of photos",
+      "note": "Cancel any time. There's no exit fee, and the domain, hosting account and code stay registered in your name regardless."
     },
     "bilingual": {
       "heading": "Welsh Language Sites",
       "p1": "A full bilingual English and Welsh version of any package adds roughly 30 to 40 per cent, depending on how much content needs translating. That covers separate URLs for each language, correct hreflang annotations, proper language tagging and a working language switcher, rather than a translation widget bolted on top. This website is built that way, so you can see the result before you commit."
-    },
-    "ownership": {
-      "heading": "What You Own",
-      "p1": "The domain is registered in your name, not ours, and so are the hosting account and the source code. You pay the registrar directly, usually £10 to £15 a year, which means the domain is yours to keep and yours to take with you if you ever move to another developer. Third-party fees, such as Stripe's transaction charges, are also paid by you directly and sit outside the prices above."
     },
     "faqHeading": "Questions About Cost",
     "faqSubtitle": "The things people ask before they commit to a number.",

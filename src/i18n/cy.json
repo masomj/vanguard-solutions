@@ -1044,16 +1044,16 @@
       "heading": "Ei Gadw i Redeg",
       "price": "O £35 y mis",
       "subtitle": "Dewisol. Chi sy'n berchen ar y safle beth bynnag.",
-      "p1": "Cynnal, clytio diogelwch, diweddariadau dibyniaeth, copïau wrth gefn awtomataidd, monitro amser gweithredu a newidiadau cynnwys bach: oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau. Mae'n atal y safle rhag pydru'n dawel ar ôl lansio.",
-      "p2": "Os byddai'n well gennych ei drin eich hun neu ei drosglwyddo i ddatblygwr arall, mae hynny'n iawn. Mae'r cod wedi'i ddogfennu, mae'r cyfrifon yn eich enw chi, a does dim ffi am adael."
+      "f1": "Cynnal",
+      "f2": "Clytio diogelwch a diweddariadau dibyniaeth",
+      "f3": "Copïau wrth gefn awtomataidd",
+      "f4": "Monitro amser gweithredu",
+      "f5": "Newidiadau cynnwys bach: oriau agor, prisiau, gwasanaeth newydd, llwyth o luniau",
+      "note": "Gallwch ganslo unrhyw bryd. Does dim ffi am adael, ac mae'r parth, y cyfrif cynnal a'r cod yn parhau i fod wedi'u cofrestru yn eich enw chi beth bynnag."
     },
     "bilingual": {
       "heading": "Safleoedd Cymraeg",
       "p1": "Mae fersiwn dwyieithog llawn Saesneg a Chymraeg o unrhyw becyn yn ychwanegu tua 30 i 40 y cant, gan ddibynnu ar faint o gynnwys sydd angen ei gyfieithu. Mae hynny'n cwmpasu URLau ar wahân i bob iaith, nodiadau hreflang cywir, tagio iaith priodol a newidydd iaith gweithredol, yn hytrach na widget cyfieithu wedi'i folltio ar ben. Mae'r wefan hon wedi'i hadeiladu felly, fel y gallwch weld y canlyniad cyn ymrwymo."
-    },
-    "ownership": {
-      "heading": "Beth Sy'n Eiddo i Chi",
-      "p1": "Mae'r parth wedi'i gofrestru yn eich enw chi, nid yn ein henw ni, ac felly hefyd y cyfrif cynnal a'r cod ffynhonnell. Chi sy'n talu'r cofrestrydd yn uniongyrchol, fel arfer £10 i £15 y flwyddyn, sy'n golygu mai chi biau'r parth i'w gadw ac i fynd ag ef gyda chi os byddwch byth yn symud at ddatblygwr arall. Mae ffioedd trydydd parti, fel taliadau trafodiad Stripe, hefyd yn cael eu talu gennych chi'n uniongyrchol ac maent y tu allan i'r prisiau uchod."
     },
     "faqHeading": "Cwestiynau Am Gost",
     "faqSubtitle": "Y pethau mae pobl yn eu gofyn cyn ymrwymo i rif.",

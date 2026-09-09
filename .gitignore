@@ -1,3 +1,7 @@
+# Internal operational docs — this repo is PUBLIC, keep these out of it.
+# Delete this line if you want the prospecting handover version-controlled here.
+PROSPECTING-HANDOVER.md
+
 # Logs
 logs
 *.log
