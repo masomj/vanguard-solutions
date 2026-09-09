@@ -93,7 +93,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionHeading from '../components/shared/SectionHeading.vue'
 import BaseButton from '../components/shared/BaseButton.vue'
 import FaqSection from '../components/shared/FaqSection.vue'
 import ContactForm from '../components/contact/ContactForm.vue'
