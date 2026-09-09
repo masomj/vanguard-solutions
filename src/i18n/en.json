@@ -805,11 +805,11 @@
   },
   "contactPage": {
     "title": "Contact Us",
-    "subtitle": "Tell us what you need and we will come back with a straight answer. No obligation.",
+    "subtitle": "Tell us what you need and we will get back to you. No obligation.",
     "contactInformation": "Contact Information",
     "email": "Email",
     "responseHeading": "When You'll Hear Back",
-    "responseBody": "Every enquiry gets a written reply by email within 24 hours. Replies usually go out in the evenings, Monday to Thursday, and on Saturday mornings.",
+    "responseBody": "Every enquiry gets a written reply by email within 24 hours.",
     "beforeYouAskHeading": "Before You Ask",
     "beforeYouAskBody": "Starting prices are published on our pricing page, so you can check you are in the right ballpark before you get in touch.",
     "beforeYouAskCta": "See pricing"
@@ -853,7 +853,6 @@
     "placeholderPhone": "+44 29 1234 5678",
     "send": "Send Message",
     "sending": "Sending...",
-    "replyPromise": "One-person studio. Every enquiry gets a written reply by email within 24 hours.",
     "statusSuccess": "Thank you. Your enquiry has been sent, and you will get a written reply by email within 24 hours.",
     "statusError": "Something went wrong. Please try again or email us at enquiries{'@'}vanguarddigitalsolutions.co.uk.",
     "validationName": "Please enter your full name with at least 2 characters.",

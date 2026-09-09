@@ -29,7 +29,7 @@
                   </div>
                   <div>
                     <h3 class="font-semibold text-text-primary text-sm mb-1">{{ t('contactPage.email') }}</h3>
-                    <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-primary hover:text-primary-light transition-colors no-underline text-sm">
+                    <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-primary hover:text-primary-light transition-colors no-underline text-sm wrap-break-word">
                       enquiries@vanguarddigitalsolutions.co.uk
                     </a>
                   </div>

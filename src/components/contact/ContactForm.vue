@@ -21,8 +21,8 @@
       </ul>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
-      <FormField field-id="name" :label="t('contactForm.name')" required :error="errors.name">
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:mb-5 gap-x-6">
+      <FormField field-id="name" :label="t('contactForm.name')" required :error="errors.name" paired>
         <template #default="{ id, ariaAttrs }">
           <input
             :id="id"
@@ -36,7 +36,7 @@
         </template>
       </FormField>
 
-      <FormField field-id="email" :label="t('contactForm.email')" required :error="errors.email">
+      <FormField field-id="email" :label="t('contactForm.email')" required :error="errors.email" paired>
         <template #default="{ id, ariaAttrs }">
           <input
             :id="id"
@@ -51,8 +51,8 @@
       </FormField>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
-      <FormField field-id="company" :label="t('contactForm.company')">
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:mb-5 gap-x-6">
+      <FormField field-id="company" :label="t('contactForm.company')" paired>
         <template #default="{ id, ariaAttrs }">
           <input
             :id="id"
@@ -66,7 +66,7 @@
         </template>
       </FormField>
 
-      <FormField field-id="phone" :label="t('contactForm.phone')" :hint="t('contactForm.phoneHint')">
+      <FormField field-id="phone" :label="t('contactForm.phone')" :hint="t('contactForm.phoneHint')" paired>
         <template #default="{ id, ariaAttrs }">
           <input
             :id="id"
@@ -100,13 +100,14 @@
       </template>
     </FormField>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:mb-5 gap-x-6">
       <FormField
         field-id="budget"
         :label="t('contactForm.budget')"
         :hint="t('contactForm.budgetHint')"
         required
         :error="errors.budget"
+        paired
       >
         <template #default="{ id, ariaAttrs }">
           <select
@@ -125,7 +126,7 @@
         </template>
       </FormField>
 
-      <FormField field-id="timeline" :label="t('contactForm.timeline')" :hint="t('contactForm.timelineHint')">
+      <FormField field-id="timeline" :label="t('contactForm.timeline')" :hint="t('contactForm.timelineHint')" paired>
         <template #default="{ id, ariaAttrs }">
           <select
             :id="id"
@@ -176,12 +177,9 @@
       />
     </div>
 
-    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-      <BaseButton type="submit" variant="accent" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto shrink-0">
-        {{ status === 'submitting' ? t('contactForm.sending') : t('contactForm.send') }}
-      </BaseButton>
-      <p class="text-sm text-text-secondary leading-relaxed m-0">{{ t('contactForm.replyPromise') }}</p>
-    </div>
+    <BaseButton type="submit" variant="accent" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto shrink-0">
+      {{ status === 'submitting' ? t('contactForm.sending') : t('contactForm.send') }}
+    </BaseButton>
 
     <div role="status" aria-live="polite" class="mt-4">
       <p v-if="status === 'success'" class="p-4 bg-success/10 text-success rounded-md font-medium">

@@ -805,11 +805,11 @@
   },
   "contactPage": {
     "title": "Cysylltu",
-    "subtitle": "Dywedwch wrthym beth sydd ei angen arnoch a byddwn yn dod yn ôl gydag ateb syth. Dim rhwymedigaeth.",
+    "subtitle": "Dywedwch wrthym beth sydd ei angen arnoch a byddwn yn dod yn ôl atoch. Dim rhwymedigaeth.",
     "contactInformation": "Gwybodaeth Gyswllt",
     "email": "E-bost",
     "responseHeading": "Pryd Fyddwch Chi'n Clywed yn Ôl",
-    "responseBody": "Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr. Fel arfer mae atebion yn mynd allan gyda'r nos, dydd Llun i ddydd Iau, a bore dydd Sadwrn.",
+    "responseBody": "Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr.",
     "beforeYouAskHeading": "Cyn i Chi Ofyn",
     "beforeYouAskBody": "Mae prisiau cychwynnol wedi'u cyhoeddi ar ein tudalen prisiau, fel y gallwch wirio eich bod yn yr ystod gywir cyn i chi gysylltu.",
     "beforeYouAskCta": "Gweler y prisiau"
@@ -853,7 +853,6 @@
     "placeholderPhone": "+44 29 1234 5678",
     "send": "Anfon Neges",
     "sending": "Yn anfon...",
-    "replyPromise": "Stiwdio un person. Mae pob ymholiad yn cael ateb ysgrifenedig drwy e-bost o fewn 24 awr.",
     "statusSuccess": "Diolch. Mae eich ymholiad wedi ei anfon, a chewch ateb ysgrifenedig drwy e-bost o fewn 24 awr.",
     "statusError": "Aeth rhywbeth o'i le. Ceisiwch eto neu e-bostiwch enquiries{'@'}vanguarddigitalsolutions.co.uk.",
     "validationName": "Rhowch eich enw llawn gyda o leiaf 2 nod.",
