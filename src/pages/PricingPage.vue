@@ -82,18 +82,9 @@
       heading-id="pricing-faq-heading"
     />
 
-    <section class="py-16 lg:py-24 bg-primary" aria-labelledby="pricing-cta-heading">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 id="pricing-cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-4">
-          {{ t('pricing.ctaHeading') }}
-        </h2>
-        <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">{{ t('pricing.ctaBody') }}</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <BaseButton variant="accent" size="lg" to="/contact">{{ t('pricing.ctaPrimary') }}</BaseButton>
-          <BaseButton size="lg" to="/small-business" class="bg-white/10 hover:bg-white/20 text-white border-white/30">
-            {{ t('pricing.ctaSecondary') }}
-          </BaseButton>
-        </div>
+    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="contact-form-heading">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ContactForm />
       </div>
     </section>
   </div>
@@ -105,6 +96,7 @@ import { useI18n } from 'vue-i18n'
 import SectionHeading from '../components/shared/SectionHeading.vue'
 import BaseButton from '../components/shared/BaseButton.vue'
 import FaqSection from '../components/shared/FaqSection.vue'
+import ContactForm from '../components/contact/ContactForm.vue'
 import { usePageSchema, faqPageSchema } from '../composables/usePageSchema'
 import { SITE_ORIGIN, businessId } from '../seo/siteSchema'
 
