@@ -23,16 +23,18 @@ src/
 │   ├── home/                Home-page sections + CallToAction (reused by
 │   │                        most pages as the closing section).
 │   ├── services/             ServiceCard.
-│   ├── portfolio/           PortfolioCard.
+│   ├── portfolio/           PortfolioCard, PortfolioEmptyState.
 │   ├── contact/              ContactForm, FormField.
 │   ├── cookie/                CookieBanner.
 │   └── shared/               BaseButton, SectionHeading, FaqSection,
 │                            BrandLogo -- generic, reused across pages.
 ├── composables/              useLocale, useSeoMeta, usePageSchema,
 │                            useContactForm, useCookieConsent, useAnalytics.
-├── data/                    Structured content that isn't UI copy (e.g.
-│                            portfolio items) -- lives in TypeScript, typed
-│                            via src/types, not duplicated into i18n JSON.
+├── data/                    Structural, non-copy facts about a data-driven
+│                            set of pages (slugs, tech lists, external
+│                            links, image paths) -- typed via src/types. The
+│                            actual copy for each entry lives in i18n, not
+│                            here; see "i18n" below.
 ├── i18n/                    en.json, cy.json, locales.ts, index.ts.
 ├── seo/                     siteSchema.ts -- the site-wide JSON-LD graph.
 ├── router/index.ts           Route table (see below).
@@ -62,29 +64,39 @@ Two shapes exist for "one template, many pages":
    up in `src/data/portfolio.ts` at render time. Use this when the content is
    data (grows over time, no fixed list to hand-maintain in the router).
 
-**Dynamic (`:param`) routes and prerendering:** `vite.config.ts`'s
-`ssgOptions.includedRoutes` filters out any path containing `:` before
-handing the route list to `vite-ssg` -- a `:slug`-style path has no concrete
-value to prerender, and `:` is an illegal filename character on Windows.
-Adding another dynamic route needs no change here (the filter is generic),
-but it does mean that route's detail pages will only exist once something
-supplies concrete slugs for it to enumerate against.
+**Dynamic (`:param`) routes and prerendering:** a `:slug`-style path has no
+concrete value for `vite-ssg` to prerender on its own, and `:` is an illegal
+filename character on Windows, so `vite.config.ts`'s `ssgOptions.includedRoutes`
+does two things: filters out any remaining `:`-containing path (the 404
+catch-all, and `/portfolio/:slug` itself), then expands the real detail
+pages by mapping `portfolioItems` to concrete paths (`/portfolio/intercopy`,
+`/cy/portfolio/intercopy`, ...) and appending them. Vue Router resolves a
+pushed concrete path against the `:slug` pattern route automatically -- no
+literal route needs registering per item. Add a portfolio entry and its
+detail page prerenders on the next build with no other change; if the array
+is empty, that item's detail pages simply don't exist yet (nothing to
+enumerate), same as the section behaved before InterCopy was added.
 
 Each route also carries `meta.seoKey` (drives the page's title/description
 via `t('seo.<seoKey>.*')` in `useSeoMeta`, called once globally in `App.vue`
 -- **do not call `useSeoMeta()` from a page**) and optionally
-`meta.noindex: true`, which forces `noindex, follow` regardless of `seoKey`.
-Use `noindex` for a real, linkable page that has no indexable content yet
-(see Portfolio below); it keeps its canonical/hreflang tags, unlike the 404
-route which suppresses those entirely.
+`meta.noindex: true`, which forces `noindex, follow` regardless of `seoKey`
+and keeps the route out of `sitemap.xml` (see "SEO" below). Use it for a
+real, linkable page that has no indexable content yet -- the portfolio
+routes carried it while `portfolioItems` was empty, and it came off both
+routes in the same change that added the first real entry. Unlike the 404
+route, a `noindex` route keeps its canonical/hreflang tags.
 
-Breadcrumb JSON-LD is generated centrally in `useSeoMeta.ts` from
-`pathLabelKeys` -- add one `'/path': 'i18n.key'` entry there for a new
-top-level page and the breadcrumb schema follows automatically. This only
-works for paths with a static label; a param-driven detail page (like a
-portfolio item) has no static label for its last segment, so its own
-breadcrumb/creative-work JSON-LD is added directly in the page component via
-`usePageSchema` instead (see `PortfolioDetail.vue`).
+Breadcrumb JSON-LD for *top-level* pages is generated centrally in
+`useSeoMeta.ts` from `pathLabelKeys` -- add one `'/path': 'i18n.key'` entry
+there and the breadcrumb schema follows automatically (see the `/portfolio`
+entry). This only works for paths with a static label; a param-driven detail
+page has no static label for its last segment (the item's title lives in
+i18n, keyed by slug, not in a lookup table of paths), so its own
+`BreadcrumbList` + `CreativeWork` JSON-LD is built and passed to
+`usePageSchema` directly in the page component instead -- see
+`PortfolioDetail.vue` and `breadcrumbListSchema`/`creativeWorkSchema` in
+`usePageSchema.ts`.
 
 ## i18n
 
@@ -101,9 +113,20 @@ not just new ones. Don't treat a Welsh string as verified copy.
 Escape any `@` in a locale string as `{'@'}` -- vue-i18n treats a bare `@` as
 linked-message syntax during SSR compilation and the build will fail.
 
-Structured, non-copy content (client names, tech stacks, image paths, dates)
-belongs in a typed `src/data/*.ts` file, not duplicated into both locale
-JSON files -- see `src/data/portfolio.ts`.
+**Copy for a data-driven set of items** (e.g. each portfolio case study)
+lives under `portfolioItems.<slug>.*` in both locale files -- title, client,
+status, summary, description, features -- exactly like `serviceDetail.<key>.*`
+already does for the four services. Only genuinely non-copy, non-translated
+facts (tech/tool names, image paths, external URLs, the slug itself) live on
+the `PortfolioItem` object in `src/data/portfolio.ts`. A component resolves
+an item's copy with `t(\`portfolioItems.${item.slug}.title\`)` etc., the same
+pattern `ServiceDetailPage.vue`'s `c()` helper uses for `serviceKey`.
+
+For a **variable-length translated list** (a project's feature bullets,
+unlike a service's fixed 8-item checklist), read it with `tm()` from
+`useI18n()` rather than `t()` -- `tm(\`portfolioItems.${slug}.features\`)`
+returns the JSON array for the current locale as-is, no need to pre-declare
+how many items exist or iterate fixed `f1..fN` keys.
 
 ## SEO / structured data
 
@@ -120,7 +143,8 @@ JSON files -- see `src/data/portfolio.ts`.
   walks the actual `dist/` output after build. The one exception is a
   `noindex` route that still gets a static file (unlike the 404 catch-all,
   which never prerenders) -- add its base path to `EXCLUDED_FROM_SITEMAP` in
-  that script, and remove it in the same change that drops `noindex: true`.
+  that script in the same change that sets `noindex: true` on the route, and
+  remove both together once the route has real content.
 
 ## CSS tokens
 
