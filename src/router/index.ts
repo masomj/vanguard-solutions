@@ -17,6 +17,9 @@ const pages = [
   { path: 'services/bespoke-software', name: 'service-bespoke', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceBespoke', serviceKey: 'bespoke' },
   { path: 'contact', name: 'contact', component: () => import('../pages/ContactPage.vue'), seoKey: 'contact' },
   { path: 'cookie-policy', name: 'cookie-policy', component: () => import('../pages/CookiePolicyPage.vue'), seoKey: 'cookiePolicy' },
+  // noindex: the section ships with no case studies yet. Drop this once portfolioItems has entries.
+  { path: 'portfolio', name: 'portfolio', component: () => import('../pages/PortfolioPage.vue'), seoKey: 'portfolio', noindex: true },
+  { path: 'portfolio/:slug', name: 'portfolio-detail', component: () => import('../pages/PortfolioDetail.vue'), seoKey: 'portfolioDetail', noindex: true },
 ] as const
 
 /** Route names are prefixed for non-default locales so they stay unique. */
@@ -34,7 +37,12 @@ function buildLocaleRoutes(locale: AppLocale): RouteRecordRaw[] {
       path,
       name: routeName(page.name, locale),
       component: page.component,
-      meta: { seoKey: page.seoKey, locale, serviceKey: 'serviceKey' in page ? page.serviceKey : undefined },
+      meta: {
+        seoKey: page.seoKey,
+        locale,
+        serviceKey: 'serviceKey' in page ? page.serviceKey : undefined,
+        noindex: 'noindex' in page ? page.noindex : undefined,
+      },
     } as RouteRecordRaw
   })
 }

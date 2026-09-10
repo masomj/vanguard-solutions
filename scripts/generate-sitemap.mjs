@@ -29,6 +29,11 @@ const RANKS = {
 }
 const DEFAULT_RANK = { priority: '0.5', changefreq: 'monthly' }
 
+// Paths rendered with `noindex` (see router meta) should not be offered to
+// crawlers via the sitemap either. Keep this in sync with the router --
+// remove an entry here in the same change that drops its `noindex: true`.
+const EXCLUDED_FROM_SITEMAP = new Set(['/portfolio'])
+
 function findRoutes(dir, base = '') {
   const routes = []
 
@@ -65,9 +70,9 @@ export function generateSitemap(outDir = 'dist') {
   const rendered = new Set(findRoutes(dist))
 
   // Assets directories contain no index.html, so anything left is a real page.
-  const basePaths = [...new Set([...rendered].map(stripLocale))].sort((a, b) =>
-    a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)
-  )
+  const basePaths = [...new Set([...rendered].map(stripLocale))]
+    .filter((path) => !EXCLUDED_FROM_SITEMAP.has(path))
+    .sort((a, b) => (a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)))
 
   const urls = basePaths.flatMap((basePath) => {
     const rank = RANKS[basePath] ?? DEFAULT_RANK

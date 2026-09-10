@@ -26,6 +26,7 @@
     "process": "Process",
     "howWeWork": "How We Work",
     "smallBusiness": "Small Business",
+    "portfolio": "Portfolio",
     "pricing": "Pricing",
     "contact": "Contact",
     "getQuote": "Get a Quote",
@@ -990,6 +991,18 @@
       "ogTitle": "404 Page Not Found",
       "ogDescription": "This page could not be found. Explore our web design services for South Wales businesses, or contact us for a free quote."
     },
+    "portfolio": {
+      "title": "Web Design Portfolio – Vanguard Digital Solutions",
+      "description": "A look at the websites, online shops and booking systems built for small businesses across South Wales. New case studies are added as projects launch.",
+      "ogTitle": "Our Web Design Portfolio",
+      "ogDescription": "Websites, online shops and booking systems built for small businesses across South Wales."
+    },
+    "portfolioDetail": {
+      "title": "Project Case Study – Vanguard Digital Solutions",
+      "description": "A case study from Vanguard Digital Solutions, covering the brief, the build and the technology used for a real client project in South Wales.",
+      "ogTitle": "Project Case Study",
+      "ogDescription": "A web design and development case study from Vanguard Digital Solutions."
+    },
     "fallbackTitle": "Vanguard Digital Solutions"
   },
   "pricing": {
@@ -1331,6 +1344,30 @@
         }
       },
       "relatedHeading": "Related"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Our Work",
+      "subtitle": "Websites, online shops and booking systems built for small businesses across South Wales."
+    },
+    "empty": {
+      "heading": "First projects launching soon",
+      "body": "This section will hold real case studies as projects launch. Check back soon, or get in touch if you would like to be one of the first.",
+      "cta": "Get in touch"
+    }
+  },
+  "portfolioDetail": {
+    "clientLabel": "Client",
+    "servicesLabel": "Services provided",
+    "techLabel": "Technology used",
+    "galleryLabel": "Gallery",
+    "galleryImageAlt": "{title} screenshot {index}",
+    "visitSite": "Visit live site",
+    "notFound": {
+      "heading": "Project not found",
+      "body": "This case study could not be found. Browse the full portfolio instead.",
+      "cta": "Back to portfolio"
     }
   }
 }

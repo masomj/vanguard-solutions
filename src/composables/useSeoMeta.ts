@@ -26,6 +26,7 @@ const pathLabelKeys: Record<string, string> = {
   '/pricing': 'nav.pricing',
   '/contact': 'nav.contact',
   '/cookie-policy': 'footer.cookiePolicy',
+  '/portfolio': 'nav.portfolio',
 }
 
 export function useSeoMeta() {
@@ -38,6 +39,14 @@ export function useSeoMeta() {
 
   /** True on the catch-all route, which must never be indexed or canonicalised. */
   const isNotFound = computed(() => seoKey.value === 'notFound')
+
+  /**
+   * True on any route flagged `noindex` in the router (e.g. the portfolio
+   * section before it has real case studies). Unlike `isNotFound`, these
+   * routes keep their canonical and hreflang tags -- they are real pages,
+   * just not ready to be indexed yet.
+   */
+  const isNoindex = computed(() => isNotFound.value || (route.meta.noindex as boolean | undefined) === true)
 
   const title = computed(() => {
     if (!seoBaseKey.value) return t('seo.fallbackTitle')
@@ -142,7 +151,7 @@ export function useSeoMeta() {
       { name: 'description', content: description.value },
       {
         name: 'robots',
-        content: isNotFound.value
+        content: isNoindex.value
           ? 'noindex, follow'
           : 'index, follow, max-image-preview:large, max-snippet:-1',
       },

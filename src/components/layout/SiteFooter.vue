@@ -78,6 +78,7 @@ const quickLinks = computed(() => [
   { to: localePath('/technology'), label: t('nav.technology') },
   { to: localePath('/process'), label: t('nav.process') },
   { to: localePath('/small-business'), label: t('nav.smallBusiness') },
+  { to: localePath('/portfolio'), label: t('nav.portfolio') },
   { to: localePath('/contact'), label: t('footer.contactUs') },
   { to: localePath('/cookie-policy'), label: t('footer.cookiePolicy') },
 ])

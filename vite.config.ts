@@ -18,10 +18,12 @@ export default defineConfig({
     dirStyle: 'nested',
     formatting: 'minify',
     includedRoutes(paths: string[]) {
-      // Both locale trees are static routes, so they arrive here already
-      // enumerated (/, /about, ... and /cy, /cy/about, ...). Only the
-      // catch-alls need excluding -- they have no concrete path to render.
-      return paths.filter(path => !path.includes(':pathMatch'))
+      // Both locale trees are mostly static routes, so they arrive here
+      // already enumerated (/, /about, ... and /cy, /cy/about, ...). Routes
+      // with a param (the catch-all 404, /portfolio/:slug) have no concrete
+      // path to render until something supplies real values, so exclude any
+      // path still carrying a ':' segment rather than just ':pathMatch'.
+      return paths.filter(path => !path.includes(':'))
     },
     // Sitemap is generated from the rendered output, not a hand-kept list, so
     // a new route can never be silently missing from it.

@@ -4,6 +4,21 @@ export interface ServiceItem {
   description: string
 }
 
+export interface PortfolioItem {
+  slug: string
+  title: string
+  client: string
+  /** One-line summary shown on the card and as the case-study intro. */
+  summary: string
+  services: string[]
+  tech: string[]
+  heroImage: string
+  gallery?: string[]
+  externalUrl?: string
+  /** ISO date (yyyy-mm-dd), when the project launched or was delivered. */
+  date: string
+}
+
 export interface NavItem {
   to: string
   label: string
@@ -57,6 +72,8 @@ declare global {
 
 declare module 'vue-router' {
   interface RouteMeta {
-    seoKey?: 'home' | 'about' | 'services' | 'technology' | 'process' | 'smallBusiness' | 'contact' | 'cookiePolicy' | 'notFound'
+    seoKey?: 'home' | 'about' | 'services' | 'technology' | 'process' | 'smallBusiness' | 'contact' | 'cookiePolicy' | 'notFound' | 'portfolio' | 'portfolioDetail'
+    /** Forces `noindex, follow` regardless of seoKey. Set on routes with no indexable content yet. */
+    noindex?: boolean
   }
 }

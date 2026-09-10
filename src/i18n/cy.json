@@ -26,6 +26,7 @@
     "process": "Proses",
     "howWeWork": "Sut Rydym yn Gweithio",
     "smallBusiness": "Busnes Bach",
+    "portfolio": "Portffolio",
     "pricing": "Prisiau",
     "contact": "Cysylltu",
     "getQuote": "Cael Dyfynbris",
@@ -990,6 +991,18 @@
       "ogTitle": "404 Tudalen Heb ei Chanfod",
       "ogDescription": "Nid oedd modd dod o hyd i'r dudalen hon. Archwiliwch ein gwasanaethau gwe ar gyfer busnesau De Cymru, neu cysylltwch am ddyfynbris am ddim."
     },
+    "portfolio": {
+      "title": "Portffolio Dylunio Gwe – Vanguard Digital Solutions",
+      "description": "Golwg ar y gwefannau, siopau ar-lein a systemau archebu a adeiladwyd ar gyfer busnesau bach ledled De Cymru. Ychwanegir astudiaethau achos newydd wrth i brosiectau lansio.",
+      "ogTitle": "Ein Portffolio Dylunio Gwe",
+      "ogDescription": "Gwefannau, siopau ar-lein a systemau archebu a adeiladwyd ar gyfer busnesau bach ledled De Cymru."
+    },
+    "portfolioDetail": {
+      "title": "Astudiaeth Achos Prosiect – Vanguard Digital Solutions",
+      "description": "Astudiaeth achos gan Vanguard Digital Solutions, yn ymdrin a'r briff, yr adeiladwaith a'r dechnoleg a ddefnyddiwyd ar gyfer prosiect cleient go iawn yn Ne Cymru.",
+      "ogTitle": "Astudiaeth Achos Prosiect",
+      "ogDescription": "Astudiaeth achos dylunio a datblygu gwe gan Vanguard Digital Solutions."
+    },
     "fallbackTitle": "Vanguard Digital Solutions"
   },
   "pricing": {
@@ -1331,6 +1344,30 @@
         }
       },
       "relatedHeading": "Cysylltiedig"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Ein Gwaith",
+      "subtitle": "Gwefannau, siopau ar-lein a systemau archebu a adeiladwyd ar gyfer busnesau bach ledled De Cymru."
+    },
+    "empty": {
+      "heading": "Prosiectau cyntaf yn lansio'n fuan",
+      "body": "Bydd yr adran hon yn cynnwys astudiaethau achos go iawn wrth i brosiectau lansio. Dewch yn ôl yn fuan, neu cysylltwch a ni os hoffech fod yn un o'r cyntaf.",
+      "cta": "Cysylltu a ni"
+    }
+  },
+  "portfolioDetail": {
+    "clientLabel": "Cleient",
+    "servicesLabel": "Gwasanaethau a ddarparwyd",
+    "techLabel": "Technoleg a ddefnyddiwyd",
+    "galleryLabel": "Oriel",
+    "galleryImageAlt": "{title} sgrinlun {index}",
+    "visitSite": "Ymweld a'r wefan fyw",
+    "notFound": {
+      "heading": "Prosiect heb ei ganfod",
+      "body": "Nid oedd modd dod o hyd i'r astudiaeth achos hon. Porwch y portffolio llawn yn lle hynny.",
+      "cta": "Yn ôl i'r portffolio"
     }
   }
 }
