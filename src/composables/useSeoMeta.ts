@@ -41,10 +41,10 @@ export function useSeoMeta() {
   const isNotFound = computed(() => seoKey.value === 'notFound')
 
   /**
-   * True on any route flagged `noindex` in the router (e.g. the portfolio
-   * section before it has real case studies). Unlike `isNotFound`, these
-   * routes keep their canonical and hreflang tags -- they are real pages,
-   * just not ready to be indexed yet.
+   * True on any route flagged `noindex` in the router -- a real, linkable
+   * page with no indexable content yet (the portfolio section shipped this
+   * way before it had a first case study). Unlike `isNotFound`, these routes
+   * keep their canonical and hreflang tags.
    */
   const isNoindex = computed(() => isNotFound.value || (route.meta.noindex as boolean | undefined) === true)
 

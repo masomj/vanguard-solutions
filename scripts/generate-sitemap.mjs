@@ -21,6 +21,7 @@ const RANKS = {
   '/services/booking-systems': { priority: '0.9', changefreq: 'monthly' },
   '/services/business-website': { priority: '0.9', changefreq: 'monthly' },
   '/services/bespoke-software': { priority: '0.8', changefreq: 'monthly' },
+  '/portfolio': { priority: '0.8', changefreq: 'monthly' },
   '/technology': { priority: '0.8', changefreq: 'monthly' },
   '/process': { priority: '0.8', changefreq: 'monthly' },
   '/contact': { priority: '0.7', changefreq: 'yearly' },
@@ -31,8 +32,9 @@ const DEFAULT_RANK = { priority: '0.5', changefreq: 'monthly' }
 
 // Paths rendered with `noindex` (see router meta) should not be offered to
 // crawlers via the sitemap either. Keep this in sync with the router --
-// remove an entry here in the same change that drops its `noindex: true`.
-const EXCLUDED_FROM_SITEMAP = new Set(['/portfolio'])
+// add an entry here in the same change that adds a route's `noindex: true`,
+// and remove it again when that flag comes off.
+const EXCLUDED_FROM_SITEMAP = new Set([])
 
 function findRoutes(dir, base = '') {
   const routes = []

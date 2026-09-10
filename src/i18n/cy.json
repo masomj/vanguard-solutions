@@ -1359,15 +1359,31 @@
   },
   "portfolioDetail": {
     "clientLabel": "Cleient",
-    "servicesLabel": "Gwasanaethau a ddarparwyd",
+    "statusLabel": "Statws",
+    "featuresLabel": "Nodweddion allweddol",
     "techLabel": "Technoleg a ddefnyddiwyd",
-    "galleryLabel": "Oriel",
-    "galleryImageAlt": "{title} sgrinlun {index}",
     "visitSite": "Ymweld a'r wefan fyw",
     "notFound": {
       "heading": "Prosiect heb ei ganfod",
       "body": "Nid oedd modd dod o hyd i'r astudiaeth achos hon. Porwch y portffolio llawn yn lle hynny.",
       "cta": "Yn ôl i'r portffolio"
+    }
+  },
+  "portfolioItems": {
+    "intercopy": {
+      "title": "InterCopy",
+      "client": "Mason Jones",
+      "status": "Wrthi'n cael ei ddatblygu",
+      "summary": "Platfform rheoli cyfieithu wedi'i adeiladu ar gyfer timau sy'n rhyddhau cynhyrchion mewn sawl iaith.",
+      "description": "Comisiynwyd i adeiladu InterCopy, platfform rheoli cyfieithu ar gyfer timau sy'n rhyddhau cynhyrchion mewn sawl iaith. Mae'n disodli'r dull taenlen-a-thrafodaeth-Slack y mae'r rhan fwyaf o dimau'n ei ddefnyddio i leoleiddio cynnyrch gyda gweithle a rennir: coeden gynnwys ar gyfer trefnu llinynnau, grid cyfieithu ochr-yn-ochr, gweithlif adolygu gyda hanes cymeradwyo, a pheiriant geirfa a rheolau arddull sy'n dal anghysondeb terminoleg cyn iddo gael ei ryddhau. Mae ategyn Figma yn cydamseru ffeiliau dylunio yn uniongyrchol a'r cynnwys sydd oddi tanynt, fel bod cyfieithydd yn gallu gweld y sgrin wirioneddol y mae llinyn yn ymddangos arni yn hytrach na gweithio o allforiad gwastad. Mae ffeiliau locale yn allforio i i18next, vue-i18n, react-intl a next-intl, gydag API ac integreiddiad CI/CD fel bod cyfieithiadau'n llifo'n syth i mewn i biblinell adeiladu. Wedi'i adeiladu o'r dechrau i'r diwedd: API ASP.NET Core 10, PostgreSQL, Keycloak ar gyfer dilysu, blaen Nuxt 4, ac ategyn Figma TypeScript, wedi'i ddefnyddio ar seilwaith pwrpasol gyda GitHub Actions yn trin CI/CD.",
+      "features": [
+        "Coeden gynnwys + grid cyfieithu aml-iaith",
+        "Gweithlif adolygu gyda dyfarniadau a hanes llawn",
+        "Ategyn Figma — cydamseru byw rhwng dyluniadau a chynnwys wedi'i gyfieithu",
+        "Gorfodi geirfa a rheolau arddull ar gyfer terminoleg gyson",
+        "Gweithleoedd yn seiliedig ar rôl (Gwyliwr / Golygydd / Adolygydd / Gweinyddwr)",
+        "Integreiddiad API a CI/CD ar gyfer allforio locale awtomatig"
+      ]
     }
   }
 }

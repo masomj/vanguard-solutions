@@ -42,6 +42,8 @@ export function faqPageSchema(items: { question: string; answer: string }[]) {
  * Builds a CollectionPage block for the portfolio index. `items` is empty
  * until real case studies exist, in which case `mainEntity` is simply
  * omitted -- an empty ItemList would claim entries the page doesn't show.
+ * Item titles live in i18n, not on `PortfolioItem`, so only the URL (not a
+ * name) is available here -- fine, `ListItem.url` alone is valid schema.
  */
 export function collectionPageSchema(name: string, description: string, items: PortfolioItem[]) {
   return {
@@ -65,18 +67,41 @@ export function collectionPageSchema(name: string, description: string, items: P
   }
 }
 
-/** Builds a CreativeWork block for one portfolio case study. */
-export function creativeWorkSchema(item: PortfolioItem) {
+/**
+ * Builds a CreativeWork block for one portfolio case study. Copy (title,
+ * description) is resolved by the caller via i18n and passed in, since
+ * `PortfolioItem` itself only carries structural fields.
+ */
+export function creativeWorkSchema(params: {
+  slug: string
+  title: string
+  description: string
+  image: string | null
+  tech: string[]
+  externalLink: string
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
-    name: item.title,
-    about: item.client,
-    description: item.summary,
-    url: `${SITE_ORIGIN}/portfolio/${item.slug}`,
-    image: `${SITE_ORIGIN}${item.heroImage}`,
-    dateCreated: item.date,
-    keywords: item.tech.join(', '),
-    ...(item.externalUrl ? { sameAs: item.externalUrl } : {}),
+    name: params.title,
+    description: params.description,
+    url: `${SITE_ORIGIN}/portfolio/${params.slug}`,
+    ...(params.image ? { image: `${SITE_ORIGIN}${params.image}` } : {}),
+    keywords: params.tech.join(', '),
+    sameAs: params.externalLink,
+  }
+}
+
+/** Builds a BreadcrumbList block from an already-resolved Home > ... > page trail. */
+export function breadcrumbListSchema(trail: { name: string; path: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: `${SITE_ORIGIN}${crumb.path}`,
+    })),
   }
 }

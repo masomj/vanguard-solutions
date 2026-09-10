@@ -17,9 +17,8 @@ const pages = [
   { path: 'services/bespoke-software', name: 'service-bespoke', component: () => import('../pages/ServiceDetailPage.vue'), seoKey: 'serviceBespoke', serviceKey: 'bespoke' },
   { path: 'contact', name: 'contact', component: () => import('../pages/ContactPage.vue'), seoKey: 'contact' },
   { path: 'cookie-policy', name: 'cookie-policy', component: () => import('../pages/CookiePolicyPage.vue'), seoKey: 'cookiePolicy' },
-  // noindex: the section ships with no case studies yet. Drop this once portfolioItems has entries.
-  { path: 'portfolio', name: 'portfolio', component: () => import('../pages/PortfolioPage.vue'), seoKey: 'portfolio', noindex: true },
-  { path: 'portfolio/:slug', name: 'portfolio-detail', component: () => import('../pages/PortfolioDetail.vue'), seoKey: 'portfolioDetail', noindex: true },
+  { path: 'portfolio', name: 'portfolio', component: () => import('../pages/PortfolioPage.vue'), seoKey: 'portfolio' },
+  { path: 'portfolio/:slug', name: 'portfolio-detail', component: () => import('../pages/PortfolioDetail.vue'), seoKey: 'portfolioDetail' },
 ] as const
 
 /** Route names are prefixed for non-default locales so they stay unique. */

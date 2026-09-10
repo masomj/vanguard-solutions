@@ -13,13 +13,7 @@
           <PortfolioCard v-for="item in items" :key="item.slug" :item="item" />
         </div>
 
-        <div v-else class="max-w-xl mx-auto text-center py-8">
-          <h2 class="text-2xl font-semibold text-text-primary mb-3">{{ t('portfolio.empty.heading') }}</h2>
-          <p class="text-text-secondary leading-relaxed">{{ t('portfolio.empty.body') }}</p>
-          <div class="mt-8">
-            <BaseButton to="/contact">{{ t('portfolio.empty.cta') }}</BaseButton>
-          </div>
-        </div>
+        <PortfolioEmptyState v-else />
       </div>
     </section>
 
@@ -30,7 +24,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import PortfolioCard from '../components/portfolio/PortfolioCard.vue'
-import BaseButton from '../components/shared/BaseButton.vue'
+import PortfolioEmptyState from '../components/portfolio/PortfolioEmptyState.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 import { portfolioItems } from '../data/portfolio'
 import { usePageSchema, collectionPageSchema } from '../composables/usePageSchema'

@@ -4,19 +4,20 @@ export interface ServiceItem {
   description: string
 }
 
+/**
+ * Structural, non-copy facts about a case study. The actual copy (title,
+ * client, status, summary, description, features) is not on this type --
+ * it lives in `portfolioItems.<slug>.*` in en.json/cy.json, same as every
+ * other piece of on-page text, so it goes through the normal translation
+ * workflow. See `src/data/portfolio.ts`.
+ */
 export interface PortfolioItem {
   slug: string
-  title: string
-  client: string
-  /** One-line summary shown on the card and as the case-study intro. */
-  summary: string
-  services: string[]
+  /** Short, non-translated technology/tool names. */
   tech: string[]
-  heroImage: string
-  gallery?: string[]
-  externalUrl?: string
-  /** ISO date (yyyy-mm-dd), when the project launched or was delivered. */
-  date: string
+  externalLink: string
+  /** No fabricated screenshots -- null renders a placeholder until a real one exists. */
+  heroImage: string | null
 }
 
 export interface NavItem {

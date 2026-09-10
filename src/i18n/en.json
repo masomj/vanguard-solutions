@@ -1359,15 +1359,31 @@
   },
   "portfolioDetail": {
     "clientLabel": "Client",
-    "servicesLabel": "Services provided",
+    "statusLabel": "Status",
+    "featuresLabel": "Key features",
     "techLabel": "Technology used",
-    "galleryLabel": "Gallery",
-    "galleryImageAlt": "{title} screenshot {index}",
     "visitSite": "Visit live site",
     "notFound": {
       "heading": "Project not found",
       "body": "This case study could not be found. Browse the full portfolio instead.",
       "cta": "Back to portfolio"
+    }
+  },
+  "portfolioItems": {
+    "intercopy": {
+      "title": "InterCopy",
+      "client": "Mason Jones",
+      "status": "In active development",
+      "summary": "A translation management platform built for teams shipping products into multiple languages.",
+      "description": "Commissioned to build InterCopy, a translation management platform for teams shipping products into multiple languages. It replaces the spreadsheet-and-Slack-thread approach most teams use to localize a product with a shared workspace: a content tree for organizing strings, a side-by-side translation grid, a review workflow with sign-off history, and a glossary and style-rule engine that catches inconsistent terminology before it ships. A Figma plugin syncs design files directly to the content underneath them, so a translator can see the actual screen a string appears on rather than working from a flat export. Locale files export to i18next, vue-i18n, react-intl and next-intl, with an API and CI/CD integration so translations flow straight into a build pipeline. Built end to end: ASP.NET Core 10 API, PostgreSQL, Keycloak for authentication, a Nuxt 4 frontend, and a TypeScript Figma plugin, deployed on dedicated infrastructure with GitHub Actions handling CI/CD.",
+      "features": [
+        "Content tree + multi-language translation grid",
+        "Review workflow with verdicts and full history",
+        "Figma plugin — live sync between designs and translated content",
+        "Glossary and style-rule enforcement for consistent terminology",
+        "Role-based workspaces (Viewer / Editor / Reviewer / Admin)",
+        "API + CI/CD integration for automated locale exports"
+      ]
     }
   }
 }
