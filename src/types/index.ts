@@ -4,6 +4,22 @@ export interface ServiceItem {
   description: string
 }
 
+/**
+ * Structural, non-copy facts about a case study. The actual copy (title,
+ * client, status, summary, description, features) is not on this type --
+ * it lives in `portfolioItems.<slug>.*` in en.json/cy.json, same as every
+ * other piece of on-page text, so it goes through the normal translation
+ * workflow. See `src/data/portfolio.ts`.
+ */
+export interface PortfolioItem {
+  slug: string
+  /** Short, non-translated technology/tool names. */
+  tech: string[]
+  externalLink: string
+  /** No fabricated screenshots -- null renders a placeholder until a real one exists. */
+  heroImage: string | null
+}
+
 export interface NavItem {
   to: string
   label: string
@@ -57,6 +73,8 @@ declare global {
 
 declare module 'vue-router' {
   interface RouteMeta {
-    seoKey?: 'home' | 'about' | 'services' | 'technology' | 'process' | 'smallBusiness' | 'contact' | 'cookiePolicy' | 'notFound'
+    seoKey?: 'home' | 'about' | 'services' | 'technology' | 'process' | 'smallBusiness' | 'contact' | 'cookiePolicy' | 'notFound' | 'portfolio' | 'portfolioDetail'
+    /** Forces `noindex, follow` regardless of seoKey. Set on routes with no indexable content yet. */
+    noindex?: boolean
   }
 }

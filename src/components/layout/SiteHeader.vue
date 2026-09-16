@@ -99,9 +99,10 @@ const { t } = useI18n()
 const { locale, otherLocale, alternatePath, localePath, rememberChoice } = useLocale()
 
 /**
- * Four top-level slots, not eight. The two groups collect pages that answer the
+ * Five top-level slots, not nine. The two groups collect pages that answer the
  * same question — "what do you build?" and "who are you and how do you work?" —
- * so the bar has room for the CTA and the language toggle without wrapping.
+ * so the bar has room for Portfolio, the CTA and the language toggle without
+ * wrapping.
  *
  * Every destination is still a real anchor in the rendered HTML, so grouping
  * costs nothing in crawlability.
@@ -121,6 +122,7 @@ const navEntries = computed<NavEntry[]>(() => [
       { to: localePath('/services/bespoke-software'), label: t('nav.bespokeSoftware') },
     ],
   },
+  { kind: 'link', id: 'portfolio', to: localePath('/portfolio'), label: t('nav.portfolio') },
   { kind: 'link', id: 'pricing', to: localePath('/pricing'), label: t('nav.pricing') },
   {
     kind: 'group',

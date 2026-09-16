@@ -21,6 +21,7 @@ const RANKS = {
   '/services/booking-systems': { priority: '0.9', changefreq: 'monthly' },
   '/services/business-website': { priority: '0.9', changefreq: 'monthly' },
   '/services/bespoke-software': { priority: '0.8', changefreq: 'monthly' },
+  '/portfolio': { priority: '0.8', changefreq: 'monthly' },
   '/technology': { priority: '0.8', changefreq: 'monthly' },
   '/process': { priority: '0.8', changefreq: 'monthly' },
   '/contact': { priority: '0.7', changefreq: 'yearly' },
@@ -28,6 +29,12 @@ const RANKS = {
   '/cookie-policy': { priority: '0.2', changefreq: 'yearly' },
 }
 const DEFAULT_RANK = { priority: '0.5', changefreq: 'monthly' }
+
+// Paths rendered with `noindex` (see router meta) should not be offered to
+// crawlers via the sitemap either. Keep this in sync with the router --
+// add an entry here in the same change that adds a route's `noindex: true`,
+// and remove it again when that flag comes off.
+const EXCLUDED_FROM_SITEMAP = new Set([])
 
 function findRoutes(dir, base = '') {
   const routes = []
@@ -65,9 +72,9 @@ export function generateSitemap(outDir = 'dist') {
   const rendered = new Set(findRoutes(dist))
 
   // Assets directories contain no index.html, so anything left is a real page.
-  const basePaths = [...new Set([...rendered].map(stripLocale))].sort((a, b) =>
-    a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)
-  )
+  const basePaths = [...new Set([...rendered].map(stripLocale))]
+    .filter((path) => !EXCLUDED_FROM_SITEMAP.has(path))
+    .sort((a, b) => (a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)))
 
   const urls = basePaths.flatMap((basePath) => {
     const rank = RANKS[basePath] ?? DEFAULT_RANK
