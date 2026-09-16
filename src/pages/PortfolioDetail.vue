@@ -24,11 +24,7 @@
 
         <div class="aspect-video rounded-lg overflow-hidden bg-surface mb-12">
           <img v-if="item.heroImage" :src="item.heroImage" :alt="title" class="w-full h-full object-cover" />
-          <div v-else class="w-full h-full flex items-center justify-center" aria-hidden="true">
-            <svg class="w-14 h-14 text-text-secondary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 8h16M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" />
-            </svg>
-          </div>
+          <PortfolioPlaceholderImage v-else size="lg" />
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,6 +105,7 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../components/shared/BaseButton.vue'
 import CallToAction from '../components/home/CallToAction.vue'
+import PortfolioPlaceholderImage from '../components/portfolio/PortfolioPlaceholderImage.vue'
 import { useLocale } from '../composables/useLocale'
 import { usePageSchema, creativeWorkSchema, breadcrumbListSchema } from '../composables/usePageSchema'
 import { portfolioItems } from '../data/portfolio'
