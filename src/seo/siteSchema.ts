@@ -44,7 +44,7 @@ export const siteSchemaGraph = {
       description:
         'Web design and software development company building websites, online shops, booking systems and bespoke web applications for small businesses across the UK.',
       url: `${SITE_ORIGIN}/`,
-      image: `${SITE_ORIGIN}/og-image.png`,
+      image: `${SITE_ORIGIN}/og-image-2026.png`,
       logo: `${SITE_ORIGIN}/icon-512.png`,
       email: 'enquiries@vanguarddigitalsolutions.co.uk',
       priceRange: '££',
