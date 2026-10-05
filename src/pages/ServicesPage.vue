@@ -1,178 +1,60 @@
 <template>
   <div>
-    <section class="bg-primary text-white py-16 sm:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('servicesPage.title') }}</h1>
-        <p class="text-lg text-white/80 max-w-2xl">
-          {{ t('servicesPage.subtitle') }}
-        </p>
-      </div>
-    </section>
+    <PageHero :kicker="t('nav.services')" :title="t('servicesPage.title')" :subtitle="t('servicesPage.subtitle')">
+      <template #aside>
+        <nav :aria-label="t('servicesPage.allServices')">
+          <ol class="list-none m-0 p-0 border-t-2 border-ink">
+            <li v-for="(service, index) in services" :key="service.id" class="border-b border-border">
+              <a :href="`#${service.id}`" class="flex gap-4 py-3 no-underline text-ink hover:text-accent">
+                <span class="font-mono text-xs text-text-secondary pt-1">{{ String(index + 1).padStart(2, '0') }}</span>
+                <span class="font-semibold">{{ service.title }}</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </template>
+    </PageHero>
 
-    <section class="py-16 lg:py-24 bg-white" :aria-label="t('servicesPage.allServices')">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="space-y-16">
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🎨</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.smallBusiness.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.smallBusiness.description') }}
-                </p>
-                <p class="mt-3">
-                  <router-link :to="localePath('/small-business')" class="text-primary font-semibold hover:text-primary-light no-underline">
-                    {{ t('servicesPage.readMore', { service: t('nav.smallBusiness') }) }} &rarr;
-                  </router-link>
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in smallBizFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🛒</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.ecommerce.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.ecommerce.description') }}
-                </p>
-                <p class="mt-3">
-                  <router-link :to="localePath('/services/ecommerce')" class="text-primary font-semibold hover:text-primary-light no-underline">
-                    {{ t('servicesPage.readMore', { service: t('serviceDetail.ecommerce.navLabel') }) }} &rarr;
-                  </router-link>
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in ecomFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">📅</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.booking.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.booking.description') }}
-                </p>
-                <p class="mt-3">
-                  <router-link :to="localePath('/services/booking-systems')" class="text-primary font-semibold hover:text-primary-light no-underline">
-                    {{ t('servicesPage.readMore', { service: t('serviceDetail.booking.navLabel') }) }} &rarr;
-                  </router-link>
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in bookingFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-            <div class="mt-8 rounded-xl bg-primary/5 border border-primary/10 p-5">
-              <p class="text-sm font-semibold text-text-primary mb-1">{{ t('servicesPage.booking.integrationsHeading') }}</p>
-              <p class="text-sm text-text-secondary">{{ t('servicesPage.booking.integrationsList') }}</p>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">📋</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.brochure.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.brochure.description') }}
-                </p>
-                <p class="mt-3">
-                  <router-link :to="localePath('/services/business-website')" class="text-primary font-semibold hover:text-primary-light no-underline">
-                    {{ t('servicesPage.readMore', { service: t('serviceDetail.businessWebsite.navLabel') }) }} &rarr;
-                  </router-link>
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in infoFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚙️</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.bespoke.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.bespoke.description') }}
-                </p>
-                <p class="mt-3">
-                  <router-link :to="localePath('/services/bespoke-software')" class="text-primary font-semibold hover:text-primary-light no-underline">
-                    {{ t('servicesPage.readMore', { service: t('serviceDetail.bespoke.navLabel') }) }} &rarr;
-                  </router-link>
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in bespokeFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-            <div class="mt-10 border-t border-border pt-8">
-              <h3 class="text-lg font-semibold text-text-primary mb-4">{{ t('servicesPage.bespoke.approachHeading') }}</h3>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div v-for="item in deliveryApproach" :key="item.title" class="rounded-lg border border-border bg-white px-4 py-4">
-                  <p class="font-semibold text-text-primary text-sm">{{ item.title }}</p>
-                  <p class="mt-1 text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🔗</div>
-              <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('servicesPage.integrations.title') }}</h2>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('servicesPage.integrations.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in integrationFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="related-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="related-heading" :subtitle="t('servicesPage.related.subtitle')">
-          {{ t('servicesPage.related.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <router-link v-for="link in relatedLinks" :key="link.to" :to="link.to"
-            class="bg-white rounded-lg p-6 border border-border hover:border-primary transition-colors flex flex-col gap-3">
-            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">
-              <span class="text-2xl">{{ link.icon }}</span>
-            </div>
-            <h3 class="text-lg font-semibold text-text-primary">{{ link.title }}</h3>
-            <p class="text-sm text-text-secondary leading-relaxed flex-1">{{ link.description }}</p>
+    <section
+      v-for="(service, index) in services"
+      :id="service.id"
+      :key="service.id"
+      :class="['py-20 lg:py-24 border-t border-border', index % 2 === 1 ? 'bg-white' : '']"
+      :aria-labelledby="`${service.id}-heading`"
+    >
+      <div class="wrap grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-10 lg:gap-16">
+        <div>
+          <p class="label text-accent mb-4">{{ String(index + 1).padStart(2, '0') }}</p>
+          <h2 :id="`${service.id}-heading`" class="text-4xl sm:text-[2.75rem] mt-0 mb-5">{{ service.title }}</h2>
+          <p class="text-ink-soft mt-0 mb-6">{{ service.description }}</p>
+          <router-link v-if="service.to" :to="service.to" class="font-semibold text-ink">
+            {{ t('servicesPage.readMore', { service: service.navLabel }) }} <span aria-hidden="true">&rarr;</span>
           </router-link>
         </div>
+        <div>
+          <RuledList :items="service.features" />
+
+          <div v-if="service.id === 'booking'" class="mt-8 pt-5 border-t-2 border-ink">
+            <p class="label text-text-secondary mt-0 mb-2">{{ t('servicesPage.booking.integrationsHeading') }}</p>
+            <p class="m-0">{{ t('servicesPage.booking.integrationsList') }}</p>
+          </div>
+
+          <div v-if="service.id === 'bespoke'" class="mt-10">
+            <h3 class="label text-text-secondary font-normal mt-0 mb-2" style="font-stretch: 100%">{{ t('servicesPage.bespoke.approachHeading') }}</h3>
+            <RuledGrid :items="approach" :columns="3" numbered heading-tag="h4" />
+          </div>
+        </div>
       </div>
     </section>
+
+    <PageSection
+      heading-id="related-heading"
+      :heading="t('servicesPage.related.heading')"
+      :subtitle="t('servicesPage.related.subtitle')"
+      tone="white"
+    >
+      <LinkRows :links="relatedLinks" />
+    </PageSection>
 
     <CallToAction />
   </div>
@@ -181,118 +63,42 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionHeading from '../components/shared/SectionHeading.vue'
+import PageHero from '../components/shared/PageHero.vue'
+import PageSection from '../components/shared/PageSection.vue'
+import RuledList from '../components/shared/RuledList.vue'
+import RuledGrid from '../components/shared/RuledGrid.vue'
+import LinkRows from '../components/shared/LinkRows.vue'
 import CallToAction from '../components/home/CallToAction.vue'
-import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
-const { localePath } = useLocale()
 
-const smallBizFeatures = computed(() => [
-  t('servicesPage.smallBusiness.f1'),
-  t('servicesPage.smallBusiness.f2'),
-  t('servicesPage.smallBusiness.f3'),
-  t('servicesPage.smallBusiness.f4'),
-  t('servicesPage.smallBusiness.f5'),
-  t('servicesPage.smallBusiness.f6'),
-  t('servicesPage.smallBusiness.f7'),
-  t('servicesPage.smallBusiness.f8'),
-])
+const features = (key: string) => [1, 2, 3, 4, 5, 6, 7, 8].map((n) => t(`servicesPage.${key}.f${n}`))
 
-const ecomFeatures = computed(() => [
-  t('servicesPage.ecommerce.f1'),
-  t('servicesPage.ecommerce.f2'),
-  t('servicesPage.ecommerce.f3'),
-  t('servicesPage.ecommerce.f4'),
-  t('servicesPage.ecommerce.f5'),
-  t('servicesPage.ecommerce.f6'),
-  t('servicesPage.ecommerce.f7'),
-  t('servicesPage.ecommerce.f8'),
-])
+const services = computed(() => [
+  { id: 'small-business', key: 'smallBusiness', to: '/small-business', navLabel: t('nav.smallBusiness') },
+  { id: 'ecommerce', key: 'ecommerce', to: '/services/ecommerce', navLabel: t('serviceDetail.ecommerce.navLabel') },
+  { id: 'booking', key: 'booking', to: '/services/booking-systems', navLabel: t('serviceDetail.booking.navLabel') },
+  { id: 'business-websites', key: 'brochure', to: '/services/business-website', navLabel: t('serviceDetail.businessWebsite.navLabel') },
+  { id: 'bespoke', key: 'bespoke', to: '/services/bespoke-software', navLabel: t('serviceDetail.bespoke.navLabel') },
+  { id: 'integrations', key: 'integrations', to: '', navLabel: '' },
+].map((s) => ({
+  ...s,
+  title: t(`servicesPage.${s.key}.title`),
+  description: t(`servicesPage.${s.key}.description`),
+  features: features(s.key),
+})))
 
-const bookingFeatures = computed(() => [
-  t('servicesPage.booking.f1'),
-  t('servicesPage.booking.f2'),
-  t('servicesPage.booking.f3'),
-  t('servicesPage.booking.f4'),
-  t('servicesPage.booking.f5'),
-  t('servicesPage.booking.f6'),
-  t('servicesPage.booking.f7'),
-  t('servicesPage.booking.f8'),
-])
-
-const infoFeatures = computed(() => [
-  t('servicesPage.brochure.f1'),
-  t('servicesPage.brochure.f2'),
-  t('servicesPage.brochure.f3'),
-  t('servicesPage.brochure.f4'),
-  t('servicesPage.brochure.f5'),
-  t('servicesPage.brochure.f6'),
-  t('servicesPage.brochure.f7'),
-  t('servicesPage.brochure.f8'),
-])
-
-const bespokeFeatures = computed(() => [
-  t('servicesPage.bespoke.f1'),
-  t('servicesPage.bespoke.f2'),
-  t('servicesPage.bespoke.f3'),
-  t('servicesPage.bespoke.f4'),
-  t('servicesPage.bespoke.f5'),
-  t('servicesPage.bespoke.f6'),
-  t('servicesPage.bespoke.f7'),
-  t('servicesPage.bespoke.f8'),
-])
-
-const integrationFeatures = computed(() => [
-  t('servicesPage.integrations.f1'),
-  t('servicesPage.integrations.f2'),
-  t('servicesPage.integrations.f3'),
-  t('servicesPage.integrations.f4'),
-  t('servicesPage.integrations.f5'),
-  t('servicesPage.integrations.f6'),
-  t('servicesPage.integrations.f7'),
-  t('servicesPage.integrations.f8'),
-])
-
-const deliveryApproach = computed(() => [
-  {
-    title: t('servicesPage.bespoke.approach1Title'),
-    description: t('servicesPage.bespoke.approach1Description'),
-  },
-  {
-    title: t('servicesPage.bespoke.approach2Title'),
-    description: t('servicesPage.bespoke.approach2Description'),
-  },
-  {
-    title: t('servicesPage.bespoke.approach3Title'),
-    description: t('servicesPage.bespoke.approach3Description'),
-  },
-])
+const approach = computed(() =>
+  [1, 2, 3].map((n) => ({
+    title: t(`servicesPage.bespoke.approach${n}Title`),
+    description: t(`servicesPage.bespoke.approach${n}Description`),
+  }))
+)
 
 const relatedLinks = computed(() => [
-  {
-    to: localePath('/technology'),
-    icon: '⚡',
-    title: t('servicesPage.related.link1Title'),
-    description: t('servicesPage.related.link1Description'),
-  },
-  {
-    to: localePath('/process'),
-    icon: '📋',
-    title: t('servicesPage.related.link2Title'),
-    description: t('servicesPage.related.link2Description'),
-  },
-  {
-    to: localePath('/small-business'),
-    icon: '🎨',
-    title: t('servicesPage.related.link3Title'),
-    description: t('servicesPage.related.link3Description'),
-  },
-  {
-    to: localePath('/pricing'),
-    icon: '💷',
-    title: t('servicesPage.related.link4Title'),
-    description: t('servicesPage.related.link4Description'),
-  },
+  { to: '/technology', title: t('servicesPage.related.link1Title'), description: t('servicesPage.related.link1Description') },
+  { to: '/process', title: t('servicesPage.related.link2Title'), description: t('servicesPage.related.link2Description') },
+  { to: '/small-business', title: t('servicesPage.related.link3Title'), description: t('servicesPage.related.link3Description') },
+  { to: '/pricing', title: t('servicesPage.related.link4Title'), description: t('servicesPage.related.link4Description') },
 ])
 </script>

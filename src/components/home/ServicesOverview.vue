@@ -1,26 +1,29 @@
 <template>
-  <section class="py-16 lg:py-24 bg-white" aria-labelledby="services-heading">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading heading-id="services-heading" :subtitle="t('home.servicesOverview.subtitle')">
-        {{ t('home.servicesOverview.heading') }}
-      </SectionHeading>
-
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article v-for="service in services" :key="service.title"
-          class="rounded-2xl border border-border bg-surface p-6 flex flex-col gap-3">
-          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-2xl shrink-0" aria-hidden="true">
-            {{ service.icon }}
-          </div>
-          <h3 class="text-lg font-semibold text-text-primary">{{ service.title }}</h3>
-          <p class="text-sm text-text-secondary leading-relaxed flex-1">{{ service.description }}</p>
-        </article>
+  <section class="py-20 lg:py-28" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="flex flex-wrap justify-between items-end gap-6 mb-12">
+        <div>
+          <p class="label text-accent mb-4">{{ t('home.services.kicker') }}</p>
+          <h2 id="services-heading" class="text-5xl sm:text-6xl m-0">{{ t('home.services.heading') }}</h2>
+        </div>
+        <router-link to="/services" class="font-semibold text-ink">{{ t('home.services.allLink') }}</router-link>
       </div>
 
-      <div class="mt-12 text-center">
-        <BaseButton to="/services" variant="primary">
-          {{ t('home.servicesOverview.exploreAll') }}
-        </BaseButton>
-      </div>
+      <ul class="list-none m-0 p-0 border-b border-border">
+        <li v-for="(service, index) in services" :key="service.title">
+          <router-link
+            :to="routes[index] ?? '/services'"
+            class="service-row grid gap-x-8 gap-y-2 items-baseline py-8 border-t border-border no-underline text-ink"
+          >
+            <span class="font-mono text-sm text-text-secondary" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span>
+            <span class="service-title text-2xl sm:text-[1.75rem] font-bold leading-tight transition-colors">{{ service.title }}</span>
+            <span class="service-desc text-ink-soft">{{ service.description }}</span>
+            <span class="service-price font-mono text-sm lg:text-right whitespace-nowrap">
+              {{ service.price }} <span aria-hidden="true">&rarr;</span>
+            </span>
+          </router-link>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -28,41 +31,39 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionHeading from '../shared/SectionHeading.vue'
-import BaseButton from '../shared/BaseButton.vue'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
-const services = computed(() => [
-  {
-    icon: '🎨',
-    title: t('home.servicesOverview.card1Title'),
-    description: t('home.servicesOverview.card1Description'),
-  },
-  {
-    icon: '🛒',
-    title: t('home.servicesOverview.card2Title'),
-    description: t('home.servicesOverview.card2Description'),
-  },
-  {
-    icon: '📅',
-    title: t('home.servicesOverview.card3Title'),
-    description: t('home.servicesOverview.card3Description'),
-  },
-  {
-    icon: '📋',
-    title: t('home.servicesOverview.card4Title'),
-    description: t('home.servicesOverview.card4Description'),
-  },
-  {
-    icon: '⚙️',
-    title: t('home.servicesOverview.card5Title'),
-    description: t('home.servicesOverview.card5Description'),
-  },
-  {
-    icon: '🔗',
-    title: t('home.servicesOverview.card6Title'),
-    description: t('home.servicesOverview.card6Description'),
-  },
-])
+const services = computed(() => tm('home.services.items') as { title: string; description: string; price: string }[])
+
+/** Destination per row, in the same order as home.services.items. */
+const routes = [
+  '/small-business',
+  '/services/booking-systems',
+  '/services/ecommerce',
+  '/services/bespoke-software',
+  '/services',
+]
 </script>
+
+<style scoped>
+.service-row {
+  grid-template-columns: 3rem minmax(0, 1fr);
+}
+.service-desc,
+.service-price {
+  grid-column: 2;
+}
+.service-row:hover .service-title {
+  color: var(--color-accent);
+}
+@media (min-width: 1024px) {
+  .service-row {
+    grid-template-columns: 5rem minmax(0, 4fr) minmax(0, 5fr) 10rem;
+  }
+  .service-desc,
+  .service-price {
+    grid-column: auto;
+  }
+}
+</style>

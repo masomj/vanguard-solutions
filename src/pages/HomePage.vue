@@ -2,14 +2,14 @@
   <div>
     <HeroSection />
     <ServicesOverview />
-    <TechStackSection />
-    <WhyChooseUs />
+    <PricingPreview />
+    <FeaturedWork />
     <ProcessSection />
-    <LocalPresenceSection />
+    <StandardsSection />
     <FaqSection
       :items="faqItems"
+      :kicker="t('home.faq.kicker')"
       :heading="t('home.faq.heading')"
-      :subtitle="t('home.faq.subtitle')"
       :cta-text="t('home.faq.ctaText')"
       heading-id="home-faq-heading"
     />
@@ -22,10 +22,10 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import HeroSection from '../components/home/HeroSection.vue'
 import ServicesOverview from '../components/home/ServicesOverview.vue'
-import TechStackSection from '../components/home/TechStackSection.vue'
-import WhyChooseUs from '../components/home/WhyChooseUs.vue'
+import PricingPreview from '../components/home/PricingPreview.vue'
+import FeaturedWork from '../components/home/FeaturedWork.vue'
 import ProcessSection from '../components/home/ProcessSection.vue'
-import LocalPresenceSection from '../components/home/LocalPresenceSection.vue'
+import StandardsSection from '../components/home/StandardsSection.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 import FaqSection from '../components/shared/FaqSection.vue'
 import { usePageSchema, faqPageSchema } from '../composables/usePageSchema'

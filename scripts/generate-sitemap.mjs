@@ -4,13 +4,12 @@
 // never be silently missing from the sitemap: if vite-ssg rendered it, it is
 // in here. Adding a route requires no change to this file.
 
-import { readdirSync, statSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 
 const ORIGIN = 'https://vanguarddigitalsolutions.co.uk'
-const LOCALE_PREFIXES = { en: '', cy: '/cy' }
 
-/** Priority and change frequency per locale-agnostic path. Anything unlisted
+/** Priority and change frequency per path. Anything unlisted
  *  falls back to DEFAULT_RANK, so a new page still gets a sane entry. */
 const RANKS = {
   '/': { priority: '1.0', changefreq: 'monthly' },
@@ -52,61 +51,56 @@ function findRoutes(dir, base = '') {
   return routes
 }
 
-function stripLocale(path) {
-  for (const prefix of Object.values(LOCALE_PREFIXES)) {
-    if (!prefix) continue
-    if (path === prefix) return '/'
-    if (path.startsWith(`${prefix}/`)) return path.slice(prefix.length) || '/'
+/**
+ * The Welsh tree (/cy/...) was removed in the 2026 redesign. GitHub Pages
+ * cannot send server redirects, so write a small page at every old /cy path
+ * that points crawlers (canonical) and visitors (meta refresh) at the English
+ * page. Without these, every indexed Welsh URL would become a 404.
+ */
+function writeLegacyWelshRedirects(dist, paths) {
+  let count = 0
+  for (const path of paths) {
+    const legacy = path === '/' ? '/cy' : `/cy${path}`
+    const target = `${ORIGIN}${path}`
+    const dir = join(dist, legacy)
+    mkdirSync(dir, { recursive: true })
+    writeFileSync(
+      join(dir, 'index.html'),
+      `<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>Moved</title>` +
+        `<link rel="canonical" href="${target}"><meta name="robots" content="noindex, follow">` +
+        `<meta http-equiv="refresh" content="0; url=${target}"></head>` +
+        `<body><p>This page has moved to <a href="${target}">${target}</a>.</p></body></html>\n`,
+      'utf8'
+    )
+    count += 1
   }
-  return path
-}
-
-function localise(basePath, locale) {
-  const prefix = LOCALE_PREFIXES[locale]
-  if (!prefix) return basePath
-  return basePath === '/' ? prefix : `${prefix}${basePath}`
+  return count
 }
 
 export function generateSitemap(outDir = 'dist') {
   const dist = resolve(outDir)
-  const rendered = new Set(findRoutes(dist))
 
   // Assets directories contain no index.html, so anything left is a real page.
-  const basePaths = [...new Set([...rendered].map(stripLocale))]
+  const paths = findRoutes(dist)
     .filter((path) => !EXCLUDED_FROM_SITEMAP.has(path))
     .sort((a, b) => (a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)))
 
-  const urls = basePaths.flatMap((basePath) => {
-    const rank = RANKS[basePath] ?? DEFAULT_RANK
-
-    const alternates = Object.keys(LOCALE_PREFIXES)
-      .filter((locale) => rendered.has(localise(basePath, locale)))
-      .map((locale) => ({ locale, path: localise(basePath, locale) }))
-
-    const links = [
-      ...alternates.map(
-        ({ locale, path }) =>
-          `    <xhtml:link rel="alternate" hreflang="${locale === 'en' ? 'en-GB' : locale}" href="${ORIGIN}${path}"/>`
-      ),
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${localise(basePath, 'en')}"/>`,
-    ]
-
-    return alternates.map(
-      ({ path }) => `  <url>
-    <loc>${ORIGIN}${path === '/' ? '/' : path}</loc>
-${links.join('\n')}
+  const urls = paths.map((path) => {
+    const rank = RANKS[path] ?? DEFAULT_RANK
+    return `  <url>
+    <loc>${ORIGIN}${path}</loc>
     <changefreq>${rank.changefreq}</changefreq>
     <priority>${rank.priority}</priority>
   </url>`
-    )
   })
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join('\n')}
 </urlset>
 `
 
   writeFileSync(join(dist, 'sitemap.xml'), xml, 'utf8')
-  return { pages: basePaths.length, urls: urls.length }
+  const redirects = writeLegacyWelshRedirects(dist, paths)
+  return { pages: paths.length, urls: urls.length, redirects }
 }

@@ -1,17 +1,10 @@
 <template>
   <div>
-    <section class="bg-primary text-white py-16 sm:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('cookiePolicy.title') }}</h1>
-        <p class="text-lg text-white/80 max-w-2xl">
-          {{ t('cookiePolicy.subtitle') }}
-        </p>
-      </div>
-    </section>
+    <PageHero :title="t('cookiePolicy.title')" :subtitle="t('cookiePolicy.subtitle')" />
 
-    <section class="py-16 lg:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto cookie-prose">
+    <section class="py-16 lg:py-20">
+      <div class="wrap">
+        <div class="max-w-3xl cookie-prose">
           <h2>{{ t('cookiePolicy.whatAreCookiesHeading') }}</h2>
           <p>
             {{ t('cookiePolicy.whatAreCookiesBody') }}
@@ -62,9 +55,9 @@
             {{ t('cookiePolicy.manageBody') }}
           </p>
 
-          <div class="rounded-lg border border-border bg-surface p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ t('cookiePolicy.currentPreferenceHeading') }}</h3>
-            <p class="text-sm text-text-secondary mb-4">
+          <div class="quote-sheet p-6 my-8">
+            <h3 class="label text-xs text-text-secondary font-normal mt-0 mb-3" style="font-stretch: 100%">{{ t('cookiePolicy.currentPreferenceHeading') }}</h3>
+            <p class="mt-0 mb-5">
               {{ t('cookiePolicy.statusLabel') }}
               <span
                 :class="[
@@ -79,7 +72,7 @@
             <div class="flex flex-wrap gap-3">
               <BaseButton
                 v-if="consentStatus !== 'accepted'"
-                variant="accent"
+                variant="signal"
                 size="sm"
                 @click="acceptCookies"
               >
@@ -110,10 +103,10 @@
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
               {{ t('cookiePolicy.googlePolicy') }}</a>.
             {{ t('cookiePolicy.furtherInfoPart2') }}
-            <router-link :to="localePath('/contact')">{{ t('cookiePolicy.contactUs') }}</router-link>.
+            <router-link :to="'/contact'">{{ t('cookiePolicy.contactUs') }}</router-link>.
           </p>
 
-          <p class="text-sm text-text-secondary mt-12">{{ t('cookiePolicy.lastUpdated') }}</p>
+          <p class="font-mono text-xs text-text-secondary mt-12">{{ t('cookiePolicy.lastUpdated') }}</p>
         </div>
       </div>
     </section>
@@ -124,11 +117,10 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../components/shared/BaseButton.vue'
+import PageHero from '../components/shared/PageHero.vue'
 import { useCookieConsent } from '../composables/useCookieConsent'
-import { useLocale } from '../composables/useLocale'
 
 const { t } = useI18n()
-const { localePath } = useLocale()
 const { consentStatus, acceptCookies, declineCookies, resetConsent } = useCookieConsent()
 
 const statusLabel = computed(() => ({
@@ -140,57 +132,51 @@ const statusLabel = computed(() => ({
 
 <style scoped>
 .cookie-prose h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
-  margin-top: 2.5rem;
+  font-size: 1.75rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
 }
-
 .cookie-prose h2:first-child {
   margin-top: 0;
 }
-
 .cookie-prose p {
-  color: var(--color-text-secondary);
+  color: var(--color-ink-soft);
   line-height: 1.75;
   margin-bottom: 1rem;
 }
-
 .cookie-prose a {
-  color: var(--color-primary);
+  color: var(--color-ink);
   text-decoration: underline;
-  transition: color 0.15s;
 }
-
 .cookie-prose a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-accent);
 }
-
-.cookie-prose strong {
-  color: var(--color-text-primary);
-  font-weight: 600;
-}
-
 .cookie-prose table {
   width: 100%;
-  font-size: 0.875rem;
   border-collapse: collapse;
   margin: 1.5rem 0;
+  font-size: 0.9375rem;
 }
-
 .cookie-prose th {
   text-align: left;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  background-color: var(--color-surface);
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-border);
-}
-
-.cookie-prose td {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--color-text-secondary);
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-border);
+  padding: 0.75rem 1rem 0.75rem 0;
+  border-bottom: 2px solid var(--color-ink);
+}
+.cookie-prose td {
+  padding: 0.75rem 1rem 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink-soft);
+}
+.cookie-prose td:first-child {
+  font-family: var(--font-mono);
+  color: var(--color-ink);
 }
 </style>

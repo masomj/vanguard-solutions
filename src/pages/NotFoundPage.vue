@@ -1,24 +1,21 @@
 <template>
-  <section class="py-24 sm:py-32 text-center">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-6xl font-bold text-primary mb-4">404</p>
-      <h1 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">{{ t('notFound.title') }}</h1>
-      <p class="text-lg text-text-secondary mb-8">
-        {{ t('notFound.message') }}
-      </p>
-      <BaseButton to="/" variant="primary" size="lg">
-        {{ t('notFound.backHome') }}
-      </BaseButton>
+  <section class="py-24 sm:py-32" aria-labelledby="not-found-heading">
+    <div class="wrap">
+      <p class="display text-[7rem] sm:text-[11rem] leading-none text-signal m-0" aria-hidden="true">404</p>
+      <h1 id="not-found-heading" class="display text-5xl sm:text-6xl mt-6 mb-6">{{ t('notFound.title') }}</h1>
+      <p class="text-xl text-ink-soft mt-0 mb-10 max-w-xl">{{ t('notFound.message') }}</p>
+      <div class="flex flex-wrap gap-x-6 gap-y-4 items-center">
+        <BaseButton to="/" size="lg">{{ t('notFound.backHome') }}</BaseButton>
+        <router-link to="/services" class="font-semibold text-ink">{{ t('nav.services') }}</router-link>
+        <router-link to="/pricing" class="font-semibold text-ink">{{ t('nav.pricing') }}</router-link>
+      </div>
     </div>
   </section>
-
-  <CallToAction />
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../components/shared/BaseButton.vue'
-import CallToAction from '../components/home/CallToAction.vue'
 
 const { t } = useI18n()
 </script>

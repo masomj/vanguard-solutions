@@ -1,11 +1,19 @@
 <template>
-  <header class="bg-white border-b border-border sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="bg-ink text-paper">
+    <div class="wrap flex flex-wrap justify-between gap-x-6 gap-y-1 py-2.5 font-mono text-xs uppercase tracking-wide">
+      <span>{{ t('nav.strapLeft') }}</span>
+      <span class="hidden md:inline text-[#C9C9C2]">{{ t('nav.strapRight') }}</span>
+    </div>
+  </div>
+  <header class="bg-paper/95 backdrop-blur border-b border-border sticky top-0 z-50">
+    <div class="wrap">
       <div class="flex items-center justify-between gap-4 h-18">
-        <router-link :to="localePath('/')" class="flex items-center gap-2 text-primary font-bold text-xl no-underline shrink-0" :aria-label="t('nav.homeAria')">
-          <BrandLogo class="h-8 w-auto shrink-0" variant="gradient" />
-          <span class="hidden sm:inline">{{ t('site.name') }}</span>
-          <span class="sm:hidden">{{ t('site.shortName') }}</span>
+        <router-link :to="'/'" class="flex items-center gap-3 text-ink no-underline shrink-0" :aria-label="t('nav.homeAria')">
+          <BrandLogo class="h-8 w-auto shrink-0" />
+          <span class="flex flex-col leading-none">
+            <span class="display text-xl">VANGUARD</span>
+            <span class="font-mono text-[0.625rem] uppercase tracking-wide text-text-secondary mt-1">Digital Solutions</span>
+          </span>
         </router-link>
 
         <nav class="hidden lg:block" :aria-label="t('nav.mainNavigation')">
@@ -22,60 +30,33 @@
               <router-link
                 v-else
                 :to="entry.to"
-                class="px-3 py-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline font-medium text-sm whitespace-nowrap"
-                active-class="text-primary bg-surface"
+                class="nav-link px-3 py-2 text-ink no-underline font-medium text-[0.9375rem] whitespace-nowrap"
+                active-class="nav-link--active"
               >
                 {{ entry.label }}
               </router-link>
             </li>
 
-            <li>
-              <router-link
-                :to="localePath('/contact')"
-                class="ml-2 px-4 py-2 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold text-sm transition-colors whitespace-nowrap"
-              >
+            <li class="ml-4">
+              <BaseButton to="/contact" size="sm" class="shrink-0">
                 {{ t('nav.getQuote') }}
-              </router-link>
-            </li>
-
-            <li>
-              <router-link
-                :to="alternatePath"
-                :hreflang="otherLocale"
-                class="ml-1 px-3 py-2 border border-border rounded-md text-sm font-semibold text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline whitespace-nowrap"
-                :aria-label="t('language.switchLabel')"
-                @click="rememberChoice"
-              >
-                <span :lang="otherLocale">{{ localeToggleLabel }}</span>
-              </router-link>
+              </BaseButton>
             </li>
           </ul>
         </nav>
 
-        <div class="flex items-center gap-2 lg:hidden shrink-0">
-          <router-link
-            :to="alternatePath"
-            :hreflang="otherLocale"
-            class="px-3 py-2 border border-border rounded-md text-sm font-semibold text-text-secondary hover:text-primary hover:bg-surface transition-colors no-underline whitespace-nowrap"
-            :aria-label="t('language.switchLabel')"
-            @click="rememberChoice"
-          >
-            <span :lang="otherLocale">{{ localeToggleLabel }}</span>
-          </router-link>
-
-          <button
-            class="p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors"
-            :aria-expanded="menuOpen"
-            aria-controls="mobile-menu"
-            :aria-label="t('nav.toggleNavigationMenu')"
-            @click="menuOpen = !menuOpen"
-          >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path v-if="!menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+        <button
+          class="lg:hidden inline-flex items-center gap-2 min-h-11 px-3 border border-ink text-ink font-semibold text-sm bg-transparent cursor-pointer"
+          :aria-expanded="menuOpen"
+          aria-controls="mobile-menu"
+          :aria-label="t('nav.toggleNavigationMenu')"
+          @click="menuOpen = !menuOpen"
+        >
+          {{ t('nav.menu') }}
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="square" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -90,48 +71,45 @@ import { useI18n } from 'vue-i18n'
 import MobileMenu from './MobileMenu.vue'
 import NavDropdown from './NavDropdown.vue'
 import BrandLogo from '../shared/BrandLogo.vue'
-import { useLocale } from '../../composables/useLocale'
+import BaseButton from '../shared/BaseButton.vue'
 import type { NavEntry, NavGroup } from '../../types'
 
 const menuOpen = ref(false)
 const route = useRoute()
 const { t } = useI18n()
-const { locale, otherLocale, alternatePath, localePath, rememberChoice } = useLocale()
 
 /**
- * Five top-level slots, not nine. The two groups collect pages that answer the
- * same question — "what do you build?" and "who are you and how do you work?" —
- * so the bar has room for Portfolio, the CTA and the language toggle without
- * wrapping.
+ * Four top-level slots plus the quote button. The two groups collect pages
+ * that answer the same question ("what do you build?" and "who are you and
+ * how do you work?"). The logo is the home link.
  *
  * Every destination is still a real anchor in the rendered HTML, so grouping
  * costs nothing in crawlability.
  */
 const navEntries = computed<NavEntry[]>(() => [
-  { kind: 'link', id: 'home', to: localePath('/'), label: t('nav.home') },
   {
     kind: 'group',
     id: 'services',
     label: t('nav.services'),
     items: [
-      { to: localePath('/services'), label: t('nav.allServices') },
-      { to: localePath('/small-business'), label: t('nav.forSmallBusiness') },
-      { to: localePath('/services/business-website'), label: t('nav.businessWebsites') },
-      { to: localePath('/services/ecommerce'), label: t('nav.onlineShops') },
-      { to: localePath('/services/booking-systems'), label: t('nav.bookingSystems') },
-      { to: localePath('/services/bespoke-software'), label: t('nav.bespokeSoftware') },
+      { to: '/services', label: t('nav.allServices') },
+      { to: '/small-business', label: t('nav.forSmallBusiness') },
+      { to: '/services/business-website', label: t('nav.businessWebsites') },
+      { to: '/services/ecommerce', label: t('nav.onlineShops') },
+      { to: '/services/booking-systems', label: t('nav.bookingSystems') },
+      { to: '/services/bespoke-software', label: t('nav.bespokeSoftware') },
     ],
   },
-  { kind: 'link', id: 'portfolio', to: localePath('/portfolio'), label: t('nav.portfolio') },
-  { kind: 'link', id: 'pricing', to: localePath('/pricing'), label: t('nav.pricing') },
+  { kind: 'link', id: 'pricing', to: '/pricing', label: t('nav.pricing') },
+  { kind: 'link', id: 'portfolio', to: '/portfolio', label: t('nav.portfolio') },
   {
     kind: 'group',
     id: 'about',
     label: t('nav.about'),
     items: [
-      { to: localePath('/about'), label: t('nav.aboutUs') },
-      { to: localePath('/process'), label: t('nav.howWeWork') },
-      { to: localePath('/technology'), label: t('nav.technology') },
+      { to: '/about', label: t('nav.aboutUs') },
+      { to: '/process', label: t('nav.howWeWork') },
+      { to: '/technology', label: t('nav.technology') },
     ],
   },
 ])
@@ -142,13 +120,23 @@ function isGroupActive(group: NavGroup): boolean {
   return group.items.some((item) => route.path === item.to || route.path.startsWith(`${item.to}/`))
 }
 
-// The toggle always names the *other* language, in that language, so the label
-// carries its own lang attribute or it gets read with the page's phonetics.
-const localeToggleLabel = computed(() => (locale.value === 'en'
-  ? t('language.switchToWelsh')
-  : t('language.switchToEnglish')))
-
 watch(() => route.path, () => {
   menuOpen.value = false
 })
 </script>
+
+<style scoped>
+.nav-link {
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  transition: text-decoration-color 0.15s ease;
+}
+.nav-link:hover {
+  text-decoration-color: var(--color-border);
+}
+.nav-link--active {
+  text-decoration-color: var(--color-signal);
+}
+</style>

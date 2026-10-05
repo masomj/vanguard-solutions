@@ -1,6 +1,6 @@
 <template>
   <div :class="paired ? 'mb-5 sm:mb-0 sm:contents' : 'mb-5'">
-    <label :for="fieldId" class="block text-sm font-medium text-text-primary mb-1.5" :class="{ 'sm:row-start-1': paired }">
+    <label :for="fieldId" class="block text-[0.9375rem] font-semibold text-text-primary mb-1.5" :class="{ 'sm:row-start-1': paired }">
       {{ label }}
       <span v-if="required" class="text-error" aria-hidden="true"> *</span>
     </label>

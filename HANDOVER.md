@@ -1,3 +1,5 @@
+> **Note (October 2026):** the Welsh translation, `cy.json` and the `/cy/` routes have been removed, and the site now targets the whole UK. Sections below that mention Welsh or en/cy parity are historical. See CONTRIBUTING.md for the current setup.
+
 # Handover — Content Expansion
 
 ## What was added

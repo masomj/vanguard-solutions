@@ -1,14 +1,14 @@
 <template>
   <form @submit.prevent="onSubmit" aria-labelledby="contact-form-heading" novalidate class="relative space-y-1">
-    <h2 id="contact-form-heading" class="text-2xl font-bold text-text-primary mb-2">{{ t('contactForm.heading') }}</h2>
-    <p class="text-text-secondary mb-6 leading-relaxed">{{ t('contactForm.intro') }}</p>
+    <h2 id="contact-form-heading" class="text-3xl mt-0 mb-2">{{ t('contactForm.heading') }}</h2>
+    <p class="text-ink-soft mt-0 mb-8 leading-relaxed">{{ t('contactForm.intro') }}</p>
 
     <div
       v-if="errorList.length"
       ref="errorSummary"
       tabindex="-1"
       role="alert"
-      class="mb-6 p-4 border-2 border-error rounded-md bg-error/5"
+      class="mb-6 p-4 border-2 border-error bg-white"
     >
       <h3 class="text-lg font-bold text-error mb-1">{{ t('contactForm.errorSummaryHeading') }}</h3>
       <p class="text-sm text-text-primary mb-2">{{ t('contactForm.errorSummaryIntro') }}</p>
@@ -30,7 +30,7 @@
             type="text"
             autocomplete="name"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary placeholder:text-text-secondary focus:border-ink transition-colors"
             :placeholder="t('contactForm.placeholderName')"
           />
         </template>
@@ -44,7 +44,7 @@
             type="email"
             autocomplete="email"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary placeholder:text-text-secondary focus:border-ink transition-colors"
             :placeholder="t('contactForm.placeholderEmail')"
           />
         </template>
@@ -60,7 +60,7 @@
             type="text"
             autocomplete="organization"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary placeholder:text-text-secondary focus:border-ink transition-colors"
             :placeholder="t('contactForm.placeholderCompany')"
           />
         </template>
@@ -74,7 +74,7 @@
             type="tel"
             autocomplete="tel"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary placeholder:text-text-secondary focus:border-ink transition-colors"
             :placeholder="t('contactForm.placeholderPhone')"
           />
         </template>
@@ -87,7 +87,7 @@
           :id="id"
           v-model="form.projectType"
           v-bind="ariaAttrs"
-          class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
+          class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary focus:border-ink transition-colors"
         >
           <option value="" disabled>{{ t('contactForm.projectTypePlaceholder') }}</option>
           <option value="small-business">{{ t('contactForm.optionSmallBusiness') }}</option>
@@ -114,11 +114,11 @@
             :id="id"
             v-model="form.budget"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary focus:border-ink transition-colors"
           >
             <option value="" disabled>{{ t('contactForm.budgetPlaceholder') }}</option>
-            <option value="under-650">{{ t('contactForm.budgetUnder650') }}</option>
-            <option value="650-1250">{{ t('contactForm.budget650to1250') }}</option>
+            <option value="under-400">{{ t('contactForm.budgetUnder400') }}</option>
+            <option value="400-1250">{{ t('contactForm.budget400to1250') }}</option>
             <option value="1250-3000">{{ t('contactForm.budget1250to3000') }}</option>
             <option value="over-3000">{{ t('contactForm.budgetOver3000') }}</option>
             <option value="unsure">{{ t('contactForm.budgetUnsure') }}</option>
@@ -132,7 +132,7 @@
             :id="id"
             v-model="form.timeline"
             v-bind="ariaAttrs"
-            class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary focus:border-primary transition-colors"
+            class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary focus:border-ink transition-colors"
           >
             <option value="">{{ t('contactForm.timelinePlaceholder') }}</option>
             <option value="asap">{{ t('contactForm.timelineAsap') }}</option>
@@ -157,7 +157,7 @@
           v-model="form.message"
           rows="5"
           v-bind="ariaAttrs"
-          class="w-full px-4 py-2.5 border border-border-strong rounded-md bg-white text-text-primary placeholder:text-text-secondary focus:border-primary transition-colors resize-y"
+          class="w-full min-h-12 px-4 py-3 border border-border-strong bg-white text-text-primary placeholder:text-text-secondary focus:border-ink transition-colors resize-y"
         />
       </template>
     </FormField>
@@ -177,15 +177,15 @@
       />
     </div>
 
-    <BaseButton type="submit" variant="accent" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto shrink-0">
+    <BaseButton type="submit" variant="signal" size="lg" :disabled="status === 'submitting'" class="w-full sm:w-auto shrink-0">
       {{ status === 'submitting' ? t('contactForm.sending') : t('contactForm.send') }}
     </BaseButton>
 
     <div role="status" aria-live="polite" class="mt-4">
-      <p v-if="status === 'success'" class="p-4 bg-success/10 text-success rounded-md font-medium">
+      <p v-if="status === 'success'" class="p-4 border-l-4 border-success bg-white text-success font-medium">
         {{ statusMessage }}
       </p>
-      <p v-if="status === 'error'" class="p-4 bg-error/10 text-error rounded-md font-medium">
+      <p v-if="status === 'error'" class="p-4 border-l-4 border-error bg-white text-error font-medium">
         {{ statusMessage }}
       </p>
     </div>

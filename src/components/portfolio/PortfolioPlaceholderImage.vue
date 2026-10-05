@@ -1,10 +1,6 @@
 <template>
-  <div
-    class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary to-primary-dark relative overflow-hidden"
-    aria-hidden="true"
-  >
-    <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
-    <BrandLogo variant="cyan" :class="markSizeClass" class="relative" />
+  <div class="w-full h-full flex items-center justify-center bg-ink relative overflow-hidden" aria-hidden="true">
+    <BrandLogo variant="paper" :class="markSizeClass" class="relative" />
   </div>
 </template>
 
@@ -26,5 +22,5 @@ const props = withDefaults(
   { size: 'sm' }
 )
 
-const markSizeClass = computed(() => (props.size === 'lg' ? 'w-16 h-16 sm:w-20 sm:h-20' : 'w-10 h-10'))
+const markSizeClass = computed(() => (props.size === 'lg' ? 'w-20 h-auto sm:w-28' : 'w-12 h-auto'))
 </script>

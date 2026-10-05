@@ -5,16 +5,16 @@
       role="dialog"
       :aria-label="t('cookieBanner.ariaLabel')"
       aria-describedby="cookie-banner-text"
-      class="fixed bottom-0 inset-x-0 z-50 bg-primary-dark border-t border-white/10 shadow-lg"
+      class="fixed bottom-0 inset-x-0 z-50 bg-ink border-t-4 border-signal"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
+      <div class="wrap py-4 sm:py-5">
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <p id="cookie-banner-text" class="text-sm text-white/80 leading-relaxed flex-1">
             {{ t('cookieBanner.messageA') }}
             {{ t('cookieBanner.messageB') }}
             <router-link
-              :to="localePath('/cookie-policy')"
-              class="text-accent-cyan hover:text-white underline transition-colors"
+              :to="'/cookie-policy'"
+              class="text-paper hover:text-signal underline transition-colors"
             >
               {{ t('cookieBanner.learnMore') }}
             </router-link>
@@ -22,13 +22,13 @@
           <div class="flex gap-3 shrink-0">
             <button
               @click="declineCookies"
-              class="px-4 py-2 text-sm font-semibold text-white/70 hover:text-white border border-white/50 rounded-md transition-colors cursor-pointer"
+              class="min-h-11 px-4 text-sm font-semibold text-paper hover:bg-paper hover:text-ink border border-paper bg-transparent transition-colors cursor-pointer"
             >
               {{ t('cookieBanner.decline') }}
             </button>
             <button
               @click="acceptCookies"
-              class="px-4 py-2 text-sm font-semibold text-white bg-accent hover:bg-accent-light rounded-md transition-colors cursor-pointer"
+              class="min-h-11 px-4 text-sm font-semibold text-ink bg-signal hover:bg-signal-dark border border-signal transition-colors cursor-pointer"
             >
               {{ t('cookieBanner.accept') }}
             </button>
@@ -42,10 +42,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { useCookieConsent } from '../../composables/useCookieConsent'
-import { useLocale } from '../../composables/useLocale'
 
 const { t } = useI18n()
-const { localePath } = useLocale()
 const { bannerVisible, acceptCookies, declineCookies } = useCookieConsent()
 </script>
 

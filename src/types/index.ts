@@ -7,9 +7,9 @@ export interface ServiceItem {
 /**
  * Structural, non-copy facts about a case study. The actual copy (title,
  * client, status, summary, description, features) is not on this type --
- * it lives in `portfolioItems.<slug>.*` in en.json/cy.json, same as every
- * other piece of on-page text, so it goes through the normal translation
- * workflow. See `src/data/portfolio.ts`.
+ * it lives in `portfolioItems.<slug>.*` in en.json, same as every
+ * other piece of on-page text, so all wording is edited in one place. See
+ * `src/data/portfolio.ts`.
  */
 export interface PortfolioItem {
   slug: string

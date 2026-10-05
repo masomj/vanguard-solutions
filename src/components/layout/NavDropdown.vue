@@ -10,10 +10,10 @@
       :id="`${id}-button`"
       ref="buttonRef"
       type="button"
-      class="flex items-center gap-1 px-3 py-2 rounded-md transition-colors font-medium text-sm cursor-pointer border-0 bg-transparent"
-      :class="active || open
-        ? 'text-primary bg-surface'
-        : 'text-text-secondary hover:text-primary hover:bg-surface'"
+      class="flex items-center gap-1.5 px-3 py-2 font-medium text-[0.9375rem] cursor-pointer border-0 bg-transparent text-ink underline decoration-[3px] underline-offset-8 transition-colors"
+      :class="active
+        ? 'decoration-signal'
+        : open ? 'decoration-border' : 'decoration-transparent hover:decoration-border'"
       :aria-expanded="open"
       :aria-controls="`${id}-menu`"
       @click="toggle"
@@ -45,15 +45,15 @@
         v-show="open"
         :id="`${id}-menu`"
         ref="menuRef"
-        class="absolute left-0 top-full mt-1 min-w-60 bg-white border border-border rounded-lg shadow-lg py-2 list-none m-0 z-50"
+        class="absolute left-0 top-full mt-2 min-w-64 bg-white border border-ink py-2 list-none m-0 z-50"
         :aria-labelledby="`${id}-button`"
         @keydown.escape="close(true)"
       >
         <li v-for="item in items" :key="item.to">
           <router-link
             :to="item.to"
-            class="block px-4 py-2.5 text-sm text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline whitespace-nowrap"
-            active-class="text-primary bg-surface font-semibold"
+            class="block px-4 py-2.5 text-[0.9375rem] text-ink hover:bg-paper transition-colors no-underline whitespace-nowrap"
+            active-class="bg-paper font-semibold"
             @click="close(false)"
           >
             {{ item.label }}

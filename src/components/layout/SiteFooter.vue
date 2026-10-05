@@ -1,61 +1,43 @@
 <template>
-  <footer class="bg-primary-dark text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-        <div>
-          <div class="flex items-center gap-2 mb-4">
-            <BrandLogo class="h-8 w-auto shrink-0" variant="cyan" />
-            <span class="font-bold text-lg">{{ t('site.name') }}</span>
+  <footer class="bg-ink text-[#C9C9C2]">
+    <div class="wrap pt-16 pb-10 lg:pt-20">
+      <div class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-10">
+        <div class="col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3 mb-5 text-paper">
+            <BrandLogo class="h-8 w-auto shrink-0" variant="paper" />
+            <span class="display text-lg">VANGUARD</span>
           </div>
-          <p class="text-white/70 text-sm leading-relaxed">
+          <p class="text-[0.9375rem] leading-relaxed max-w-xs m-0">
             {{ t('footer.tagline') }}
           </p>
         </div>
 
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.quickLinks') }}</h3>
-          <ul class="list-none m-0 p-0 space-y-2">
-            <li v-for="link in quickLinks" :key="link.to">
-              <router-link :to="link.to" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
-                {{ link.label }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.services') }}</h3>
-          <ul class="list-none m-0 p-0 space-y-2">
-            <li v-for="service in services" :key="service.label">
-              <router-link :to="service.to" class="text-white/70 hover:text-white transition-colors no-underline text-sm">
-                {{ service.label }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider mb-4 text-white/90">{{ t('footer.contact') }}</h3>
-          <ul class="list-none m-0 p-0 space-y-3">
-            <li class="flex items-start gap-2 text-sm text-white/70">
-              <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-white/70 hover:text-white transition-colors no-underline">
-                enquiries@vanguarddigitalsolutions.co.uk
-              </a>
+        <div v-for="column in columns" :key="column.heading">
+          <h2 class="label text-[#8A8A84] font-normal tracking-wide mb-4" style="font-stretch: 100%">
+            {{ column.heading }}
+          </h2>
+          <ul class="list-none m-0 p-0 space-y-2.5">
+            <li v-for="link in column.links" :key="link.label">
+              <a
+                v-if="link.href"
+                :href="link.href"
+                class="text-[#E4E4DE] hover:text-signal no-underline text-[0.9375rem] transition-colors"
+              >{{ link.label }}</a>
+              <router-link
+                v-else
+                :to="link.to!"
+                class="text-[#E4E4DE] hover:text-signal no-underline text-[0.9375rem] transition-colors"
+              >{{ link.label }}</router-link>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-12 pt-8 border-t border-white/10">
-        <h3 class="font-semibold text-sm uppercase tracking-wider mb-3 text-white/90">{{ t('footer.areasHeading') }}</h3>
-        <p class="text-white/60 text-sm leading-relaxed max-w-4xl">{{ t('footer.areasBody') }}</p>
-      </div>
-
-      <div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/50">
-        <p>{{ t('footer.copyright', { year: currentYear }) }}</p>
+      <div class="mt-16 pt-6 border-t border-[#2E3237] flex flex-wrap justify-between gap-4 font-mono text-xs text-[#8A8A84]">
+        <p class="m-0">{{ t('footer.copyright', { year: currentYear }) }}</p>
+        <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-[#8A8A84] hover:text-signal no-underline">
+          enquiries@vanguarddigitalsolutions.co.uk
+        </a>
       </div>
     </div>
   </footer>
@@ -65,30 +47,40 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import BrandLogo from '../shared/BrandLogo.vue'
-import { useLocale } from '../../composables/useLocale'
 
 const currentYear = new Date().getFullYear()
 const { t } = useI18n()
-const { localePath } = useLocale()
 
-const quickLinks = computed(() => [
-  { to: localePath('/'), label: t('nav.home') },
-  { to: localePath('/about'), label: t('footer.aboutUs') },
-  { to: localePath('/services'), label: t('nav.services') },
-  { to: localePath('/technology'), label: t('nav.technology') },
-  { to: localePath('/process'), label: t('nav.process') },
-  { to: localePath('/small-business'), label: t('nav.smallBusiness') },
-  { to: localePath('/portfolio'), label: t('nav.portfolio') },
-  { to: localePath('/contact'), label: t('footer.contactUs') },
-  { to: localePath('/cookie-policy'), label: t('footer.cookiePolicy') },
-])
+type FooterLink = { label: string; to?: string; href?: string }
 
-const services = computed(() => [
-  { to: localePath('/small-business'), label: t('footer.serviceSmallBusiness') },
-  { to: localePath('/services'), label: t('footer.serviceEcommerce') },
-  { to: localePath('/services'), label: t('footer.serviceBooking') },
-  { to: localePath('/services'), label: t('footer.serviceBespoke') },
-  { to: localePath('/services'), label: t('footer.serviceIntegrations') },
-  { to: localePath('/pricing'), label: t('footer.pricing') },
+const columns = computed<{ heading: string; links: FooterLink[] }[]>(() => [
+  {
+    heading: t('footer.services'),
+    links: [
+      { to: '/small-business', label: t('footer.serviceSmallBusiness') },
+      { to: '/services/business-website', label: t('nav.businessWebsites') },
+      { to: '/services/ecommerce', label: t('footer.serviceEcommerce') },
+      { to: '/services/booking-systems', label: t('footer.serviceBooking') },
+      { to: '/services/bespoke-software', label: t('footer.serviceBespoke') },
+      { to: '/pricing', label: t('footer.pricing') },
+    ],
+  },
+  {
+    heading: t('footer.studio'),
+    links: [
+      { to: '/about', label: t('footer.aboutUs') },
+      { to: '/portfolio', label: t('nav.portfolio') },
+      { to: '/process', label: t('nav.process') },
+      { to: '/technology', label: t('nav.technology') },
+    ],
+  },
+  {
+    heading: t('footer.contact'),
+    links: [
+      { to: '/contact', label: t('footer.contactUs') },
+      { href: 'mailto:enquiries@vanguarddigitalsolutions.co.uk', label: t('footer.email') },
+      { to: '/cookie-policy', label: t('footer.cookiePolicy') },
+    ],
+  },
 ])
 </script>

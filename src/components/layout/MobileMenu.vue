@@ -13,15 +13,15 @@
       <nav
         v-if="open"
         id="mobile-menu"
-        class="fixed top-0 right-0 bottom-0 w-72 max-w-[85vw] bg-white shadow-xl z-50 lg:hidden flex flex-col"
+        class="fixed top-0 right-0 bottom-0 w-80 max-w-[88vw] bg-paper border-l border-ink z-50 lg:hidden flex flex-col"
         :aria-label="t('nav.mobileNavigation')"
         @keydown.escape="$emit('close')"
       >
         <div class="flex items-center justify-between p-4 border-b border-border shrink-0">
-          <span class="font-bold text-primary text-lg">{{ t('nav.menu') }}</span>
+          <span class="label text-text-secondary">{{ t('nav.menu') }}</span>
           <button
             ref="closeButtonRef"
-            class="p-2 rounded-md text-text-secondary hover:text-primary hover:bg-surface transition-colors"
+            class="inline-flex items-center justify-center w-11 h-11 border border-ink text-ink bg-transparent cursor-pointer"
             :aria-label="t('nav.closeNavigationMenu')"
             @click="$emit('close')"
           >
@@ -42,8 +42,8 @@
               <li v-if="entry.kind === 'link'">
                 <router-link
                   :to="entry.to"
-                  class="block px-4 py-3 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline font-medium"
-                  active-class="text-primary bg-surface"
+                  class="block px-1 py-3 text-ink no-underline font-semibold text-lg border-b border-border"
+                  active-class="text-accent"
                   @click="$emit('close')"
                 >
                   {{ entry.label }}
@@ -53,7 +53,7 @@
               <li v-else class="mt-3 first:mt-0">
                 <h2
                   :id="`mobile-group-${entry.id}`"
-                  class="px-4 pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary"
+                  class="label px-1 pt-4 pb-1 text-text-secondary font-normal"
                 >
                   {{ entry.label }}
                 </h2>
@@ -61,8 +61,8 @@
                   <li v-for="item in entry.items" :key="item.to">
                     <router-link
                       :to="item.to"
-                      class="block px-4 py-2.5 rounded-md text-text-primary hover:text-primary hover:bg-surface transition-colors no-underline"
-                      active-class="text-primary bg-surface font-semibold"
+                      class="block px-1 py-2.5 text-ink no-underline border-b border-border"
+                      active-class="text-accent font-semibold"
                       @click="$emit('close')"
                     >
                       {{ item.label }}
@@ -76,21 +76,11 @@
 
         <div class="p-4 border-t border-border shrink-0">
           <router-link
-            :to="localePath('/contact')"
-            class="block w-full text-center px-5 py-3 bg-accent hover:bg-accent-light text-white rounded-md no-underline font-semibold transition-colors mb-3"
+            :to="'/contact'"
+            class="flex items-center justify-center w-full min-h-12 px-5 bg-signal hover:bg-signal-dark text-ink no-underline font-semibold transition-colors"
             @click="$emit('close')"
           >
             {{ t('nav.getQuote') }}
-          </router-link>
-
-          <router-link
-            :to="alternatePath"
-            :hreflang="otherLocale"
-            class="block w-full text-center px-5 py-3 border border-border text-text-secondary hover:text-primary hover:bg-surface rounded-md font-semibold transition-colors no-underline"
-            :aria-label="t('language.switchLabel')"
-            @click="onSwitchLocale"
-          >
-            <span :lang="otherLocale">{{ localeToggleLabel }}</span>
           </router-link>
         </div>
       </nav>
@@ -99,9 +89,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch, nextTick } from 'vue'
+import { ref, watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useLocale } from '../../composables/useLocale'
 import type { NavEntry } from '../../types'
 
 defineProps<{
@@ -109,24 +98,12 @@ defineProps<{
   navEntries: NavEntry[]
 }>()
 
-const emit = defineEmits<{
+defineEmits<{
   close: []
 }>()
 
 const { t } = useI18n()
-const { locale, otherLocale, alternatePath, localePath, rememberChoice } = useLocale()
-
 const closeButtonRef = ref<HTMLButtonElement | null>(null)
-
-// See SiteHeader: the label is always in the language being switched *to*.
-const localeToggleLabel = computed(() => (locale.value === 'en'
-  ? t('language.switchToWelsh')
-  : t('language.switchToEnglish')))
-
-function onSwitchLocale() {
-  rememberChoice()
-  emit('close')
-}
 
 watch(() => closeButtonRef.value, async (btn) => {
   if (btn) {

@@ -1,54 +1,157 @@
 @import "tailwindcss";
 
+/*
+ * Vanguard design system (2026 redesign).
+ *
+ * Ink on paper with one signal colour. Square corners, ruled dividers instead
+ * of floating cards, a wide display face for headings and a mono face for
+ * labels, figures and prices.
+ *
+ * Token names are kept from the previous theme (primary, accent, surface...)
+ * so every page picks up the new look without rewriting each class.
+ */
 @theme {
-  --color-primary: #1a365d;
-  --color-primary-light: #2c5282;
-  --color-primary-dark: #102a4a;
-  /* Brand accent. Blue scale is safe on light surfaces (white text >= 4.5:1). */
-  --color-accent: #176ACC;
-  --color-accent-light: #1F72D4;
-  --color-accent-dark: #0B5FBF;
-  /* Electric cyan from the brand gradient. DARK SURFACES ONLY -- it scores
-     1.82:1 against white, so never use it for text or fills on light backgrounds. */
-  --color-accent-cyan: #00D1FF;
-  --color-surface: #f7fafc;
-  --color-surface-dark: #edf2f7;
-  --color-border: #e2e8f0;
-  /* Form-control borders need 3:1 (WCAG 1.4.11). #6b7280 is 4.83:1 on white.
-     --color-border remains the lighter decorative divider colour. */
-  --color-border-strong: #6b7280;
-  --color-text-primary: #1a202c;
-  --color-text-secondary: #4a5568;
-  --color-text-inverse: #ffffff;
-  --color-success: #276749;
-  --color-error: #c53030;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Ink: headings, body text, dark bands, primary buttons. */
+  --color-ink: #111315;
+  --color-ink-soft: #2A2E33;
+  --color-primary: #111315;
+  --color-primary-light: #2A2E33;
+  --color-primary-dark: #000000;
+
+  /* Signal orange. FILLS ONLY with ink text on top (6.9:1), or as text/marks
+     on ink (6.9:1). It is 2.9:1 on paper, so never use it for text there. */
+  --color-signal: #FF5A1F;
+  --color-signal-dark: #E8460C;
+
+  /* Text-safe orange for links, kickers and small marks on paper (5.4:1),
+     and button fills under white text (5.9:1). */
+  --color-accent: #B33A0A;
+  --color-accent-light: #9A3108;
+  --color-accent-dark: #842A06;
+  /* Kept for components written for dark surfaces. */
+  --color-accent-cyan: #FF5A1F;
+
+  /* Paper and rules. */
+  --color-paper: #F3F3EF;
+  --color-surface: #F3F3EF;
+  --color-surface-dark: #E7E7E1;
+  --color-border: #CFCFC8;
+  /* Form-control borders need 3:1 (WCAG 1.4.11): #6b6f74 is 4.9:1 on white. */
+  --color-border-strong: #6B6F74;
+
+  --color-text-primary: #111315;
+  /* 6.9:1 on paper, 7.5:1 on white. */
+  --color-text-secondary: #50555B;
+  --color-text-inverse: #F3F3EF;
+  --color-success: #1F6B45;
+  --color-error: #B42318;
+
+  --font-sans: 'Archivo Variable', 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Square corners everywhere. rounded-full still works for dots and pills. */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+
+  /* Flat by default. The one deliberate shadow is the offset .quote-sheet. */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Sticky header is 73px tall; keep focused/anchored elements clear of it. */
-    scroll-padding-top: 5rem;
+    /* Sticky header is ~73px tall; keep focused/anchored elements clear of it. */
+    scroll-padding-top: 5.5rem;
   }
 
   body {
     font-family: var(--font-sans);
     color: var(--color-text-primary);
+    background: var(--color-paper);
     line-height: 1.6;
+    font-size: 1.0625rem;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 700;
   }
 
-  :focus-visible {
-    outline: 3px solid #ffffff;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 6px var(--color-primary);
-    border-radius: 2px;
+  /* Page and section headings use the expanded cut of Archivo. */
+  h1, h2 {
+    font-stretch: 125%;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1;
   }
+
+  a {
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 1px;
+  }
+
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-signal);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px var(--color-ink);
+  }
+}
+
+@layer components {
+  /* Page gutter + max width. */
+  .wrap {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .wrap { padding-inline: 2.5rem; }
+  }
+
+  /* Wide display type for big statements. */
+  .display {
+    font-stretch: 125%;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+
+  /* Mono label: section numbers, prices, metadata. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  /* "Printed quote" card used for published prices. */
+  .quote-sheet {
+    background: #fff;
+    border: 1px solid var(--color-ink);
+    box-shadow: 6px 6px 0 var(--color-ink);
+  }
+  @media (min-width: 640px) {
+    .quote-sheet { box-shadow: 10px 10px 0 var(--color-ink); }
+  }
+
+  /* Long-form copy blocks on content pages. */
+  .prose-vds p { margin-block: 0 1.1em; color: var(--color-ink-soft); }
+  .prose-vds p:last-child { margin-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

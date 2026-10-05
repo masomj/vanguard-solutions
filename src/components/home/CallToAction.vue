@@ -1,19 +1,17 @@
 <template>
-  <section class="py-16 lg:py-24 bg-primary" aria-labelledby="cta-heading">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 id="cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-4">
-        {{ t('home.cta.heading') }}
+  <section class="py-24 lg:py-32 bg-signal text-ink" aria-labelledby="cta-heading">
+    <div class="wrap">
+      <h2 id="cta-heading" class="display text-6xl sm:text-8xl xl:text-[7rem] mb-8 max-w-5xl">
+        {{ heading ?? t('home.cta.heading') }}
       </h2>
-      <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-        {{ t('home.cta.description') }}
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <BaseButton variant="accent" size="lg" to="/contact">
-          {{ t('home.cta.primary') }}
-        </BaseButton>
-        <BaseButton size="lg" to="/services" class="bg-white/10 hover:bg-white/20 text-white border-white/30">
-          {{ t('home.cta.secondary') }}
-        </BaseButton>
+      <div class="flex flex-wrap gap-10 items-end justify-between">
+        <p class="text-xl m-0 max-w-xl">{{ description ?? t('home.cta.description') }}</p>
+        <div class="flex flex-wrap gap-x-6 gap-y-4 items-center">
+          <BaseButton size="lg" to="/contact">{{ t('home.cta.primary') }}</BaseButton>
+          <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="font-mono text-sm text-ink break-all">
+            enquiries@vanguarddigitalsolutions.co.uk
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -22,6 +20,12 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import BaseButton from '../shared/BaseButton.vue'
+
+/** Closing band used across the site. Pages may override the wording. */
+defineProps<{
+  heading?: string
+  description?: string
+}>()
 
 const { t } = useI18n()
 </script>

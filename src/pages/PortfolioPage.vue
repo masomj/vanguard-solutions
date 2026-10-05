@@ -1,15 +1,10 @@
 <template>
   <div>
-    <section class="bg-primary text-white py-16 sm:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('portfolio.hero.title') }}</h1>
-        <p class="text-lg text-white/80 max-w-2xl">{{ t('portfolio.hero.subtitle') }}</p>
-      </div>
-    </section>
+    <PageHero :kicker="t('nav.portfolio')" :title="t('portfolio.hero.title')" :subtitle="t('portfolio.hero.subtitle')" />
 
-    <section class="py-16 lg:py-24 bg-white" :aria-label="t('portfolio.hero.title')">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div v-if="items.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section class="py-16 lg:py-24" :aria-label="t('portfolio.hero.title')">
+      <div class="wrap">
+        <div v-if="items.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           <PortfolioCard v-for="item in items" :key="item.slug" :item="item" />
         </div>
 
@@ -23,6 +18,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import PageHero from '../components/shared/PageHero.vue'
 import PortfolioCard from '../components/portfolio/PortfolioCard.vue'
 import PortfolioEmptyState from '../components/portfolio/PortfolioEmptyState.vue'
 import CallToAction from '../components/home/CallToAction.vue'

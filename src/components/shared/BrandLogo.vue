@@ -9,10 +9,6 @@
   >
     <title v-if="title">{{ title }}</title>
     <defs>
-      <linearGradient v-if="variant === 'gradient'" :id="gradientId" x1="0" y1="0" x2="0.62" y2="0.79">
-        <stop offset="0" stop-color="#176ACC" />
-        <stop offset="1" stop-color="#00D1FF" />
-      </linearGradient>
       <!-- Explicit units are required. Without them the mask region is read as
            objectBoundingBox and the mark collapses to a fragment in the corner. -->
       <mask
@@ -28,10 +24,10 @@
         <polygon points="-40,199 475,162 475,180 -40,217" fill="#000" />
       </mask>
     </defs>
-    <g :mask="`url(#${maskId})`" :fill="fill">
-      <polygon points="0,0 250,540 500,0 355,0 250,370 145,0" />
-      <polygon points="582,0 627,21 543,202 498,181" />
-      <polygon points="692,0 737,21 683,139 638,118" />
+    <g :mask="`url(#${maskId})`">
+      <polygon :fill="colours.v" points="0,0 250,540 500,0 355,0 250,370 145,0" />
+      <polygon :fill="colours.ticks" points="582,0 627,21 543,202 498,181" />
+      <polygon :fill="colours.ticks" points="692,0 737,21 683,139 638,118" />
     </g>
   </svg>
 </template>
@@ -43,28 +39,36 @@ defineOptions({ inheritAttrs: false })
 
 const props = withDefaults(defineProps<{
   /**
-   * gradient - the full brand mark, for light surfaces.
-   * white    - single colour, for navy/dark surfaces.
-   * cyan     - accent mark, for navy/dark surfaces.
-   * current  - inherits currentColor from the parent.
+   * ink     - ink V with signal ticks, for paper/white surfaces (default).
+   * paper   - paper V with signal ticks, for ink surfaces.
+   * signal  - all signal orange, for ink surfaces.
+   * current - inherits currentColor from the parent.
+   * gradient, white, cyan - legacy names, mapped to ink, paper and signal.
    */
-  variant?: 'gradient' | 'white' | 'cyan' | 'current'
+  variant?: 'ink' | 'paper' | 'signal' | 'current' | 'gradient' | 'white' | 'cyan'
   /** Accessible name. Omit to render the mark as decorative. */
   title?: string
 }>(), {
-  variant: 'gradient',
+  variant: 'ink',
   title: '',
 })
 
 // Unique per instance so the header and footer marks don't collide in the DOM.
-const uid = useId()
-const gradientId = `vds-grad-${uid}`
-const maskId = `vds-seam-${uid}`
+const maskId = `vds-seam-${useId()}`
 
-const fill = computed(() => ({
-  gradient: `url(#${gradientId})`,
-  white: '#FFFFFF',
-  cyan: 'var(--color-accent-cyan)',
-  current: 'currentColor',
-}[props.variant]))
+const colours = computed(() => {
+  const signal = 'var(--color-signal)'
+  switch (props.variant) {
+    case 'paper':
+    case 'white':
+      return { v: 'var(--color-paper)', ticks: signal }
+    case 'signal':
+    case 'cyan':
+      return { v: signal, ticks: signal }
+    case 'current':
+      return { v: 'currentColor', ticks: 'currentColor' }
+    default:
+      return { v: 'var(--color-ink)', ticks: signal }
+  }
+})
 </script>

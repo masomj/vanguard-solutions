@@ -10,22 +10,8 @@ export const SITE_ORIGIN = 'https://vanguarddigitalsolutions.co.uk'
 export const businessId = `${SITE_ORIGIN}/#business`
 export const websiteId = `${SITE_ORIGIN}/#website`
 
-/** Towns and areas covered. Mirrors the `home.areas` copy shown on the site. */
-const areaServed = [
-  { '@type': 'City', name: 'Bridgend' },
-  { '@type': 'City', name: 'Cardiff' },
-  { '@type': 'City', name: 'Swansea' },
-  { '@type': 'City', name: 'Newport' },
-  { '@type': 'City', name: 'Neath' },
-  { '@type': 'City', name: 'Port Talbot' },
-  { '@type': 'City', name: 'Merthyr Tydfil' },
-  { '@type': 'City', name: 'Pontypridd' },
-  { '@type': 'City', name: 'Barry' },
-  { '@type': 'City', name: 'Caerphilly' },
-  { '@type': 'AdministrativeArea', name: 'Rhondda Cynon Taf' },
-  { '@type': 'AdministrativeArea', name: 'Vale of Glamorgan' },
-  { '@type': 'AdministrativeArea', name: 'South Wales' },
-]
+/** UK-wide since the 2026 redesign. Work is delivered remotely. */
+const areaServed = { '@type': 'Country', name: 'United Kingdom' }
 
 function service(slug: string, name: string, serviceType: string, url: string) {
   return {
@@ -34,7 +20,7 @@ function service(slug: string, name: string, serviceType: string, url: string) {
     name,
     serviceType,
     provider: { '@id': businessId },
-    areaServed: { '@type': 'AdministrativeArea', name: 'South Wales' },
+    areaServed,
     url: `${SITE_ORIGIN}${url}`,
   }
 }
@@ -47,16 +33,16 @@ export const siteSchemaGraph = {
       '@id': websiteId,
       url: `${SITE_ORIGIN}/`,
       name: 'Vanguard Digital Solutions',
-      inLanguage: ['en-GB', 'cy'],
+      inLanguage: 'en-GB',
       publisher: { '@id': businessId },
     },
     {
-      '@type': ['ProfessionalService', 'LocalBusiness'],
+      '@type': 'ProfessionalService',
       '@id': businessId,
       name: 'Vanguard Digital Solutions',
       alternateName: 'VDS',
       description:
-        'Web design and software development company building websites, online shops, booking systems and bespoke web applications for small businesses across South Wales.',
+        'Web design and software development company building websites, online shops, booking systems and bespoke web applications for small businesses across the UK.',
       url: `${SITE_ORIGIN}/`,
       image: `${SITE_ORIGIN}/og-image.png`,
       logo: `${SITE_ORIGIN}/icon-512.png`,
@@ -66,17 +52,17 @@ export const siteSchemaGraph = {
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Bridgend',
-        addressRegion: 'South Wales',
+        addressRegion: 'Wales',
         addressCountry: 'GB',
       },
       areaServed,
-      knowsLanguage: ['en-GB', 'cy'],
+      knowsLanguage: 'en-GB',
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
         email: 'enquiries@vanguarddigitalsolutions.co.uk',
         areaServed: 'GB',
-        availableLanguage: ['English', 'Welsh'],
+        availableLanguage: 'English',
       },
       makesOffer: [
         { '@type': 'Offer', itemOffered: { '@id': `${SITE_ORIGIN}/services#small-business-websites` } },

@@ -1,245 +1,59 @@
 <template>
   <div>
-    <section class="bg-primary text-white py-16 sm:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">{{ t('technology.hero.title') }}</h1>
-        <p class="text-lg text-white/80 max-w-2xl">
-          {{ t('technology.hero.subtitle') }}
-        </p>
-      </div>
-    </section>
+    <PageHero :kicker="t('nav.technology')" :title="t('technology.hero.title')" :subtitle="t('technology.hero.subtitle')" />
 
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="foundations-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="foundations-heading" :subtitle="t('technology.foundations.subtitle')">
-          {{ t('technology.foundations.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article v-for="item in foundations" :key="item.title" class="bg-white rounded-lg p-6 border border-border">
-            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4" aria-hidden="true">
-              <span class="text-2xl">{{ item.icon }}</span>
-            </div>
-            <h3 class="text-lg font-semibold text-text-primary mb-2">{{ item.title }}</h3>
-            <p class="text-text-secondary text-sm leading-relaxed">{{ item.description }}</p>
-          </article>
+    <div class="wrap grid grid-cols-1 lg:grid-cols-[17rem_minmax(0,1fr)] gap-10 lg:gap-16 py-16 lg:py-20">
+      <!-- Contents: a printed spec sheet, sticky on wide screens. -->
+      <nav class="hidden lg:block" :aria-label="t('technology.contents')">
+        <div class="sticky top-28">
+          <p class="label text-text-secondary mt-0 mb-3">{{ t('technology.contents') }}</p>
+          <ol class="list-none m-0 p-0 border-t-2 border-ink">
+            <li v-for="(section, index) in sections" :key="section.id" class="border-b border-border">
+              <a :href="`#${section.id}`" class="flex gap-3 py-2.5 text-[0.9375rem] no-underline text-ink hover:text-accent">
+                <span class="font-mono text-xs text-text-secondary pt-1">{{ String(index + 1).padStart(2, '0') }}</span>
+                {{ section.heading }}
+              </a>
+            </li>
+          </ol>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="frameworks-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="frameworks-heading" :subtitle="t('technology.frameworks.subtitle')">
-          {{ t('technology.frameworks.heading') }}
-        </SectionHeading>
+      <div>
+        <section
+          v-for="(section, index) in sections"
+          :id="section.id"
+          :key="section.id"
+          :class="['pb-14 mb-14 border-b border-border last:border-b-0 last:mb-0', index === 0 ? '' : '']"
+          :aria-labelledby="`${section.id}-heading`"
+        >
+          <p class="label text-accent mt-0 mb-3">{{ String(index + 1).padStart(2, '0') }}</p>
+          <h2 :id="`${section.id}-heading`" class="text-3xl sm:text-4xl mt-0 mb-3">{{ section.heading }}</h2>
+          <p class="text-lg text-text-secondary mt-0 mb-8">{{ section.subtitle }}</p>
 
-        <div class="mt-12 space-y-8">
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚡</div>
-              <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.vue.title') }}</h3>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('technology.frameworks.vue.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in vueFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
+          <!-- Foundations: three short items. -->
+          <RuledGrid v-if="section.id === 'foundations'" :items="foundations" heading-tag="h3" />
 
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">🚀</div>
-              <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.nuxt.title') }}</h3>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('technology.frameworks.nuxt.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in nuxtFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-border bg-surface p-6 sm:p-10">
-            <div class="flex items-start gap-4 mb-6">
-              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 text-2xl" aria-hidden="true">⚙️</div>
-              <div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">{{ t('technology.frameworks.vite.title') }}</h3>
-                <p class="mt-2 text-text-secondary leading-relaxed max-w-3xl">
-                  {{ t('technology.frameworks.vite.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              <div v-for="f in viteFeatures" :key="f" class="rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-secondary">
-                <span class="text-primary font-semibold mr-2" aria-hidden="true">+</span>{{ f }}
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="static-sites-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="static-sites-heading" :subtitle="t('technology.staticSites.subtitle')">
-          {{ t('technology.staticSites.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.staticSites.p1') }}</p>
-            <p>{{ t('technology.staticSites.p2') }}</p>
-            <p>{{ t('technology.staticSites.p3') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="builders-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="builders-heading" :subtitle="t('technology.builders.subtitle')">
-          {{ t('technology.builders.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.builders.p1') }}</p>
-            <p>{{ t('technology.builders.p2') }}</p>
-            <p>{{ t('technology.builders.p3') }}</p>
-            <p>{{ t('technology.builders.p4') }}</p>
-          </div>
-          <div class="mt-8 text-center">
-            <BaseButton variant="secondary" to="/pricing">{{ t('pricing.hero.title') }}</BaseButton>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="apis-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="apis-heading" :subtitle="t('technology.apis.subtitle')">
-          {{ t('technology.apis.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.apis.p1') }}</p>
-            <p>{{ t('technology.apis.p2') }}</p>
-            <p>{{ t('technology.apis.p3') }}</p>
-            <p>{{ t('technology.apis.p4') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="accessibility-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="accessibility-heading" :subtitle="t('technology.accessibility.subtitle')">
-          {{ t('technology.accessibility.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.accessibility.p1') }}</p>
-            <p>{{ t('technology.accessibility.p2') }}</p>
-            <p>{{ t('technology.accessibility.p3') }}</p>
-            <p>{{ t('technology.accessibility.p4') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="gdpr-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="gdpr-heading" :subtitle="t('technology.gdpr.subtitle')">
-          {{ t('technology.gdpr.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.gdpr.p1') }}</p>
-            <p>{{ t('technology.gdpr.p2') }}</p>
-            <p>{{ t('technology.gdpr.p3') }}</p>
-            <div class="mt-8 rounded-xl bg-primary/5 border border-primary/10 p-5">
-              <p class="text-sm text-text-secondary">{{ t('technology.gdpr.disclaimer') }}</p>
+          <!-- Frameworks: description plus feature list per tool. -->
+          <div v-else-if="section.id === 'frameworks'" class="space-y-12">
+            <div v-for="fw in frameworks" :key="fw.title">
+              <h3 class="text-2xl mt-0 mb-3" style="font-stretch: 100%">{{ fw.title }}</h3>
+              <p class="text-ink-soft mt-0 mb-5 max-w-3xl">{{ fw.description }}</p>
+              <RuledList :items="fw.features" />
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="cloud-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="cloud-heading" :subtitle="t('technology.cloud.subtitle')">
-          {{ t('technology.cloud.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.cloud.p1') }}</p>
-            <p>{{ t('technology.cloud.p2') }}</p>
-            <p>{{ t('technology.cloud.p3') }}</p>
+          <div v-else class="prose-vds max-w-3xl">
+            <p v-for="para in section.paragraphs" :key="para">{{ para }}</p>
+            <p v-if="section.id === 'gdpr'" class="font-mono text-[0.8125rem] text-text-secondary border-t border-border pt-4">
+              {{ t('technology.gdpr.disclaimer') }}
+            </p>
+            <p v-if="section.id === 'builders'" class="mt-8">
+              <router-link to="/pricing" class="font-semibold text-ink">{{ t('nav.pricing') }} <span aria-hidden="true">&rarr;</span></router-link>
+            </p>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="containers-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="containers-heading" :subtitle="t('technology.containers.subtitle')">
-          {{ t('technology.containers.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.containers.p1') }}</p>
-            <p>{{ t('technology.containers.p2') }}</p>
-            <p>{{ t('technology.containers.p3') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-surface" aria-labelledby="performance-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="performance-heading" :subtitle="t('technology.performance.subtitle')">
-          {{ t('technology.performance.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.performance.p1') }}</p>
-            <p>{{ t('technology.performance.p2') }}</p>
-            <p>{{ t('technology.performance.p3') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 lg:py-24 bg-white" aria-labelledby="seo-heading">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading heading-id="seo-heading" :subtitle="t('technology.seo.subtitle')">
-          {{ t('technology.seo.heading') }}
-        </SectionHeading>
-
-        <div class="mt-12 max-w-4xl mx-auto">
-          <div class="space-y-6 text-text-secondary leading-relaxed">
-            <p>{{ t('technology.seo.p1') }}</p>
-            <p>{{ t('technology.seo.p2') }}</p>
-            <p>{{ t('technology.seo.p3') }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <CallToAction />
   </div>
@@ -248,54 +62,49 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionHeading from '../components/shared/SectionHeading.vue'
-import BaseButton from '../components/shared/BaseButton.vue'
+import PageHero from '../components/shared/PageHero.vue'
+import RuledGrid from '../components/shared/RuledGrid.vue'
+import RuledList from '../components/shared/RuledList.vue'
 import CallToAction from '../components/home/CallToAction.vue'
 
 const { t } = useI18n()
 
-const foundations = computed(() => [
-  {
-    icon: '🏗️',
-    title: t('technology.foundations.html.title'),
-    description: t('technology.foundations.html.description'),
-  },
-  {
-    icon: '🎨',
-    title: t('technology.foundations.css.title'),
-    description: t('technology.foundations.css.description'),
-  },
-  {
-    icon: '⚡',
-    title: t('technology.foundations.typescript.title'),
-    description: t('technology.foundations.typescript.description'),
-  },
-])
+/** Order of the long-read. Each key maps to `technology.<key>` in en.json. */
+const order: { id: string; key: string; paras: number }[] = [
+  { id: 'foundations', key: 'foundations', paras: 0 },
+  { id: 'frameworks', key: 'frameworks', paras: 0 },
+  { id: 'static-sites', key: 'staticSites', paras: 3 },
+  { id: 'builders', key: 'builders', paras: 4 },
+  { id: 'apis', key: 'apis', paras: 4 },
+  { id: 'accessibility', key: 'accessibility', paras: 4 },
+  { id: 'gdpr', key: 'gdpr', paras: 3 },
+  { id: 'cloud', key: 'cloud', paras: 3 },
+  { id: 'containers', key: 'containers', paras: 3 },
+  { id: 'performance', key: 'performance', paras: 3 },
+  { id: 'seo', key: 'seo', paras: 3 },
+]
 
-const vueFeatures = computed(() => [
-  t('technology.frameworks.vue.f1'),
-  t('technology.frameworks.vue.f2'),
-  t('technology.frameworks.vue.f3'),
-  t('technology.frameworks.vue.f4'),
-  t('technology.frameworks.vue.f5'),
-  t('technology.frameworks.vue.f6'),
-])
+const sections = computed(() =>
+  order.map((s) => ({
+    id: s.id,
+    heading: t(`technology.${s.key}.heading`),
+    subtitle: t(`technology.${s.key}.subtitle`),
+    paragraphs: Array.from({ length: s.paras }, (_, i) => t(`technology.${s.key}.p${i + 1}`)),
+  }))
+)
 
-const nuxtFeatures = computed(() => [
-  t('technology.frameworks.nuxt.f1'),
-  t('technology.frameworks.nuxt.f2'),
-  t('technology.frameworks.nuxt.f3'),
-  t('technology.frameworks.nuxt.f4'),
-  t('technology.frameworks.nuxt.f5'),
-  t('technology.frameworks.nuxt.f6'),
-])
+const foundations = computed(() =>
+  ['html', 'css', 'typescript'].map((k) => ({
+    title: t(`technology.foundations.${k}.title`),
+    description: t(`technology.foundations.${k}.description`),
+  }))
+)
 
-const viteFeatures = computed(() => [
-  t('technology.frameworks.vite.f1'),
-  t('technology.frameworks.vite.f2'),
-  t('technology.frameworks.vite.f3'),
-  t('technology.frameworks.vite.f4'),
-  t('technology.frameworks.vite.f5'),
-  t('technology.frameworks.vite.f6'),
-])
+const frameworks = computed(() =>
+  ['vue', 'nuxt', 'vite'].map((k) => ({
+    title: t(`technology.frameworks.${k}.title`),
+    description: t(`technology.frameworks.${k}.description`),
+    features: [1, 2, 3, 4, 5, 6].map((n) => t(`technology.frameworks.${k}.f${n}`)),
+  }))
+)
 </script>

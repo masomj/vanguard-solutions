@@ -28,30 +28,32 @@ src/
 │   ├── cookie/                CookieBanner.
 │   └── shared/               BaseButton, SectionHeading, FaqSection,
 │                            BrandLogo -- generic, reused across pages.
-├── composables/              useLocale, useSeoMeta, usePageSchema,
+├── composables/              useSeoMeta, usePageSchema,
 │                            useContactForm, useCookieConsent, useAnalytics.
 ├── data/                    Structural, non-copy facts about a data-driven
 │                            set of pages (slugs, tech lists, external
 │                            links, image paths) -- typed via src/types. The
 │                            actual copy for each entry lives in i18n, not
 │                            here; see "i18n" below.
-├── i18n/                    en.json, cy.json, locales.ts, index.ts.
+├── i18n/                    en.json (all site copy), locales.ts, index.ts.
 ├── seo/                     siteSchema.ts -- the site-wide JSON-LD graph.
 ├── router/index.ts           Route table (see below).
 └── types/index.ts            Shared interfaces + the RouteMeta augmentation.
 ```
 
 Before adding a new shared component, check `components/shared/` -- reuse
-`BaseButton`, `SectionHeading` and `FaqSection` rather than one-off markup.
+`PageHero`, `PageSection`, `RuledGrid`, `RuledList`, `LinkRows`, `BaseButton`
+and `FaqSection` rather than one-off markup. Design tokens (ink, paper,
+signal, accent, fonts, square corners) live in `src/assets/styles/main.css`;
+signal orange is a fill colour only, never text on paper (contrast).
 `BaseButton` only renders an internal `router-link` or a `<button>`; for an
 external link, use a plain `<a>` styled to match (see `PortfolioDetail.vue`'s
 "visit site" link) rather than misusing `BaseButton`'s props.
 
 ## Route patterns
 
-Routes are defined once, locale-agnostically, in the `pages` array in
-`src/router/index.ts`, and expanded into both locale trees
-(`buildLocaleRoutes`). A new page needs one entry there, not one per locale.
+Routes are defined once in the `pages` array in `src/router/index.ts`. A new
+page needs one entry there.
 
 Two shapes exist for "one template, many pages":
 
@@ -70,7 +72,7 @@ filename character on Windows, so `vite.config.ts`'s `ssgOptions.includedRoutes`
 does two things: filters out any remaining `:`-containing path (the 404
 catch-all, and `/portfolio/:slug` itself), then expands the real detail
 pages by mapping `portfolioItems` to concrete paths (`/portfolio/intercopy`,
-`/cy/portfolio/intercopy`, ...) and appending them. Vue Router resolves a
+...) and appending them. Vue Router resolves a
 pushed concrete path against the `:slug` pattern route automatically -- no
 literal route needs registering per item. Add a portfolio entry and its
 detail page prerenders on the next build with no other change; if the array
@@ -85,7 +87,7 @@ and keeps the route out of `sitemap.xml` (see "SEO" below). Use it for a
 real, linkable page that has no indexable content yet -- the portfolio
 routes carried it while `portfolioItems` was empty, and it came off both
 routes in the same change that added the first real entry. Unlike the 404
-route, a `noindex` route keeps its canonical/hreflang tags.
+route, a `noindex` route keeps its canonical tag.
 
 Breadcrumb JSON-LD for *top-level* pages is generated centrally in
 `useSeoMeta.ts` from `pathLabelKeys` -- add one `'/path': 'i18n.key'` entry
@@ -100,15 +102,16 @@ i18n, keyed by slug, not in a lookup table of paths), so its own
 
 ## i18n
 
-`en.json` and `cy.json` must stay in exact key-path parity -- verify with:
+The site is English only (en-GB). The Welsh `/cy/` tree was removed in the
+October 2026 redesign; `scripts/generate-sitemap.mjs` writes redirect stubs
+at every old `/cy/...` path so existing links land on the English page.
+vue-i18n is kept purely as a copy store: every on-page string lives in
+`src/i18n/en.json` and is read with `t()` / `tm()`.
 
-```powershell
-node -e "const a=require('./src/i18n/en.json'),b=require('./src/i18n/cy.json');const f=(o,p='')=>Object.entries(o).flatMap(([k,v])=>typeof v==='object'&&v?f(v,p+k+'.'):[p+k]);const A=new Set(f(a)),B=new Set(f(b));console.log([...A].filter(x=>!B.has(x)),[...B].filter(x=>!A.has(x)))"
-```
-
-Welsh (`cy.json`) content is machine-translated pending a native-speaker
-review pass before launch -- this applies to every Welsh string in the repo,
-not just new ones. Don't treat a Welsh string as verified copy.
+Copy rules: no em dashes, no "honestly", "up front", "straight answers" or
+similar filler, no ", not X" contrast reflex. Write in first person ("I") --
+Vanguard is a one-person studio. Contact is by email or phone; don't promise
+video calls.
 
 Escape any `@` in a locale string as `{'@'}` -- vue-i18n treats a bare `@` as
 linked-message syntax during SSR compilation and the build will fail.

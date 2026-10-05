@@ -1,48 +1,57 @@
 <template>
-  <section class="py-16 lg:py-24" :class="background" :aria-labelledby="headingId">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading :heading-id="headingId" :subtitle="subtitle">
-        {{ heading }}
-      </SectionHeading>
+  <section class="py-20 lg:py-28" :class="background" :aria-labelledby="headingId">
+    <div class="wrap grid grid-cols-1 lg:grid-cols-[4fr_8fr] gap-10 lg:gap-16">
+      <div>
+        <p v-if="kicker" class="label text-accent mb-4">{{ kicker }}</p>
+        <h2 :id="headingId" class="text-4xl sm:text-5xl mb-5">{{ heading }}</h2>
+        <p v-if="subtitle" class="text-ink-soft m-0">{{ subtitle }}</p>
+        <p v-if="ctaText" class="mt-6 mb-0">
+          <router-link to="/contact" class="font-semibold text-ink">{{ ctaText }}</router-link>
+        </p>
+      </div>
 
-      <div class="mt-12 max-w-3xl mx-auto space-y-4">
+      <div>
         <details
-          v-for="item in items"
+          v-for="(item, index) in items"
           :key="item.question"
-          class="border border-border rounded-lg bg-white p-4 sm:p-6"
+          class="faq-item border-t border-border py-6 last:border-b"
+          :open="index === 0"
         >
           <!-- The question is a real heading so it appears in the document
                outline, not just as a disclosure label. -->
-          <summary class="cursor-pointer">
-            <h3 class="inline font-semibold text-text-primary">{{ item.question }}</h3>
+          <summary class="cursor-pointer list-none flex justify-between gap-6">
+            <h3 class="flex-1 min-w-0 text-lg sm:text-xl font-semibold m-0" style="font-stretch: 100%">{{ item.question }}</h3>
+            <span class="faq-marker font-mono text-xl leading-none shrink-0 w-4 text-center" aria-hidden="true">+</span>
           </summary>
-          <p class="mt-3 text-text-secondary text-sm leading-relaxed">{{ item.answer }}</p>
+          <p class="mt-4 mb-0 text-ink-soft leading-relaxed max-w-2xl">{{ item.answer }}</p>
         </details>
       </div>
-
-      <p v-if="ctaText" class="mt-10 text-center text-text-secondary">
-        <router-link :to="localePath('/contact')" class="text-primary font-semibold hover:text-primary-light">
-          {{ ctaText }}
-        </router-link>
-      </p>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import SectionHeading from './SectionHeading.vue'
-import { useLocale } from '../../composables/useLocale'
-
 withDefaults(defineProps<{
   items: { question: string; answer: string }[]
   heading: string
   headingId: string
+  kicker?: string
   subtitle?: string
   ctaText?: string
   background?: string
 }>(), {
-  background: 'bg-surface',
+  background: 'bg-white border-t border-border',
 })
-
-const { localePath } = useLocale()
 </script>
+
+<style scoped>
+summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item[open] .faq-marker {
+  transform: rotate(45deg);
+}
+.faq-marker {
+  transition: transform 0.15s ease;
+}
+</style>

@@ -31,8 +31,8 @@ const PROJECT_TYPE_LABELS: Record<string, string> = {
 }
 
 const BUDGET_LABELS: Record<string, string> = {
-  'under-650': 'contactForm.budgetUnder650',
-  '650-1250': 'contactForm.budget650to1250',
+  'under-400': 'contactForm.budgetUnder400',
+  '400-1250': 'contactForm.budget400to1250',
   '1250-3000': 'contactForm.budget1250to3000',
   'over-3000': 'contactForm.budgetOver3000',
   unsure: 'contactForm.budgetUnsure',
@@ -46,7 +46,7 @@ const TIMELINE_LABELS: Record<string, string> = {
 }
 
 export function useContactForm() {
-  const { t, locale } = useI18n()
+  const { t } = useI18n()
 
   const form = reactive<ContactFormData>({ ...EMPTY_FORM })
 
@@ -121,8 +121,8 @@ export function useContactForm() {
         budget: label(BUDGET_LABELS, form.budget),
         timeline: form.timeline ? label(TIMELINE_LABELS, form.timeline) : '',
         message: form.message,
-        localeName: locale.value === 'cy' ? 'Cymraeg' : 'English',
-        time: new Date().toLocaleString(locale.value === 'cy' ? 'cy-GB' : 'en-GB', {
+        localeName: 'English',
+        time: new Date().toLocaleString('en-GB', {
           dateStyle: 'long',
           timeStyle: 'short',
         }),
@@ -133,7 +133,6 @@ export function useContactForm() {
         project_type: form.projectType,
         budget_band: form.budget,
         timeline: form.timeline || 'not_given',
-        locale: locale.value,
       })
       Object.assign(form, EMPTY_FORM)
     } catch {
