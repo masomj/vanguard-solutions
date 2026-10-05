@@ -4,7 +4,7 @@
       <div class="flex flex-wrap justify-between items-end gap-6 mb-10">
         <div class="max-w-3xl">
           <p class="label text-accent mb-4">{{ t('home.standards.kicker') }}</p>
-          <h2 id="standards-heading" class="text-5xl sm:text-6xl mb-5">{{ t('home.standards.heading') }}</h2>
+          <h2 id="standards-heading" class="text-[clamp(2rem,10.5vw,3rem)] sm:text-6xl mb-5">{{ t('home.standards.heading') }}</h2>
           <p class="text-ink-soft m-0">{{ t('home.standards.body') }}</p>
         </div>
         <router-link to="/about" class="font-semibold text-ink">{{ t('home.standards.link') }}</router-link>

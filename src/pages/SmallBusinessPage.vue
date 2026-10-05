@@ -66,7 +66,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-[4fr_8fr] gap-10 lg:gap-16">
         <div>
           <p class="label text-accent mt-0 mb-4">06</p>
-          <h2 id="cost-heading" class="text-4xl sm:text-5xl mt-0 mb-5">{{ t('smallBusiness.cost.heading') }}</h2>
+          <h2 id="cost-heading" class="text-[clamp(1.875rem,9.5vw,2.25rem)] sm:text-5xl mt-0 mb-5">{{ t('smallBusiness.cost.heading') }}</h2>
           <p class="text-lg text-text-secondary m-0">{{ t('smallBusiness.cost.subtitle') }}</p>
         </div>
         <div class="prose-vds text-lg max-w-3xl">

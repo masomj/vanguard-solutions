@@ -4,7 +4,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-16 items-end">
         <div>
           <p class="label text-accent mb-6">{{ t('pricing.hero.kicker') }}</p>
-          <h1 id="pricing-heading" class="display text-[3.25rem] sm:text-7xl xl:text-[5.5rem] m-0">
+          <h1 id="pricing-heading" class="display text-[clamp(2.5rem,13vw,3.25rem)] sm:text-7xl xl:text-[5.5rem] m-0">
             {{ t('pricing.hero.title') }}
           </h1>
         </div>
@@ -18,7 +18,22 @@
     <section class="pb-20 lg:pb-24" aria-labelledby="packages-heading">
       <div class="wrap">
         <h2 id="packages-heading" class="sr-only">{{ t('pricing.packagesHeading') }}</h2>
-        <div class="overflow-x-auto">
+        <!-- Phones: one stacked list per package instead of a wide table. -->
+        <div class="md:hidden space-y-12">
+          <div v-for="tier in tableTiers" :key="tier.key" :class="['border-t-2 pt-6', tier.featured ? 'border-signal' : 'border-ink']">
+            <h3 class="label text-text-secondary font-normal m-0" style="font-stretch: 100%">{{ tier.name }}</h3>
+            <p class="display text-5xl mt-2 mb-1">{{ tier.figure }}</p>
+            <p class="font-mono text-xs text-text-secondary mt-0 mb-4">{{ tier.meta }}</p>
+            <dl class="m-0">
+              <div v-for="row in rows" :key="row.feature" class="flex justify-between gap-4 py-3 border-t border-border">
+                <dt class="min-w-0">{{ row.feature }}</dt>
+                <dd :class="['m-0 text-right shrink-0 max-w-[45%]', tierValue(row, tier.key) === t('pricing.compare.no') ? 'text-text-secondary' : 'font-semibold']">{{ tierValue(row, tier.key) }}</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="hidden md:block overflow-x-auto">
           <table class="w-full min-w-[42rem] border-collapse text-left">
             <caption class="label text-text-secondary text-left pb-5">{{ t('pricing.compare.caption') }}</caption>
             <thead>
@@ -79,7 +94,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-[4fr_8fr] gap-10 lg:gap-16">
         <div>
           <p class="label text-accent mb-4">{{ t('pricing.ctaKicker') }}</p>
-          <p class="display text-4xl sm:text-5xl mt-0 mb-5">{{ t('pricing.ctaHeading') }}</p>
+          <p class="display text-[clamp(1.875rem,9.5vw,2.25rem)] sm:text-5xl mt-0 mb-5">{{ t('pricing.ctaHeading') }}</p>
           <p class="text-ink-soft m-0">{{ t('pricing.ctaBody') }}</p>
         </div>
         <ContactForm />
@@ -112,6 +127,10 @@ function cellClass(value: string, index: number) {
     'text-text-secondary': value === t('pricing.compare.no'),
     'font-semibold': index === rows.value.length - 1,
   }
+}
+
+function tierValue(row: { starter: string; business: string }, key: string) {
+  return key === 'business' ? row.business : row.starter
 }
 
 const careFeatures = computed(() => [1, 2, 3, 4].map((n) => t(`pricing.care.f${n}`)))

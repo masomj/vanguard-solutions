@@ -94,6 +94,17 @@
     line-height: 1;
   }
 
+  /* Long words in big type ("Environments", "individually") must never push
+     the page wider than a 320px screen. */
+  h1, h2, h3, .display {
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 639px) {
+    h1, h2, h3, .display {
+      hyphens: auto;
+    }
+  }
+
   a {
     text-underline-offset: 0.3em;
     text-decoration-thickness: 1px;

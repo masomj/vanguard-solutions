@@ -27,7 +27,7 @@
           :aria-labelledby="`${section.id}-heading`"
         >
           <p class="label text-accent mt-0 mb-3">{{ String(index + 1).padStart(2, '0') }}</p>
-          <h2 :id="`${section.id}-heading`" class="text-3xl sm:text-4xl mt-0 mb-3">{{ section.heading }}</h2>
+          <h2 :id="`${section.id}-heading`" class="text-[clamp(1.625rem,8.5vw,1.875rem)] sm:text-4xl mt-0 mb-3">{{ section.heading }}</h2>
           <p class="text-lg text-text-secondary mt-0 mb-8">{{ section.subtitle }}</p>
 
           <!-- Foundations: three short items. -->

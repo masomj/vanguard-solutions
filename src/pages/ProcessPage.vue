@@ -65,7 +65,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16">
         <div v-for="(block, index) in proseBlocks" :key="block.key">
           <p class="label text-accent mt-0 mb-4">{{ String(index + 5).padStart(2, '0') }}</p>
-          <h2 class="text-4xl mt-0 mb-3">{{ t(`process.${block.key}.heading`) }}</h2>
+          <h2 class="text-[clamp(1.875rem,9.5vw,2.25rem)] mt-0 mb-3">{{ t(`process.${block.key}.heading`) }}</h2>
           <p class="text-lg text-text-secondary mt-0 mb-8">{{ t(`process.${block.key}.subtitle`) }}</p>
           <div class="prose-vds">
             <p v-for="n in 3" :key="n">{{ t(`process.${block.key}.p${n}`) }}</p>

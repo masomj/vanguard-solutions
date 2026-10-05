@@ -35,7 +35,7 @@
 
       <div class="mt-16 pt-6 border-t border-[#2E3237] flex flex-wrap justify-between gap-4 font-mono text-xs text-[#8A8A84]">
         <p class="m-0">{{ t('footer.copyright', { year: currentYear }) }}</p>
-        <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-[#8A8A84] hover:text-signal no-underline">
+        <a href="mailto:enquiries@vanguarddigitalsolutions.co.uk" class="text-[#8A8A84] hover:text-signal no-underline break-all">
           enquiries@vanguarddigitalsolutions.co.uk
         </a>
       </div>

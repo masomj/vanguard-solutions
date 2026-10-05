@@ -12,7 +12,7 @@
       <div :class="$slots.aside ? 'grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-16 items-end' : ''">
         <div>
           <p v-if="kicker" class="label text-accent mb-6">{{ kicker }}</p>
-          <h1 :id="headingId" class="display text-[2.75rem] sm:text-6xl xl:text-7xl m-0 max-w-5xl">{{ title }}</h1>
+          <h1 :id="headingId" class="display text-[clamp(2.125rem,11vw,2.75rem)] sm:text-6xl xl:text-7xl m-0 max-w-5xl">{{ title }}</h1>
           <p v-if="subtitle" class="mt-8 mb-0 text-xl leading-relaxed text-ink-soft max-w-3xl">{{ subtitle }}</p>
         </div>
         <slot name="aside" />

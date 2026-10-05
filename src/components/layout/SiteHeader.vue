@@ -7,8 +7,8 @@
   </div>
   <header class="bg-paper/95 backdrop-blur border-b border-border sticky top-0 z-50">
     <div class="wrap">
-      <div class="flex items-center justify-between gap-4 h-18">
-        <router-link :to="'/'" class="flex items-center gap-3 text-ink no-underline shrink-0" :aria-label="t('nav.homeAria')">
+      <div class="flex items-center justify-between gap-3 h-18">
+        <router-link :to="'/'" class="flex items-center gap-3 text-ink no-underline min-w-0" :aria-label="t('nav.homeAria')">
           <BrandLogo class="h-8 w-auto shrink-0" />
           <span class="flex flex-col leading-none">
             <span class="display text-xl">VANGUARD</span>
@@ -46,13 +46,13 @@
         </nav>
 
         <button
-          class="lg:hidden inline-flex items-center gap-2 min-h-11 px-3 border border-ink text-ink font-semibold text-sm bg-transparent cursor-pointer"
+          class="lg:hidden inline-flex items-center justify-center gap-2 min-h-11 min-w-11 px-3 shrink-0 border border-ink text-ink font-semibold text-sm bg-transparent cursor-pointer"
           :aria-expanded="menuOpen"
           aria-controls="mobile-menu"
           :aria-label="t('nav.toggleNavigationMenu')"
           @click="menuOpen = !menuOpen"
         >
-          {{ t('nav.menu') }}
+          <span class="hidden min-[360px]:inline">{{ t('nav.menu') }}</span>
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="square" stroke-width="2" d="M4 8h16M4 16h16" />
           </svg>

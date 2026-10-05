@@ -25,7 +25,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-10 lg:gap-16">
         <div>
           <p class="label text-accent mb-4">{{ String(index + 1).padStart(2, '0') }}</p>
-          <h2 :id="`${service.id}-heading`" class="text-4xl sm:text-[2.75rem] mt-0 mb-5">{{ service.title }}</h2>
+          <h2 :id="`${service.id}-heading`" class="text-[clamp(1.875rem,9.5vw,2.25rem)] sm:text-[2.75rem] mt-0 mb-5">{{ service.title }}</h2>
           <p class="text-ink-soft mt-0 mb-6">{{ service.description }}</p>
           <router-link v-if="service.to" :to="service.to" class="font-semibold text-ink">
             {{ t('servicesPage.readMore', { service: service.navLabel }) }} <span aria-hidden="true">&rarr;</span>

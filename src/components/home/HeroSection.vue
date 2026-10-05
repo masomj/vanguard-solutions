@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-14 lg:gap-16 items-end">
         <div>
           <p class="label text-text-secondary mb-7">{{ t('home.hero.kicker') }}</p>
-          <h1 id="hero-heading" class="display text-[3.25rem] sm:text-7xl xl:text-8xl m-0">
+          <h1 id="hero-heading" class="display text-[clamp(2.5rem,13vw,3.25rem)] sm:text-7xl xl:text-8xl m-0">
             {{ t('home.hero.title') }}
           </h1>
           <p class="mt-9 text-xl leading-relaxed text-ink-soft max-w-[38rem]">

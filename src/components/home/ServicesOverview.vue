@@ -4,7 +4,7 @@
       <div class="flex flex-wrap justify-between items-end gap-6 mb-12">
         <div>
           <p class="label text-accent mb-4">{{ t('home.services.kicker') }}</p>
-          <h2 id="services-heading" class="text-5xl sm:text-6xl m-0">{{ t('home.services.heading') }}</h2>
+          <h2 id="services-heading" class="text-[clamp(2rem,10.5vw,3rem)] sm:text-6xl m-0">{{ t('home.services.heading') }}</h2>
         </div>
         <router-link to="/services" class="font-semibold text-ink">{{ t('home.services.allLink') }}</router-link>
       </div>

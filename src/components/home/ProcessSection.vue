@@ -4,7 +4,7 @@
       <div class="flex flex-wrap justify-between items-end gap-6 mb-14">
         <div>
           <p class="label text-accent mb-4">{{ t('home.process.kicker') }}</p>
-          <h2 id="process-heading" class="text-5xl sm:text-6xl m-0 max-w-4xl">{{ t('home.process.heading') }}</h2>
+          <h2 id="process-heading" class="text-[clamp(2rem,10.5vw,3rem)] sm:text-6xl m-0 max-w-4xl">{{ t('home.process.heading') }}</h2>
         </div>
         <router-link to="/process" class="font-semibold text-ink">{{ t('home.process.learnMore') }}</router-link>
       </div>

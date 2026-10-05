@@ -9,7 +9,7 @@
       >
         <div class="max-w-3xl">
           <p v-if="kicker" :class="['label mb-4', tone === 'ink' ? 'text-signal' : 'text-accent']">{{ kicker }}</p>
-          <h2 :id="headingId" class="text-4xl sm:text-5xl m-0">{{ heading }}</h2>
+          <h2 :id="headingId" class="text-[clamp(1.875rem,9.5vw,2.25rem)] sm:text-5xl m-0">{{ heading }}</h2>
           <p v-if="subtitle" :class="['mt-5 mb-0 text-lg', tone === 'ink' ? 'text-[#D6D6D0]' : 'text-ink-soft']">{{ subtitle }}</p>
         </div>
         <slot name="link" />

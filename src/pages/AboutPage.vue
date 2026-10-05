@@ -6,7 +6,7 @@
       <div class="wrap grid grid-cols-1 lg:grid-cols-[4fr_8fr] gap-10 lg:gap-16">
         <div>
           <p class="label text-accent mb-4">01</p>
-          <h2 id="studio-heading" class="text-4xl sm:text-5xl m-0">{{ t('about.storyHeading') }}</h2>
+          <h2 id="studio-heading" class="text-[clamp(1.875rem,9.5vw,2.25rem)] sm:text-5xl m-0">{{ t('about.storyHeading') }}</h2>
         </div>
         <div class="prose-vds text-lg max-w-3xl">
           <p>{{ t('about.p1') }}</p>

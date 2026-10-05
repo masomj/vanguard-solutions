@@ -12,7 +12,7 @@
         <aside class="lg:pt-2">
           <div class="quote-sheet p-6">
             <p class="label text-xs text-text-secondary mt-0 mb-2">{{ c('pricing.heading') }}</p>
-            <p class="display text-4xl mt-0 mb-3">{{ priceFigure }}</p>
+            <p class="display text-3xl sm:text-4xl mt-0 mb-3">{{ priceFigure }}</p>
             <p class="text-[0.9375rem] text-ink-soft mt-0 mb-5">{{ c('pricing.body') }}</p>
             <BaseButton :to="pricingCtaTo" size="sm" variant="secondary">{{ c('pricing.cta') }}</BaseButton>
           </div>
